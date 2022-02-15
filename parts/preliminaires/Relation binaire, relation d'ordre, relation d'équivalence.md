@@ -102,7 +102,7 @@ Soit $\preccurlyeq$ la relation binaire définie sur le demi-plan $E = \{(a,b) \
 
 
 
-```{exercise} Ordre lexicographique] \label{lexico
+```{exercise} Ordre lexicographique
 :label: exo-48
 Sur $E = \N^2$, on définit la relation binaire $\preccurlyeq$ par
 \begin{equation*}
@@ -124,6 +124,10 @@ Sur $E = \N^2$, on définit la relation binaire $\preccurlyeq$ par
 
 
 
+```{admonition} Relation bien fondée
+:class: margin
+Une relation binaire $\rightarrow$ est bien fondée s'il n'existe pas de suite infinie $x_n \rightarrow x_{n+1}$.
+```
 ```{exercise} lemme de Newman
 :label: exo-49
 Soit $E$ un ensemble et $\rightarrow$ une relation sur $E$. On note $\overset{*}{\rightarrow}$ la clôture réflexive, transitive de $\rightarrow$. On dit que $\rightarrow$
@@ -136,6 +140,7 @@ Soit $E$ un ensemble et $\rightarrow$ une relation sur $E$. On note $\overset{*}
 \begin{equation*}
  \forall x, y, z \in E, \; z \leftarrow x \rightarrow y \Rightarrow ( \exists v \in E, \; y \overset{*}{\rightarrow} v \textrm{ et } z \overset{*}{\rightarrow} v)
 \end{equation*}
+
 On veut montrer que si $\rightarrow$ est bien fondée, alors $\rightarrow$ est localement confulente si et seulement si $\rightarrow$ est confluente.
 
 Soit $P(x)$ la propriété
@@ -145,7 +150,6 @@ Soit $P(x)$ la propriété
 
 1. Montrer la propriété en supposant que tous les successeurs de $x$ vérifient $P$. *Indication : utiliser deux fois l'hypothèse d'induction*.
 1. Conclure par l'absurde.
-
 ```
 
 
@@ -192,7 +196,7 @@ L'initialisation où $w_n$ est juste une lettre est immédiate parce que $\mathc
 
 ```{exercise}
 :label: exo-51
-On suppose que la relation "être l'ami de" est réflive et symétrique, et que le nombre de personnes est fini. Montrer qu'il existe deux personnes ayant autant d'amis.
+On suppose que la relation "être l'ami de" est réflexive et symétrique, et que le nombre de personnes est fini. Montrer qu'il existe deux personnes ayant autant d'amis.
 ```
 
 ```{solution} exo-51
@@ -232,7 +236,7 @@ Soit $(E, \preccurlyeq)$ un ensemble ordonné tel que toute partie non vide adme
 
 ```{solution} exo-53
 :class: dropdown
-Si $E$ est infini, on peut prendre son plus grand élément, puis le plus grand des restant, etc. ce qui construit une suite infinie stricement décroissante.
+Si $E$ est infini, on peut prendre son plus grand élément, puis le plus grand des restant, etc. ce qui construit une suite infinie strictement décroissante.
 ```
 
 

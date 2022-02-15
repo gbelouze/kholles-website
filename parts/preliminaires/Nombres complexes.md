@@ -142,7 +142,7 @@ est une bijection et calculer sa réciproque.
 
 ```{exercise}
 :label: exo-62
-Inspiré du 3.20 du poly de Mansuy. Trouver le plus grand $\alpha$ tel que
+Trouver le plus grand $\alpha$ tel que
 \begin{equation*}
 \forall z \in \mathbb{U} \setminus \{1\}, \; \exists n \in \mathbb{N} \text{ tel que } |z^n -1| \geq \alpha \end{equation*}
 Indication : On pourra séparer les cas où $z$ est une racine de l'unité.
@@ -153,13 +153,9 @@ Difficulté : ***
 :class: dropdown
 Avec $z=j$, on a la majoration $\alpha \leq \sqrt{3}$. On montre que $\sqrt{3}$ convient. Soit $z \in \mathbb{U} \setminus \{1\}$, et $\theta \in ]0; 1[$ tel que $2 \pi \theta$ soit son argument.
 
-- si $\theta$ est irrationnel, on peut montrer que $\{ z^n, n \in \mathbb{N} \}$ est dense dans $\mathbb{U}$.
-    Pour tout $n \in \N^*$ on note $\theta_n \in ]0; 1[$ tel que $2 \pi \theta$ soit l'argument de $z^n$. Regardons $\gamma = \inf_{n \in \N} \theta_n$.
-
-    Supposons $\gamma > 0$. Soit $n > m \in \N$ tels que $\theta_n < 2\gamma$, $\theta_m < 2\gamma$. Si $\theta_n > \theta_m$, alors $\theta_{n-m}= \theta_n-\theta_m < \gamma$ ce qui est impossible. Ainsi $0 < 1 - \theta_{n-m} < \gamma$. Soit $N = \lfloor \frac{1}{1-\theta_{n-m}} \rfloor$. Il vient en passant deux fois au conjugué $0 < \theta_{N(n-m)} < \alpha$ ce qui est une contradiction.
-
-    Ainsi $\gamma = 0$ et de là $\{ z^n, n \in \mathbb{N} \}$ est soit fini (inf atteint), soit dense dans $\mathbb{U}$ (inf non atteint). Par irrationnalité de
-    $\theta$ l'ensemble est dense. En particulier $\sup_{n \in \N} |z^n -1| = 2$ donc il existe $n \in \N$ tel que $|z^n -1| \geq \sqrt{3}$
+-   si $\theta$ est irrationnel, on peut montrer que $\{ z^n, n \in \mathbb{N} \}$ est dense dans $\mathbb{U}$.<br>
+    Pour tout $n \in \N^*$ on note $\Theta_n = \{\alpha \; | \; z_n = e^{i\alpha} \}$, et $\Theta = \cup_n \Theta_n$. Clairement $\Theta$ est un sous-groupe de $(\R, +)$, donc soit dense dans $\R$, soit isomorphe à $\eta\Z$. Par irrationnalité de $\theta$, $\Theta$ est dense dans $\R$, ce qui conclut.<br>
+    En particulier $\sup_{n \in \N} |z^n -1| = 2$ donc il existe $n \in \N$ tel que $|z^n -1| \geq \sqrt{3}$
 - sinon, $z$ est une racine de l'unité et est donc générateur de $\mathbb{U}_m$ avec $m \geq 2$ car $z \neq 1$. Avec l'étude précédente de $j$, il suffit de vérifier que
 \begin{equation*}
 \forall n \geq 2, \; \min \{\mathcal{R}e(z), z \in \mathbb{U}_n \} \leq -\frac{1}{2}

@@ -280,7 +280,8 @@ Soit $E$ un ensemble. Montrer que $E$ est infini ssi toute fonction $f$ de $E$ d
 
 ```{solution} exo-39
 :class: dropdown
-Si $E$ est fini, considérer $f$ un cycle de support $E$. Si $E$ est infini, considérons $f : E \rightarrow E$, et choisissons $x \in E$ quelconque. Soit $A = \underset{n \in \N}{\cup} f^{\circ n}(x)$. De toute évidence $A$ est stable par $f$. Si $A$ est fini, $A \neq E$ et $A$ convient. Sinon, $A$ n'est pas cyclique et en particulier $x \notin \underset{n \geq 1}{\cup} f^{\circ n}(x) = B$. $B$ est stable et convient.
+Si $E$ est fini, considérer $f$ un cycle de support $E$.<br>
+Si $E$ est infini, considérons $f : E \rightarrow E$, et choisissons $x \in E$ quelconque. Soit $A = \underset{n \in \N}{\cup} f^{\circ n}(x)$. De toute évidence $A$ est stable par $f$. Si $A$ est fini, $A \neq E$ et $A$ convient. Sinon, $(f^{\circ n}(x))_n$ n'est pas cyclique et en particulier $x \notin \underset{n \geq 1}{\cup} f^{\circ n}(x) = B$. $B$ est stable par $f$ et convient.
 ```
 
 
@@ -288,7 +289,7 @@ Si $E$ est fini, considérer $f$ un cycle de support $E$. Si $E$ est infini, con
 ```{exercise}
 :label: exo-40
 On dit que $f, g \; : \; X \rightarrow Y$ possèdent un coégalisateur $e : Y \rightarrow Q$ lorsque
-1. *Commutation* $e \circ f = e \circ g$
+1. *Commutativité* $e \circ f = e \circ g$
 1. *Maximalité* pour toute fonction $d : Y \rightarrow Q'$ telle que $d \circ f = d \circ g$, il existe une unique fonction $h : Q \rightarrow Q'$ vérifiant $h \circ e = d$.
 
 Montrer que si $e$ existe, alors $e$ est surjective. *Indication : montrer que $\phi$ est surjective si et seulement si pour toute paire de fonction $h_1, h_2$, $h_1 \circ \phi = h_2 \circ \phi \Rightarrow h_1 = h_2$*
