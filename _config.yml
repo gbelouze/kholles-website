@@ -4,7 +4,7 @@
 title: Exercices de kholles
 author: Gabriel Belouze
 logo: logo.png
-exclude_patterns : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "ExoKholles.md"]
+exclude_patterns : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "ExoKholles.md", "README.md"]
 
 
 # Force re-execution of notebooks on each build.
