@@ -1,0 +1,76 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: Exercices de kholles
+author: Gabriel Belouze
+logo: logo.png
+exclude_patterns : [_build, Thumbs.db, .DS_Store, "**.ipynb_checkpoints", "ExoKholles.md"]
+
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+# Define the name of the latex output file for PDF builds
+latex:
+  latex_documents:
+    targetname: book.tex
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/gbelouze/kholles-website # Online location of your book
+  path_to_book: "" # Optional path to your book, relative to the repository root
+  branch: master  # Which branch of the repository should be used when creating links (optional)
+
+# Add GitHub buttons to your book
+# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+html:
+  use_issues_button: false
+  use_repository_button: true
+  home_page_in_navbar: false
+  favicon: "favicon.ico"
+
+parse:
+  myst_dmath_double_inline: true  # Allow display math ($$) within an inline context
+  myst_enable_extensions:  # default extensions to enable in the myst parser. See https://myst-parser.readthedocs.io/en/latest/using/syntax-optional.html
+    - amsmath
+    - colon_fence
+    # - deflist
+    - dollarmath
+    # - html_admonition
+    # - html_image
+    - linkify
+    # - replacements
+    # - smartquotes
+    - substitution
+    - tasklist
+  myst_url_schemes: [mailto, http, https] # URI schemes that will be recognised as external URLs in Markdown links
+
+
+
+sphinx:
+  recursive_update: true
+  extra_extensions:
+    - sphinx_exercise
+    - sphinx_togglebutton
+    - sphinx_proof
+  config:
+    mathjax3_config:
+      TeX:
+        Macros:
+          "N": "\\mathbb{N}"
+          "sh": "\\textrm{sh}"
+          "ch": "\\textrm{ch}"
+          "th": "\\textrm{th}"
+          "R": "\\mathbb{R}"
+          "C": "\\mathbb{C}"
+          "K": "\\mathbb{K}"
+          "Q": "\\mathbb{Q}"
+          "Z": "\\mathbb{Z}"
+          "M": "\\mathcal{M}"
+          "L": "\\mathcal{L}"
+          "B": "\\mathcal{B}"
+          "Vect": "\\textrm{Vect}"
+          "S": "\\mathcal{S}"
+          "P": "\\mathcal{P}"

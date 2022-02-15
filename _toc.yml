@@ -1,0 +1,49 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+parts:
+  - caption: Préliminaires
+    chapters:
+      - file: "parts/preliminaires/Calculus : intégration, fonctions usuelles"
+      - file: "parts/preliminaires/Ensembles et applications"
+      - file: "parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence"
+      - file: "parts/preliminaires/Nombres complexes"
+      - file: "parts/preliminaires/Manipulations algébriques"
+      - file: "parts/preliminaires/R, Q, N"
+  - caption: Analyse réelle et complexe
+    chapters:
+      - file: "parts/analyse_reelle/Suites numériques"
+      - file: "parts/analyse_reelle/Convergence des suites numériques"
+      - file: "parts/analyse_reelle/Séries numériques"
+      - file: "parts/analyse_reelle/Fonctions usuelles"
+      - file: "parts/analyse_reelle/Limites de fonctions, continuité"
+      - file: "parts/analyse_reelle/Dérivabilité"
+      - file: "parts/analyse_reelle/Taylor-Young"
+      - file: "parts/analyse_reelle/Convexité, inégalité arithmético-géométrique"
+      - file: "parts/analyse_reelle/Études locales et asymptotiques"
+      - file: "parts/analyse_reelle/Équations différentielles"
+  - caption: Algèbre commutative
+    chapters:
+      - file: "parts/algebre_commutative/Groupes"
+      - file: "parts/algebre_commutative/Groupe cyclique"
+      - file: "parts/algebre_commutative/Anneaux"
+      - file: "parts/algebre_commutative/Polynômes"
+      - file: "parts/algebre_commutative/Fractions rationnelles"
+      - file: "parts/algebre_commutative/Arithmétique"
+  - caption: Algèbre linéaire
+    chapters:
+      - file: "parts/algebre_lineaire/Espaces vectoriels"
+      - file: "parts/algebre_lineaire/Matrices"
+      - file: "parts/algebre_lineaire/Systèmes linéaires"
+      - file: "parts/algebre_lineaire/Réduction"
+  - caption: Analyse vectorielle et fonctionnelle
+    chapters:
+      - file: "parts/analyse_vectorielle/Topologie"
+      - file: "parts/analyse_vectorielle/Suites de fonctions"
+  - caption: Probabilités
+    chapters:
+      - file: "parts/probabilites/Dénombrement"
+
+
