@@ -124,7 +124,8 @@ Sur $E = \N^2$, on définit la relation binaire $\preccurlyeq$ par
 
 
 
-```{sidebar} Relation bien fondée
+```{admonition} Relation bien fondée
+:class: margin
 Une relation binaire $\rightarrow$ est bien fondée s'il n'existe pas de suite infinie $x_n \rightarrow x_{n+1}$.
 ```
 ```{exercise} lemme de Newman

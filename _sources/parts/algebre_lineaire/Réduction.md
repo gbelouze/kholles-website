@@ -19,7 +19,7 @@
 # Réduction
 
 ```{admonition} Rappel
-:class: sidebar
+:class: margin
 $u$ est diagonalisable si et seulement si le polynôme minimal de $u$ est scindé à racines simples.
 ```
 
