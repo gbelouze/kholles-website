@@ -398,18 +398,22 @@
     \renewcommand \P {\mathcal{P}}\]</div>
 <div class="tex2jax_ignore mathjax_ignore section" id="reduction">
 <h1>Réduction<a class="headerlink" href="#reduction" title="Permalink to this headline">¶</a></h1>
+<div class="sidebar admonition">
+<p class="admonition-title">Rappel</p>
+<p><span class="math notranslate nohighlight">\(u\)</span> est diagonalisable si et seulement si le polynôme minimal de <span class="math notranslate nohighlight">\(u\)</span> est scindé à racines simples.</p>
+</div>
 <div class="exercise admonition" id="exo-403">
 
 <p class="admonition-title"><span class="caption-number">Exercise 373 </span></p>
 <div class="section" id="exercise-content">
-<p>Montrer que pour tout permutation <span class="math notranslate nohighlight">\(\sigma \in \Sigma_n\)</span>, la matrice de permutation <span class="math notranslate nohighlight">\(P_{\sigma}\)</span> est diagonalisable.</p>
+<p>Montrer que pour toute permutation <span class="math notranslate nohighlight">\(\sigma \in \S_n\)</span>, la matrice de permutation <span class="math notranslate nohighlight">\(P_{\sigma}\)</span> est diagonalisable.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_lineaire/Réduction-solution-1">
 
 <p class="admonition-title">Solution to<a class="reference internal" href="#exo-403"> Exercise 373</a></p>
 <div class="section" id="solution-content">
-<p>Elle vaut l’identité élevée à une certaine puissance.</p>
+<p>Elle vaut l’identité élevée à une certaine puissance, et tout polynôme <span class="math notranslate nohighlight">\(X^m - 1\)</span> est scindé à racines simples sur <span class="math notranslate nohighlight">\(\C\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-404">
@@ -437,7 +441,14 @@
 
 <p class="admonition-title">Solution to<a class="reference internal" href="#exo-405"> Exercise 375</a></p>
 <div class="section" id="solution-content">
-<p>Sens retour. On exhibe <span class="math notranslate nohighlight">\(P=X\prod(X-a_i)\)</span> scindé à racines simples et annulateur de <span class="math notranslate nohighlight">\(u^2\)</span>. On pose <span class="math notranslate nohighlight">\(Q =X^2 \prod(X-\sqrt{a_i})(X+\sqrt{a_i})\)</span> et <span class="math notranslate nohighlight">\(Q^* = \frac{Q}{X}\)</span>. On regarde <span class="math notranslate nohighlight">\(E=Ker(P(u^2)) = Ker(Q(u)) = \oplus_{i} Ker(u^2-a_iI)+Ker(u^2)=Ker(u)\oplus_{i} Ker(u-\sqrt{a_i}I) + Ker(u+\sqrt{a_i}I)\)</span>. Donc <span class="math notranslate nohighlight">\(Q^*(u)=0\)</span> et <span class="math notranslate nohighlight">\(Q^*\)</span> est scindé à racines simples : <span class="math notranslate nohighlight">\(u\)</span> est diagonalisable.</p>
+<p>Sens retour. On exhibe <span class="math notranslate nohighlight">\(P=X\prod(X-a_i)\)</span> scindé à racines simples et annulateur de <span class="math notranslate nohighlight">\(u^2\)</span>. On pose <span class="math notranslate nohighlight">\(Q =X^2 \prod(X-\sqrt{a_i})(X+\sqrt{a_i})\)</span> et <span class="math notranslate nohighlight">\(Q^* = \frac{Q}{X}\)</span>. On regarde</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+E=Ker(P(u^2)) &amp;= Ker(Q(u)) \\
+ &amp;= \oplus_{i} Ker(u^2-a_iI)+Ker(u^2) \\
+ &amp;= Ker(u)\oplus_{i} Ker(u-\sqrt{a_i}I) + Ker(u+\sqrt{a_i}I)
+\end{equation*}\]</div>
+<p>Donc <span class="math notranslate nohighlight">\(Q^*(u)=0\)</span> et <span class="math notranslate nohighlight">\(Q^*\)</span> est scindé à racines simples : <span class="math notranslate nohighlight">\(u\)</span> est diagonalisable.</p>
 <p>Sens aller. On possède une base de vecteurs propres de <span class="math notranslate nohighlight">\(u\)</span>, donc stables par <span class="math notranslate nohighlight">\(u^2\)</span>.</p>
 </div>
 </div>
