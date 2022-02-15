@@ -1,0 +1,720 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convexité, inégalité arithmético-géométrique &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Études locales et asymptotiques" href="%C3%89tudes%20locales%20et%20asymptotiques.html" />
+    <link rel="prev" title="Taylor-Young" href="Taylor-Young.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/analyse_reelle/Convexité, inégalité arithmético-géométrique.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Convexité, inégalité arithmético-géométrique</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="convexite-inegalite-arithmetico-geometrique">
+<h1>Convexité, inégalité arithmético-géométrique<a class="headerlink" href="#convexite-inegalite-arithmetico-geometrique" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-268">
+
+<p class="admonition-title"><span class="caption-number">Exercise 185 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(a_1, a_2, \ldots, a_n\)</span> des réels positifs tels que <span class="math notranslate nohighlight">\(\prod a_i = 1\)</span>. Montrer que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \prod_{i=1}^{n}(2+a_i) \geq 3^n
+\end{equation*}\]</div>
+<p>et donner le cas d’égalité.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-268"> Exercise 185</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(a_1 =a_2 = \ldots = a_n = 1\)</span> est un cas d’égalité. Cela conduit à utiliser l’inégalité arithmético-géométrique avec <span class="math notranslate nohighlight">\(1, 1, a_i\)</span> ce qui donne <span class="math notranslate nohighlight">\(\frac{2+a_i}{3} \geq a_i^{\frac{1}{3}}\)</span>. De là suit l’inégalité. Le cas d’égalité est celui de l’IAG, donc uniquement pour les <span class="math notranslate nohighlight">\(a_i\)</span> tous égaux à 1.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-270">
+
+<p class="admonition-title"><span class="caption-number">Exercise 186 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : \R \rightarrow \R \)</span> continue telle que <span class="math notranslate nohighlight">\(\forall x, y\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f(\frac{x+y}{2}) \leq \frac{f(x)+f(y)}{2}
+\end{equation*}\]</div>
+<p>Montrer que <span class="math notranslate nohighlight">\(f\)</span> est convexe.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-270"> Exercise 186</a></p>
+<div class="section" id="solution-content">
+<p>Vrai pour tous les diadiques puis densité des diadiques.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-271">
+
+<p class="admonition-title"><span class="caption-number">Exercise 187 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\((x_1, \ldots, x_n)\)</span> des réels strictement positifs</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Montrer que $\frac{x_1}{x_2} + \ldots + \frac{x_{n-1}}{x_n} + \frac{x_n}{x_1} \geq n$
+1. Montrer que $\sum_{i,j = 1}^n \frac{x_i}{x_j} \geq n^2$.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-271"> Exercise 187</a></p>
+<div class="section" id="solution-content">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Concavité de $\ln$ : $\ln(\frac{1}{n}\sum \frac{x_i}{x_{i+1}}) \geq \frac{1}{n} \sum \ln(\frac{x_i}{x_{i+1}}) =0$
+1. Cas $n=2$ de l&#39;inégalité précédente pour toute paire $i,j$.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-272">
+
+<p class="admonition-title"><span class="caption-number">Exercise 188 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f :[a,b] \rightarrow \R\)</span> continue telle que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall x \in ]a,b[, \; \exists \varepsilon &gt; 0, \; f(x) = \frac{1}{2}(f(x+\varepsilon)+f(x-\varepsilon))
+\end{equation*}\]</div>
+<p>Montrer que <span class="math notranslate nohighlight">\(f\)</span> est convexe. En considérant <span class="math notranslate nohighlight">\(-f\)</span>, en déduire qu’elle est affine.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-272"> Exercise 188</a></p>
+<div class="section" id="solution-content">
+<p>Notons <span class="math notranslate nohighlight">\(\Delta_x(y) = \frac{f(x)-f(y)}{x-y}\)</span>.
+On raisonne par l’absurde et on suppose disposer de <span class="math notranslate nohighlight">\(u &lt; v &lt; w\)</span> tels que <span class="math notranslate nohighlight">\(\Delta_u(v) &gt; \Delta_u(w)\)</span>. On regarde alors <span class="math notranslate nohighlight">\(h : x \mapsto f(x)-f(u) -(x-u)\Delta_u(w)\)</span> qui possède la même propriété que <span class="math notranslate nohighlight">\(f\)</span> et de plus vérifie <span class="math notranslate nohighlight">\(h(u)=h(w)=0\)</span> et <span class="math notranslate nohighlight">\(h(v)&gt;0\)</span>. En considérant <span class="math notranslate nohighlight">\(y = \inf \{x \; | \; h(x) = \sup h \}\)</span> on obtient une contradiction. Ensuite le même raisonnement appliqué à <span class="math notranslate nohighlight">\(-f\)</span> montre que <span class="math notranslate nohighlight">\(f\)</span> est concave. De là <span class="math notranslate nohighlight">\(f\)</span> est à la fois convexe et concave, elle est donc affine.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-273">
+
+<p class="admonition-title"><span class="caption-number">Exercise 189 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(x_1, \ldots, x_n\)</span> des réels strictement positifs. Pour <span class="math notranslate nohighlight">\(\alpha &gt; 0\)</span> on pose <span class="math notranslate nohighlight">\(M_{\alpha}(x_i) = (\frac{1}{n}\sum_ix_i^{\alpha})^{\frac{1}{\alpha}}\)</span>. Montrer que si <span class="math notranslate nohighlight">\(0 &lt; \alpha &lt; \beta\)</span>, alors <span class="math notranslate nohighlight">\(M_{\alpha} \leq M_{\beta}\)</span>. Déterminer <span class="math notranslate nohighlight">\(\lim_{\alpha \rightarrow 0} M_{\alpha}\)</span> et <span class="math notranslate nohighlight">\(\lim_{\alpha \rightarrow +\infty} M_{\alpha}\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-273"> Exercise 189</a></p>
+<div class="section" id="solution-content">
+<p>Tout d’abord <span class="math notranslate nohighlight">\(\alpha \leq 1 \leq \beta \Rightarrow M_{\alpha} \leq M_1 \leq M_{\beta}\)</span>. La première inégalité (resp. la deuxième) vient de ce que <span class="math notranslate nohighlight">\(x \mapsto x^{\gamma}\)</span> est concave (resp. convexe) lorsque <span class="math notranslate nohighlight">\(\gamma \leq 1\)</span> (resp. <span class="math notranslate nohighlight">\(\gamma \geq 1\)</span>).</p>
+<p>Ensuite dans le cas général, on écrit</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+M_{\alpha}(x_1, \ldots, x_n) &amp;= M_1(x_1^{\alpha}, \ldots, x_n^{\alpha})^{\frac{1}{\alpha}} \\
+&amp;\leq M_{\beta/\alpha}(x_1^{\alpha}, \ldots, x_n^{\alpha})^{\frac{\alpha}{\beta}\frac{1}{\alpha}} \\
+&amp;= M_{\beta}(x_1, \ldots, x_n)
+\end{align*}\]</div>
+<p>En factorisant par <span class="math notranslate nohighlight">\(\max(x_i)\)</span>, clairement <span class="math notranslate nohighlight">\(M_\alpha(x_i) \underset{\alpha \rightarrow + \infty}{\rightarrow} \max(x_i)\)</span>.
+Pour la limite en <span class="math notranslate nohighlight">\(0\)</span> on écrit <span class="math notranslate nohighlight">\(x_i = e^{t_i}\)</span> et</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+M_\alpha(x_i) &amp;= \left ( \frac{1}{n} \sum e^{t_i\alpha} \right )^{1/\alpha} \\
+&amp;= (1 - \alpha \frac{\sum t_i}{n} + o(\alpha))^{1/\alpha} \\
+&amp;= e^{\sum t_i / n + o(1)} \\
+&amp;\underset{\alpha \rightarrow 0}{\rightarrow} e^{M_1(\ln(x_i))}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-274">
+
+<p class="admonition-title"><span class="caption-number">Exercise 190 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : \R \rightarrow ]0,+\infty[\)</span>. Montrer que <span class="math notranslate nohighlight">\(\ln(f)\)</span> est convexe si et seulement si <span class="math notranslate nohighlight">\(\forall a &gt; 0\)</span>, <span class="math notranslate nohighlight">\(f^a\)</span> est convexe.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-274"> Exercise 190</a></p>
+<div class="section" id="solution-content">
+<p>(<span class="math notranslate nohighlight">\(\Rightarrow\)</span>) <span class="math notranslate nohighlight">\(\ln(f^a) = a\ln(f)\)</span> est convexe. Or <span class="math notranslate nohighlight">\(\exp\)</span> est convexe croissante donc <span class="math notranslate nohighlight">\(f^a = \exp(\ln(f^a))\)</span> est convexe.</p>
+<p>(<span class="math notranslate nohighlight">\(\Leftarrow\)</span>) On a <span class="math notranslate nohighlight">\(f^a\)</span> convexe <span class="math notranslate nohighlight">\(\Rightarrow\)</span> <span class="math notranslate nohighlight">\(\forall b&gt;a\)</span> <span class="math notranslate nohighlight">\(f^b\)</span> convexe. Toute l’information de l’hypothèse se trouve donc pour <span class="math notranslate nohighlight">\(a\)</span> petit, d’où l’idée de faire tendre <span class="math notranslate nohighlight">\(a\)</span> vers <span class="math notranslate nohighlight">\(0\)</span>. Fixons <span class="math notranslate nohighlight">\(x, y, \lambda\)</span>. Notons <span class="math notranslate nohighlight">\(X = \ln(f(x))\)</span>, <span class="math notranslate nohighlight">\(Y=\ln(f(y))\)</span> et <span class="math notranslate nohighlight">\( Z = \ln(f(\lambda x + (1-\lambda) y))\)</span>. On exprime la convexité de <span class="math notranslate nohighlight">\(f^a\)</span> :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\forall a &gt; 0, \quad e^{aZ} \leq \lambda e^{aX} + (1-\lambda)e^{aY}
+\end{equation*}\]</div>
+<p>De là <span class="math notranslate nohighlight">\(\phi : a \mapsto \lambda e^{aX} + (1-\lambda)e^{aY} - e^{aZ} \)</span> est positive sur <span class="math notranslate nohighlight">\(\R^*+\)</span>. Mais <span class="math notranslate nohighlight">\(\frac{\phi(a)}{a} \underset{a \rightarrow 0}{\rightarrow} \lambda X + (1-\lambda) Y - Z\)</span>. D’où finalement <span class="math notranslate nohighlight">\(\lambda X + (1-\lambda) Y - Z \geq 0\)</span>, ce qui est la condition souhaitée.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-275">
+
+<p class="admonition-title"><span class="caption-number">Exercise 191 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que pour tout <span class="math notranslate nohighlight">\(x &gt; 1\)</span>, on a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+x^n-1 \geq n(x^{\frac{n+1}{2}}-x^{\frac{n-1}{2}})
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-275"> Exercise 191</a></p>
+<div class="section" id="solution-content">
+<p>On factorise par <span class="math notranslate nohighlight">\(x-1\)</span> : on veut donc montrer</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \sum_{k=0}^{n-1}x^k \geq nx^{\frac{n-1}{2}}
+\end{equation*}\]</div>
+<p>On utilise la convexité de <span class="math notranslate nohighlight">\(y \mapsto \exp(y\ln(x))\)</span> et on écrit</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{1}{n}\sum_{k=0}^{n-1}x^k
+&amp;= \sum_{k=0}^{n-1}\frac{1}{n}e^{k\ln(x)} \\
+&amp;\geq  \exp(\ln(x)(\frac{1}{n}\sum_{i=0}^{n-1}i))\\
+&amp;\geq x^{\frac{n-1}{2}}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-276">
+
+<p class="admonition-title"><span class="caption-number">Exercise 192 </span></p>
+<div class="section" id="exercise-content">
+<p>(Éventuellement la première question peut juste servir d’indication)
+Soit <span class="math notranslate nohighlight">\(f:\R\rightarrow\R\)</span> convexe.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. On suppose que $\lim_{+\infty}f = 0$, montrer que $f$ est positive.
+1. On suppose que $f$ admet une asymptote. Montrer que la courbe est toujours au dessus de l&#39;asymptote.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-276"> Exercise 192</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Sinon on peut trouver <span class="math notranslate nohighlight">\(x,y\)</span> tels que <span class="math notranslate nohighlight">\(\Delta_x(y) &gt; 0\)</span>.</p></li>
+<li><p>On regarde la différence de <span class="math notranslate nohighlight">\(f\)</span> et de son asymptote, qui reste convexe et on utilise la question 1.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-277">
+
+<p class="admonition-title"><span class="caption-number">Exercise 193 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f:\R\rightarrow\R\)</span> convexe. Montrer que <span class="math notranslate nohighlight">\(\frac{f(x)}{x}\)</span> admet une limite dans <span class="math notranslate nohighlight">\(\R \bigcup \{+\infty\}\)</span> lorsque <span class="math notranslate nohighlight">\(x\)</span> tend vers <span class="math notranslate nohighlight">\(+\infty\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-277"> Exercise 193</a></p>
+<div class="section" id="solution-content">
+<p>Par croissance des cordes, on a <span class="math notranslate nohighlight">\(\frac{f(x)-f(0)}{x}\)</span> croissante. Cela conclut.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-278">
+
+<p class="admonition-title"><span class="caption-number">Exercise 194 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : \R^+ \rightarrow \R\)</span> positive, bornée, de classe <span class="math notranslate nohighlight">\(\mathbb{C}^2\)</span> telle que <span class="math notranslate nohighlight">\(f \leq f''\)</span>.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Montrer que $f$ est convexe et décroissante.
+1. Montrer que $f$ et $f&#39;$ tendent vers 0 en $+\infty$.
+1. Soit $g$ et $h$ définies par $g(x)=f(x)e^{x}$ et $h(x)=(f&#39;(x)+f(x))e^{-x}$ pour $x\geq 0$. Étudier les variations de $g$ et le signe de $h$.
+1. En déduire que pour $x \geq 0$, on a $f(x) \leq f(0)e^{-x}$.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-278"> Exercise 194</a></p>
+<div class="section" id="solution-content">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. La convexité vient de ce que $f&#39;&#39; \geq 0$. $f&#39;$ est croissante. Si elle n&#39;est pas tout le temps négative, $f$ diverge en $+\infty$.
+1. $f$ et $f&#39;$ convergent par monotonie. Donc $f&#39;$ converge vers $0$ (sinon $f$ ne converge pas). Puis si $f$ converge vers une limite strictement positive, $f&#39;&#39;$ reste grande et donc $f&#39;$ diverge.
+1. On a $h&#39; = (f&#39;&#39;-f)e^{-x} \geq 0$. Donc $h$ est croissante et $h \underset{+\infty}{\rightarrow} 0$, donc $h$ est toujours négative. Il suit que $g$ est décroissante.
+1. Immédiat
+</pre></div>
+</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-279">
+
+<p class="admonition-title"><span class="caption-number">Exercise 195 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que pour tout <span class="math notranslate nohighlight">\(a,b,x,y &gt; 0\)</span>, on a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ x\ln{\frac{x}{a}}+y\ln{\frac{y}{b}} \geq (x+y)\ln{\frac{x+y}{a+b}}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-279"> Exercise 195</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(f : x \mapsto x\ln{x}\)</span> est convexe d’où</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f(\frac{a}{a+b}\frac{x}{a}+\frac{b}{a+b}\frac{y}{b}) \leq \frac{a}{a+b}f(\frac{x}{a}) + \frac{b}{a+b}f(\frac{y}{b})
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-280">
+
+<p class="admonition-title"><span class="caption-number">Exercise 196 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer qu’une fonction sur un intervalle ouvert est convexe si et seulement si elle s’écrit comme le <span class="math notranslate nohighlight">\(\sup\)</span> d’une famille de fonctions affines.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convexité, inégalité arithmético-géométrique-solution-23">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-280"> Exercise 196</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> définie sur <span class="math notranslate nohighlight">\(I\)</span> affine. Par croissance des pentes il existe pour tout <span class="math notranslate nohighlight">\(y \in I\)</span>, <span class="math notranslate nohighlight">\(\underset{x \rightarrow x^-}{\lim} \frac{f(y)-f(x)}{y-x}\)</span>, que l’on note <span class="math notranslate nohighlight">\(a(y)\)</span>. On note <span class="math notranslate nohighlight">\(f_y : x \rightarrow f(y)+a(y)(x-y)\)</span> (la tangente à gauche). On a <span class="math notranslate nohighlight">\(f = \sup_{y \in I} f_y\)</span>.
+Réciproquement, on montre qu’un tel <span class="math notranslate nohighlight">\(\sup\)</span> est convexe.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/analyse_reelle"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Taylor-Young.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Taylor-Young</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="%C3%89tudes%20locales%20et%20asymptotiques.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Études locales et asymptotiques</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

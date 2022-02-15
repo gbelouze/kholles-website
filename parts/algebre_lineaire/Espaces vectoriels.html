@@ -1,0 +1,1027 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Espaces vectoriels &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Matrices" href="Matrices.html" />
+    <link rel="prev" title="Arithmétique" href="../algebre_commutative/Arithm%C3%A9tique.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/algebre_lineaire/Espaces vectoriels.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Espaces vectoriels</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="espaces-vectoriels">
+<h1>Espaces vectoriels<a class="headerlink" href="#espaces-vectoriels" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-342">
+
+<p class="admonition-title"><span class="caption-number">Exercise 313 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que la commutativité de la loi <span class="math notranslate nohighlight">\(+\)</span> est une conséquence des autres axiomes de la structure d’espace vectoriel.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-342"> Exercise 313</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(u,b\)</span> deux vecteurs. On a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+0 &amp;= u + (v-v) - u \\
+&amp;= (u+v) -v -u \\
+&amp;= (u+v) + (-1)u + (-1)v \\
+&amp;= (u+v)+(-1)(v+u) \\
+&amp;= (u+v)-(v+u)
+\end{align*}\]</div>
+<p>d’où <span class="math notranslate nohighlight">\(u+v = v+u\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-343">
+
+<p class="admonition-title"><span class="caption-number">Exercise 314 </span> (lemme de Schur)</p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un espace vectoriel et <span class="math notranslate nohighlight">\(u \in \L(E)\)</span>. On suppose que <span class="math notranslate nohighlight">\(\forall x \in E, \; \exists \lambda_x \in \mathbb{K} \; u(x) = \lambda_xx\)</span>. Montrer que <span class="math notranslate nohighlight">\(u\)</span> est une homothétie.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-343"> Exercise 314 (lemme de Schur)</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(x,y \in E\)</span> non nuls. On va montrer que <span class="math notranslate nohighlight">\(\lambda_x = \lambda_y\)</span>. S’il existe <span class="math notranslate nohighlight">\(\mu \in \mathbb{K}\)</span>, <span class="math notranslate nohighlight">\(x=\mu y\)</span>, alors on a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lambda_y y &amp;= u(y) \\
+&amp;= \lambda_x \mu x \\
+&amp;= \lambda_x y
+\end{align*}\]</div>
+<p>d’où <span class="math notranslate nohighlight">\(\lambda_x=\lambda_y\)</span>. Sinon on regarde <span class="math notranslate nohighlight">\(z=x+y\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\lambda_z (x+y) &amp;= \lambda_x x + \lambda_y y  \\
+(\lambda_z-\lambda_x) x = (\lambda_y-\lambda_z) y \\
+\end{align*}\]</div>
+<p>Et il suit de la liberté de <span class="math notranslate nohighlight">\((x,y)\)</span> que <span class="math notranslate nohighlight">\(\lambda_x=\lambda_z=\lambda_y\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-344">
+
+<p class="admonition-title"><span class="caption-number">Exercise 315 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer <span class="math notranslate nohighlight">\(\alpha\)</span> tel que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+F_{\alpha} = \{ (x,y) \in R^2 \; | \; x^2 + \alpha xy + y^2 = 0 \}
+\end{equation*}\]</div>
+<p>soit un sous espace vectoriel de <span class="math notranslate nohighlight">\(\R^2\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-344"> Exercise 315</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(x\)</span> non nul fixé. <span class="math notranslate nohighlight">\(x^2 + \alpha xy + y^2 = 0\)</span> admet une solution réelle si et seulement si <span class="math notranslate nohighlight">\(\alpha^2 \geq 4\)</span>. Ainsi, pour <span class="math notranslate nohighlight">\(\alpha \in ]-2,2[\)</span>, <span class="math notranslate nohighlight">\(F_{\alpha} = \{ (0,0) \}\)</span> convient. On vérifie que <span class="math notranslate nohighlight">\(|\alpha| = 2\)</span> convient également. Puis si <span class="math notranslate nohighlight">\(\alpha^2 &gt; 4\)</span>, il existe deux solutions distinctes <span class="math notranslate nohighlight">\(y_1, y_2\)</span> à <span class="math notranslate nohighlight">\(x\)</span> non nul fixé. Si <span class="math notranslate nohighlight">\(F_{\alpha}\)</span> est un espace vectoriel, alors <span class="math notranslate nohighlight">\((x-x, y_1-y_2 ) \in F_{\alpha}\)</span>mais cela est absurde.</p>
+</div>
+</div>
+<div class="exercise admonition" id="sevcomplementaire">
+
+<p class="admonition-title"><span class="caption-number">Exercise 316 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(F\)</span> un sous-espace vectoriel strict de <span class="math notranslate nohighlight">\(E\)</span>. Déterminer <span class="math notranslate nohighlight">\(\Vect(E \setminus F)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#sevcomplementaire"> Exercise 316</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(a \in E \setminus F\)</span> non nul. Soit <span class="math notranslate nohighlight">\(x\in E\)</span>. Si <span class="math notranslate nohighlight">\(x \in E \setminus F\)</span>, alors <span class="math notranslate nohighlight">\(x \in \Vect(E \setminus F)\)</span>. Sinon <span class="math notranslate nohighlight">\(x = x+(a-a) = (x+a)-a\)</span>. Mais <span class="math notranslate nohighlight">\(x+a \notin F\)</span> (sans quoi <span class="math notranslate nohighlight">\(a \in F\)</span>) et <span class="math notranslate nohighlight">\(-a \notin F\)</span>, donc <span class="math notranslate nohighlight">\(x \in \Vect(E \setminus F)\)</span>. Bref <span class="math notranslate nohighlight">\(\Vect(E \setminus F) = E\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-346">
+
+<p class="admonition-title"><span class="caption-number">Exercise 317 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E = \C^0(\R,\R)\)</span>. Pour <span class="math notranslate nohighlight">\(a \in \R\)</span> on note <span class="math notranslate nohighlight">\(E_a = \{f \in E \; | \; f(a)=0 \}\)</span>. Montrer que pour tout <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(E_a\)</span> est un sous-espace vectoriel de <span class="math notranslate nohighlight">\(E\)</span>. Soit <span class="math notranslate nohighlight">\(a\neq b\)</span>. Que dire de <span class="math notranslate nohighlight">\(E_a + E_b\)</span>?</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-346"> Exercise 317</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(E_a+E_b=E\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-347">
+
+<p class="admonition-title"><span class="caption-number">Exercise 318 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un espace vectoriel et <span class="math notranslate nohighlight">\(F\)</span> un sous-espace non trivial de <span class="math notranslate nohighlight">\(E\)</span>. Déterminer l’ensemble des endomorphismes s’annulant sur le complémentaire de <span class="math notranslate nohighlight">\(F\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-347"> Exercise 318</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(u\)</span> un tel endomorphisme. <span class="math notranslate nohighlight">\(Ker(u)\)</span> est un sous-espace vectoriel s’annulant sur <span class="math notranslate nohighlight">\(E\setminus F\)</span>, donc sur <span class="math notranslate nohighlight">\(\Vect(E \setminus F)\)</span>. Or avec <a class="reference internal" href="#sevcomplementaire"><span class="std std-numref">Exercise 316</span></a>, cet ensemble est <span class="math notranslate nohighlight">\(E\)</span> lui-même. Donc seul l’endomorphisme nul convient.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-348">
+
+<p class="admonition-title"><span class="caption-number">Exercise 319 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E,F\)</span> deux <span class="math notranslate nohighlight">\(\R\)</span>-espaces vectoriels, <span class="math notranslate nohighlight">\(u \in \L(E,F)\)</span> et <span class="math notranslate nohighlight">\(V,W\)</span> deux sous-espaces vectoriels de <span class="math notranslate nohighlight">\(E\)</span>. Montrer</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+u(V) \subset u(W) \Leftrightarrow V \subset W + Ker(u)
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-348"> Exercise 319</a></p>
+<div class="section" id="solution-content">
+<p>Le sens retour est immédiat. Montrons le sens direct. Soit <span class="math notranslate nohighlight">\(v \in V\)</span>. Il existe <span class="math notranslate nohighlight">\(w \in W\)</span> tel que <span class="math notranslate nohighlight">\(u(v)=u(w)\)</span>, i.e. <span class="math notranslate nohighlight">\(v-w \in Ker(u)\)</span>. Il suit <span class="math notranslate nohighlight">\(v = w+z\)</span> avec <span class="math notranslate nohighlight">\(z \in Ker(u)\)</span>, d’où le résultat.</p>
+</div>
+</div>
+<div class="exercise admonition" id="noyau_itere">
+
+<p class="admonition-title"><span class="caption-number">Exercise 320 </span> (Suite des noyaux itérés)</p>
+<div class="section" id="exercise-content">
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(E\)</span> un espace vectoriel, <span class="math notranslate nohighlight">\(u\in \L(E)\)</span> et <span class="math notranslate nohighlight">\(n \in \N\)</span> tel que <span class="math notranslate nohighlight">\(Ker(u^n)=Ker(u^{n+1})\)</span>. Montrer que pour tout <span class="math notranslate nohighlight">\(m \geq n\)</span>, <span class="math notranslate nohighlight">\(Ker(u^n)=Ker(u^m)\)</span></p></li>
+<li><p>Voir <a class="reference internal" href="#noyau_itere_suite"><span class="std std-numref">Exercise 328</span></a></p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#noyau_itere"> Exercise 320 (Suite des noyaux itérés)</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Par récurrence, <span class="math notranslate nohighlight">\(x \in Ker(u^{n+k+1}) \Leftrightarrow u^k(x) \in Ker(u^{n+1}) \Leftrightarrow u^k(x) \in Ker(u^n) \Leftrightarrow x \in Ker(u^{n+k})\)</span></p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\((d_k)\)</span> la suite des dimensions de <span class="math notranslate nohighlight">\(Ker(u^k)\)</span>. On remarque <span class="math notranslate nohighlight">\(Ker(u^k) \subset Ker(u^{k+1})\)</span>, ce qui se traduit par le fait que <span class="math notranslate nohighlight">\((d_k)\)</span> est croissante. De plus <span class="math notranslate nohighlight">\(d_n = n\)</span>, et pour tout <span class="math notranslate nohighlight">\(m \geq n\)</span>, <span class="math notranslate nohighlight">\(d_m=n\)</span>, et pour tout <span class="math notranslate nohighlight">\(m&lt;n\)</span>, <span class="math notranslate nohighlight">\(d_m &lt; n\)</span>. Ensuite, si <span class="math notranslate nohighlight">\((d_k)\)</span> n’est pas strictement croissante sur <span class="math notranslate nohighlight">\([\![0, n-1]\!]\)</span>, avec la question 1 <span class="math notranslate nohighlight">\((d_k)\)</span> est stationnaire et n’atteint pas <span class="math notranslate nohighlight">\(n\)</span>, ce qui est absurde. Donc <span class="math notranslate nohighlight">\((d_k)\)</span> est strictement croissante sur <span class="math notranslate nohighlight">\([\![0, n-1]\!]\)</span>, à valeur dans <span class="math notranslate nohighlight">\([\![0, n-1]\!]\)</span>. Il n’y a qu’une seule possibilité : <span class="math notranslate nohighlight">\(d_k = k\)</span> pour <span class="math notranslate nohighlight">\(k \leq n\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-350">
+
+<p class="admonition-title"><span class="caption-number">Exercise 321 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un espace vectoriel et <span class="math notranslate nohighlight">\(\mathcal{F} = (F_i)_{i \in I}\)</span> une famille de sous-espace vectoriels de <span class="math notranslate nohighlight">\(E\)</span>. On suppose <span class="math notranslate nohighlight">\(\mathcal{F}\)</span> filtrante, i.e. <span class="math notranslate nohighlight">\(\forall i,j, \; \exists k\)</span> tel que <span class="math notranslate nohighlight">\(F_i \cup F_j \subset F_k\)</span>. Montrer que <span class="math notranslate nohighlight">\(\bigcup_{i \in I} F_i\)</span> est un sous-espace vectoriel de <span class="math notranslate nohighlight">\(E\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-350"> Exercise 321</a></p>
+<div class="section" id="solution-content">
+<p>Il contient <span class="math notranslate nohighlight">\(0\)</span>. Puis soit <span class="math notranslate nohighlight">\(x,y \in \bigcup_{i \in I} F_i\)</span>. Il existe <span class="math notranslate nohighlight">\(i,j\)</span> tels <span class="math notranslate nohighlight">\(x \in F_i\)</span> et <span class="math notranslate nohighlight">\(y \in F_j\)</span>. De là <span class="math notranslate nohighlight">\(x,y \in F_k\)</span> puis <span class="math notranslate nohighlight">\(x + \alpha y \in F_k \subset \bigcup_{i \in I} F_i\)</span>. Cela conclut.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-351">
+
+<p class="admonition-title"><span class="caption-number">Exercise 322 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que si un <span class="math notranslate nohighlight">\(\K\)</span>-espace vectoriel <span class="math notranslate nohighlight">\(E\)</span> est réunion d’une famille finie de sous-espaces différents de <span class="math notranslate nohighlight">\(E\)</span>, alors le corps <span class="math notranslate nohighlight">\(\K\)</span> est fini.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-351"> Exercise 322</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(E_1, \ldots, E_n\)</span> des sous-espaces propres de <span class="math notranslate nohighlight">\(E\)</span> de réunion <span class="math notranslate nohighlight">\(E\)</span>, et (quitte à éliminer les redondances) tels qu’aucun d’entre eux ne soit inclus dans la réunion des autres. Soit alors <span class="math notranslate nohighlight">\(u\)</span> un vecteur de <span class="math notranslate nohighlight">\(E_1\)</span> qui ne soit pas dans la réunion des autres, et <span class="math notranslate nohighlight">\(v \notin E_1\)</span>. On regarde le sous-espace affine <span class="math notranslate nohighlight">\(v + \K u\)</span>. Il contient au plus un élément dans chaque <span class="math notranslate nohighlight">\(E_i\)</span>, et est disjoint de <span class="math notranslate nohighlight">\(E_1\)</span>, donc <span class="math notranslate nohighlight">\(\K\)</span> contient au plus <span class="math notranslate nohighlight">\(n-1\)</span> éléments.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-352">
+
+<p class="admonition-title"><span class="caption-number">Exercise 323 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> l’espace vectoriel des fonctions de <span class="math notranslate nohighlight">\([0,1]\)</span> dans <span class="math notranslate nohighlight">\(\R\)</span> et <span class="math notranslate nohighlight">\(p_a : x \mapsto |x-a|\)</span>. Déterminer le sous-espace vectoriel engendré par les <span class="math notranslate nohighlight">\(p_a\)</span> pour <span class="math notranslate nohighlight">\(a \in [0,1]\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-352"> Exercise 323</a></p>
+<div class="section" id="solution-content">
+<p>Clairement ce sous-espace est inclus dans l’ensemble <span class="math notranslate nohighlight">\(\mathcal{A}\)</span> des fonctions affines par morceaux continues, avec un nombre fini de morceaux. Montrons que le sev recherché est exactement <span class="math notranslate nohighlight">\(\mathcal{A}\)</span>. On représente une fonction <span class="math notranslate nohighlight">\(f\)</span> de <span class="math notranslate nohighlight">\(\mathcal{A}\)</span> par les <span class="math notranslate nohighlight">\(n\)</span> points <span class="math notranslate nohighlight">\((a_i, f(a_i))\)</span> de rupture de pente, ainsi que <span class="math notranslate nohighlight">\(f(0)\)</span> et <span class="math notranslate nohighlight">\(f(1)\)</span>. On raisonne par réccurrence sur <span class="math notranslate nohighlight">\(n\)</span>.</p>
+<p>Pour <span class="math notranslate nohighlight">\(n=1\)</span>, on résoud un système linéaire à trois inconnues.</p>
+<p>Pour <span class="math notranslate nohighlight">\(n \geq 2\)</span>, on peut retirer la fonction <span class="math notranslate nohighlight">\(f\)</span> correspondant aux <span class="math notranslate nohighlight">\(n-1\)</span> premiers points de représentation, puis utiliser le cas <span class="math notranslate nohighlight">\(n=2\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-353">
+
+<p class="admonition-title"><span class="caption-number">Exercise 324 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que deux formes linéaires de même noyau sont colinéaires</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-23">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-353"> Exercise 324</a></p>
+<div class="section" id="solution-content">
+<p>Il s’agit de trouver une combinaison linéaire annulant <span class="math notranslate nohighlight">\(\phi\)</span> et <span class="math notranslate nohighlight">\(\psi\)</span>. Fixons <span class="math notranslate nohighlight">\(a\)</span> et remarquons astucieusement pour <span class="math notranslate nohighlight">\(x \in E\)</span> que <span class="math notranslate nohighlight">\(\phi(x)\phi(a) - \phi(x)\phi(a) = 0\)</span>, soit <span class="math notranslate nohighlight">\(x\phi(a) - \phi(x)a \in Ker(\phi)\)</span> donc <span class="math notranslate nohighlight">\(x\phi(a) - \phi(x)a \in Ker(\psi)\)</span>, i.e. <span class="math notranslate nohighlight">\(\psi(a)\phi - \phi(a)\psi = 0\)</span>. Il suffit alors de choisir <span class="math notranslate nohighlight">\(a\)</span> qui n’annule pas une des deux fonctions. Si cela n’est pas possible, elles sont toutes deux nulles donc a fortiori colinéaires.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-354">
+
+<p class="admonition-title"><span class="caption-number">Exercise 325 </span></p>
+<div class="section" id="exercise-content">
+<p>Exhiber un endomorphisme d’un espace vectoriel injectif et non surjectif, puis surjectif mais non injectif.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-25">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-354"> Exercise 325</a></p>
+<div class="section" id="solution-content">
+<p>Les tapis roulants de <span class="math notranslate nohighlight">\(\R^{\N}\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-355">
+
+<p class="admonition-title"><span class="caption-number">Exercise 326 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que le produit de nilpotent n’est pas nécessairement nilpotent.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-27">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-355"> Exercise 326</a></p>
+<div class="section" id="solution-content">
+<p>Les tapis roulants de <span class="math notranslate nohighlight">\(\R^n\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-356">
+
+<p class="admonition-title"><span class="caption-number">Exercise 327 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(n \geq 1\)</span> et <span class="math notranslate nohighlight">\(\K\)</span> un corps fini de cardinal <span class="math notranslate nohighlight">\(q \geq 2\)</span></p>
+<ol class="simple">
+<li><p>Déterminer le nombre de droites de <span class="math notranslate nohighlight">\(\K^n\)</span>.</p></li>
+<li><p>Déterminer le nombre de plans de <span class="math notranslate nohighlight">\(\K^n\)</span>. (CORRECTION MISSING)</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-29">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-356"> Exercise 327</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Notons <span class="math notranslate nohighlight">\(\mathcal{D}\)</span> l’ensemble des droites. Une droite est de la forme <span class="math notranslate nohighlight">\(\K x\)</span> avec <span class="math notranslate nohighlight">\(x\)</span> un vecteur non nul. Il est naturel de regarder</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\phi : \begin{cases}
+K^n \setminus \{0\} &amp;\rightarrow \mathcal{D} \\
+x &amp;\mapsto \K x
+\end{cases}
+\end{align*}\]</div>
+<p>L’application <span class="math notranslate nohighlight">\(\phi\)</span> est par construction surjective. Regardons le nombre d’antécédents d’un éléments de <span class="math notranslate nohighlight">\(\mathcal{D}\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\phi(x) = \phi(y) &amp;\Longrightarrow \K x = \K y\\
+&amp;\Longrightarrow y = 1y \in \K x\\
+&amp;\Longrightarrow \exists k \in \K^*, \; y = k x
+\end{align*}\]</div>
+<p>Réciproquement, il est évident que <span class="math notranslate nohighlight">\(x = k y\)</span> pour <span class="math notranslate nohighlight">\(k\)</span> non nul implique <span class="math notranslate nohighlight">\(\phi(x) = \phi(y)\)</span>. Ainsi tout élément de <span class="math notranslate nohighlight">\(\mathcal{D}\)</span> possède exactement <span class="math notranslate nohighlight">\(q-1\)</span> antécédent par <span class="math notranslate nohighlight">\(\phi\)</span>. Ainsi</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ |\mathcal{D}| = \frac{|\K^n \setminus \{ 0\}|}{|K^*|} = 1 + q +\ldots + q^{n-1}
+\end{equation*}\]</div>
+<ol class="simple">
+<li><p>à faire</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="noyau_itere_suite">
+
+<p class="admonition-title"><span class="caption-number">Exercise 328 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> de dimension <span class="math notranslate nohighlight">\(n\)</span> et <span class="math notranslate nohighlight">\(u \in \L(E)\)</span> nilpotent d’indice <span class="math notranslate nohighlight">\(n\)</span>. On note <span class="math notranslate nohighlight">\(F_k = Ker(u^k)\)</span>. Calculer <span class="math notranslate nohighlight">\(d_k=dim(F_k)\)</span> pour tout <span class="math notranslate nohighlight">\(k\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-31">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#noyau_itere_suite"> Exercise 328</a></p>
+<div class="section" id="solution-content">
+<p>Voir <a class="reference internal" href="#noyau_itere"><span class="std std-numref">Exercise 320</span></a></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-358">
+
+<p class="admonition-title"><span class="caption-number">Exercise 329 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E,F\)</span> des espaces vectoriels de dimension finie et <span class="math notranslate nohighlight">\(u \in \L(E,F)\)</span>. Montrer qu’il existe <span class="math notranslate nohighlight">\(v \in \L(F,E)\)</span> tel que <span class="math notranslate nohighlight">\(u \circ v \circ u = u\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-359">
+
+<p class="admonition-title"><span class="caption-number">Exercise 330 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que la famille des fonctions <span class="math notranslate nohighlight">\(x \rightarrow \cos(\lambda x)\)</span> avec <span class="math notranslate nohighlight">\(\lambda \in \R^{+}\)</span> est libre.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-34">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-359"> Exercise 330</a></p>
+<div class="section" id="solution-content">
+<p>Ce sont des vecteurs propres de l’application <span class="math notranslate nohighlight">\(f \longmapsto -f''\)</span>. Sinon dériver <span class="math notranslate nohighlight">\(n\)</span> fois en <span class="math notranslate nohighlight">\(0\)</span> et faire tendre <span class="math notranslate nohighlight">\(n\)</span> vers <span class="math notranslate nohighlight">\(+ \infty\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-360">
+
+<p class="admonition-title"><span class="caption-number">Exercise 331 </span></p>
+<div class="section" id="exercise-content">
+<p>Même exercice avec <span class="math notranslate nohighlight">\(x \rightarrow \exp(\lambda x)\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="supplementaire_existe">
+
+<p class="admonition-title"><span class="caption-number">Exercise 332 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(U\)</span> et <span class="math notranslate nohighlight">\(V\)</span> des s.e.v. de <span class="math notranslate nohighlight">\(E\)</span> un espace vectoriel de dimension fini.. Montrer que <span class="math notranslate nohighlight">\(U\)</span> et <span class="math notranslate nohighlight">\(V\)</span> ont un supplémentaire commun si et seulement si <span class="math notranslate nohighlight">\(dim(U) = dim(V)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-37">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#supplementaire_existe"> Exercise 332</a></p>
+<div class="section" id="solution-content">
+<p>Un sens est trivial. On raisonne par récurrence décroissante sur <span class="math notranslate nohighlight">\(dim(U)=dim(V)\)</span>. Si <span class="math notranslate nohighlight">\(dim(U)=dim(E)\)</span> c’est fini. On suppose le résultat vrai pour tout sous espace de dimension plus grande que <span class="math notranslate nohighlight">\(k\)</span>. Soit <span class="math notranslate nohighlight">\(e \in E \setminus (U \cup V)\)</span>. On considère <span class="math notranslate nohighlight">\(U' = U + Vect(e)\)</span> et <span class="math notranslate nohighlight">\(V'=V+Vect(e)\)</span>. Par hypothèse de récurrence, il existe <span class="math notranslate nohighlight">\(S\)</span> supplémentaire commun à <span class="math notranslate nohighlight">\(U'\)</span> et <span class="math notranslate nohighlight">\(V'\)</span>. De là <span class="math notranslate nohighlight">\(S+Vect(e)\)</span> est supplémentaire commun à <span class="math notranslate nohighlight">\(U\)</span> et <span class="math notranslate nohighlight">\(V\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-362">
+
+<p class="admonition-title"><span class="caption-number">Exercise 333 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer le rang de la famille des vecteurs <span class="math notranslate nohighlight">\(X_{i,j} = e_i-e_j \in \R^n\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-39">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-362"> Exercise 333</a></p>
+<div class="section" id="solution-content">
+<p>Il est majoré par <span class="math notranslate nohighlight">\(n\)</span>. Il est minoré par <span class="math notranslate nohighlight">\(n-1\)</span> avec les <span class="math notranslate nohighlight">\(X_{1,j}\)</span>. Puis on remarque <span class="math notranslate nohighlight">\(X_{j,k} = X_{1,k}-X_{1,j}\)</span>. D’où un rang de <span class="math notranslate nohighlight">\(n-1\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-363">
+
+<p class="admonition-title"><span class="caption-number">Exercise 334 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(a_0&lt;a_1&lt;\ldots&lt;a_N\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que l’espace <span class="math notranslate nohighlight">\(E\)</span> des fonctions continues sur <span class="math notranslate nohighlight">\([a_0,a_N]\)</span> affines par morceaux pour la subdivision <span class="math notranslate nohighlight">\(a_0, \ldots, a_N\)</span> est de dimension <span class="math notranslate nohighlight">\(N+1\)</span>.</p></li>
+<li><p>Déterminer une base de <span class="math notranslate nohighlight">\(E\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-41">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-363"> Exercise 334</a></p>
+<div class="section" id="solution-content">
+<p>Isomorphisme évident avec <span class="math notranslate nohighlight">\(\R^{N+1}\)</span> par <span class="math notranslate nohighlight">\(f \mapsto (f(a_0), \ldots, f(a_N))\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-364">
+
+<p class="admonition-title"><span class="caption-number">Exercise 335 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un espace vectoriel de dimension finie, <span class="math notranslate nohighlight">\(A\)</span> l’ensemble des sous-espaces vectoriels de <span class="math notranslate nohighlight">\(E\)</span>. Déterminer les applications <span class="math notranslate nohighlight">\(f\)</span> de <span class="math notranslate nohighlight">\(A\)</span> dans <span class="math notranslate nohighlight">\(\R\)</span> telles que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall U,V \in A, \; f(U+V) = f(U) + f(V) - f(U \cap V)
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-43">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-364"> Exercise 335</a></p>
+<div class="section" id="solution-content">
+<p>Remarquons qu’on peut ajouter une constante à <span class="math notranslate nohighlight">\(f\)</span> sans modifier la propriété. On suppose donc <span class="math notranslate nohighlight">\(f(\{0\})=0\)</span>. On montre d’abord que les espaces de dimension <span class="math notranslate nohighlight">\(1\)</span> ont même image par <span class="math notranslate nohighlight">\(f\)</span>. Soit <span class="math notranslate nohighlight">\(a,b \in E\)</span> non liés. D’après l’exercice <a class="reference internal" href="#supplementaire_existe"><span class="std std-numref">Exercise 332</span></a>, on peut trouver <span class="math notranslate nohighlight">\(S\)</span> supplémentaire à la fois de <span class="math notranslate nohighlight">\(Vect(a)\)</span> et <span class="math notranslate nohighlight">\(Vect(b)\)</span>.
+On a alors <span class="math notranslate nohighlight">\(f(Vect(a)) = f(E)-f(S) = f(Vect(b))\)</span>. Notons <span class="math notranslate nohighlight">\(\lambda\)</span> cette image. Par une récurrence immédiate il vient <span class="math notranslate nohighlight">\(f(U) = \lambda dim(U)\)</span>. Bref, dans le cas général, <span class="math notranslate nohighlight">\(f(U) = \lambda dim(U) + \mu\)</span> avec <span class="math notranslate nohighlight">\(\lambda, \mu \in \R\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-365">
+
+<p class="admonition-title"><span class="caption-number">Exercise 336 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un espace vectoriel de dimension finie, <span class="math notranslate nohighlight">\(u \in \L(E)\)</span> nilpotente d’indice <span class="math notranslate nohighlight">\(p\)</span>. Notons <span class="math notranslate nohighlight">\(\Phi : v \in \L(E) \mapsto u\circ v - v \circ u\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que, pour tout <span class="math notranslate nohighlight">\(n \in \N\)</span>, et tout <span class="math notranslate nohighlight">\(v \in \L(E)\)</span>,</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \Phi^n(v) = \sum_{k=0}^n (-1)^k {n \choose k} u^{n-k} \circ v \circ u^k
+\end{equation*}\]</div>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(\Phi\)</span> est nilpotente et majorer son indice de nilpotence.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(a \in \L(E)\)</span>. Montrer qu’il existe <span class="math notranslate nohighlight">\(b \in \L(E)\)</span> tel que <span class="math notranslate nohighlight">\(a \circ b \circ a = a\)</span>.</p></li>
+<li><p>En déduire l’indice de nilpotence de <span class="math notranslate nohighlight">\(\Phi\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-45">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-365"> Exercise 336</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Simple récurrence.</p></li>
+<li><p>Avec <span class="math notranslate nohighlight">\(n = 2p\)</span>, et même <span class="math notranslate nohighlight">\(2p-1\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\((e_1, \ldots, e_m)\)</span> une base de <span class="math notranslate nohighlight">\(Im(a)\)</span>, et <span class="math notranslate nohighlight">\(b_1, \ldots, b_m\)</span> tels que <span class="math notranslate nohighlight">\(a(b_i) = e_i\)</span>. Nécessairement <span class="math notranslate nohighlight">\(b_1, \ldots, b_m\)</span> est libre. On choisit <span class="math notranslate nohighlight">\(b\)</span> tel que <span class="math notranslate nohighlight">\(b(b_i)=e_i\)</span>, <span class="math notranslate nohighlight">\(b=0\)</span> ailleurs. Ce tel <span class="math notranslate nohighlight">\(b\)</span> convient.</p></li>
+<li><p>On a <span class="math notranslate nohighlight">\(\Phi^{2p-2}(v) = (-1)^{p-1}{2p-2 \choose p-1} u^{p-1} \circ v \circ u^{p-1}\)</span>. Avec <span class="math notranslate nohighlight">\(v\)</span> tel que <span class="math notranslate nohighlight">\(u^{p-1} \circ v \circ u^{p-1} = u^{p-1}\)</span>, il suit que <span class="math notranslate nohighlight">\(\Phi\)</span> est d’indice de nilpotence exactement <span class="math notranslate nohighlight">\(2p-1\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-366">
+
+<p class="admonition-title"><span class="caption-number">Exercise 337 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(F,G\)</span> deux sous espaces vectoriels de <span class="math notranslate nohighlight">\(\R^n\)</span>. Déterminer une condition nécessaire et suffisante pour qu’il existe <span class="math notranslate nohighlight">\(u \in GL(\R^n)\)</span> tel que <span class="math notranslate nohighlight">\(u(F)=G\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-47">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-366"> Exercise 337</a></p>
+<div class="section" id="solution-content">
+<p>Même dimension, en envoyant la base de <span class="math notranslate nohighlight">\(F\)</span> sur la base de <span class="math notranslate nohighlight">\(G\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-367">
+
+<p class="admonition-title"><span class="caption-number">Exercise 338 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> de dimension <span class="math notranslate nohighlight">\(n\)</span> et <span class="math notranslate nohighlight">\(f \in \L(E)\)</span> un endomorphisme <span class="math notranslate nohighlight">\(n\)</span>-nilpotent. Montrer l’équivalence pour <span class="math notranslate nohighlight">\(g \in \L(E)\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f \circ g = g \circ f \Longleftrightarrow g \in Vect(Id,f,\ldots,f^{n-1})
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-49">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-367"> Exercise 338</a></p>
+<div class="section" id="solution-content">
+<p>Il est classique de montrer l’existence de <span class="math notranslate nohighlight">\(x\)</span> tel que <span class="math notranslate nohighlight">\((x, f(x), \ldots, f^{n-1}(x))\)</span> est une base de <span class="math notranslate nohighlight">\(E\)</span>. On peut donc écrire <span class="math notranslate nohighlight">\(g(x) = \sum_{k=0}^{n-1} a_kf^{k}(x)\)</span>. Alors il vient que <span class="math notranslate nohighlight">\(g\)</span> et <span class="math notranslate nohighlight">\(\sum a_kf^k\)</span> coïncident sur <span class="math notranslate nohighlight">\((x, f(x), \ldots, f^{n-1}(x))\)</span>  donc sur <span class="math notranslate nohighlight">\(E\)</span>. Le sens retour est trivial.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-368">
+
+<p class="admonition-title"><span class="caption-number">Exercise 339 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> de dimension finie, <span class="math notranslate nohighlight">\(F\)</span>, <span class="math notranslate nohighlight">\(G\)</span> deux sev de <span class="math notranslate nohighlight">\(E\)</span> tels que <span class="math notranslate nohighlight">\(F+G=E\)</span>. Déterminer la dimension du sev de <span class="math notranslate nohighlight">\(\L(E)\)</span> composé des <span class="math notranslate nohighlight">\(u\)</span> tels que <span class="math notranslate nohighlight">\(u(F)\subset F\)</span> et <span class="math notranslate nohighlight">\(u(G)\subset G\)</span>. Et si on impose <span class="math notranslate nohighlight">\(u\)</span> bijectif ?</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-51">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-368"> Exercise 339</a></p>
+<div class="section" id="solution-content">
+<p>Isomorphisme avec <span class="math notranslate nohighlight">\(\L(F\cap G, F \cap G) \times \L(F', F) \times \L(G',G)\)</span> où <span class="math notranslate nohighlight">\(F'\)</span> supplémentaire de <span class="math notranslate nohighlight">\(F\cap G\)</span> dans <span class="math notranslate nohighlight">\(F\)</span> et <span class="math notranslate nohighlight">\(G'\)</span> de même. Si <span class="math notranslate nohighlight">\(F',G',F\cap G\)</span> sont de dimension respective <span class="math notranslate nohighlight">\(r,s,t\)</span>, la dimension recherchée est donc <span class="math notranslate nohighlight">\(r(r+t)+s(s+t)+t^2=r^2+t^2+s^2+t(r+s)\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-369">
+
+<p class="admonition-title"><span class="caption-number">Exercise 340 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(p\)</span> un projecteur de <span class="math notranslate nohighlight">\(E\)</span>. Définissons</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+F_1 &amp;= \{ f \in \L(E) \; | \; \exists u \in \L(E), \; f=u\circ p \} \\
+F_2 &amp;= \{ f \in \L(E) \; | \; \exists u \in \L(E), \; f=u\circ (Id-p) \}
+\end{align*}\]</div>
+<p>Montrer que <span class="math notranslate nohighlight">\(F_1\)</span> et <span class="math notranslate nohighlight">\(F_2\)</span> sont supplémentaires dans <span class="math notranslate nohighlight">\(\L(E)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-53">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-369"> Exercise 340</a></p>
+<div class="section" id="solution-content">
+<p>Classiquement <span class="math notranslate nohighlight">\(Ker(p)\)</span> et <span class="math notranslate nohighlight">\(Ker(Id-p)\)</span> sont supplémentaires dans <span class="math notranslate nohighlight">\(E\)</span>. Ainsi si <span class="math notranslate nohighlight">\(f \in \L(E)\)</span>, <span class="math notranslate nohighlight">\(f(x)=f(p(x)+x-p(x))=f(p(x))+f(x-p(x))\)</span> d’où <span class="math notranslate nohighlight">\(F_1+F_2=E\)</span>. Si <span class="math notranslate nohighlight">\(f \in F_1 \cap F_2\)</span>, alors <span class="math notranslate nohighlight">\(Ker(p)\subset Ker(f)\)</span> et <span class="math notranslate nohighlight">\(Ker(Id-p) \subset Ker(f)\)</span> d’où <span class="math notranslate nohighlight">\(Ker(p)+Ker(Id-p)=E\subset Ker(f)\)</span>. Bref <span class="math notranslate nohighlight">\(f=0\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-370">
+
+<p class="admonition-title"><span class="caption-number">Exercise 341 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(a, b\)</span> deux scalaires distincts et <span class="math notranslate nohighlight">\(u\in \L(E)\)</span> tels que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ (u-aId) \circ (u-b(Id)) = 0
+\end{equation*}\]</div>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(Ker(u-aId)\)</span> et <span class="math notranslate nohighlight">\(Ker(u-bId)\)</span> sont supplémentaires.</p></li>
+<li><p>Déterminer une expression simple de la projection de <span class="math notranslate nohighlight">\(p\)</span> sur <span class="math notranslate nohighlight">\(Ker(u-aId)\)</span> parallèlement à <span class="math notranslate nohighlight">\(Ker(u-bId)\)</span>.</p></li>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(u = ap + b(Id-p)\)</span>. En déduire une expression de <span class="math notranslate nohighlight">\(u^n\)</span> pour tout <span class="math notranslate nohighlight">\(n\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-55">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-370"> Exercise 341</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Ils sont trivialement en somme directe. Le lemme des noyaux permet d’obtenir directement le résultat mais ici on se contente de le faire à la main. On a <span class="math notranslate nohighlight">\(P(u)=0\)</span> avec <span class="math notranslate nohighlight">\(P=(X-a)(X-b)=P_1P_2\)</span>. De plus <span class="math notranslate nohighlight">\(\frac{P_1}{b-a}+\frac{P_2}{a-b}=1\)</span>. Ainsi pour tout <span class="math notranslate nohighlight">\(x\in E, \; x = \frac{u(x)-ax}{b-a}+\frac{u(x)-bx}{a-b}\)</span>.</p></li>
+<li><p>On vérifie immédiatement que <span class="math notranslate nohighlight">\(\frac{u(x)-bx}{b-a}\)</span> convient.</p></li>
+<li><p>La vérification est immédiate en écrivant <span class="math notranslate nohighlight">\(Id-p=\frac{u-aId}{b-a}\)</span>, et on a <span class="math notranslate nohighlight">\(u^n=a^np+b^n(Id-p)\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-371">
+
+<p class="admonition-title"><span class="caption-number">Exercise 342 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(p,q\)</span> deux projecteurs sur le même espace (pas forcément parallèles). Soit <span class="math notranslate nohighlight">\(\lambda \in \R\)</span>. Montrer <span class="math notranslate nohighlight">\(\lambda p + (1-\lambda)q\)</span> est un projecteur.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-57">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-371"> Exercise 342</a></p>
+<div class="section" id="solution-content">
+<p>Il suffit de remarquer que <span class="math notranslate nohighlight">\(p \circ q = q\)</span> et <span class="math notranslate nohighlight">\(q \circ p = p\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-372">
+
+<p class="admonition-title"><span class="caption-number">Exercise 343 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(p,q\)</span> deux projecteurs qui commutent. Montrer que <span class="math notranslate nohighlight">\(Ker(p+q)=Ker(p)\cap Ker(q)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-59">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-372"> Exercise 343</a></p>
+<div class="section" id="solution-content">
+<p>Une inclusion est évidente. Pour l’autre on écrit <span class="math notranslate nohighlight">\(p(x)+q(x)=0\)</span> donc en composant pas <span class="math notranslate nohighlight">\(p\)</span> et <span class="math notranslate nohighlight">\(q\)</span> on <span class="math notranslate nohighlight">\(p(x)+q\circ(p(x))=0\)</span> et <span class="math notranslate nohighlight">\(q(x)+q\circ p(x)=0\)</span>. Bref<span class="math notranslate nohighlight">\(p(x)=q(x)=0\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-373">
+
+<p class="admonition-title"><span class="caption-number">Exercise 344 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(p,q\)</span> deux projecteurs. Montrer que <span class="math notranslate nohighlight">\(p+q\)</span> est un projecteur si et seulement si <span class="math notranslate nohighlight">\(p \circ q = q \circ p =0\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-61">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-373"> Exercise 344</a></p>
+<div class="section" id="solution-content">
+<p>Un sens est évident. Pour l’autre on a <span class="math notranslate nohighlight">\(p\circ q + q \circ p =0\)</span>. En composant une fois par <span class="math notranslate nohighlight">\(p\)</span> à gauche, une autre fois à droite, il vient que <span class="math notranslate nohighlight">\(p \circ q = q \circ p\)</span>. Cela conclut facilement.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-374">
+
+<p class="admonition-title"><span class="caption-number">Exercise 345 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(p\)</span> un projection et <span class="math notranslate nohighlight">\(\lambda \in \mathbb{K}\)</span>, <span class="math notranslate nohighlight">\(\lambda \notin \{ 0,1\}\)</span>. Montrer que <span class="math notranslate nohighlight">\(p-\lambda Id\)</span> est inversible et calculer son inverse.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Espaces vectoriels-solution-63">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-374"> Exercise 345</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(\frac{X^2+X}{\lambda^2-\lambda} -1\)</span> annule <span class="math notranslate nohighlight">\(p-\lambda\)</span>.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/algebre_lineaire"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../algebre_commutative/Arithm%C3%A9tique.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Arithmétique</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Matrices.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Matrices</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

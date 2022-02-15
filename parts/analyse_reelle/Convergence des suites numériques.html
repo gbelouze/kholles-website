@@ -1,0 +1,939 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convergence des suites numériques &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Séries numériques" href="S%C3%A9ries%20num%C3%A9riques.html" />
+    <link rel="prev" title="Suites numériques" href="Suites%20num%C3%A9riques.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/analyse_reelle/Convergence des suites numériques.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Convergence des suites numériques</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="convergence-des-suites-numeriques">
+<h1>Convergence des suites numériques<a class="headerlink" href="#convergence-des-suites-numeriques" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-103">
+
+<p class="admonition-title"><span class="caption-number">Exercise 100 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.6 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\((u_n)\)</span> et <span class="math notranslate nohighlight">\((v_n)\)</span> deux suites réelles de majorants <span class="math notranslate nohighlight">\(l\)</span> et <span class="math notranslate nohighlight">\(l'\)</span> respectivement, telles que <span class="math notranslate nohighlight">\(u_n+v_n \rightarrow l+l'\)</span>.
+Que dire de <span class="math notranslate nohighlight">\(u_n\)</span> ?
+Difficulté : *</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-103"> Exercise 100</a></p>
+<div class="section" id="solution-content">
+<p>On montre que <span class="math notranslate nohighlight">\(u_n \rightarrow l\)</span>.
+Soit <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> et <span class="math notranslate nohighlight">\(N\)</span> tel que <span class="math notranslate nohighlight">\(\forall n \geq N\)</span>, <span class="math notranslate nohighlight">\(|l+l' - (u_n +v_n)| &lt; \varepsilon\)</span>. <span class="math notranslate nohighlight">\(l\)</span> et <span class="math notranslate nohighlight">\(l'\)</span> étant des majorants respectifs de <span class="math notranslate nohighlight">\(u_n\)</span> et <span class="math notranslate nohighlight">\(v_n\)</span> on a
+<span class="math notranslate nohighlight">\(|l-u_n| \leq |l-u_n| + |l'-v_n| = |l+l' - (u_n +v_n)| &lt; \varepsilon\)</span> d’où le résultat souhaité.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-104">
+
+<p class="admonition-title"><span class="caption-number">Exercise 101 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.3 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\((u_n)\)</span> une suite réelle convergente vers <span class="math notranslate nohighlight">\(l\)</span>. Est-ce que <span class="math notranslate nohighlight">\((\lfloor u_n \rfloor)\)</span> est convergente ? Et si <span class="math notranslate nohighlight">\(l \notin \Z\)</span> ?</p>
+<p>Difficulté : *</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-104"> Exercise 101</a></p>
+<div class="section" id="solution-content">
+<p>Un contre-exemple est fourni par <span class="math notranslate nohighlight">\(\frac{(-1)^n}{n}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-105">
+
+<p class="admonition-title"><span class="caption-number">Exercise 102 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.14 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\((u_n)_n\)</span> et <span class="math notranslate nohighlight">\((v_n)_n\)</span> deux suites équivalentes de limite <span class="math notranslate nohighlight">\(+\mathcal{1}\)</span>. Montrer que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \ln (u_n) \sim \ln (v_n) \end{equation*}\]</div>
+<p>Difficulté : *</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-105"> Exercise 102</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(\ln (u_n)-\ln (v_n) = \ln(\frac{u_n}{v_n}) \longrightarrow 0\)</span>. Or <span class="math notranslate nohighlight">\(\ln(u_n) \longrightarrow +\mathcal{1}\)</span> . L’équivalence est alors immédiate.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-106">
+
+<p class="admonition-title"><span class="caption-number">Exercise 103 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.8 du poly de Mansuy. Étudier par inégalité la convergence de la suite définie par <span class="math notranslate nohighlight">\(u_n = n^2\sum \limits_{k=1}^{n}\frac{1}{k+n^3}\)</span>.
+Difficulté : *</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-106"> Exercise 103</a></p>
+<div class="section" id="solution-content">
+<p>D’une part <span class="math notranslate nohighlight">\(v_n \leq n^2\sum \limits_{k=1}^{n}\frac{1}{n^3} = 1\)</span> et d’autre part <span class="math notranslate nohighlight">\(v_n \geq n^2\sum \limits_{k=1}^{n}\frac{1}{n^3+n} = \frac{n^2}{1+n^2} \rightarrow 1\)</span>.
+Par encadrement, <span class="math notranslate nohighlight">\(v_n \rightarrow 1\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-107">
+
+<p class="admonition-title"><span class="caption-number">Exercise 104 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.15 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\((u_n)_n\)</span> telle que <span class="math notranslate nohighlight">\(u_n \sim \frac{1}{n}\)</span> et</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall n \geq 1, \; \; u_n \leq \frac{1}{n} + \frac{2}{n^2} \end{equation*}\]</div>
+<p>A-t-on <span class="math notranslate nohighlight">\(u_n = \frac{1}{n} + O(\frac{1}{n^2})\)</span> ? Et si on ajoute la condition <span class="math notranslate nohighlight">\(u_n \geq \frac{1}{n}\)</span> ?
+Difficulté : *</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-107"> Exercise 104</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(u_n = \frac{1}{n} - \frac{1}{n \ln(n)}\)</span> fournit un contre-exemple à la première égalité. En ajoutant l’inégalité supplémentaire, <span class="math notranslate nohighlight">\(u_n = \frac{1}{n} + O(\frac{1}{n^2})\)</span>
+devient vrai puisque <span class="math notranslate nohighlight">\(|u_n - \frac{1}{n^2}| \leq \frac{2}{n^2}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-108">
+
+<p class="admonition-title"><span class="caption-number">Exercise 105 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.4 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(a&gt;0\)</span>, étudier la convergence de la suite <span class="math notranslate nohighlight">\(u_n=(\lfloor a^n \rfloor^{\frac{1}{n}})_n\)</span>.
+Difficulté = <em>/</em>*</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-108"> Exercise 105</a></p>
+<div class="section" id="solution-content">
+<ul class="simple">
+<li><p>Si a&lt;1, <span class="math notranslate nohighlight">\(u_n\)</span> est stationnaire à 0.</p></li>
+<li><p>Si a=1, <span class="math notranslate nohighlight">\(u_n\)</span> est constante égale à 1.</p></li>
+<li><p>si a&gt;1, on regarde l’inégalité <span class="math notranslate nohighlight">\(a \leq u_n \leq (a^n +1)^{\frac{1}{n}} = e^{\frac{1}{n} \ln(a^n+1)}\)</span>. Or l’inégalité des accroissements finis s’écrit
+pour <span class="math notranslate nohighlight">\(\ln\)</span> sur <span class="math notranslate nohighlight">\([1 \; , \; +\mathcal{1}[\)</span>, <span class="math notranslate nohighlight">\(\ln(a^n+1) \leq n\ln(a) +1\)</span>. De là vient la convergence du membre de droite vers <span class="math notranslate nohighlight">\(a\)</span>, puis par encadrement celle
+de <span class="math notranslate nohighlight">\(u_n\)</span> vers <span class="math notranslate nohighlight">\(a\)</span>.</p></li>
+</ul>
+</div>
+</div>
+<div class="exercise admonition" id="exo-109">
+
+<p class="admonition-title"><span class="caption-number">Exercise 106 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.5 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(\alpha = 2 + \sqrt{3}\)</span> et <span class="math notranslate nohighlight">\(\beta = 2 -\sqrt{3}\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que pour tout <span class="math notranslate nohighlight">\(n\in \mathbb{N}\)</span>, <span class="math notranslate nohighlight">\(u_n=\alpha^n + \beta^n \in \mathbb{N}\)</span>.</p></li>
+<li><p>Étudier la convergence de <span class="math notranslate nohighlight">\((\alpha^n - \lfloor \alpha^n \rfloor)_n\)</span>.</p></li>
+</ol>
+<p>Difficulté : **</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-109"> Exercise 106</a></p>
+<div class="section" id="solution-content">
+<ol>
+<li><p>On écrit le binôme de Newton</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \alpha^n + \beta^n &amp;= \sum \limits _{k=0}^n {n \choose k} 2^{n-k} \sqrt{3}^k (1 + (-1)^k) \\
+    &amp;=  \sum \limits _{k=0, \; \text{k paire}}^n {n \choose k} 2^{n-k+1} 3^{\frac{k}{2}} \in \mathbb{N}\\
+    \end{align*}\]</div>
+</li>
+<li><p>On a <span class="math notranslate nohighlight">\(0 &lt; \beta &lt; 1\)</span> donc <span class="math notranslate nohighlight">\(\forall n\)</span>, <span class="math notranslate nohighlight">\(\lfloor \alpha^n \rfloor = u_n -1\)</span>. Il vient</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+     \alpha^n - \lfloor \alpha^n \rfloor = 1 - \beta^n \rightarrow 1
+    \end{equation*}\]</div>
+<p>Cela conclut.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-110">
+
+<p class="admonition-title"><span class="caption-number">Exercise 107 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.7 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\((u_n)_n\)</span> et<span class="math notranslate nohighlight">\((v_n)_n\)</span> deux suites telles que <span class="math notranslate nohighlight">\(u_n^2+v_n^2+u_nv_n \rightarrow 0\)</span>. Que dire de <span class="math notranslate nohighlight">\(u_n\)</span> et <span class="math notranslate nohighlight">\(v_n\)</span> ?
+Indication : pour faciliter l’exercice, on pourra plutôt demander de montrer que leur limite est 0.
+Difficulté : **</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-110"> Exercise 107</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\((u_n+v_n)^2 - u_nv_n \longrightarrow 0\)</span> donc <span class="math notranslate nohighlight">\(\forall \varepsilon &gt; 0\)</span>, <span class="math notranslate nohighlight">\(\exists N \in\mathbb{N}\)</span>, <span class="math notranslate nohighlight">\(\forall n \geq N\)</span>, <span class="math notranslate nohighlight">\(u_nv_n &gt; -\varepsilon\)</span>. On peut imposer de plus
+<span class="math notranslate nohighlight">\(\forall n \geq N\)</span>, <span class="math notranslate nohighlight">\(|u_n^2+v_n^2 + u_nv_n| &lt; \varepsilon\)</span>, ce qui amène <span class="math notranslate nohighlight">\(0 \leq u_n^2+v_n^2 &lt; 2\varepsilon\)</span> (l’inégalité se voit bien par l’absurde).
+Finalement on trouve que <span class="math notranslate nohighlight">\(u_n^2 + v_n^2 \longrightarrow 0\)</span> ce qui conduit au résultat souhaité.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-111">
+
+<p class="admonition-title"><span class="caption-number">Exercise 108 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.21 du poly de Mansuy.</p>
+<ol class="simple">
+<li><p>Montrer que pour tout <span class="math notranslate nohighlight">\(n\in \mathbb{N}^*\)</span>, l’équation <span class="math notranslate nohighlight">\(e^x = n-x\)</span> admet une unique solution positive que l’on notera <span class="math notranslate nohighlight">\(x_n\)</span>.</p></li>
+<li><p>Déterminer deux termes du développement asymptotique de <span class="math notranslate nohighlight">\(x_n\)</span>.</p></li>
+</ol>
+<p>Difficulté : **</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-111"> Exercise 108</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>On étudie la fonction <span class="math notranslate nohighlight">\(f_n(x) = e^x - n + x\)</span> de dérivée strictement positive sur <span class="math notranslate nohighlight">\(\mathbb{R}_+\)</span> donc strictement croissante sur cet intervalle. De plus
+<span class="math notranslate nohighlight">\(f(0) \leq 0\)</span> et <span class="math notranslate nohighlight">\(f(n) &gt; 0\)</span> d’où le résultat.</p></li>
+<li></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(x_n = n - e^{x_n} \geq 0\)</span> donc <span class="math notranslate nohighlight">\(\forall n, \; x_n \leq \ln (n)\)</span>. Ainsi <span class="math notranslate nohighlight">\(e^{x_n} \sim n\)</span> donc (voir exercice 6.14 du poly de Mansuy) \begin{equation*}
+x_n \sim \ln (n)\end{equation*}</p>
+<p>On écrit <span class="math notranslate nohighlight">\(\alpha_n = \ln(n) - x_n \geq 0\)</span>. On a donc <span class="math notranslate nohighlight">\(\alpha_n = o(\ln (n))\)</span>. En repartant de l’égalité de définition de <span class="math notranslate nohighlight">\(x_n\)</span> on obtient alors
+<span class="math notranslate nohighlight">\(e^{\ln(n)-\alpha_n} = n-\ln(n) + \alpha_n \)</span> ce qui amène <span class="math notranslate nohighlight">\(\ln(n)-\alpha_n = \ln (n - \ln (n) + \alpha_n)\)</span> puis <span class="math notranslate nohighlight">\(\alpha_n = -\ln (1 - \frac{\ln (n)-\alpha_n}{n}) \sim -\ln (1 - \frac{\ln (n)}{n}) \)</span>.
+On utilise alors l’équivalent <span class="math notranslate nohighlight">\(\ln (1+x) \underset{x\rightarrow 0}{\sim} x\)</span> qui se retrouve par exemple avec le théorème des accroissements finis. Bref,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ u_n = \ln (n) - \ln(\ln(n)) + o( \ln(\ln(n)))\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-112">
+
+<p class="admonition-title"><span class="caption-number">Exercise 109 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.36 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(\phi \; : \; \mathbb{N} \rightarrow \mathbb{Q}\)</span> bijective. Déterminer les valeurs d’adhérence de la suite <span class="math notranslate nohighlight">\((\phi(n))_n\)</span>.
+Difficulté : **</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-112"> Exercise 109</a></p>
+<div class="section" id="solution-content">
+<p>On montre que l’ensemble des valeurs d’adhérence de <span class="math notranslate nohighlight">\(\phi_n\)</span> est <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>. Pour cela on se donne <span class="math notranslate nohighlight">\(q \in \mathbb{Q}\)</span>. Pour tout <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, l’ensemble
+<span class="math notranslate nohighlight">\(\{ r \in \mathbb{Q}, \; |q-r| &lt; \varepsilon \}\)</span> est infini, donc <span class="math notranslate nohighlight">\(\{ \phi^{-1}(r), \; r \in \mathbb{Q}, \; |q-r| &lt; \varepsilon \}\)</span> n’est pas borné et ainsi <span class="math notranslate nohighlight">\(\forall N, \; \exists n &gt; N, \; |q-\phi(n)| &lt; \varepsilon \)</span>. Cela assure donc que <span class="math notranslate nohighlight">\(q\)</span> est une valeur
+d’adhérence de la suite. Par densité de <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}\)</span>, le résultat cherché est alors acquis.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-113">
+
+<p class="admonition-title"><span class="caption-number">Exercise 110 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer qu’une suite bornée converge si et seulement si elle admet exactement une valeur d’adhérence.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-113"> Exercise 110</a></p>
+<div class="section" id="solution-content">
+<p>Le sens direct est évident. Pour le sens retour, si <span class="math notranslate nohighlight">\((u_n)\)</span> ne converge pas vers l’unique valeur d’adhérence <span class="math notranslate nohighlight">\(a\)</span>, alors on peut se munir d’une extractrice <span class="math notranslate nohighlight">\(\phi\)</span> tel que <span class="math notranslate nohighlight">\(d(a, (u_{\phi(n)})) &gt; \varepsilon\)</span> pour un certain <span class="math notranslate nohighlight">\(\varepsilon\)</span> suffisamment petit. Alors <span class="math notranslate nohighlight">\((u_{\phi(n)})\)</span> est bornée, donc admet une valeur d’adhérence, qui nécessairement n’est pas <span class="math notranslate nohighlight">\(a\)</span>. Cela fournit une seconde valeur d’adhérence à <span class="math notranslate nohighlight">\((u_n)\)</span> ce qui est une contradiction.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-114">
+
+<p class="admonition-title"><span class="caption-number">Exercise 111 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 6.35 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\((u_n)_n\)</span> une suite bornée telle que <span class="math notranslate nohighlight">\(u_n + \frac{1}{2}u_{2n} \rightarrow 1\)</span>. Que dire de <span class="math notranslate nohighlight">\(u_n\)</span> ?
+Indication : On pourra demander de montrer qu’une suite bornée converge si et seulement si elle admet exactement une valeur d’adhérence.</p>
+<p>Et si on abandonne l’hypothèse <span class="math notranslate nohighlight">\((u_n)\)</span> bornée ?</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-23">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-114"> Exercise 111</a></p>
+<div class="section" id="solution-content">
+<p>La relation assure que si <span class="math notranslate nohighlight">\(a\)</span> est une valeur d’adhérence de <span class="math notranslate nohighlight">\((u_n)\)</span>, alors <span class="math notranslate nohighlight">\(2-2a\)</span> l’est également, et <span class="math notranslate nohighlight">\(f(a) = -2+4a\)</span> l’est donc également (en recomposant).
+Supposons par l’absurde qu’il existe <span class="math notranslate nohighlight">\(a \neq \frac{2}{3}\)</span> une valeur d’adhérence de <span class="math notranslate nohighlight">\((u_n)\)</span>. Alors <span class="math notranslate nohighlight">\(4a - 2 - \frac{2}{3} = 4 \times (a-\frac{2}{3})\)</span>
+donc la suite <span class="math notranslate nohighlight">\(f^{on}(a)\)</span> diverge, ce qui contredit l’hypothèse de bornitude. Ainsi <span class="math notranslate nohighlight">\((u_n)_n\)</span> est bornée et n’admet qu’une seule valeur d’adhérence, donc converge et il est immédiat que <span class="math notranslate nohighlight">\(\frac{2}{3}\)</span> est la limite.</p>
+<p>Si on abandonne l’hypothèse bornée, on va trouver un contre-exemple explicite en posant</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+u_n =
+\begin{cases}
+\frac{1}{3}(2 + (-2)^k) \quad &amp;\textrm{si $n = 2^k$}\\
+\frac{2}{3} \quad &amp;\textrm{sinon}
+\end{cases}
+\end{align*}\]</div>
+<p>qui n’est pas bornée donc ne converge pas, et qui vérifie <span class="math notranslate nohighlight">\(u_n + \frac{1}{2}u_{2n} = 1\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-115">
+
+<p class="admonition-title"><span class="caption-number">Exercise 112 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\((a_n)\)</span> une suite de <span class="math notranslate nohighlight">\(\R_+^*\)</span> qui converge vers <span class="math notranslate nohighlight">\(0\)</span>. Montrer que les ensembles <span class="math notranslate nohighlight">\(X^+ = \{ n \in \N \; | \; \forall m \geq n, \; a_m \leq a_n \}\)</span> et <span class="math notranslate nohighlight">\(X^- = \{ n \in \N \; | \; \forall m \leq n, \; a_m \geq a_n \}\)</span> sont infinis.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-25">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-115"> Exercise 112</a></p>
+<div class="section" id="solution-content">
+<p>On montre que <span class="math notranslate nohighlight">\(X^+\)</span> n’est pas majoré. Soit donc <span class="math notranslate nohighlight">\(N \in \N\)</span>. On a <span class="math notranslate nohighlight">\(a_{N+1} &gt; 0\)</span>, posons <span class="math notranslate nohighlight">\(\varepsilon = a_{N+1}/2 &lt; a_{N+1}\)</span>. Par convergence vers <span class="math notranslate nohighlight">\(0\)</span>, il existe <span class="math notranslate nohighlight">\(M\)</span> tel que <span class="math notranslate nohighlight">\(\forall m \geq M\)</span>, <span class="math notranslate nohighlight">\(u_m &lt; \varepsilon\)</span>. Soit <span class="math notranslate nohighlight">\(M_0\)</span> le plus petit de ces tels <span class="math notranslate nohighlight">\(M\)</span>. Nécessairement <span class="math notranslate nohighlight">\(M_0 &gt; N+1\)</span>, donc <span class="math notranslate nohighlight">\(M_0 - 1 &gt; N\)</span> , et <span class="math notranslate nohighlight">\(M_0 - 1\)</span> appartient à <span class="math notranslate nohighlight">\(X^+\)</span>, ce qui conclut.</p>
+<p>On montre encore plus facilement que <span class="math notranslate nohighlight">\(X^-\)</span> n’est pas majoré. Soit <span class="math notranslate nohighlight">\(N \in \N\)</span>, et <span class="math notranslate nohighlight">\(m = \underset{1 \leq n \leq N}{u_n} &gt; 0\)</span>. Il existe <span class="math notranslate nohighlight">\(k\)</span> tel que <span class="math notranslate nohighlight">\(u_k &lt; m\)</span>. Soit <span class="math notranslate nohighlight">\(k_0\)</span> le plus petit de ces tels <span class="math notranslate nohighlight">\(k\)</span>. Nécessairement <span class="math notranslate nohighlight">\(k_0 \geq N + 1\)</span> et <span class="math notranslate nohighlight">\(k_0 - 1 \in X^-\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-116">
+
+<p class="admonition-title"><span class="caption-number">Exercise 113 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer Bolzano-Weierstrauss dans <span class="math notranslate nohighlight">\(\R^d\)</span> pour <span class="math notranslate nohighlight">\(|| \cdot ||_{\infty}\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-27">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-116"> Exercise 113</a></p>
+<div class="section" id="solution-content">
+<p>Chaque composante est bornée, on peut faire <span class="math notranslate nohighlight">\(d\)</span> extractions.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-117">
+
+<p class="admonition-title"><span class="caption-number">Exercise 114 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que <span class="math notranslate nohighlight">\(||\cdot ||_1\)</span>, <span class="math notranslate nohighlight">\(|| \cdot ||_2\)</span> et <span class="math notranslate nohighlight">\(|| \cdot ||_{\infty}\)</span> sont équivalentes.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-29">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-117"> Exercise 114</a></p>
+<div class="section" id="solution-content">
+</div>
+</div>
+<div class="exercise admonition" id="exo-118">
+
+<p class="admonition-title"><span class="caption-number">Exercise 115 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(z_1, \ldots, z_p\)</span> des complexes de module 1. Montrer que <span class="math notranslate nohighlight">\(p\)</span> est une valeur d’adhérence de <span class="math notranslate nohighlight">\(s_n = (z_1^n + \ldots + z_p^n)_n\)</span>. On pourra admettre le cas <span class="math notranslate nohighlight">\(p=1\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-31">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-118"> Exercise 115</a></p>
+<div class="section" id="solution-content">
+<p>Par récurrence sur <span class="math notranslate nohighlight">\(p\)</span>. L’initialisation est évidente. On factorise par <span class="math notranslate nohighlight">\(z_p^n\)</span>. Notons <span class="math notranslate nohighlight">\(y_i=\frac{z_i}{z_n}\)</span>. Soit donc <span class="math notranslate nohighlight">\(\phi\)</span> une extractrice telle que <span class="math notranslate nohighlight">\((y_1^{\phi(n)} + \ldots + y_{p-1}^{\phi(n)})_n \rightarrow p-1\)</span>. De plus <span class="math notranslate nohighlight">\(s_{\phi(n)}\)</span> est dans un fermé borné de dimension finie donc admet une valeur d’adhérence, et nécessairement celle-ci est de module <span class="math notranslate nohighlight">\(p\)</span>, notons la donc <span class="math notranslate nohighlight">\(pe^{i\theta}\)</span>. Idée générale : il existe un <span class="math notranslate nohighlight">\(N\)</span> tel que <span class="math notranslate nohighlight">\(e^{i\theta}\)</span> est très proche de <span class="math notranslate nohighlight">\(1\)</span>. De plus, être proche de
+<span class="math notranslate nohighlight">\(pe^{i\theta}\)</span> force chacun des <span class="math notranslate nohighlight">\(n\theta_i\)</span> à être proche de <span class="math notranslate nohighlight">\(\theta\)</span>. De là, on peut rendre <span class="math notranslate nohighlight">\(\max_i (N|\theta-\theta_i|)\)</span> arbitrairement petit, ce amène que <span class="math notranslate nohighlight">\(s\)</span> est proche de <span class="math notranslate nohighlight">\(pe^{iN\theta}\)</span> donc de <span class="math notranslate nohighlight">\(p\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-119">
+
+<p class="admonition-title"><span class="caption-number">Exercise 116 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(z_1, \ldots, z_p\)</span> des complexes de module supérieur ou égal à 1 tels que <span class="math notranslate nohighlight">\(z_1^n+ \ldots + z_p^n\)</span> converge. Montrer que <span class="math notranslate nohighlight">\(z_1 = \ldots = z_p = 1\)</span>.
+Inidication : Utiliser l’exercice précédent.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-33">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-119"> Exercise 116</a></p>
+<div class="section" id="solution-content">
+<p>On se ramène au cas de complexes de module 1 en factorisant par le complexe de plus grand module. D’après l’exercise précédent <span class="math notranslate nohighlight">\(p\)</span> est une valeur d’adhérence de <span class="math notranslate nohighlight">\((z_1^n + \ldots + z_p^n)_n\)</span> donc la limite de cette suite est <span class="math notranslate nohighlight">\(p\)</span>. On peut alors par exemple regarder la partie réelle des <span class="math notranslate nohighlight">\(z_i^n\)</span> qui est majorée par 1. Il vient qu’elle tend vers 1 pour tout <span class="math notranslate nohighlight">\(i\)</span> puis que <span class="math notranslate nohighlight">\(z_i=1\)</span> pour tout <span class="math notranslate nohighlight">\(i\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-120">
+
+<p class="admonition-title"><span class="caption-number">Exercise 117 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\sigma\)</span> une bijection de <span class="math notranslate nohighlight">\(\N^*\)</span> dans <span class="math notranslate nohighlight">\(\N^*\)</span> telle que <span class="math notranslate nohighlight">\((\frac{\sigma(n)}{n})\)</span> converge. Que dire de la limite ?</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-35">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-120"> Exercise 117</a></p>
+<div class="section" id="solution-content">
+<p>On montre <span class="math notranslate nohighlight">\(l=1\)</span>. Si <span class="math notranslate nohighlight">\(l&lt;1\)</span> en choisissant <span class="math notranslate nohighlight">\(l&lt;l'&lt;1\)</span> on exhibe une contradiction avec l’injectivité. Si <span class="math notranslate nohighlight">\(l&gt;1\)</span> on exhibe une contradiction avec la surjectivité.</p>
+</div>
+</div>
+<div class="exercise admonition" id="adherence_condition">
+
+<p class="admonition-title"><span class="caption-number">Exercise 118 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(u_n \in \R^{\N}\)</span>, et <span class="math notranslate nohighlight">\(a \in \R\)</span> tel que <span class="math notranslate nohighlight">\(\forall \varepsilon &gt; 0\)</span>, l’ensemble <span class="math notranslate nohighlight">\(\B(a, \varepsilon) \cap (u_n)\)</span> est infini. Montrer que <span class="math notranslate nohighlight">\(a\)</span> est une valeur d’adhérence de <span class="math notranslate nohighlight">\(u\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-37">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#adherence_condition"> Exercise 118</a></p>
+<div class="section" id="solution-content">
+<p>Pour tout <span class="math notranslate nohighlight">\(n\)</span> on peut donc se munir d’une extractrice <span class="math notranslate nohighlight">\(\phi_n\)</span> telle que <span class="math notranslate nohighlight">\(d((u_{\phi_n}), a) \leq \frac{1}{n}\)</span>. On définit alors notre extractice <span class="math notranslate nohighlight">\(\psi\)</span> par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \psi(n) = \phi_n \circ \phi_{n-1} \circ \ldots \circ \phi_1 (n)
+\end{equation*}\]</div>
+<p>Et on peut vérifier que <span class="math notranslate nohighlight">\(|u_{\psi}(n) - a| \leq \frac{1}{n}\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-122">
+
+<p class="admonition-title"><span class="caption-number">Exercise 119 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(u_n\)</span> telle que <span class="math notranslate nohighlight">\(u_{n+1}-u_n \rightarrow 0\)</span>. Montrer que l’ensemble des valeurs d’adhérence de <span class="math notranslate nohighlight">\((u_n)\)</span> est un intervalle.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-39">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-122"> Exercise 119</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(a&lt;b\)</span> deux valeurs d’adhérence de la suite, <span class="math notranslate nohighlight">\(c \in ]a, b[\)</span> et <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>. Soit <span class="math notranslate nohighlight">\(N\)</span> tel que <span class="math notranslate nohighlight">\(u\)</span> fait des pas de moins de <span class="math notranslate nohighlight">\(\varepsilon\)</span> après <span class="math notranslate nohighlight">\(N\)</span>.</p>
+<p>Soit <span class="math notranslate nohighlight">\(A \in \R\)</span> tel que <span class="math notranslate nohighlight">\(A \geq N\)</span> et soit <span class="math notranslate nohighlight">\(A &lt; n &lt; m\)</span> tels que <span class="math notranslate nohighlight">\(|u_n - a| &lt; \varepsilon\)</span> et <span class="math notranslate nohighlight">\(|u_m - b| &lt; \varepsilon\)</span>. Soit <span class="math notranslate nohighlight">\(M = \max{k &lt; m \; | \; u_k &lt; c}\)</span>. On a <span class="math notranslate nohighlight">\(n \leq M \leq m\)</span> (quitte à prendre <span class="math notranslate nohighlight">\(\varepsilon\)</span> suffisamment petit, <span class="math notranslate nohighlight">\(M \geq n\)</span>), et de plus <span class="math notranslate nohighlight">\(u_M \leq c \leq u_{M+1}\)</span> donc <span class="math notranslate nohighlight">\(|u_M - c| \leq |u_M - u_{M+1}| \leq \varepsilon\)</span>.</p>
+<p>Remarquons que <span class="math notranslate nohighlight">\(M \geq A\)</span>, donc il existe une infinité de rangs tels que <span class="math notranslate nohighlight">\(u\)</span> est proche de <span class="math notranslate nohighlight">\(c\)</span> : <span class="math notranslate nohighlight">\(c\)</span> est une valeur d’adhérence (par exemple avec l’exercice <a class="reference internal" href="#adherence_condition"><span class="std std-numref">Exercise 118</span></a>).</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-123">
+
+<p class="admonition-title"><span class="caption-number">Exercise 120 </span></p>
+<div class="section" id="exercise-content">
+<p>Exhiber une suite dont l’ensemble des valeurs d’adhérence est <span class="math notranslate nohighlight">\(\R\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-41">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-123"> Exercise 120</a></p>
+<div class="section" id="solution-content">
+<p>Par exemple notons <span class="math notranslate nohighlight">\(u\)</span> la suite qui à <span class="math notranslate nohighlight">\(n = \overline{a_1a_2\ldots a_k}^{10}\)</span> (écrit en base <span class="math notranslate nohighlight">\(10\)</span>) associe <span class="math notranslate nohighlight">\(u_n = 0,a_1a_2a_3\ldots\)</span>. Alors <span class="math notranslate nohighlight">\(0.1\)</span> est une valeur d’adhérence, et <span class="math notranslate nohighlight">\(1\)</span> est une valeur d’adhérence, et <span class="math notranslate nohighlight">\(u_{n+1} - u_n \rightarrow 0\)</span>, donc tout élément de <span class="math notranslate nohighlight">\([0.1, 1]\)</span> est une valeur d’adhérence de <span class="math notranslate nohighlight">\(u\)</span>.</p>
+<p>Ensuite on dilate continument. D’abord <span class="math notranslate nohighlight">\(v_n = f(u_n)\)</span> où <span class="math notranslate nohighlight">\(f(x) = -1 + 2\frac{1-x}{0.9}\)</span>, et tout élément de <span class="math notranslate nohighlight">\([-1, 1]\)</span> est une valeur d’adhérence de <span class="math notranslate nohighlight">\(v_n\)</span>, puis <span class="math notranslate nohighlight">\(w_n = \th (v_n)\)</span></p>
+<p>Sinon n’importe quelle bijection de <span class="math notranslate nohighlight">\(\N\)</span> vers <span class="math notranslate nohighlight">\(\Q\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-124">
+
+<p class="admonition-title"><span class="caption-number">Exercise 121 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\((u_n) \in \C^{\N}\)</span> et <span class="math notranslate nohighlight">\((l_k)\)</span> une suite de valeur d’adhérence de <span class="math notranslate nohighlight">\((u_n)\)</span> qui tend vers <span class="math notranslate nohighlight">\(l\)</span>. Montrer que <span class="math notranslate nohighlight">\(l\)</span> est une valeur d’adhérence de <span class="math notranslate nohighlight">\((u_n)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-43">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-124"> Exercise 121</a></p>
+<div class="section" id="solution-content">
+<p>On note <span class="math notranslate nohighlight">\(\phi_k\)</span> une extractrice associée à <span class="math notranslate nohighlight">\(l_k\)</span>, que l’on choisit de sorte que <span class="math notranslate nohighlight">\(d(l_k, (u_{\phi_k})) \leq \frac{1}{k}\)</span>. Il suffit de considérer l’extractrice <span class="math notranslate nohighlight">\(\psi : k \mapsto \phi_k \circ \ldots \circ \phi_1 (k)\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-125">
+
+<p class="admonition-title"><span class="caption-number">Exercise 122 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(u_n = \sum \limits_{k=0}^n\frac{1}{k!}\)</span> et <span class="math notranslate nohighlight">\(v_n = u_n + \frac{1}{nn!}\)</span>. Montrer que <span class="math notranslate nohighlight">\((u_n)\)</span> et <span class="math notranslate nohighlight">\((v_n)\)</span> convergent vers la même limite, notée <span class="math notranslate nohighlight">\(e\)</span>. Montrer que <span class="math notranslate nohighlight">\(e \notin \Q\)</span>.
+Indication : Montrer que <span class="math notranslate nohighlight">\((u_n)\)</span> et <span class="math notranslate nohighlight">\((v_n)\)</span> sont adjacentes.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-126">
+
+<p class="admonition-title"><span class="caption-number">Exercise 123 </span></p>
+<div class="section" id="exercise-content">
+<p>Nature de la série de terme général <span class="math notranslate nohighlight">\(\sin(\pi(2+\sqrt{3})^n)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-46">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-126"> Exercise 123</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(\alpha = 2+\sqrt{3}\)</span> et <span class="math notranslate nohighlight">\(\beta = 2-\sqrt{3}\)</span>. On a pour tout <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(\alpha^n+\beta^n \in \N\)</span>. De là <span class="math notranslate nohighlight">\(|\sin(\pi\alpha^n)| = \sin(\pi\beta^n) \sim \pi\beta^n\)</span> d’où la convergence de la série.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-127">
+
+<p class="admonition-title"><span class="caption-number">Exercise 124 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\((w_n)\)</span> une suite à valeurs dans <span class="math notranslate nohighlight">\([0,1]\)</span> telle que pour tout <span class="math notranslate nohighlight">\(n\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+w_{n+1}(1-w_n) &gt; \frac{1}{4}
+\end{equation*}\]</div>
+<p>Nature et limite de <span class="math notranslate nohighlight">\((w_n)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-48">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-127"> Exercise 124</a></p>
+<div class="section" id="solution-content">
+<p>On montre que la suite est croissante en utilisant que <span class="math notranslate nohighlight">\(\forall x, \; x(1-x) \leq \frac{1}{4}\)</span>. Nécessairement elle converge et la limite <span class="math notranslate nohighlight">\(l\)</span> doit vérifier <span class="math notranslate nohighlight">\(l(1-l) \geq \frac{1}{4}\)</span> et de là <span class="math notranslate nohighlight">\(l=\frac{1}{2}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-128">
+
+<p class="admonition-title"><span class="caption-number">Exercise 125 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\((u_n)\)</span> une suite à valeurs dans <span class="math notranslate nohighlight">\(\R\)</span> vérifiant <span class="math notranslate nohighlight">\(u_0 \neq 0\)</span> et pour tout <span class="math notranslate nohighlight">\(n\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+u_{n+1} \leq 2- \frac{1}{u_n}
+\end{equation*}\]</div>
+<p>Nature et limite de <span class="math notranslate nohighlight">\((u_n)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-50">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-128"> Exercise 125</a></p>
+<div class="section" id="solution-content">
+<p>Remarquons que <span class="math notranslate nohighlight">\(\forall x&gt;0, \; 2-\frac{1}{x} \leq x\)</span> avec égalité si et seulement si <span class="math notranslate nohighlight">\(x=1\)</span>. La suite est donc décroissante. Donc converge. Donc inégalité à la limite. Donc la limite est <span class="math notranslate nohighlight">\(1\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-129">
+
+<p class="admonition-title"><span class="caption-number">Exercise 126 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(p_n, q_n\)</span> deux suites d’entiers naturels, telles que <span class="math notranslate nohighlight">\(\frac{p_n}{q_n}\rightarrow x \notin \Q\)</span>. Montrer que <span class="math notranslate nohighlight">\(q_n \rightarrow +\infty\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Convergence des suites numériques-solution-52">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-129"> Exercise 126</a></p>
+<div class="section" id="solution-content">
+<p>La distance de <span class="math notranslate nohighlight">\(x\)</span> à <span class="math notranslate nohighlight">\(\frac{\N}{q_n}\)</span> est minorée par <span class="math notranslate nohighlight">\(\varepsilon_n &gt; 0\)</span>.</p>
+<p>Sinon on peut aussi extraire par l’absurde une valeur d’adhérence que <span class="math notranslate nohighlight">\((q_n)\)</span> et en déduire que <span class="math notranslate nohighlight">\(p_{\phi(n)}\)</span> converge puis que <span class="math notranslate nohighlight">\(x\)</span> est rationnel.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/analyse_reelle"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Suites%20num%C3%A9riques.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Suites numériques</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="S%C3%A9ries%20num%C3%A9riques.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Séries numériques</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

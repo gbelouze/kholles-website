@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculus : intégration, fonctions usuelles &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Ensembles et applications" href="Ensembles%20et%20applications.html" />
+    <link rel="prev" title="Exercices de kholles de Gabriel Belouze" href="../../index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/preliminaires/Calculus : intégration, fonctions usuelles.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Calculus : intégration, fonctions usuelles</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="calculus-integration-fonctions-usuelles">
+<h1>Calculus : intégration, fonctions usuelles<a class="headerlink" href="#calculus-integration-fonctions-usuelles" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-1">
+
+<p class="admonition-title"><span class="caption-number">Exercise 1 </span></p>
+<div class="section" id="exercise-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ I = \int_0^1 \frac{xdx}{1+\sqrt{x}}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-2">
+
+<p class="admonition-title"><span class="caption-number">Exercise 2 </span></p>
+<div class="section" id="exercise-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ I = \int_0^{\pi/3} \frac{\sin^3(x)dx}{\sqrt{\cos(x)}}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-3">
+
+<p class="admonition-title"><span class="caption-number">Exercise 3 </span></p>
+<div class="section" id="exercise-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ I = \int_0^1 \frac{e^{2x}dx}{\sqrt{e^x+1}}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-4">
+
+<p class="admonition-title"><span class="caption-number">Exercise 4 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> une application continue périodique de <span class="math notranslate nohighlight">\(\R\)</span> dans <span class="math notranslate nohighlight">\(\R\)</span>. Trouver une condition nécessaire et suffisante pour que les primitives de <span class="math notranslate nohighlight">\(f\)</span> soient périodiques.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-4">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-4"> Exercise 4</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(f\)</span> est <span class="math notranslate nohighlight">\(T\)</span>-périodique. Soit <span class="math notranslate nohighlight">\(\lambda = \int_0^T f\)</span>. On a <span class="math notranslate nohighlight">\(F(x+nT) = F(x) + n\lambda\)</span>. Si <span class="math notranslate nohighlight">\(\lambda \neq 0\)</span>, <span class="math notranslate nohighlight">\(F\)</span> est non bornée, continue, donc non périodique. Réciproquement, si <span class="math notranslate nohighlight">\(\lambda = 0\)</span>, <span class="math notranslate nohighlight">\(F\)</span> est <span class="math notranslate nohighlight">\(T\)</span>-périodique.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-5">
+
+<p class="admonition-title"><span class="caption-number">Exercise 5 </span> (Wallis)</p>
+<div class="section" id="exercise-content">
+<p>Calculer <span class="math notranslate nohighlight">\(W_n = \int_0^{\pi/2} cos^n(x) dx\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-6">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-5"> Exercise 5 (Wallis)</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\int_0^{\pi/2}cos^{n+2}(x) dx &amp;= W_n - \int_0^{\pi/2} cos^n(x)sin^2(x) dx \\
+&amp;= W_n + \frac{1}{n+1} \left ( [cos_{n+1}sin]_0^{\pi/2} - \int_0^{\pi/2} cos_{n+2}(x)dx \right ) \\
+W_{n+2} &amp;= \frac{n+1}{n+2}W_n
+\end{align*}\]</div>
+<p>Leading to</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W_{2n} &amp;= \frac{1\times3\times\ldots\times(2n-1)}{2\times4\times\ldots\times2n}W_0 \\
+&amp;= \frac{(2n)!}{4^n(n!)^2}W_0 \\
+&amp;= \frac{(2n)!}{4^n(n!)^2} \frac{\pi}{2}
+\end{align*}\]</div>
+<p>et</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+W_{2n+1} &amp;= \frac{2\times4\times\ldots\times2n}{3\times5\times\ldots\times(2n+1)}W_1 \\
+&amp;= \frac{4^n(n!)^2}{(2n+1)!}\\
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-6">
+
+<p class="admonition-title"><span class="caption-number">Exercise 6 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer qu’une fonction <span class="math notranslate nohighlight">\(f: \mathbb{R} \rightarrow \mathbb{R}\)</span> se décompose de façon unique comme somme d’une fonction paire et d’une fonction impaire.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-8">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-6"> Exercise 6</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(f(x) = \frac{f(x)+f(-x)}{2} +  \frac{f(x)-f(-x)}{2}\)</span> pour l’existence. <span class="math notranslate nohighlight">\(f = p + i\)</span> donne <span class="math notranslate nohighlight">\(f(x)+f(-x) = p(x) + p(-x) = 2p(x)\)</span> pour l’unicité.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-7">
+
+<p class="admonition-title"><span class="caption-number">Exercise 7 </span></p>
+<div class="section" id="exercise-content">
+<p>On se donne <span class="math notranslate nohighlight">\(a \in ]0, 2 \pi [\)</span>. Calculer <span class="math notranslate nohighlight">\(\prod \limits_{k=0}^n \cos(\frac{a}{2^k})\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-10">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-7"> Exercise 7</a></p>
+<div class="section" id="solution-content">
+<p>On part de <span class="math notranslate nohighlight">\(\sin(2a) = 2\sin(a)\cos(a)\)</span> pour avoir</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \sin(2^na) = 2^n\sin(a)\prod_{k=0}^{n-1}\cos(2^ka)
+\end{equation*}\]</div>
+<p>D’où <span class="math notranslate nohighlight">\(\prod \limits_{k=0}^n \cos(\frac{a}{2^k}) = \frac{sin(2^na)}{2^n}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-8">
+
+<p class="admonition-title"><span class="caption-number">Exercise 8 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que dans un triangle ABC, <span class="math notranslate nohighlight">\(\frac{\sin{\hat{a}}}{a}=\frac{\sin{\hat{b}}}{b}=\frac{\sin{\hat{c}}}{c}\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-12">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-8"> Exercise 8</a></p>
+<div class="section" id="solution-content">
+<p>On projette <span class="math notranslate nohighlight">\(C\)</span> pour avoir un segment de longueur <span class="math notranslate nohighlight">\(h\)</span> vérifiant <span class="math notranslate nohighlight">\(\sin(a) = \frac{h}{b}\)</span> et <span class="math notranslate nohighlight">\(\sin(b) = \frac{h}{a}\)</span> d’où le résultat.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-9">
+
+<p class="admonition-title"><span class="caption-number">Exercise 9 </span></p>
+<div class="section" id="exercise-content">
+<p>Résoudre dans <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> l’équation</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \arctan(x) + \arctan(2x) = \frac{\pi}{4}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-14">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-9"> Exercise 9</a></p>
+<div class="section" id="solution-content">
+<p>En prenant la tangente on a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{\tan(\arctan(x)) + \tan(\arctan(2x))}{1-\tan(\arctan(x))\tan(\arctan(2x))} &amp;= 1 \\
+\frac{3x}{1-2x^2} &amp;= 1\\
+2x^2+3x-1&amp;=0 \\
+x = \frac{-3\pm\sqrt{17}}{4}
+\end{align*}\]</div>
+<p>On note <span class="math notranslate nohighlight">\(x_1 = \frac{-3-\sqrt{17}}{4} &lt; 0\)</span> et <span class="math notranslate nohighlight">\(x_2 = \frac{-3+\sqrt{17}}{4} &gt; 0\)</span>.  En remontant les implications, on a <span class="math notranslate nohighlight">\(\arctan(x_i) + \arctan(2x_i) = \frac{\pi}{4} \mod{\pi}\)</span>.</p>
+<p>Remarquons que <span class="math notranslate nohighlight">\(\phi : x \mapsto \arctan(x) + \arctan(2x)\)</span> est négative sur <span class="math notranslate nohighlight">\(\R_-\)</span>, positive sur <span class="math notranslate nohighlight">\(\R_+\)</span>, et comprise entre <span class="math notranslate nohighlight">\(-\pi\)</span> et <span class="math notranslate nohighlight">\(\pi\)</span>. Ainsi <span class="math notranslate nohighlight">\(\phi(x_1) &lt; 0\)</span> donc <span class="math notranslate nohighlight">\(x_1\)</span> n’est pas solution de l’équation initiale. D’autre part, <span class="math notranslate nohighlight">\(\phi(x_2) \in [0, \pi]\)</span>. La seule valeur possible est <span class="math notranslate nohighlight">\(\phi(x_2) = \pi/4\)</span>. <span class="math notranslate nohighlight">\(\frac{-3+\sqrt{17}}{4}\)</span> est l’unique solution de l’équation.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-10">
+
+<p class="admonition-title"><span class="caption-number">Exercise 10 </span> (Formule de Machin)</p>
+<div class="section" id="exercise-content">
+<p>Montrer la formule</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \frac{\pi}{4} = 4\arctan(\frac{1}{5})-\arctan(\frac{1}{239})
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-16">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-10"> Exercise 10 (Formule de Machin)</a></p>
+<div class="section" id="solution-content">
+<p>On passe par les complexes</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+Arg(\frac{(5+i)^4}{239+i}) &amp;= Arg((5+i)^4(239-i)) \\
+&amp;= Arg((24+10i)^2(239-i)) \\
+&amp;= Arg((476 +480i)(239-i)) \\
+&amp;= Arg(114244 + 114244i) \\
+&amp;= Arg(1+i)\\
+&amp;= \frac{\pi}{4}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-11">
+
+<p class="admonition-title"><span class="caption-number">Exercise 11 </span></p>
+<div class="section" id="exercise-content">
+<p>Donner le nombre de solutions de <span class="math notranslate nohighlight">\(\tan(x) + \tan(2x) +\tan(3x)+\tan(4x)=a\)</span>  dans <span class="math notranslate nohighlight">\([0, \pi]\)</span> selon <span class="math notranslate nohighlight">\(a\in\R\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-18">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-11"> Exercise 11</a></p>
+<div class="section" id="solution-content">
+<p>Les points limites sont <span class="math notranslate nohighlight">\(\frac{\pi}{2}, \frac{\pi/4}, \frac{3\pi}{4}, \frac{\pi}{6}, \frac{5\pi}{6}, \frac{\pi}{8}, \frac{3\pi}{8}, \frac{5\pi}{8}, \frac{7\pi}{8}\)</span>. Par ailleurs, <span class="math notranslate nohighlight">\(f(0)=f(\pi)=0\)</span>, <span class="math notranslate nohighlight">\(f\)</span> est strictement croissante sur chaque intervalle de définition, bref l’équation possède <span class="math notranslate nohighlight">\(9\)</span> solutions si <span class="math notranslate nohighlight">\(a \neq 0\)</span> et <span class="math notranslate nohighlight">\(10\)</span> si <span class="math notranslate nohighlight">\(a=0\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-12">
+
+<p class="admonition-title"><span class="caption-number">Exercise 12 </span></p>
+<div class="section" id="exercise-content">
+<ol class="simple">
+<li><p>Résoudre pour <span class="math notranslate nohighlight">\(x \in [0,2\pi]\)</span>, l’équation <span class="math notranslate nohighlight">\(\cos(3x)=\sin(2x)\)</span>.</p></li>
+<li><p>En déduire une expression des <span class="math notranslate nohighlight">\(\cos\)</span> et <span class="math notranslate nohighlight">\(\sin\)</span> de <span class="math notranslate nohighlight">\(\{ \frac{3\pi}{10}, \frac{\pi}{10}, \frac{\pi}{5} \}\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-20">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-12"> Exercise 12</a></p>
+<div class="section" id="solution-content">
+<ol>
+<li><div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \cos(3x) = \sin(2x) &amp;\Leftrightarrow \cos(3x) = \cos(\pi/2-2x) \\
+    &amp;\Leftrightarrow \begin{cases}
+    3x = \pi/2-2x \mod{2\pi} \\
+    3x = 2x - \pi/2 \mod{2\pi}
+    \end{cases} \\
+    &amp;\Leftrightarrow \begin{cases}
+    x = \pi/10 \mod{2\pi/5} \\
+    x = 3\pi/2 \mod{2\pi}
+    \end{cases} \\
+    \end{align*}\]</div>
+<p>Les solutions dans <span class="math notranslate nohighlight">\([0, 2\pi]\)</span> sont <span class="math notranslate nohighlight">\(\frac{\pi}{10}, \frac{\pi}{2}, \frac{9\pi}{10}, \frac{13\pi}{10}, \frac{3\pi}{2}, \frac{17\pi}{10}\)</span>.</p>
+</li>
+<li><p>On commence par factoriser <span class="math notranslate nohighlight">\(\cos(3x)\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \cos(3x) &amp;= \Re(e^{3ix}) \\
+    &amp;= \Re((\cos(x) + i\sin(x))^3) \\
+    &amp;= 4\cos^3(x)-3\cos(x)
+    \end{align*}\]</div>
+<p>Ainsi <span class="math notranslate nohighlight">\(x_1 = \pi/10\)</span> et <span class="math notranslate nohighlight">\(x_2 = 13\pi/10\)</span> vérifient</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    4\cos^3(x)-3\cos(x) &amp;= 2\cos(x)\sin(x)\\
+    4 (1-\sin^2(x))-2\sin(x)-3 &amp;= 0 \\
+    \end{align*}\]</div>
+<p>Et de là <span class="math notranslate nohighlight">\(X_1 = \sin(\pi/10)\)</span> et <span class="math notranslate nohighlight">\(X_2 = \sin(13\pi/10) = -\sin(3\pi/10)\)</span> sont les 2 racines de <span class="math notranslate nohighlight">\(4X^2 + 2X -1\)</span>
+De là</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    \sin(\pi/10) &amp;=  \frac{\sqrt{5}-1}{4}\\
+    \sin(3\pi/10) &amp;=  \frac{\sqrt{5}+1}{4}\\
+    \end{align*}\]</div>
+<p>Et ensuite ça déroule.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-13">
+
+<p class="admonition-title"><span class="caption-number">Exercise 13 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que <span class="math notranslate nohighlight">\(\arctan(\frac{1}{\sqrt{x}}) = \arcsin(\frac{1}{\sqrt{x+1}})\)</span> pour <span class="math notranslate nohighlight">\(x &gt;0\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-22">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-13"> Exercise 13</a></p>
+<div class="section" id="solution-content">
+<p>On passe à la tangente</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\tan(\arcsin(\frac{1}{\sqrt{x+1}})) &amp;= \frac{\sin(\arcsin(1/\sqrt{x+1}))}{\sqrt{(1-\sin^2(\arcsin(1/\sqrt{x+1})))}}\\ &amp;= \frac{1/\sqrt{x+1}}{\sqrt{1-1/(x+1)}} \\
+&amp;= \frac{1}{\sqrt{x}} \\
+&amp;= \tan(\arctan(\frac{1}{\sqrt{x}}))
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-14">
+
+<p class="admonition-title"><span class="caption-number">Exercise 14 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que <span class="math notranslate nohighlight">\(\frac{1}{\sh(x)} = \frac{1}{th(\frac{x}{2})} - \frac{1}{th(x)}\)</span>. En déduire une expression simple de <span class="math notranslate nohighlight">\(\sum \limits_{k=0}^n \frac{1}{\sh(2^kx)}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-15">
+
+<p class="admonition-title"><span class="caption-number">Exercise 15 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\forall a,b,x \in \R_+^*\)</span>, <span class="math notranslate nohighlight">\(a&lt;b\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+0 &lt; b e^{-ax}-a e^{-bx} &lt; b-a
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-25">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-15"> Exercise 15</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(be^{-ax} - ae^{-bx} &gt; be^{-ax} - ae^{-ax} &gt; 0\)</span>. De l’autre côté, on dérive <span class="math notranslate nohighlight">\(f'(x) = ab(e^{-bx}-e^{-ax}) &lt; 0\)</span> donc <span class="math notranslate nohighlight">\(f(x)&lt;=f(0) = b-a\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-16">
+
+<p class="admonition-title"><span class="caption-number">Exercise 16 </span></p>
+<div class="section" id="exercise-content">
+<p>Étudier la monotonie sur <span class="math notranslate nohighlight">\(\R_+^*\)</span>, pour <span class="math notranslate nohighlight">\(a,b\)</span> réels, de <span class="math notranslate nohighlight">\(\frac{\ln(1+ax)}{\ln(1+bx)}\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-27">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-16"> Exercise 16</a></p>
+<div class="section" id="solution-content">
+<p>Sans perte de généralité, <span class="math notranslate nohighlight">\(a&lt;b\)</span>. On dérive deux fois.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-17">
+
+<p class="admonition-title"><span class="caption-number">Exercise 17 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(n \in \N\)</span>. Trouver une primitive de <span class="math notranslate nohighlight">\(\frac{1}{x \ln(x) \ln(\ln(x)) \ldots \ln^{\circ n}(x)}\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-29">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-17"> Exercise 17</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(ln^{\circ n}(x)\)</span> par récurrence.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-18">
+
+<p class="admonition-title"><span class="caption-number">Exercise 18 </span></p>
+<div class="section" id="exercise-content">
+<p>Calculer <span class="math notranslate nohighlight">\(\int \limits_0^1 \frac{1}{(1+x^2)^2}dx\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-19">
+
+<p class="admonition-title"><span class="caption-number">Exercise 19 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver une primitive de <span class="math notranslate nohighlight">\(\frac{1}{\sqrt{-x^2+x+1}}\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-32">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-19"> Exercise 19</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\int^t \frac{1}{\sqrt{1+x-x^2}} dx &amp;= \int^t \frac{1}{\frac{\sqrt{5}}{2}\sqrt{-(\frac{2(x-1/2)}{\sqrt{5}})^2+1} } dx \\
+&amp;= \int^{2(u-1/2)/\sqrt{5}} \frac{1}{\sqrt{1-u^2}}du \\
+&amp;= \arcsin(\frac{2u-1}{\sqrt{5}})
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-20">
+
+<p class="admonition-title"><span class="caption-number">Exercise 20 </span></p>
+<div class="section" id="exercise-content">
+<p>Calculer <span class="math notranslate nohighlight">\(I = \int \limits_0^{\frac{\pi}{2}} \ln (\sin (x)) dx\)</span>. On pourra introduire <span class="math notranslate nohighlight">\(J = \int \limits_0^{\frac{\pi}{2}} \ln (\cos (x)) dx\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-34">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-20"> Exercise 20</a></p>
+<div class="section" id="solution-content">
+<p>Par un changement de variable évident, <span class="math notranslate nohighlight">\(I=J\)</span>. Donc <span class="math notranslate nohighlight">\(2I = I+J = \int_0^{\frac{\pi}{2}} \ln(\sin(2x)/2)dx = -\ln(2)\frac{\pi}{2} + \frac{1}{2}\int_0^{\pi} \ln(\sin(x))dx = -\ln(2)\frac{\pi}{2} + I\)</span> d’où</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+I = -\ln(2)\frac{\pi}{2}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-21">
+
+<p class="admonition-title"><span class="caption-number">Exercise 21 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : \R \rightarrow \R\)</span>, telle que le graphe de <span class="math notranslate nohighlight">\(f\)</span> possède deux centres de symétrie distincts. Montrer que <span class="math notranslate nohighlight">\(f\)</span> peut se décomposer comme somme d’une fonction affine et d’une fonction périodique.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-36">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-21"> Exercise 21</a></p>
+<div class="section" id="solution-content">
+<p>Quitte à retirer la bonne fonction affine à <span class="math notranslate nohighlight">\(f\)</span>, on peut supposer que les deux centres de symétrie sont situés sur l’axe des <span class="math notranslate nohighlight">\(x\)</span>, respectivement en <span class="math notranslate nohighlight">\(a\)</span> et en <span class="math notranslate nohighlight">\(b\)</span>. Soit <span class="math notranslate nohighlight">\(x \in \R\)</span>. On a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f(x) &amp;= f(b-(b-x)) \\
+&amp;= f(2b-x) \\
+&amp;= f(a - (a-2b + x)) \\
+&amp;= f(x + 2(a-b) )
+\end{align*}\]</div>
+<p>Donc <span class="math notranslate nohighlight">\(f-\delta\)</span> est <span class="math notranslate nohighlight">\(a-b\)</span> périodique avec <span class="math notranslate nohighlight">\(\delta\)</span> affine.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-22">
+
+<p class="admonition-title"><span class="caption-number">Exercise 22 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(a&gt;b\)</span> des réels. Déterminer une condition nécessaire et suffisante pour que le système</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\begin{cases}
+    \ch(x) + \ch(y) = a \\
+    \sh(x) + \sh(y) =b
+\end{cases}
+\end{equation*}\]</div>
+<p>admette au moins une solution.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-23">
+
+<p class="admonition-title"><span class="caption-number">Exercise 23 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : \R \rightarrow \R\)</span>, on suppose que <span class="math notranslate nohighlight">\(f \circ f\)</span> est croissante et que <span class="math notranslate nohighlight">\(f \circ f \circ f\)</span> est strictement décroissante.</p>
+<p>Montrer que f est strictement décroissante.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-39">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-23"> Exercise 23</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(f\circ f\)</span> est strictement croissante, sinon <span class="math notranslate nohighlight">\(f \circ f \circ f\)</span> n’est pas strictement décroissante.</p>
+<p>Soit <span class="math notranslate nohighlight">\(a&lt;b\)</span>, <span class="math notranslate nohighlight">\(f(f(f(a)))&lt; f(f(f(b)))\)</span> donc par croissance de <span class="math notranslate nohighlight">\(f\circ f\)</span>, <span class="math notranslate nohighlight">\(f(a) &lt; f(b)\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-24">
+
+<p class="admonition-title"><span class="caption-number">Exercise 24 </span></p>
+<div class="section" id="exercise-content">
+<p>Calculer exactement <span class="math notranslate nohighlight">\(\sin(\frac{1}{2} \arcsin(\frac{3}{4}))\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-25">
+
+<p class="admonition-title"><span class="caption-number">Exercise 25 </span> (formule de Hutton)</p>
+<div class="section" id="exercise-content">
+<p>Montrer la formule</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\frac{\pi}{4} = 2 \arctan(\frac{1}{3})+\arctan(\frac{1}{7})
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Calculus : intégration, fonctions usuelles-solution-42">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-25"> Exercise 25 (formule de Hutton)</a></p>
+<div class="section" id="solution-content">
+<p>Par les complexes ou bien avec les formules de trigonométrie.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/preliminaires"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../../index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Exercices de kholles de Gabriel Belouze</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Ensembles%20et%20applications.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Ensembles et applications</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

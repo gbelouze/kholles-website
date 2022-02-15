@@ -1,0 +1,889 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limites de fonctions, continuité &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Dérivabilité" href="D%C3%A9rivabilit%C3%A9.html" />
+    <link rel="prev" title="Fonctions usuelles" href="Fonctions%20usuelles.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/analyse_reelle/Limites de fonctions, continuité.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Limites de fonctions, continuité</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="limites-de-fonctions-continuite">
+<h1>Limites de fonctions, continuité<a class="headerlink" href="#limites-de-fonctions-continuite" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-154">
+
+<p class="admonition-title"><span class="caption-number">Exercise 138 </span></p>
+<div class="section" id="exercise-content">
+<p>La fonction <span class="math notranslate nohighlight">\(x \longmapsto \lfloor x \rfloor + \lfloor -x \rfloor\)</span> admet-elle une limite en <span class="math notranslate nohighlight">\(+ \infty\)</span> ?</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-154"> Exercise 138</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(\forall x \in \mathbb{N}, \; f(x) = 0\)</span> et <span class="math notranslate nohighlight">\(f(x+\frac{1}{2}) = -1\)</span> donc <span class="math notranslate nohighlight">\(f\)</span> n’admet pas de telle limite.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-155">
+
+<p class="admonition-title"><span class="caption-number">Exercise 139 </span></p>
+<div class="section" id="exercise-content">
+<p>A-t-on <span class="math notranslate nohighlight">\(f\)</span> continue sur un segment et jamais identiquement nulle sur un sous-intervalle de ce segment de <span class="math notranslate nohighlight">\(\Rightarrow\)</span> <span class="math notranslate nohighlight">\(f\)</span> s’annule un nombre fini de fois.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-155"> Exercise 139</a></p>
+<div class="section" id="solution-content">
+<p>Non avec <span class="math notranslate nohighlight">\(x\sin(\frac{1}{x})\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-156">
+
+<p class="admonition-title"><span class="caption-number">Exercise 140 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(g\)</span> deux fonctions continues de <span class="math notranslate nohighlight">\([0,1]\)</span> dans <span class="math notranslate nohighlight">\(\R\)</span> telles que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \sup f = \sup g
+\end{equation*}\]</div>
+<p>Montrer que le graphe de <span class="math notranslate nohighlight">\(f\)</span> et le graphe de <span class="math notranslate nohighlight">\(g\)</span> se coupent.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-156"> Exercise 140</a></p>
+<div class="section" id="solution-content">
+<p>Par continuité, le sup est atteint. On écrit <span class="math notranslate nohighlight">\(s = \sup f = \sup g = f(a) = f(b)\)</span>. On a alors <span class="math notranslate nohighlight">\((f-g)(a) \geq 0\)</span> et <span class="math notranslate nohighlight">\((f-g)(b) \leq 0\)</span> donc <span class="math notranslate nohighlight">\(f-g\)</span> s’annule.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-157">
+
+<p class="admonition-title"><span class="caption-number">Exercise 141 </span></p>
+<div class="section" id="exercise-content">
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(f \; : \; \mathbb{R}^*_+ \longrightarrow  \mathbb{R}\)</span> continue telle que, pour tout <span class="math notranslate nohighlight">\(x&gt;0\)</span>, la suite <span class="math notranslate nohighlight">\((f(nx))_n\)</span> est croissante. Montrer que <span class="math notranslate nohighlight">\(f\)</span> est croissante.</p></li>
+<li><p>Et si on abandonne l’hypothèse de la continuité de <span class="math notranslate nohighlight">\(f\)</span> ?</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-157"> Exercise 141</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Raisonnons par l’absurde en se donnant <span class="math notranslate nohighlight">\(a&lt;b\)</span> tels que <span class="math notranslate nohighlight">\(f(a)&gt;f(b)\)</span>. Par continuité de <span class="math notranslate nohighlight">\(f\)</span>, il existe <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span> tel que <span class="math notranslate nohighlight">\(\varepsilon &lt; b-a\)</span> et <span class="math notranslate nohighlight">\(\forall x \in [b-\varepsilon, b+\varepsilon], f(a)&gt;f(x)\)</span>. Choisissons <span class="math notranslate nohighlight">\(N \in \mathbb{N}\)</span> suffisamment grand de sorte que <span class="math notranslate nohighlight">\(\frac{a}{N} &lt; 2 \varepsilon\)</span>. Alors la suite <span class="math notranslate nohighlight">\((n\frac{a}{N})_n\)</span> contient <span class="math notranslate nohighlight">\(a\)</span> et rencontre <span class="math notranslate nohighlight">\([b-\varepsilon, b+\varepsilon]\)</span> donc la suite <span class="math notranslate nohighlight">\((f(n\frac{a}{N}))_n\)</span> n’est pas croissante, ce qui contredit les hypothèses de départ.</p></li>
+<li><p>Considérons la fonction <span class="math notranslate nohighlight">\(f \; : \; x \longmapsto \mathds{1}_{\mathbb{Q}} \)</span>. Pour tout <span class="math notranslate nohighlight">\(x\)</span> réel, pour tout <span class="math notranslate nohighlight">\(n \in \mathbb{N}^*\)</span>, <span class="math notranslate nohighlight">\(nx \in \mathbb{Q} \; \longleftrightarrow \; x \in \mathbb{Q}\)</span> donc <span class="math notranslate nohighlight">\(\forall x, \, (f(nx))_n\)</span> est constante donc croissante.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-158">
+
+<p class="admonition-title"><span class="caption-number">Exercise 142 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver les fonctions <span class="math notranslate nohighlight">\(f : \R \rightarrow \R\)</span> continues en <span class="math notranslate nohighlight">\(1\)</span> vérifiant <span class="math notranslate nohighlight">\(\forall x \in \R, \; f(x^2) = f(x)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-158"> Exercise 142</a></p>
+<div class="section" id="solution-content">
+<p>On a immédiatement <span class="math notranslate nohighlight">\(\forall n \in \N, \; f(x) = f(x^{2^{-n}})\)</span>. Or pour <span class="math notranslate nohighlight">\(x \neq 0\)</span>, <span class="math notranslate nohighlight">\(x^{2^{-n}}  \underset{n \rightarrow +\infty}{ \rightarrow} 1\)</span> donc <span class="math notranslate nohighlight">\(\forall x \neq 1\)</span>, <span class="math notranslate nohighlight">\(f(x) = f(1)\)</span>. Par continuité en 1. On vérifie immédiatement que les fonctions constantes sur <span class="math notranslate nohighlight">\(\R^*\)</span> conviennent.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-159">
+
+<p class="admonition-title"><span class="caption-number">Exercise 143 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que deux fonctions d’un intervalle ouvert, croissantes et dont la somme est continue sont continues.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-159"> Exercise 143</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(]a,b[\)</span> l’intervalle de définition de <span class="math notranslate nohighlight">\(f\)</span> et <span class="math notranslate nohighlight">\(g\)</span> et soit <span class="math notranslate nohighlight">\(x \in ]a,b[\)</span>. On justifie facilement que <span class="math notranslate nohighlight">\(\underset{x^-}{\lim} f + \underset{x^-}{\lim} g = \underset{x^-}{\lim} (f+g) = (f+g)(x)\)</span> par continuité de <span class="math notranslate nohighlight">\(f+g\)</span>. Or <span class="math notranslate nohighlight">\(\underset{x^-}{\lim} f \leq f(x)\)</span> et
+<span class="math notranslate nohighlight">\(\underset{x^-}{\lim} g \leq g(x)\)</span> donc ces deux inégalités sont des égalités. Ceci étant vrai pour tout <span class="math notranslate nohighlight">\(x\)</span> et étant facilement montré de la même façon pour la limite en <span class="math notranslate nohighlight">\(x^+\)</span>, <span class="math notranslate nohighlight">\(f\)</span> et <span class="math notranslate nohighlight">\(g\)</span> sont continues.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-160">
+
+<p class="admonition-title"><span class="caption-number">Exercise 144 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f \; : \; \mathbb{R} \longrightarrow \mathbb{R}\)</span> <span class="math notranslate nohighlight">\(T\)</span>-périodique et continue. Montrer qu’il existe <span class="math notranslate nohighlight">\(a \in \mathbb{R}\)</span> tel que <span class="math notranslate nohighlight">\(f(\mathbb{R}) = f([a,a+\frac{T}{2}])\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-160"> Exercise 144</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(a,b \in [0,T]\)</span> tels que <span class="math notranslate nohighlight">\(f\)</span> atteigne son minimum et son maximum respectivement en <span class="math notranslate nohighlight">\(a\)</span> et <span class="math notranslate nohighlight">\(b\)</span>. Quitte à remplacer <span class="math notranslate nohighlight">\(f\)</span> par <span class="math notranslate nohighlight">\(-f\)</span> on peut supposer <span class="math notranslate nohighlight">\(a&lt;b\)</span>. Si <span class="math notranslate nohighlight">\(b-a\leq \frac{T}{2}\)</span>, <span class="math notranslate nohighlight">\(a\)</span> convient. Sinon <span class="math notranslate nohighlight">\(b\)</span> convient.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-161">
+
+<p class="admonition-title"><span class="caption-number">Exercise 145 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir exercice 8.31 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(f \; \: \; \mathbb{R}_+ \longrightarrow \mathbb{R}\)</span> continue et surjective. Montrer que <span class="math notranslate nohighlight">\(f^{-1}(\{0\})\)</span> est infini.
+Difficulté : <em>/</em>*</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-161"> Exercise 145</a></p>
+<div class="section" id="solution-content">
+<p>Montrons que cet ensemble n’est pas majoré. Soit <span class="math notranslate nohighlight">\(A&gt;0\)</span>, par continuité de <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(f[0,A]\)</span> est borné, mettons par <span class="math notranslate nohighlight">\(M\)</span>. <span class="math notranslate nohighlight">\(f\)</span> étant surjective, <span class="math notranslate nohighlight">\(M+1\)</span> admet un antécédent, soit <span class="math notranslate nohighlight">\(x\)</span>, et <span class="math notranslate nohighlight">\(-M-1\)</span> admet un antécédent, soit <span class="math notranslate nohighlight">\(y\)</span>. Nécessairement <span class="math notranslate nohighlight">\(x&gt;A\)</span> et <span class="math notranslate nohighlight">\(y&gt;A\)</span>. Mais par continuité de <span class="math notranslate nohighlight">\(f\)</span> et d’après le théorème des valeurs intermédiaires, il existe <span class="math notranslate nohighlight">\(z\)</span> entre <span class="math notranslate nohighlight">\(x\)</span> et <span class="math notranslate nohighlight">\(y\)</span> tel que <span class="math notranslate nohighlight">\(f(z)=0\)</span>. Cela conclut.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-162">
+
+<p class="admonition-title"><span class="caption-number">Exercise 146 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir exercice 8.28 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(f\)</span> et <span class="math notranslate nohighlight">\(g\)</span> deux fonctions continues sur <span class="math notranslate nohighlight">\([0,1]\)</span> telles que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\forall x \in [0,1], \qquad 0 &lt; f(x) &lt;g(x).
+\end{equation*}\]</div>
+<p>Montrer qu’il existe <span class="math notranslate nohighlight">\(D&gt;C&gt;1\)</span> tels que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\forall x \in [0,1], \qquad Cf(x) &lt; g(x)&lt;Df(x).
+\end{equation*}\]</div>
+<p>Difficulté : **</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-162"> Exercise 146</a></p>
+<div class="section" id="solution-content">
+<p>On regarde la fonction <span class="math notranslate nohighlight">\(\frac{g}{f}\)</span> définie et continue sur le segment <span class="math notranslate nohighlight">\([0,1]\)</span>, donc bornée. Notons <span class="math notranslate nohighlight">\(m\)</span> son minimum, atteint en <span class="math notranslate nohighlight">\(a\)</span> et <span class="math notranslate nohighlight">\(M\)</span> son maximum. Par hypothèse, <span class="math notranslate nohighlight">\(\frac{g}{f}(a) &gt; 1\)</span> donc <span class="math notranslate nohighlight">\(m&gt;1\)</span>. <span class="math notranslate nohighlight">\(\frac{1+m}{2}\)</span> convient comme valeur de <span class="math notranslate nohighlight">\(C\)</span>. <span class="math notranslate nohighlight">\(M+1\)</span> convient comme valeur de <span class="math notranslate nohighlight">\(D\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-163">
+
+<p class="admonition-title"><span class="caption-number">Exercise 147 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir exercice 8.26 du poly de Mansuy. Déterminer les fonctions <span class="math notranslate nohighlight">\(f \; : \; \mathbb{R} \longrightarrow \mathbb{R}\)</span> continues telles que <span class="math notranslate nohighlight">\(f(\mathbb{Q}) \subset \mathbb{R} \setminus \mathbb{Q}\)</span> et <span class="math notranslate nohighlight">\(f(\mathbb{R} \setminus \mathbb{Q}) \subset \mathbb{Q}\)</span>.
+Difficulté : *** (nécessite les notions de dénombrabilité)</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-163"> Exercise 147</a></p>
+<div class="section" id="solution-content">
+<p>Montrons par l’absurde qu’il n’en existe pas en considérant <span class="math notranslate nohighlight">\(f\)</span> convenable. Si <span class="math notranslate nohighlight">\(f(\mathbb{Q})\)</span> contient deux éléments distincts, soit <span class="math notranslate nohighlight">\(a&lt;b\)</span>, alors par continuité de <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\([a,b] \subset f(\mathbb{R})\)</span> donc <span class="math notranslate nohighlight">\([a,b] \setminus \mathbb{Q} \subset f(\mathbb{Q})\)</span>. Or <span class="math notranslate nohighlight">\([a,b] \setminus \mathbb{Q}\)</span> est indénombrable tandis que <span class="math notranslate nohighlight">\( f(\mathbb{Q})\)</span> est dénombrable. Non! Ainsi <span class="math notranslate nohighlight">\(f(\mathbb{Q})={a}\)</span>. Mais par densité de <span class="math notranslate nohighlight">\(\mathbb{Q}\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> et par continuité de <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(f\)</span> est alors constante égale à <span class="math notranslate nohighlight">\(a\)</span>, ce qui contredit les hypothèses de départ.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-164">
+
+<p class="admonition-title"><span class="caption-number">Exercise 148 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : \R \rightarrow \R\)</span> une fonction continue périodique. Montrer que <span class="math notranslate nohighlight">\(f\)</span> est uniformément continue.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-164"> Exercise 148</a></p>
+<div class="section" id="solution-content">
+<p>Notons <span class="math notranslate nohighlight">\(T\)</span> la période de <span class="math notranslate nohighlight">\(f\)</span>. <span class="math notranslate nohighlight">\(f\)</span> est uniformément continue sur <span class="math notranslate nohighlight">\([0, 2T]\)</span>. Soit <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> et <span class="math notranslate nohighlight">\(\alpha &lt; \frac{T}{2}\)</span> de l’uniforme continuité associé à <span class="math notranslate nohighlight">\(\varepsilon\)</span> :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+
+\forall x, y \in [0, 2T], |x-y| &lt; \alpha \Rightarrow |f(x)-f(y)|&lt;\varepsilon
+\end{equation*}\]</div>
+<p>Soit <span class="math notranslate nohighlight">\(x&lt;y\)</span> <span class="math notranslate nohighlight">\(\in \R\)</span> tels que  <span class="math notranslate nohighlight">\(|x-y| &lt; \alpha\)</span>. On écrit la “division euclidienne” <span class="math notranslate nohighlight">\(x = nT + b\)</span> où <span class="math notranslate nohighlight">\(n \in \N\)</span> et <span class="math notranslate nohighlight">\(b &lt; T\)</span>, et de même <span class="math notranslate nohighlight">\(y = mT + c\)</span>. On a <span class="math notranslate nohighlight">\(n \leq m \leq m+1\)</span>. Il vient <span class="math notranslate nohighlight">\(|f(x)-f(y)| = |f(b)-f((m-n)T+c)| &lt; \varepsilon\)</span> car <span class="math notranslate nohighlight">\(|b-((m-n)T + c)| = |x-y| &lt; \alpha\)</span> et <span class="math notranslate nohighlight">\(0 \leq (m-n)T+c \leq T+c &lt; 2T\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-165">
+
+<p class="admonition-title"><span class="caption-number">Exercise 149 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> et <span class="math notranslate nohighlight">\(g\)</span> continues de <span class="math notranslate nohighlight">\([0,1]\)</span> dans <span class="math notranslate nohighlight">\([0,1]\)</span> qui commutent. Montrer qu’il existe <span class="math notranslate nohighlight">\(x\)</span> tel que <span class="math notranslate nohighlight">\(f(x)=g(x)\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-23">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-165"> Exercise 149</a></p>
+<div class="section" id="solution-content">
+<p>Par l’absurde <span class="math notranslate nohighlight">\(f&lt;g\)</span>. Soit <span class="math notranslate nohighlight">\(l\)</span> un point fixe de <span class="math notranslate nohighlight">\(f\)</span>. Il vient <span class="math notranslate nohighlight">\(f(g(l))=g(f(l))=g(l)\)</span> donc l’ensemble des points fixes de <span class="math notranslate nohighlight">\(f\)</span> est stable par <span class="math notranslate nohighlight">\(g\)</span>. Considérons <span class="math notranslate nohighlight">\(s = \sup \{ l \; | \; f(l)=l\}\)</span>, qui existe car cet ensemble est non vide (résultat classique). Par continuité de <span class="math notranslate nohighlight">\(f\)</span> on a <span class="math notranslate nohighlight">\(f(s)=s\)</span>. Puis <span class="math notranslate nohighlight">\(g(s) \leq s\)</span> par maximalité de <span class="math notranslate nohighlight">\(s\)</span>. De là <span class="math notranslate nohighlight">\(g(s) \leq s = f(s) &lt; g(s)\)</span>. Absurde !</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-166">
+
+<p class="admonition-title"><span class="caption-number">Exercise 150 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : \R \rightarrow \R\)</span> croissante et <span class="math notranslate nohighlight">\(D\)</span> l’ensemble des points en lesquels <span class="math notranslate nohighlight">\(f\)</span> n’est pas continue. Montrer que <span class="math notranslate nohighlight">\(D\)</span> est au plus dénombrable.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-25">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-166"> Exercise 150</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(x \in D\)</span>. On a donc <span class="math notranslate nohighlight">\(f(x^+)-f(x^-)&gt;0\)</span>. On peut donc trouver un rationnel <span class="math notranslate nohighlight">\(r_x \in ]f(x^-)-f(x^+)\)</span>. On définit ainsi une application injective (car strictement croissante) de <span class="math notranslate nohighlight">\(D\)</span> dans <span class="math notranslate nohighlight">\(\Q\)</span>. Il suit que <span class="math notranslate nohighlight">\(D\)</span> est au plus dénombrable.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-167">
+
+<p class="admonition-title"><span class="caption-number">Exercise 151 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> une fonction de <span class="math notranslate nohighlight">\(\mathbb{C}\)</span> dans <span class="math notranslate nohighlight">\( \R\)</span>, continue en <span class="math notranslate nohighlight">\(0\)</span> et en <span class="math notranslate nohighlight">\(1\)</span>, telle que <span class="math notranslate nohighlight">\(f(1)=1\)</span> et <span class="math notranslate nohighlight">\(f(z_1z_2)=f(z_1)f(z_2)\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(f\)</span> est strictement positive sur <span class="math notranslate nohighlight">\(\C^*\)</span></p></li>
+<li><p>Montrer qu’il un existe un réel <span class="math notranslate nohighlight">\(\alpha \geq 0\)</span> tel que <span class="math notranslate nohighlight">\(f(x)=x^{\alpha}\)</span> pour <span class="math notranslate nohighlight">\(x &gt; 0\)</span>.</p></li>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(f(e^{it})=1\)</span> pour tout réel <span class="math notranslate nohighlight">\(t\)</span>.</p></li>
+<li><p>Conclure.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-27">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-167"> Exercise 151</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>La positivité est évidente. Soit <span class="math notranslate nohighlight">\(z \neq 0\)</span>. Supposons par l’absurde <span class="math notranslate nohighlight">\(f(z)=0\)</span>. Alors pour tout <span class="math notranslate nohighlight">\(n \in \N\)</span>, on a <span class="math notranslate nohighlight">\(f(z^{1/2^n})=0\)</span>, donc par continuité en <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(f(1)=0\)</span>, ce qui est absurde.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(g = f_{\R_+^*}\)</span>, continue, strictement positive et multiplicative. On peut donc correctement définir <span class="math notranslate nohighlight">\(h = \ln(g)\)</span> qui est continue et vérifie <span class="math notranslate nohighlight">\(h(ab)=h(a)+h(b)\)</span>. Le raisonnement suivant est alors classique : <span class="math notranslate nohighlight">\(\forall x&gt;0\)</span>, <span class="math notranslate nohighlight">\(\forall n \in \N\)</span>, <span class="math notranslate nohighlight">\(h(x^n) = nh(x)\)</span>, puis <span class="math notranslate nohighlight">\(h(x^{p/q}) = \frac{p}{q}h(x)\)</span>. Par continuité de <span class="math notranslate nohighlight">\(h\)</span> et densité des rationnels, cela s’étend à : pour tout <span class="math notranslate nohighlight">\(y&gt;0\)</span> <span class="math notranslate nohighlight">\(h(x^y) = yh(x)\)</span> et ainsi <span class="math notranslate nohighlight">\(h = h(e)\ln\)</span> !</p></li>
+<li><p>Les racines <span class="math notranslate nohighlight">\(n\)</span>-ièmes de l’unité vérifient <span class="math notranslate nohighlight">\(f(z)^n=1\)</span> donc <span class="math notranslate nohighlight">\(f(z)=1\)</span>. Par densité des racines de l’unité et continuité de <span class="math notranslate nohighlight">\(f\)</span>, c’est vrai pour tout complexe du cercle unité.</p></li>
+<li><p><span class="math notranslate nohighlight">\(f\)</span> est donc de la forme <span class="math notranslate nohighlight">\(\rho e^{it} \mapsto \rho^\alpha\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-168">
+
+<p class="admonition-title"><span class="caption-number">Exercise 152 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f  : \R \rightarrow \R\)</span> uniformément continue et telle que <span class="math notranslate nohighlight">\((f(n))_{n \in \N}\)</span> diverge vers <span class="math notranslate nohighlight">\(+\infty\)</span>. Montrer que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+f \underset{x \rightarrow +\infty}{\rightarrow} +\infty
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-29">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-168"> Exercise 152</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(\delta\)</span> de l’uniforme continuité associé à 1. Soit <span class="math notranslate nohighlight">\(M\)</span> tel que <span class="math notranslate nohighlight">\(M\delta &gt; 1\)</span>. Il vient <span class="math notranslate nohighlight">\(\forall n \in \N, \forall n \leq x &lt; n+1\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f(x) \geq f(n)-M
+\end{equation*}\]</div>
+<p>D’où le résultat.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-169">
+
+<p class="admonition-title"><span class="caption-number">Exercise 153 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E,F\)</span> deux espaces vectoriels normés et <span class="math notranslate nohighlight">\(f : E \rightarrow F\)</span>. On note <span class="math notranslate nohighlight">\(Gr(f) = \{(x,y) \in E \times F \; | \; f(x) = y \}\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que si <span class="math notranslate nohighlight">\(f\)</span> est continue, alors <span class="math notranslate nohighlight">\(Gr(f)\)</span> est fermé dans <span class="math notranslate nohighlight">\(E \times F\)</span>.</p></li>
+<li><p>Montrer la réciproque lorsque <span class="math notranslate nohighlight">\(f(E)\)</span> est inclus dans un compact de <span class="math notranslate nohighlight">\(F\)</span>.</p></li>
+<li><p>Trouver un contre-exemple si <span class="math notranslate nohighlight">\(f(E)\)</span> n’est pas inclus dans un compact.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-31">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-169"> Exercise 153</a></p>
+<div class="section" id="solution-content">
+<p>\leavevmode</p>
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\((x_n, y_n)\)</span> une suite de <span class="math notranslate nohighlight">\(Gr(f)\)</span> qui converge vers <span class="math notranslate nohighlight">\((x,y) \in E\times F\)</span>. Alors <span class="math notranslate nohighlight">\(x_n \rightarrow x\)</span> donc par contuinité de <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(y_n = f(x_n) \rightarrow f(x)\)</span>, puis par unicité de la limité, <span class="math notranslate nohighlight">\(y=f(x)\)</span> et finalement <span class="math notranslate nohighlight">\((x,y) \in Gr(f)\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(x_n\)</span> une suite de <span class="math notranslate nohighlight">\(E\)</span> qui converge vers <span class="math notranslate nohighlight">\(x\in E\)</span>. On pose <span class="math notranslate nohighlight">\(y_n = f(x_n)\)</span>. Soit <span class="math notranslate nohighlight">\(y\)</span> une valeur d’adhérence de <span class="math notranslate nohighlight">\(y_n\)</span>, associée à une extractrice <span class="math notranslate nohighlight">\(\phi\)</span>. Alors <span class="math notranslate nohighlight">\((x_{\phi(n)}, y_{\phi(n)})\)</span> est une suite d e<span class="math notranslate nohighlight">\(Gr(f)\)</span> qui converge vers <span class="math notranslate nohighlight">\((x,y)\)</span>. <span class="math notranslate nohighlight">\(Gr(f)\)</span> étant fermé, on a <span class="math notranslate nohighlight">\((x,y) \in Gr(f)\)</span> i.e. <span class="math notranslate nohighlight">\(y=f(x)\)</span>. Ainsi <span class="math notranslate nohighlight">\(y_n\)</span> admet au plus une seule valeur d’adhérence. <span class="math notranslate nohighlight">\(f(E)\)</span> étant compacte, <span class="math notranslate nohighlight">\(y_n\)</span> en admet au moins une. Finalement <span class="math notranslate nohighlight">\(y_n\)</span> admet une et une seule valeur d’adhérence donc converge, vers <span class="math notranslate nohighlight">\(f(x)\)</span>.</p></li>
+<li><p>Dans <span class="math notranslate nohighlight">\(\R\)</span>,</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+x \mapsto \begin{cases} \frac{1}{x} \quad \textrm{si $x \neq 0$} \\ $0$ \quad \textrm{sinon} \end{cases}
+\end{equation*}\]</div>
+<p>fournit un contre exemple.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-170">
+
+<p class="admonition-title"><span class="caption-number">Exercise 154 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : \R \rightarrow \R\)</span> uniformément continue, bornée, et <span class="math notranslate nohighlight">\(g : \R \rightarrow \R\)</span> continue. Montrer que <span class="math notranslate nohighlight">\(g \circ f\)</span> est uniformément continue</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-33">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-170"> Exercise 154</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>. <span class="math notranslate nohighlight">\(f(\R)\)</span> est borné inclus dans un segment, mettons <span class="math notranslate nohighlight">\(S\)</span>. Par Heine, <span class="math notranslate nohighlight">\(g\)</span> est uniformément continue sur <span class="math notranslate nohighlight">\(S\)</span>. Soit <span class="math notranslate nohighlight">\(\gamma\)</span> de l’uniforme continuité de <span class="math notranslate nohighlight">\(g_{|S}\)</span> associé à <span class="math notranslate nohighlight">\(\varepsilon\)</span>. Soit <span class="math notranslate nohighlight">\(\delta\)</span> de l’uniforme continuité de <span class="math notranslate nohighlight">\(f\)</span> associé <span class="math notranslate nohighlight">\(\gamma\)</span>. Alors</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ |x-y| \leq \delta \Rightarrow |f(x) - f(y)| \leq \gamma \Rightarrow |g(f(x)) - g(f(y))| \leq \varepsilon
+\end{equation*}\]</div>
+<p>ce qui conclut.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-171">
+
+<p class="admonition-title"><span class="caption-number">Exercise 155 </span> ({<span class="math notranslate nohighlight">\(f([a,b]) \subset g([a,b])\)</span>})</p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f,g : [a,b] \rightarrow \R\)</span> continues. On suppose <span class="math notranslate nohighlight">\(\forall x \in [a,b], \exists y \in [a,b], f(x) = g(y)\)</span>. Montrer qu’il existe <span class="math notranslate nohighlight">\(x\in [a,b]\)</span> tel que <span class="math notranslate nohighlight">\(f(x) = g(x)\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-35">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-171"> Exercise 155 ({<span class="math notranslate nohighlight">\(f([a,b]) \subset g([a,b])\)</span>})</a></p>
+<div class="section" id="solution-content">
+<p>Par l’absurde <span class="math notranslate nohighlight">\(f &lt; g\)</span>. <span class="math notranslate nohighlight">\(f\)</span> étant continue, il existe <span class="math notranslate nohighlight">\(x\)</span> tel que <span class="math notranslate nohighlight">\(f(x) = \inf f\)</span>. Puis il existe donc <span class="math notranslate nohighlight">\(y\)</span> tel que <span class="math notranslate nohighlight">\(g(y) = \inf f\)</span>. Alors <span class="math notranslate nohighlight">\(f(y) &lt; \inf f\)</span> ce qui est impossible.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-172">
+
+<p class="admonition-title"><span class="caption-number">Exercise 156 </span> ({Cordes de longueur <span class="math notranslate nohighlight">\(\frac{1}{n}\)</span>})</p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : [0,1] \rightarrow \R\)</span> continue telle que <span class="math notranslate nohighlight">\(f(0) = f(1) = 0\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer qu’il existe <span class="math notranslate nohighlight">\(x \in [0,\frac{1}{2}]\)</span> tel que <span class="math notranslate nohighlight">\(f(x) = f(x + \frac{1}{2}\)</span>.</p></li>
+<li><p>Pour <span class="math notranslate nohighlight">\(n \geq 2\)</span>, montrer qu’il existe <span class="math notranslate nohighlight">\(x \in [0,1- \frac{1}{n}]\)</span> tel que <span class="math notranslate nohighlight">\(f(x) = f(x + \frac{1}{n}\)</span>.</p></li>
+<li><p>Trouver une fonction <span class="math notranslate nohighlight">\(f\)</span> telle que <span class="math notranslate nohighlight">\(\forall x \in [0,1- \frac{2}{5}]\)</span>, <span class="math notranslate nohighlight">\(f(x) \neq f(x + \frac{2}{5})\)</span>.</p></li>
+<li><p>Sans corection ! Montrer qu’il existe <span class="math notranslate nohighlight">\(a &gt; 0\)</span>, tel que : <span class="math notranslate nohighlight">\(\forall b \in ]0,a]\)</span>, <span class="math notranslate nohighlight">\(\exists x \in [0, 1-b]\)</span> tel que <span class="math notranslate nohighlight">\(f(x) = f(x+b)\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-37">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-172"> Exercise 156 ({Cordes de longueur <span class="math notranslate nohighlight">\(\frac{1}{n}\)</span>})</a></p>
+<div class="section" id="solution-content">
+<p>\leavevmode</p>
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(g = f(\cdot) - f (\frac{1}{2} + \cdot)\)</span>. On a <span class="math notranslate nohighlight">\(g(0) + g(\frac{1}{2}) = 0\)</span> donc <span class="math notranslate nohighlight">\(g\)</span> touche <span class="math notranslate nohighlight">\(0\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(g = f(\cdot) - f (\frac{1}{n} + \cdot)\)</span>. On a <span class="math notranslate nohighlight">\(g(0) + g(\frac{1}{n}) + \ldots + g(1 - \frac{1}{n}) = 0\)</span> donc <span class="math notranslate nohighlight">\(g\)</span> touche <span class="math notranslate nohighlight">\(0\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(\phi\)</span> une fonction périodique de plus petite période <span class="math notranslate nohighlight">\(T = \frac{2}{5}\)</span>, par exemple <span class="math notranslate nohighlight">\(\phi(x) = \sin^2(\frac{2\pi x}{5})\)</span>. On va ajouter la bonne pente à <span class="math notranslate nohighlight">\(\phi\)</span> pour avoir l’égalité en <span class="math notranslate nohighlight">\(0\)</span> et <span class="math notranslate nohighlight">\(1\)</span> : <span class="math notranslate nohighlight">\(f(x) = \phi(x) - x\phi(1)\)</span>. Alors écrivons</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f(x) = f(x+T) &amp;\Leftrightarrow T\phi(1) = 0 \\
+&amp;\Leftrightarrow \phi(1) = 0 \\
+&amp;\Leftrightarrow \frac{1}{T} \in N
+\end{align*}\]</div>
+<p>Ainsi avec n’importe quelle période autre que <span class="math notranslate nohighlight">\(\frac{1}{n}\)</span>, on peut trouver des contre-exemples (et en l’occurence avec <span class="math notranslate nohighlight">\(T = \frac{2}{5}\)</span>).</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-173">
+
+<p class="admonition-title"><span class="caption-number">Exercise 157 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un espace de Banach (espace vectoriel normé complet), et <span class="math notranslate nohighlight">\(f : E \rightarrow E\)</span> une fonction <span class="math notranslate nohighlight">\(k\)</span>-lipschitzienne avec <span class="math notranslate nohighlight">\(k &lt; 1\)</span>. On choisit <span class="math notranslate nohighlight">\(u_0 \in E\)</span> quelconque, et on définit <span class="math notranslate nohighlight">\(u_{n+1} = f(u_n)\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(u\)</span> converge vers une limite <span class="math notranslate nohighlight">\(l\)</span>.</p></li>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(l\)</span> est le seul point fixe de <span class="math notranslate nohighlight">\(f\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-39">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-173"> Exercise 157</a></p>
+<div class="section" id="solution-content">
+<p>\leavevmode</p>
+<ol class="simple">
+<li><p>Par récurrence <span class="math notranslate nohighlight">\(||u_{n+1} - u_{n}|| \leq k^n ||u_1 - u_0||\)</span>. Donc <span class="math notranslate nohighlight">\(u\)</span> est de Cauchy, donc converge.</p></li>
+<li><p>Pour l’unicité, soit <span class="math notranslate nohighlight">\(l'\)</span> tel que <span class="math notranslate nohighlight">\(f(l') = l'\)</span>. Alors <span class="math notranslate nohighlight">\(||l'-l|| = ||f(l') - f(l)|| \leq k ||l' -l||\)</span> donc <span class="math notranslate nohighlight">\(||l' - l || = 0\)</span>. Pour le fait que <span class="math notranslate nohighlight">\(l\)</span> est un point fixe, <span class="math notranslate nohighlight">\(f\)</span> est lipschitzienne donc continue, donc <span class="math notranslate nohighlight">\(f(u_n) \rightarrow f(l)\)</span>. Mais <span class="math notranslate nohighlight">\(f(u_n) \rightarrow l\)</span> donc <span class="math notranslate nohighlight">\(l = f(l)\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-174">
+
+<p class="admonition-title"><span class="caption-number">Exercise 158 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(C\)</span> un compact convexe d’un espace vectoriel normé <span class="math notranslate nohighlight">\(E\)</span>. Soit <span class="math notranslate nohighlight">\(f : C \rightarrow C\)</span> 1-lipschitzienne. Montrer que <span class="math notranslate nohighlight">\(f\)</span> admet un point fixe. On pourra introduire <span class="math notranslate nohighlight">\(f_n : x \mapsto \frac{1}{n}a + (1-\frac{1}{n})f(x)\)</span> pour un <span class="math notranslate nohighlight">\(a \in C\)</span> fixé.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Limites de fonctions, continuité-solution-41">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-174"> Exercise 158</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(f_n\)</span> est bien définie de <span class="math notranslate nohighlight">\(C\)</span> dans <span class="math notranslate nohighlight">\(C\)</span> car <span class="math notranslate nohighlight">\(C\)</span> est convexe, et est <span class="math notranslate nohighlight">\(1-\frac{1}{n}\)</span> lipschitzienne, donc admet un point fixe <span class="math notranslate nohighlight">\(l_n\)</span>. La suite <span class="math notranslate nohighlight">\(l_n\)</span> est à valeur dans le compact <span class="math notranslate nohighlight">\(C\)</span> donc admet une valeur d’adhérence <span class="math notranslate nohighlight">\(l\)</span>, associée à une extractrice <span class="math notranslate nohighlight">\(\phi\)</span>. On remarque que la suite <span class="math notranslate nohighlight">\(f_{\phi(n)}(l) = \frac{1}{\phi(n)}a + (1- \frac{1}{\phi(n)})f(l)\)</span> converge vers <span class="math notranslate nohighlight">\(f(l)\)</span>. Puis</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+||f(l) - l || &amp;\leq ||f(l) - f_{\phi(n)}(l)|| + ||f_{\phi(n)}(l) - f_{\phi(n)}(l_{\phi(n)})|| + ||f_{\phi(n)}(l_{\phi(n)}) - l_{\phi(n)}|| + ||l_{\phi(n)} - l|| \\
+&amp;\leq ||f(l) - f_{\phi(n)}(l)||  + (1-\frac{1}{\phi(n)})||l_{\phi(n)} - l|| +  0 +||l_{\phi(n)} - l|| \longrightarrow 0
+\end{align*}\]</div>
+<p>D’où <span class="math notranslate nohighlight">\(f(l) = l\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-175">
+
+<p class="admonition-title"><span class="caption-number">Exercise 159 </span></p>
+<div class="section" id="exercise-content">
+<p>Site de Michel Quercia.
+Evn :</p>
+<ol class="simple">
+<li><ol class="simple">
+<li><p>Prendre <span class="math notranslate nohighlight">\(k_i \in K_i\)</span> tels que <span class="math notranslate nohighlight">\(f(k_i) = x\)</span>, remarquer quepour chaque <span class="math notranslate nohighlight">\(K_i\)</span> on peut extraire une sous-suite convergente dans <span class="math notranslate nohighlight">\(K_i\)</span> et faire l’habituelle composée de dénombrables extractrices.</p></li>
+</ol>
+</li>
+<li><p>95</p></li>
+<li><p>98 avec de Banach (complet) plutôt que de dimension finie, puis 101</p></li>
+<li><p>102</p></li>
+<li><ol class="simple">
+<li><p>Penser au fait que <span class="math notranslate nohighlight">\(||f(\cdot)||\)</span> est continue. Pour la réciproque penser à la caractérisation des applications linéaires continues.</p></li>
+</ol>
+</li>
+<li><p>Montrer que la norme est continue. Solution : elle est 1-lipschitzienne.</p></li>
+</ol>
+<p>Continu :</p>
+<ol class="simple">
+<li><p>30</p></li>
+<li><p>21</p></li>
+<li><p>23</p></li>
+<li><p>17</p></li>
+<li><p>16</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/analyse_reelle"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Fonctions%20usuelles.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Fonctions usuelles</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="D%C3%A9rivabilit%C3%A9.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Dérivabilité</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

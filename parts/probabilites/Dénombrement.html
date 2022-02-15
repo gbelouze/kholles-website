@@ -1,0 +1,644 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dénombrement &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Suites de fonctions" href="../analyse_vectorielle/Suites%20de%20fonctions.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/probabilites/Dénombrement.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Dénombrement</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="denombrement">
+<h1>Dénombrement<a class="headerlink" href="#denombrement" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-243">
+
+<p class="admonition-title"><span class="caption-number">Exercise 393 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(S\)</span> de cardinal <span class="math notranslate nohighlight">\(n \geq 2\)</span> et soit <span class="math notranslate nohighlight">\(A_1,...,A_m\)</span> des parties de <span class="math notranslate nohighlight">\(S\)</span> vérifiant : <span class="math notranslate nohighlight">\(\forall x,y \in S\)</span> avec <span class="math notranslate nohighlight">\(x \neq y\)</span>, il existe <span class="math notranslate nohighlight">\(i\)</span> tel qu’on ait soit <span class="math notranslate nohighlight">\(x\in A_i, y\notin A_i\)</span>, soit <span class="math notranslate nohighlight">\(x \notin A_i, y\in A_i\)</span>. Montrer que <span class="math notranslate nohighlight">\(m \geq \log_2(n)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-243"> Exercise 393</a></p>
+<div class="section" id="solution-content">
+<p>À chaque élément <span class="math notranslate nohighlight">\(x\)</span> de <span class="math notranslate nohighlight">\(S\)</span> on associe une clef <span class="math notranslate nohighlight">\(\phi(x) = (\mathds{1}_{x \in A_1}, \ldots, \mathds{1}_{x\in A_m})\)</span>. La condition de l’énoncé implique que <span class="math notranslate nohighlight">\(\phi\)</span> est injective. Ainsi <span class="math notranslate nohighlight">\(|S| \leq |\{0,1\}^m|\)</span>, i.e. <span class="math notranslate nohighlight">\(n \leq 2^m\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-244">
+
+<p class="admonition-title"><span class="caption-number">Exercise 394 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble de cardinal <span class="math notranslate nohighlight">\(n\)</span>. Dénombrer les <span class="math notranslate nohighlight">\(m\)</span>-uplets <span class="math notranslate nohighlight">\((X_1, X_2, \ldots, X_m) \in \P(E)^m\)</span> tels que <span class="math notranslate nohighlight">\(X_1 \subset X_2 \subset \ldots \subset X_m\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-244"> Exercise 394</a></p>
+<div class="section" id="solution-content">
+<p>Pour chaque élément, on a <span class="math notranslate nohighlight">\(m+1\)</span> choix d’appartenance (à personne, au dernier, aux deux derniers, …, à tout le monde), d’où <span class="math notranslate nohighlight">\((m+1)^n\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-245">
+
+<p class="admonition-title"><span class="caption-number">Exercise 395 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble de cardinal <span class="math notranslate nohighlight">\(n\)</span>, et soit <span class="math notranslate nohighlight">\(p \leq n\)</span>. Dénombrer les <span class="math notranslate nohighlight">\(m\)</span>-uplets <span class="math notranslate nohighlight">\((X_1, X_2, \ldots, X_m) \in \P(E)^m\)</span> tels que <span class="math notranslate nohighlight">\(\bigcap \limits_{i=1}^m X_i\)</span> est de cardinal <span class="math notranslate nohighlight">\(p\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-245"> Exercise 395</a></p>
+<div class="section" id="solution-content">
+<p>À chaque élément on associe une clef d’appartenance à valeur dans <span class="math notranslate nohighlight">\(\{0,1\}^m\)</span>. Exactement <span class="math notranslate nohighlight">\(p\)</span> éléments ont la clef <span class="math notranslate nohighlight">\((1,1,\ldots,1)\)</span>. Il y a <span class="math notranslate nohighlight">\(2^m-1\)</span> autres clefs possibles, d’où finalement <span class="math notranslate nohighlight">\({n \choose p}(2^m-1)^{n-p}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-246">
+
+<p class="admonition-title"><span class="caption-number">Exercise 396 </span></p>
+<div class="section" id="exercise-content">
+<p>On dit que <span class="math notranslate nohighlight">\((a_1,\ldots,a_p) \in \N^p\)</span> est une <span class="math notranslate nohighlight">\(p\)</span>-décomposition de <span class="math notranslate nohighlight">\(n\)</span> si <span class="math notranslate nohighlight">\(n=a_1+\ldots+a_p\)</span>. Si de plus <span class="math notranslate nohighlight">\(\forall i, a_i &gt;0\)</span>, on parle de <span class="math notranslate nohighlight">\(p\)</span>-décomposition stricte. Dénombrer les <span class="math notranslate nohighlight">\(p\)</span>-décompositions et les <span class="math notranslate nohighlight">\(p\)</span>-décomposition stricte.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-246"> Exercise 396</a></p>
+<div class="section" id="solution-content">
+<p>Pour les <span class="math notranslate nohighlight">\(p\)</span>-décompositions strictes. On écrit <span class="math notranslate nohighlight">\(n = 1+1+\ldots+1\)</span> et on transforme <span class="math notranslate nohighlight">\(p-1\)</span> “+” en séparation. On touve donc <span class="math notranslate nohighlight">\({n-1 \choose p-1}\)</span>. Pour les <span class="math notranslate nohighlight">\(p\)</span>-décompositions, on a une bijection entre les <span class="math notranslate nohighlight">\(p\)</span>-décompositions et les <span class="math notranslate nohighlight">\(p\)</span>-décompositions strictes de <span class="math notranslate nohighlight">\(n+p\)</span> et on trouve <span class="math notranslate nohighlight">\({n+p-1 \choose p-1}\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-247">
+
+<p class="admonition-title"><span class="caption-number">Exercise 397 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\((a_i)\)</span> une suite finie de <span class="math notranslate nohighlight">\(mn+1\)</span> réels distincts. Montrer qu’il existe soit une sous-suite décroissante de longueur <span class="math notranslate nohighlight">\(m+1\)</span>, soit une sous-suite croissante de longueur <span class="math notranslate nohighlight">\(n+1\)</span>.
+<em>Indication : Considérer <span class="math notranslate nohighlight">\(\alpha_i\)</span> la longueur de la plus grande sous-suite croissante finissant en <span class="math notranslate nohighlight">\(x_i\)</span>, et <span class="math notranslate nohighlight">\(\beta_i\)</span> de la plus grande suite décroissante.</em></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-247"> Exercise 397</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(f(a_i) = (\alpha_i, \beta_i)\)</span> est injective. Principe des tiroirs.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-248">
+
+<p class="admonition-title"><span class="caption-number">Exercise 398 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver une relation de récurrence sur le nombre d’involutions d’un ensemble à <span class="math notranslate nohighlight">\(n\)</span> éléments. <em>Rappel : une involution est sa propre biijection réciproque.</em></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-248"> Exercise 398</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(u_{n+2} = u_{n+1} + (n+1)u_n\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-249">
+
+<p class="admonition-title"><span class="caption-number">Exercise 399 </span></p>
+<div class="section" id="exercise-content">
+<p>Une barrière circulaire est constituée de 17 poteaux dont 5 sont pourris. Montrer qu’il existe un ensemble de 7 poteaux consécutifs dont 3 sont pourris.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-249"> Exercise 399</a></p>
+<div class="section" id="solution-content">
+<p>Soient <span class="math notranslate nohighlight">\(p_1, \ldots, p_{17}\)</span> ces poteaux. À chaque poteau <span class="math notranslate nohighlight">\(p_i\)</span>, on associe l’ensemble <span class="math notranslate nohighlight">\(E_{p_i}\)</span> qui est l’ensemble des 7 poteaux consécutifs commençant à <span class="math notranslate nohighlight">\(p_i\)</span>. Remarquons que tout poteau <span class="math notranslate nohighlight">\(p\)</span> appartient à exactement 7 tels ensembles. On note également <span class="math notranslate nohighlight">\(E\)</span> l’ensemble des poteaux pourris. Ensuite on définit</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+    \phi : \; \begin{cases}
+        [\![1, n]\!] \rightarrow \mathbb{N} \\
+        i \longmapsto Card(E_{p_i} \cap E)
+    \end{cases}
+\end{equation*}\]</div>
+<p>Supposons par l’absurde que pour tout <span class="math notranslate nohighlight">\(i\)</span>, <span class="math notranslate nohighlight">\(\phi(i) \leq 2\)</span>. On a alors</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ 35 = \sum_{i=1}^{17} \phi(i)
+\leq \sum_{i=1}^{17} 2 = 34
+\end{equation*}\]</div>
+<p>De là une contradiction.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-250">
+
+<p class="admonition-title"><span class="caption-number">Exercise 400 </span> (Chemins du plan)</p>
+<div class="section" id="exercise-content">
+<ol class="simple">
+<li><p>Dénombrer le nombre de chemins de <span class="math notranslate nohighlight">\(\Z^2\)</span> allant de <span class="math notranslate nohighlight">\((0,0)\)</span> à <span class="math notranslate nohighlight">\((a,b)\)</span> en n’effectuant que des déplacements vers le nord ou vers l’est.</p></li>
+<li><p>Combien a-t-on de suite à valeurs entières de taille <span class="math notranslate nohighlight">\(b\)</span> telle que <span class="math notranslate nohighlight">\(\forall n, |u_{n+1} - u_n| = 1\)</span> ? Dans la suite, on considère des chemins n’effectuant que des déplacements NE ou SE.</p></li>
+<li><p>Montrer que l’ensemble des chemins de <span class="math notranslate nohighlight">\((a,\alpha)\)</span> à <span class="math notranslate nohighlight">\((b,\beta)\)</span> qui passent par l’axe des abscisse a même cardinal que l’ensemble des chemins de <span class="math notranslate nohighlight">\((a, -\alpha)\)</span> à <span class="math notranslate nohighlight">\((b, \beta)\)</span> sans contrainte.</p></li>
+<li><p>En déduire le nombre de chemins de <span class="math notranslate nohighlight">\((a, \alpha)\)</span> à <span class="math notranslate nohighlight">\((b,\beta)\)</span> qui ne passent pas par l’axe. Montrer que</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+|\{ C_2 \neq 0, \ldots, C_{2n-2} \neq 0, C_{2n} = 0\} | = \frac{1}{2n-1}|C_{2n}=0| = |C_{2n-2}=0|- |C_{2n}=0|\end{equation*}\]</div>
+<p>et</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+|\{ C_2 \neq 0, \ldots, C_{2n-2} \neq 0, C_{2n} \neq 0\} | = |C_{2n}=0|
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-250"> Exercise 400 (Chemins du plan)</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\({a+b \choose a}\)</span></p></li>
+<li></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-251">
+
+<p class="admonition-title"><span class="caption-number">Exercise 401 </span></p>
+<div class="section" id="exercise-content">
+<p>En combien de façon peut-on paver un damier <span class="math notranslate nohighlight">\(2\times n\)</span> avec des pièces <span class="math notranslate nohighlight">\(2 \times 1\)</span> ?</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-251"> Exercise 401</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(C_n\)</span> ce nombre. <span class="math notranslate nohighlight">\(C_1 = 1\)</span>, et <span class="math notranslate nohighlight">\(C_{n+2} = C_{n+1} + C_n\)</span> donc c’est fibonacci.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-252">
+
+<p class="admonition-title"><span class="caption-number">Exercise 402 </span></p>
+<div class="section" id="exercise-content">
+<p>On note <span class="math notranslate nohighlight">\(F^{(n)}_p\)</span> l’ensemble des parties de <span class="math notranslate nohighlight">\([\![1,n]\!]\)</span> ne contenant pas deux entiers consécutifs. Déterminer <span class="math notranslate nohighlight">\(|F^{(n)}_p|\)</span>. <em>Indication : pour un élément <span class="math notranslate nohighlight">\(a_1 &lt; a_2 &lt; \ldots &lt; a_p\)</span> de <span class="math notranslate nohighlight">\(F^{(n)}_p\)</span>, considérer <span class="math notranslate nohighlight">\(b_k = a_k-k+1\)</span>.</em></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-252"> Exercise 402</a></p>
+<div class="section" id="solution-content">
+<p>L’indication donne une bijection entre <span class="math notranslate nohighlight">\(F_p^{(n)}\)</span> et les suites de <span class="math notranslate nohighlight">\(p\)</span> entiers de <span class="math notranslate nohighlight">\([1, n-p + 1]\)</span> strictement croissantes. On trouve donc <span class="math notranslate nohighlight">\({n-p+1 \choose p}\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-253">
+
+<p class="admonition-title"><span class="caption-number">Exercise 403 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> un sous ensemble fini de <span class="math notranslate nohighlight">\(\mathbb{P}\)</span> l’ensemble des nombres premiers, et <span class="math notranslate nohighlight">\(n = |\mathcal{P}|\)</span>. Soit <span class="math notranslate nohighlight">\(x_1, \ldots, x_{n+1}\)</span> des entiers, dont les facteurs premiers sont contenus dans <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>. Montrer qu’il existe un sous-ensemble <span class="math notranslate nohighlight">\(I\)</span> non vide de <span class="math notranslate nohighlight">\([\![1,n+1]\!]\)</span> tel que <span class="math notranslate nohighlight">\(\prod_{i \in I} x_i\)</span> soit un carré parfait.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-253"> Exercise 403</a></p>
+<div class="section" id="solution-content">
+<p>Il suffit que la valuation <span class="math notranslate nohighlight">\(p\)</span>-adique du produit soit paire, pour tout <span class="math notranslate nohighlight">\(p \in \mathcal{P}\)</span>. On va procéder par récurrence.
+<strong>initialisation</strong> Pour <span class="math notranslate nohighlight">\(n=1\)</span>, soit <span class="math notranslate nohighlight">\(x_1\)</span> ou <span class="math notranslate nohighlight">\(x_2\)</span> est de valuation <span class="math notranslate nohighlight">\(p_1\)</span>-adique paire et est un carré parfait, soit les deux ont une valuation <span class="math notranslate nohighlight">\(p_1\)</span>-adique impaire et leur produit est un carré parfait.
+<strong>récurrence</strong> <span class="math notranslate nohighlight">\(X = \{x_1, \ldots, x_{n+1}\}\)</span> sont donnés. On peut partitionner <span class="math notranslate nohighlight">\(X\)</span> selon la parité de la valuation <span class="math notranslate nohighlight">\(p_n\)</span>-adique de ses éléments : <span class="math notranslate nohighlight">\(X = X_0 \sqcup X_1\)</span>.</p>
+<p>Si <span class="math notranslate nohighlight">\(|X_1| \leq 1\)</span>, on peut choisir <span class="math notranslate nohighlight">\(n\)</span>-éléments dans <span class="math notranslate nohighlight">\(X_0\)</span>, et par hypothèse de récurrence extraire de ses <span class="math notranslate nohighlight">\(n\)</span> éléments un produit dont la valuation <span class="math notranslate nohighlight">\(p_i\)</span>-adique est paire pour <span class="math notranslate nohighlight">\(i=1, \ldots, n-1\)</span>. De plus, la valuation <span class="math notranslate nohighlight">\(p_n\)</span>-adique de ce produit est paire par construction de <span class="math notranslate nohighlight">\(X_0\)</span>, le produit est donc un carré parfait.</p>
+<p>Sinon on peut choisir <span class="math notranslate nohighlight">\(x, y \in X_1\)</span>. Par hypothèse de récurrence cela fournit <span class="math notranslate nohighlight">\(C_x\)</span> (respectivement <span class="math notranslate nohighlight">\(C_y\)</span>) un sous ensembles de <span class="math notranslate nohighlight">\(X \setminus x\)</span> (respectivement <span class="math notranslate nohighlight">\(X \setminus y\)</span>), tel que le produit <span class="math notranslate nohighlight">\(P_x\)</span> de ses éléments est de valuation <span class="math notranslate nohighlight">\(p_i\)</span>-adique paire pour <span class="math notranslate nohighlight">\(i=1, \ldots, n-1\)</span>. Alors soit l’un des deux produits <span class="math notranslate nohighlight">\(P_x\)</span> ou <span class="math notranslate nohighlight">\(P_y\)</span> est de valuation <span class="math notranslate nohighlight">\(p_n\)</span>-adique paire, auquel cas ce produit est un carré parfait, soit les deux sont de valuation <span class="math notranslate nohighlight">\(p_n\)</span>-adique impaire. Dans ce dernier cas, on regarde <span class="math notranslate nohighlight">\(C = C_x \ XOR \  C_y\)</span>, c’est-à-dire que <span class="math notranslate nohighlight">\(C\)</span> contient les éléments de <span class="math notranslate nohighlight">\(X\)</span> qui sont dans <span class="math notranslate nohighlight">\(C_x\)</span> ou dans <span class="math notranslate nohighlight">\(C_y\)</span>, mais pas les deux. Il suffit alors de remarquer que pour tout <span class="math notranslate nohighlight">\(p \in \mathcal{P}\)</span>, la parité du nombre d’éléments de valuation <span class="math notranslate nohighlight">\(p\)</span>-adique impaire est la même dans <span class="math notranslate nohighlight">\(C_x\)</span> et dans <span class="math notranslate nohighlight">\(C_y\)</span>, et donc il y a un nombre pair de tels éléments dans leur <span class="math notranslate nohighlight">\(XOR\)</span>. Cela justifie que le produit des éléments de <span class="math notranslate nohighlight">\(C\)</span> est un carré parfait.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/probabilites"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="../analyse_vectorielle/Suites%20de%20fonctions.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Suites de fonctions</p>
+        </div>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

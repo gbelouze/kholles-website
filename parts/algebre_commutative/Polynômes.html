@@ -1,0 +1,778 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polynômes &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Fractions rationnelles" href="Fractions%20rationnelles.html" />
+    <link rel="prev" title="Anneaux" href="Anneaux.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/algebre_commutative/Polynômes.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Polynômes</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="polynomes">
+<h1>Polynômes<a class="headerlink" href="#polynomes" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-292">
+
+<p class="admonition-title"><span class="caption-number">Exercise 263 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que les fonctions trigonométriques ne sont pas des polynômes</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-292"> Exercise 263</a></p>
+<div class="section" id="solution-content">
+<p>On dérive pour <span class="math notranslate nohighlight">\(\cos\)</span> et <span class="math notranslate nohighlight">\(\sin\)</span>, et on regarde l’équation <span class="math notranslate nohighlight">\(\tan^2 = 1 + \tan'\)</span> pour <span class="math notranslate nohighlight">\(\tan\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-293">
+
+<p class="admonition-title"><span class="caption-number">Exercise 264 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que le polynôme <span class="math notranslate nohighlight">\(\sum_{k=0}^{2n} \frac{X^k}{k!}\)</span> n’admet pas de racine réelle.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-293"> Exercise 264</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(P\)</span> tend vers <span class="math notranslate nohighlight">\(+\infty\)</span> en <span class="math notranslate nohighlight">\(\pm \infty\)</span> donc <span class="math notranslate nohighlight">\(P\)</span> atteint son <span class="math notranslate nohighlight">\(\inf\)</span>, mettons en <span class="math notranslate nohighlight">\(a\)</span>. On a aussi <span class="math notranslate nohighlight">\(P = P' + \frac{X^2n}{(2n)!}\)</span> d’où <span class="math notranslate nohighlight">\(P(a) = \frac{a^{2n}}{(2n!)}\)</span> qui est strictement positif, sauf si <span class="math notranslate nohighlight">\(a=0\)</span>, cas que l’on peut rejeter à la main. Remarque : l’idée de dériver est naturelle par analogie avec l’exponentielle.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-294">
+
+<p class="admonition-title"><span class="caption-number">Exercise 265 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(P\)</span> un polynôme de <span class="math notranslate nohighlight">\(\C[X]\)</span>. Déterminer <span class="math notranslate nohighlight">\(P(\C)\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-294"> Exercise 265</a></p>
+<div class="section" id="solution-content">
+<p>Si <span class="math notranslate nohighlight">\(deg(P) &gt; 0\)</span>, le polynôme <span class="math notranslate nohighlight">\(P - z\)</span> admet une racine complexe pour tout <span class="math notranslate nohighlight">\(z \in \C\)</span> donc <span class="math notranslate nohighlight">\(P(\C) = \C\)</span>. Sinon, <span class="math notranslate nohighlight">\(P(\C) = P(0)\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-295">
+
+<p class="admonition-title"><span class="caption-number">Exercise 266 </span></p>
+<div class="section" id="exercise-content">
+<p>Résoudre dans <span class="math notranslate nohighlight">\(\C[X]\)</span> l’équation <span class="math notranslate nohighlight">\(P(X^2)=P(X)P(X+1)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-295"> Exercise 266</a></p>
+<div class="section" id="solution-content">
+<p>On procède par analyse synthèse. On a <span class="math notranslate nohighlight">\(r\)</span> racine implique <span class="math notranslate nohighlight">\(r^2\)</span> racine et <span class="math notranslate nohighlight">\((r-1)^2\)</span> racine. On suppose <span class="math notranslate nohighlight">\(P\)</span> non nul. Cela amène à trouver les <span class="math notranslate nohighlight">\(E\)</span> ensembles finis stables par <span class="math notranslate nohighlight">\(x \mapsto x^2\)</span> et par <span class="math notranslate nohighlight">\(x \mapsto (x-1)^2\)</span>. Soit un tel <span class="math notranslate nohighlight">\(E\)</span>. On a <span class="math notranslate nohighlight">\(\forall z \in E, \; |z| \in \{0,1\}\)</span>. Puis en regardant <span class="math notranslate nohighlight">\(|z-1|^2\)</span> pour <span class="math notranslate nohighlight">\(z\neq 0, z \neq 1\)</span>, on montre que <span class="math notranslate nohighlight">\(E \subset \{ 0, 1, -j, -\bar{j} \}\)</span>. La stabilité par carré impose <span class="math notranslate nohighlight">\(E \subset \{ 0, 1\}\)</span>. À partir de là la synthèse est facile et on trouve <span class="math notranslate nohighlight">\(0, 1, X^n(X-1)^n\)</span> pour <span class="math notranslate nohighlight">\(n \in \N\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-296">
+
+<p class="admonition-title"><span class="caption-number">Exercise 267 </span> (Gauss-Lucas)</p>
+<div class="section" id="exercise-content">
+<p>Montrer que les racines de la dérivée d’un polynôme sont comprises dans l’enveloppe convexe des racines de ce polynôme. Conséquence : Soit <span class="math notranslate nohighlight">\(P\)</span> polynôme dont un des coefficients est nuls. Montrer que <span class="math notranslate nohighlight">\(0\)</span> appartient à l’enveloppe convexe des racines de <span class="math notranslate nohighlight">\(P\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-296"> Exercise 267 (Gauss-Lucas)</a></p>
+<div class="section" id="solution-content">
+<p>On dérive <span class="math notranslate nohighlight">\(\log(P)\)</span>. Pour la conséquence, <span class="math notranslate nohighlight">\(0\)</span> est racine de la dérivée <span class="math notranslate nohighlight">\(k-ième\)</span> dont les racines sont incluses dans l’enveloppe convexe de <span class="math notranslate nohighlight">\(P\)</span> par Gauss-Lucas itéré.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-297">
+
+<p class="admonition-title"><span class="caption-number">Exercise 268 </span> (Régionnement)</p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(P = X^n + a_{n-1}X^{n-1} + \ldots + a_0\)</span>. Montrer que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \max \{ |z|, \; z \in Z(P) \} \leq 1 + \underset{0 \leq i \leq n-1 }{\max} |a_i|
+\end{equation*}\]</div>
+<p>Conséquence :
+Soit <span class="math notranslate nohighlight">\((P_k) \in \C_n[X]\)</span> une suite de polynômes unitaires à coefficients bornés par <span class="math notranslate nohighlight">\(M\)</span>. Montrer qu’il existe une extractrice <span class="math notranslate nohighlight">\(\phi\)</span> telle que <span class="math notranslate nohighlight">\(Z(P_{\phi(k)})\)</span> converge.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-297"> Exercise 268 (Régionnement)</a></p>
+<div class="section" id="solution-content">
+<p>On pose <span class="math notranslate nohighlight">\(\mu = \underset{0 \leq i \leq n-1 }{\max} |a_i|\)</span>. Soit <span class="math notranslate nohighlight">\(z \in Z(P)\)</span>. On a <span class="math notranslate nohighlight">\(|z|^n \leq \sum_{k=0}^{n-1} |a_k||z_k| \leq \mu \frac{|z|^n-1}{|z|-1}\)</span> si <span class="math notranslate nohighlight">\(|z| \neq 1\)</span>. Supposons <span class="math notranslate nohighlight">\(|z| &gt; 1\)</span> Il vient</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ |z|^n(|z|-1) \leq \mu (|z|^n-1) \leq \mu|z|^n
+\end{equation*}\]</div>
+<p>Et de là le résultat. La conséquence est immédiate.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-298">
+
+<p class="admonition-title"><span class="caption-number">Exercise 269 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(P \in \Q[X]\)</span> tel que <span class="math notranslate nohighlight">\(1+\sqrt{2}\)</span> soit une racine de <span class="math notranslate nohighlight">\(P\)</span>. Calculer <span class="math notranslate nohighlight">\(P(1-\sqrt{2})\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-298"> Exercise 269</a></p>
+<div class="section" id="solution-content">
+<p>On regarde le polynôme minimal de l’idéal des polynôme qui s’annulent en <span class="math notranslate nohighlight">\(1+\sqrt{2}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-299">
+
+<p class="admonition-title"><span class="caption-number">Exercise 270 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(F\)</span> une partie fermée de <span class="math notranslate nohighlight">\(\C\)</span> et <span class="math notranslate nohighlight">\(P_k = X^n + a_{n-1,k}X^{n-1} + \ldots + a_{0,k}\)</span> une suite de polynôme tels que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\begin{cases}
+    a_{l,k} \rightarrow a_l\\
+    Z(P_k) \subset F
+\end{cases}
+\end{equation*}\]</div>
+<p>On note <span class="math notranslate nohighlight">\(P = \sum_{l=0}^na_lX^l\)</span>. Montrer que <span class="math notranslate nohighlight">\(Z(P) \subset F\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-299"> Exercise 270</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(a \in \C \setminus F\)</span>. On a pour tout <span class="math notranslate nohighlight">\(k\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ |P_k(a)| = \prod_{j=1}^n |a-z_{j,k}| \geq d(a, F)^n &gt; 0
+\end{equation*}\]</div>
+<p>À la limite, <span class="math notranslate nohighlight">\(|P(a)| \geq d(a, F)^n &gt; 0\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-300">
+
+<p class="admonition-title"><span class="caption-number">Exercise 271 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que tout polynôme positif sur <span class="math notranslate nohighlight">\(\R\)</span> est somme de deux carrés.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-300"> Exercise 271</a></p>
+<div class="section" id="solution-content">
+<p>D’abord on remarque que l’ensemble des polynômes sommes de deux carrés est stable par produit (cf exercice de complexes). Puis si <span class="math notranslate nohighlight">\(P = X^2 + 2aX +b\)</span> est irréductible, on a <span class="math notranslate nohighlight">\(a^2-b &lt; 0\)</span>. De là <span class="math notranslate nohighlight">\(P = (X+a)^2+(\sqrt{b-a^2})^2\)</span>. Puis si <span class="math notranslate nohighlight">\(P\)</span> admet <span class="math notranslate nohighlight">\(x\)</span> pour racine, <span class="math notranslate nohighlight">\(P \sim_{x} \lambda(X-x)^{\alpha}\)</span>. Il vient <span class="math notranslate nohighlight">\(\lambda &gt; 0\)</span> et <span class="math notranslate nohighlight">\(\alpha\)</span> pair. Cela conclut.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-301">
+
+<p class="admonition-title"><span class="caption-number">Exercise 272 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer les polynômes <span class="math notranslate nohighlight">\(P\)</span> tels que <span class="math notranslate nohighlight">\(P'\)</span> divise <span class="math notranslate nohighlight">\(P\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-301"> Exercise 272</a></p>
+<div class="section" id="solution-content">
+<p>Ok avec d’Alembert Gauss. Sinon on explicite la relation <span class="math notranslate nohighlight">\(P=QP'\)</span> de divisibilité et on dérive <span class="math notranslate nohighlight">\(k\)</span> fois pour <span class="math notranslate nohighlight">\(k\)</span> plus petit que <span class="math notranslate nohighlight">\(n\)</span> et on évalue en la racine de <span class="math notranslate nohighlight">\(Q\)</span>. Ou encore avec les fractions rationnelles et en regardant <span class="math notranslate nohighlight">\(\frac{P'}{P}\)</span>, <span class="math notranslate nohighlight">\(P\)</span> a une seule racine.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-302">
+
+<p class="admonition-title"><span class="caption-number">Exercise 273 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit P un polynôme tel que les restes de la division euclidienne de <span class="math notranslate nohighlight">\(P\)</span> par <span class="math notranslate nohighlight">\((X - 1)\)</span> , <span class="math notranslate nohighlight">\((X - 2)\)</span> et <span class="math notranslate nohighlight">\((X - 3)\)</span> soient <span class="math notranslate nohighlight">\(3\)</span>, <span class="math notranslate nohighlight">\(7\)</span> et <span class="math notranslate nohighlight">\(13\)</span> respectivement. Déterminer le reste de la division euclidienne de <span class="math notranslate nohighlight">\(P\)</span> par <span class="math notranslate nohighlight">\((X-1)(X-2)(X-3)\)</span> .</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-302"> Exercise 273</a></p>
+<div class="section" id="solution-content">
+<p>Ce reste <span class="math notranslate nohighlight">\(R\)</span> est de degré au plus <span class="math notranslate nohighlight">\(2\)</span> et coïncide avec l’interpolateur de Lagrange associé à <span class="math notranslate nohighlight">\((1,3), (2,7), (3,13)\)</span> en <span class="math notranslate nohighlight">\(3\)</span> points, donc ces deux polynômes sont égaux.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-303">
+
+<p class="admonition-title"><span class="caption-number">Exercise 274 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(P \in \C[X]\)</span>, on suppose que pour tout <span class="math notranslate nohighlight">\(x \in \R\)</span>, <span class="math notranslate nohighlight">\(P(x) \in \R\)</span>. Montrer que <span class="math notranslate nohighlight">\(P \in \R[X]\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-23">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-303"> Exercise 274</a></p>
+<div class="section" id="solution-content">
+<p>Par exemple avec un polynôme interpolateur de Lagrange sur <span class="math notranslate nohighlight">\(deg(P)+1\)</span> points réels. Ou sinon avec le polynôme <span class="math notranslate nohighlight">\(\bar{P}\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-304">
+
+<p class="admonition-title"><span class="caption-number">Exercise 275 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer <span class="math notranslate nohighlight">\(m&gt;0\)</span> tel que le polynôme <span class="math notranslate nohighlight">\(X^4-(3m+2)X^2+m^2\)</span> ait ses racines en progression arithmétique.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-25">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-304"> Exercise 275</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(P\)</span> est pair donc ses racines sont réparties autour de <span class="math notranslate nohighlight">\(0\)</span>. Ainsi il existe <span class="math notranslate nohighlight">\(a&gt;0\)</span> tel que <span class="math notranslate nohighlight">\(-3a, -a, a, 3a\)</span> sont les racines de <span class="math notranslate nohighlight">\(P\)</span>. Ainsi <span class="math notranslate nohighlight">\(P=(X^2-9a^2)(X^2-a^2) = X^4 - 10a^2 +9a^4\)</span>. On a donc</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\begin{cases}
+10a^2 &amp;= 3m+2 \\
+9a^4 &amp;= m^2
+\end{cases}
+\end{equation*}\]</div>
+<p>De là <span class="math notranslate nohighlight">\(m = 3a^2\)</span> puis <span class="math notranslate nohighlight">\(a=\sqrt{2}\)</span>, ce qui correspond à <span class="math notranslate nohighlight">\(m=6\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-305">
+
+<p class="admonition-title"><span class="caption-number">Exercise 276 </span></p>
+<div class="section" id="exercise-content">
+<p>Résoudre l’équation <span class="math notranslate nohighlight">\(4P=(X-1)P'+P''\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-27">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-305"> Exercise 276</a></p>
+<div class="section" id="solution-content">
+<p>Soi t<span class="math notranslate nohighlight">\(n\)</span> le degré de <span class="math notranslate nohighlight">\(P\)</span>. On écrit <span class="math notranslate nohighlight">\(P = a_nX^n+Q\)</span> avec <span class="math notranslate nohighlight">\(deg(Q&lt;n)\)</span>. En réinjectant dans l’équation on a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+4a_nX^n-na_nX^n+R=0
+\end{equation*}\]</div>
+<p>avec <span class="math notranslate nohighlight">\(deg(R)&lt;n\)</span>, d’où <span class="math notranslate nohighlight">\(n=4\)</span>. Ensuite après dérivations successives de l’équation et évaluation en <span class="math notranslate nohighlight">\(1\)</span>, on obtient <span class="math notranslate nohighlight">\(4P(1)=P''(1)\)</span>, <span class="math notranslate nohighlight">\(3P'(1)=P^{(3)}(1)\)</span>, <span class="math notranslate nohighlight">\(2P''(1)=P^{(4)}(1)\)</span> et <span class="math notranslate nohighlight">\(P^{(3)}(1)=P^{(5)}(1)=0\)</span>, d’où <span class="math notranslate nohighlight">\(P'(1)=0\)</span>. On effectue un développement de Taylor en <span class="math notranslate nohighlight">\(1\)</span> pour obtenir</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ P(X) = P(1) \left (1 +2(X-1)^2+\frac{1}{3}(X-1)^4 \right )
+\end{equation*}\]</div>
+<p>On vérifie que tous les polynômes de cette forme conviennent.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-306">
+
+<p class="admonition-title"><span class="caption-number">Exercise 277 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(P \in \R[X]\)</span> unitaire. Montrer que <span class="math notranslate nohighlight">\(P\)</span> est scindé dans <span class="math notranslate nohighlight">\(\R[X]\)</span> si et seulement si</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall z \in \C, \; |P(z)| \geq |\Im(z)|^{deg(P)}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-29">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-306"> Exercise 277</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\((\Rightarrow) \;\)</span> On écrit <span class="math notranslate nohighlight">\(P = \prod(X-a_i)\)</span>, avec <span class="math notranslate nohighlight">\(a_i \in \R\)</span>. On évalue en <span class="math notranslate nohighlight">\(z = x+iy\)</span> :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+|P(z)| &amp;= \prod |(x-a_i) + iy| \\
+&amp;\geq \prod |y| =  |\Im(z)|^{deg(P)}
+\end{align*}\]</div>
+<p><span class="math notranslate nohighlight">\((\Leftarrow) \;\)</span> Si <span class="math notranslate nohighlight">\(P\)</span> admet une racine non réelle, on a une contradiction en évaluant en cette racine. On conclut avec D’Alembert-Gauss.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-307">
+
+<p class="admonition-title"><span class="caption-number">Exercise 278 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(P\)</span> un polynôme de degré <span class="math notranslate nohighlight">\(n\)</span> tel que <span class="math notranslate nohighlight">\(\forall k \in \{ 0, 1, \ldots, n\}, \; P(k)=\frac{k}{k+1}\)</span>. Calculer <span class="math notranslate nohighlight">\(P(n+1)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-31">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-307"> Exercise 278</a></p>
+<div class="section" id="solution-content">
+<p>On regarde <span class="math notranslate nohighlight">\(Q = (X+1)P-X\)</span>, de degré <span class="math notranslate nohighlight">\(n+1\)</span> et nul en <span class="math notranslate nohighlight">\(0,1,\ldots, n\)</span>. Il vient <span class="math notranslate nohighlight">\(Q = a\prod_{i=0}^n(X-i)\)</span>. Mais <span class="math notranslate nohighlight">\(Q(-1)=1\)</span> donc <span class="math notranslate nohighlight">\(a=\frac{(-1)^{n+1}}{(n+1)!}\)</span>. De là <span class="math notranslate nohighlight">\(P(n+1) = \frac{n+1+Q(n+1)}{n+2} = \frac{n+1+(-1)^{n+1}}{n+2}\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-308">
+
+<p class="admonition-title"><span class="caption-number">Exercise 279 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer les <span class="math notranslate nohighlight">\(P\)</span> tels que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ P(\cos(t)) + P(\sin(t))=1
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-33">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-308"> Exercise 279</a></p>
+<div class="section" id="solution-content">
+<p>En remplaçant <span class="math notranslate nohighlight">\(t\)</span> par <span class="math notranslate nohighlight">\(-t\)</span>, il vient que <span class="math notranslate nohighlight">\(P(X)\)</span> et <span class="math notranslate nohighlight">\((P-X)\)</span> coïncident sur une infinité de valeurs, donc <span class="math notranslate nohighlight">\(P\)</span> est pair. Ainsi <span class="math notranslate nohighlight">\(P\)</span> s’écrit comme un polynômr en <span class="math notranslate nohighlight">\(X^2\)</span>, notons le <span class="math notranslate nohighlight">\(Q\)</span>, qui vérifie</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ Q(\cos^2(t)) + Q(\sin^2(t))=1
+\end{equation*}\]</div>
+<p>donc <span class="math notranslate nohighlight">\(Q(X)+Q(1-X)=1\)</span>. Ainsi, <span class="math notranslate nohighlight">\(R=Q(X+\frac{1}{2})-\frac{1}{2}\)</span> est impair (penser au centre de symétrie du graphe de <span class="math notranslate nohighlight">\(Q\)</span>). On peut donc écrire <span class="math notranslate nohighlight">\(R=XU(X^2)\)</span>.</p>
+<p>Réciproquement ça marche (mais il reste un peu de calcul).</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-309">
+
+<p class="admonition-title"><span class="caption-number">Exercise 280 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f\)</span> une fonction localement polynomiale, i.e. <span class="math notranslate nohighlight">\(\forall x \in \R\)</span>, <span class="math notranslate nohighlight">\(\exists \varepsilon &gt; 0, P_x \in \R[X]\)</span>, <span class="math notranslate nohighlight">\(f = P_x\)</span> sur <span class="math notranslate nohighlight">\(]x-\varepsilon, x+\varepsilon[\)</span>. Montrer que <span class="math notranslate nohighlight">\(f\)</span> est un polynôme.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Polynômes-solution-35">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-309"> Exercise 280</a></p>
+<div class="section" id="solution-content">
+<p>Si elle ne l’est pas, soit <span class="math notranslate nohighlight">\(s = \inf \{ x &gt; 0 \; | \; f(x) \neq \P_0(x)\}\)</span>. Par hypothèse, <span class="math notranslate nohighlight">\(s &gt; 0\)</span>. Or <span class="math notranslate nohighlight">\(P_s\)</span> et <span class="math notranslate nohighlight">\(P_0\)</span> coïncident sur un intervalle, donc <span class="math notranslate nohighlight">\(P_s = P_0\)</span>, donc <span class="math notranslate nohighlight">\(s\)</span> n’est pas l’infinimum.
+Remarque : avec le théorème de Baire, l’hypothèse plus faible <span class="math notranslate nohighlight">\(\forall x, \exists n, f^{(n)}(x) = 0\)</span> suffit.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/algebre_commutative"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Anneaux.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Anneaux</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Fractions%20rationnelles.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Fractions rationnelles</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

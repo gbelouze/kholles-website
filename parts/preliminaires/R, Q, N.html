@@ -1,0 +1,911 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>R, Q, N &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Suites numériques" href="../analyse_reelle/Suites%20num%C3%A9riques.html" />
+    <link rel="prev" title="Manipulations algébriques" href="Manipulations%20alg%C3%A9briques.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/preliminaires/R, Q, N.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>R, Q, N</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="r-q-n">
+<h1>R, Q, N<a class="headerlink" href="#r-q-n" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-77">
+
+<p class="admonition-title"><span class="caption-number">Exercise 76 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer qu’une union dénombrable d’ensemble dénombrable est dénombrable.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-78">
+
+<p class="admonition-title"><span class="caption-number">Exercise 77 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\sigma: \N \rightarrow \N\)</span> une bijection. Montrer que l’ensemble des <span class="math notranslate nohighlight">\(n\)</span> tels que <span class="math notranslate nohighlight">\(\sigma(n) \geq n\)</span> est infini.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-2">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-78"> Exercise 77</a></p>
+<div class="section" id="solution-content">
+<p>On va montrer que l’ensemble des <span class="math notranslate nohighlight">\(\{ \sigma \; | \; \exists n \sigma = \sigma(n) \textrm{ and } \sigma(n) \geq n \} \)</span> n’est pas majoré, cela conclura par bijectivité de <span class="math notranslate nohighlight">\(\sigma\)</span>. Soit <span class="math notranslate nohighlight">\(N \in \N\)</span>, et considérons l’ensemble <span class="math notranslate nohighlight">\(\sigma([\![1, N]\!]\)</span>.</p>
+<ul class="simple">
+<li><p>Si <span class="math notranslate nohighlight">\(\sigma([\![1, N]\!] = [\![1, N]\!]\)</span> alors <span class="math notranslate nohighlight">\(\sigma(N+1) \geq N+1\)</span>.</p></li>
+<li><p>Sinon <span class="math notranslate nohighlight">\(\exists k \leq N\)</span> tel que <span class="math notranslate nohighlight">\(\sigma(k) &gt; N\)</span> i.e. <span class="math notranslate nohighlight">\(\sigma(k) \geq N+1\)</span>.</p></li>
+</ul>
+</div>
+</div>
+<div class="exercise admonition" id="exo-79">
+
+<p class="admonition-title"><span class="caption-number">Exercise 78 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\sigma\)</span> une bijection de <span class="math notranslate nohighlight">\(\N^*\)</span> dans <span class="math notranslate nohighlight">\(\N^*\)</span> telle que <span class="math notranslate nohighlight">\((\frac{\sigma(n)}{n})\)</span> converge. Que dire de la limite ? Trouver un exemple où <span class="math notranslate nohighlight">\((\frac{\sigma(n)}{n})\)</span> ne converge pas.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-4">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-79"> Exercise 78</a></p>
+<div class="section" id="solution-content">
+<p>On va montrer que la limite est <span class="math notranslate nohighlight">\(1\)</span>. Soit <span class="math notranslate nohighlight">\(l\)</span> la limite</p>
+<ol class="simple">
+<li><p>Si <span class="math notranslate nohighlight">\(l&lt;1\)</span>, soit <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> suffisamment petit, il existe <span class="math notranslate nohighlight">\(N\)</span> tel que <span class="math notranslate nohighlight">\(\forall n \geq N\)</span>, <span class="math notranslate nohighlight">\(\frac{\sigma(n)}{n} &lt; 1-\varepsilon\)</span>. Soit <span class="math notranslate nohighlight">\(M = \max{\sigma(1), \ldots, \sigma(N)}\)</span>, et <span class="math notranslate nohighlight">\(K(M) = \lfloor \frac{M}{1-\varepsilon} \rfloor\)</span>. Quitte à prendre <span class="math notranslate nohighlight">\(M\)</span> encore plus grand, <span class="math notranslate nohighlight">\(K \geq M+1\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-80">
+
+<p class="admonition-title"><span class="caption-number">Exercise 79 </span></p>
+<div class="section" id="exercise-content">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Trouver une injection de $\R$ vers $\P(\N)$.
+1. Trouver une injection de $\P(\N)$ vers $\R$.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-6">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-80"> Exercise 79</a></p>
+<div class="section" id="solution-content">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. On définit l&#39;image de $x$ par $\phi$ de la manière suivante : si le développement de $x$ est
+$ x=0,a_1a_2\ldots
+$
+on pose \begin{equation*}
+ \phi(x) = \{ 1a_{\frac{n(n+1)}{2}}\ldots a_{\frac{(n+1)(n+2)}{2}-1} \; | \; n \in \N^* \}
+\end{equation*}
+
+Meilleure solution : prendre la réciproque de la question 2, en binaire.
+2. On définit l&#39;image de $A \in \P(\N)$ par $\psi$ de la manière suivante:
+\begin{equation*}
+ \psi(x) = \sum_{n=1}^{+\infty} \mathds{1}_{n \in A} 10^{-n}
+\end{equation*}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-81">
+
+<p class="admonition-title"><span class="caption-number">Exercise 80 </span></p>
+<div class="section" id="exercise-content">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Soit $n \in \N^*$ et $a_1, \ldots, a_n$ des éléments de $[\![0,9]\!]$ non tous égaux à $9$. On note $x$ le réel dont le développement décimal est $0,a_1\ldots a_na_1\ldots a_na_1\ldots a_n\ldots$. Justifier l&#39;existence et trouver $p,q \in \N$ tels que $x= \frac{p}{q}$.
+1. Réciproquement, montrer que si $x$ est rationnel, alors son développement décimal est périodique à partir d&#39;un certain rang. Indication : on admettra que si $u$ et $v$ sont premiers entre eux, alors il existe $n$ tels que $u^n = 1 \mod{v}$.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-8">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-81"> Exercise 80</a></p>
+<div class="section" id="solution-content">
+<ol>
+<li><p>On note</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+    a = \sum_{m=1}^{n}a_m10^{n-m}
+    \end{equation*}\]</div>
+<p>Alors</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    x &amp;= \sum_{k=1}^{+\infty}a10^{-nk} \\
+    &amp;= a\frac{10^{-n}}{1 - 10^{-n}} \\
+    &amp;= \frac{a}{10^n-1} \\
+    \end{align*}\]</div>
+</li>
+<li><p>Soit <span class="math notranslate nohighlight">\(x = \frac{p}{q}\)</span> avec <span class="math notranslate nohighlight">\(p \land q = 1\)</span>. Écrivons <span class="math notranslate nohighlight">\(q = 2^\alpha 5^\beta q'\)</span> avec <span class="math notranslate nohighlight">\(q'\land 2 = q' \land 5 = 1\)</span>. Quitte à multiplier le numérateur par une puissance appropriée de <span class="math notranslate nohighlight">\(2\)</span> ou de <span class="math notranslate nohighlight">\(5\)</span>, on se restreint à l’étude de la forme suivante <span class="math notranslate nohighlight">\(x = 10^{-m} \frac{p'}{q'}\)</span> où <span class="math notranslate nohighlight">\(p' \land q' = 1\)</span> et <span class="math notranslate nohighlight">\(q' \land 10 = 1\)</span>.</p>
+<p>Ensuite <span class="math notranslate nohighlight">\(10\)</span> est inversible dans <span class="math notranslate nohighlight">\((\Z/q'\Z, *)\)</span> ce qui fournit <span class="math notranslate nohighlight">\(n\)</span> tel que <span class="math notranslate nohighlight">\(10^n = 1 \mod{q'}\)</span>. En effet il existe <span class="math notranslate nohighlight">\(i&lt;j\)</span> tels que <span class="math notranslate nohighlight">\(10^i = 10^j \mod{q'}\)</span> et on multiplie par <span class="math notranslate nohighlight">\(10^{-i}\)</span>.  Finalement on peut écrire</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+     x = 10^{-m}\frac{p''}{10^n-1}
+    \end{equation*}\]</div>
+<p>dont le développement décimal est périodique à partir d’un certain rang.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-82">
+
+<p class="admonition-title"><span class="caption-number">Exercise 81 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(k \in \N\)</span>. On définit <span class="math notranslate nohighlight">\((a_n)_{n \in N}\)</span> la suite telle que <span class="math notranslate nohighlight">\(a_n\)</span> est le chiffre des unités du coefficient binomial <span class="math notranslate nohighlight">\({n\choose k}\)</span>. On note <span class="math notranslate nohighlight">\(x\)</span> le réel défini par la donné de son développement décimal propre</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ x = 0,a_1a_2a_3\ldots
+\end{equation*}\]</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Montrer que pour tout $n \in \N$, il existe un entier $q$ tel que
+\begin{equation*}
+ {n+10k!\choose k} = {n\choose k} + 10q
+\end{equation*}
+
+1. En déduire que $x \in \Q$
+</pre></div>
+</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-83">
+
+<p class="admonition-title"><span class="caption-number">Exercise 82 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> une partie non vide bornée de <span class="math notranslate nohighlight">\(\R\)</span>. Déterminer <span class="math notranslate nohighlight">\(\underset{x,y \in A}{\sup} |x-y|\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-83"> Exercise 82</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(\underset{x,y \in A}{\sup} |x-y| \leq \sup A - \inf A \)</span> par définition. Soit <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span>, et <span class="math notranslate nohighlight">\(x, y \in A\)</span> tels que <span class="math notranslate nohighlight">\( \sup A &lt; x + \varepsilon \)</span> et <span class="math notranslate nohighlight">\( \inf A &gt; y - \varepsilon\)</span>. Alors <span class="math notranslate nohighlight">\(\underset{x,y \in A}{\sup} |x-y| \geq \sup A - \inf A + 2 \varepsilon\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-84">
+
+<p class="admonition-title"><span class="caption-number">Exercise 83 </span></p>
+<div class="section" id="exercise-content">
+<p>Résoudre dans <span class="math notranslate nohighlight">\(\R\)</span> l’équation <span class="math notranslate nohighlight">\(x E(x) = x^2 - E(x)^2\)</span> où <span class="math notranslate nohighlight">\(E(\cdot)\)</span> désigne la fonction partie entière.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-84"> Exercise 83</a></p>
+<div class="section" id="solution-content">
+<p>Posons <span class="math notranslate nohighlight">\(n = E(x)\)</span> et <span class="math notranslate nohighlight">\(\alpha = x - E(x) \in [0,1]\)</span>. On doit résoudre</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+n(n+\alpha) = n^2 + 2n\alpha + \alpha^2 - n^2
+\end{equation*}\]</div>
+<p>soit</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\alpha^2 + n\alpha - n^2 = 0
+\end{equation*}\]</div>
+<p>Si <span class="math notranslate nohighlight">\(\alpha = 0\)</span>, cela impose <span class="math notranslate nohighlight">\(n = 0\)</span> et on vérifie que <span class="math notranslate nohighlight">\(x=0\)</span> convient. Sinon <span class="math notranslate nohighlight">\(\alpha = \frac{n(\sqrt{5}-1)}{2}\)</span>. Or <span class="math notranslate nohighlight">\(2 \leq \sqrt{5} \leq 3\)</span>, nécessairement <span class="math notranslate nohighlight">\(n=1\)</span> et <span class="math notranslate nohighlight">\(x = \frac{1+\sqrt{5}}{2}\)</span> convient.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-85">
+
+<p class="admonition-title"><span class="caption-number">Exercise 84 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(G \subset \R\)</span> sous-groupe de <span class="math notranslate nohighlight">\(\R\)</span> pour l’addition. Montrer que <span class="math notranslate nohighlight">\(G\)</span> est dense dans <span class="math notranslate nohighlight">\(\R\)</span> ou bien <span class="math notranslate nohighlight">\(G\)</span> est isomorphe à <span class="math notranslate nohighlight">\(a\Z\)</span> pour un certain <span class="math notranslate nohighlight">\(a\)</span> à expliciter.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-85"> Exercise 84</a></p>
+<div class="section" id="solution-content">
+<p>On note <span class="math notranslate nohighlight">\(G^+ = G \cap \R_+^*\)</span>. Considérons <span class="math notranslate nohighlight">\(a = \inf G^+\)</span>.</p>
+<ul class="simple">
+<li><p><strong>Si <span class="math notranslate nohighlight">\(a &gt; 0\)</span></strong>  : s’il existe <span class="math notranslate nohighlight">\(x,y \in G^+\)</span> tels que <span class="math notranslate nohighlight">\(a\leq x &lt; y &lt; 2a\)</span>, alors <span class="math notranslate nohighlight">\(y-x \in G\)</span> (car <span class="math notranslate nohighlight">\(G\)</span> est un groupe) et <span class="math notranslate nohighlight">\(y-x &gt; 0\)</span> donc <span class="math notranslate nohighlight">\(y-x \in G^+\)</span>. Mais <span class="math notranslate nohighlight">\(y-x &lt; a\)</span>, c’est impossible. Ainsi <span class="math notranslate nohighlight">\(a\)</span> est atteint, i.e. <span class="math notranslate nohighlight">\(a \in G^{+}\)</span>. Puis, comme <span class="math notranslate nohighlight">\(G\)</span> est un groupe, <span class="math notranslate nohighlight">\(a\Z \subset G\)</span>. On va montrer qu’en fait <span class="math notranslate nohighlight">\(a\Z = G\)</span>. Supposons donc par l’absurde qu’il existe <span class="math notranslate nohighlight">\(g\in G\)</span>, <span class="math notranslate nohighlight">\(g \notin a\Z\)</span> c’est-à-dire qu’on peut trouver <span class="math notranslate nohighlight">\(k\in \Z\)</span> tel que <span class="math notranslate nohighlight">\(ka &lt; g &lt; (k+1)a\)</span>. Alors <span class="math notranslate nohighlight">\(\gamma = (k+1)a - g \in G\)</span> et <span class="math notranslate nohighlight">\(\gamma &gt; 0\)</span> donc <span class="math notranslate nohighlight">\(\gamma \in G^+\)</span> et <span class="math notranslate nohighlight">\(\gamma &lt; a\)</span>. C’est une contradiction.</p></li>
+<li><p><strong>Si <span class="math notranslate nohighlight">\(a= 0\)</span></strong> : on va montrer que <span class="math notranslate nohighlight">\(G^+\)</span> est dense dans <span class="math notranslate nohighlight">\(\R_+\)</span>. Soit alors <span class="math notranslate nohighlight">\(x \in \R_+\)</span> et <span class="math notranslate nohighlight">\(\varepsilon&gt;0\)</span>. D’abord <span class="math notranslate nohighlight">\(a\)</span> n’est pas atteint donc on peut trouver <span class="math notranslate nohighlight">\(g\in G\)</span> tel que <span class="math notranslate nohighlight">\(0 &lt; g &lt; \varepsilon\)</span>. Prenons <span class="math notranslate nohighlight">\(n \in \N\)</span> tel que <span class="math notranslate nohighlight">\(ng \leq x &lt; (n+1)g\)</span> (i.e. <span class="math notranslate nohighlight">\(n = \lfloor \frac{x}{g} \rfloor\)</span>). Alors <span class="math notranslate nohighlight">\(ng \in G\)</span> et <span class="math notranslate nohighlight">\(|x-ng| &lt; \varepsilon\)</span>. Cela conclut pour la densité de <span class="math notranslate nohighlight">\(G^+\)</span> dans <span class="math notranslate nohighlight">\(\R_+\)</span>. Ensuite tout simplement <span class="math notranslate nohighlight">\(-G_+ \subset G\)</span> et <span class="math notranslate nohighlight">\(-G_+\)</span> est dense dans <span class="math notranslate nohighlight">\(\R_-\)</span>. Finalement, <span class="math notranslate nohighlight">\(G\)</span> est dense dans <span class="math notranslate nohighlight">\(\R\)</span>.</p></li>
+</ul>
+</div>
+</div>
+<div class="exercise admonition" id="exo-86">
+
+<p class="admonition-title"><span class="caption-number">Exercise 85 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> une partie de <span class="math notranslate nohighlight">\(\R\)</span>. Déterminer <span class="math notranslate nohighlight">\(\sup \{ \alpha x | x \in A\}\)</span> en fonction de <span class="math notranslate nohighlight">\(\alpha\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-86"> Exercise 85</a></p>
+<div class="section" id="solution-content">
+<p>Si <span class="math notranslate nohighlight">\(\alpha &gt; 0\)</span>, il s’agit de <span class="math notranslate nohighlight">\(\alpha \sup A\)</span>, si <span class="math notranslate nohighlight">\(\alpha = 0\)</span> c’est évident et si <span class="math notranslate nohighlight">\(\alpha &lt; 0\)</span>, il s’agit de <span class="math notranslate nohighlight">\(\alpha \inf A\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-87">
+
+<p class="admonition-title"><span class="caption-number">Exercise 86 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer le sup et l’inf de l’ensemble suivant</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ A = \{ \frac{mn}{(m+n)^2} \; | \; m,n \in \N\setminus\{0\} \}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-87"> Exercise 86</a></p>
+<div class="section" id="solution-content">
+<p>Commençons par noter que pour tout <span class="math notranslate nohighlight">\(m,n\)</span>, <span class="math notranslate nohighlight">\(\frac{mn}{(m+n)^2} &gt; 0\)</span> donc <span class="math notranslate nohighlight">\(\inf A \geq 0\)</span>. Puis par exemple <span class="math notranslate nohighlight">\(\underset{n \rightarrow + \infty}{\frac{1 \cdot n}{(1+n)^2}} = 0\)</span> donc <span class="math notranslate nohighlight">\(\inf A \leq 0\)</span>, et finalement <span class="math notranslate nohighlight">\(\inf A = 0\)</span>.</p>
+<p>Ensuite on écrit pour <span class="math notranslate nohighlight">\(m,n \in \N\setminus\{0\}\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \frac{mn}{(m+n)^2} = \frac{1}{\frac{m}{n} + \frac{n}{m} + 2}
+\end{equation*}\]</div>
+<p>La fonction <span class="math notranslate nohighlight">\(x + \frac{1}{x}\)</span> est minorée par <span class="math notranslate nohighlight">\(2\)</span> sur <span class="math notranslate nohighlight">\(\R+\)</span>, il suit que pour tout <span class="math notranslate nohighlight">\(m,n\)</span>, <span class="math notranslate nohighlight">\(\frac{mn}{(m+n)^2} \leq \frac{1}{2+2} = \frac{1}{4}\)</span>, et cette borne est atteinte pour <span class="math notranslate nohighlight">\(m,n=1\)</span>. Il suit <span class="math notranslate nohighlight">\(\sup A = \frac{1}{4}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-88">
+
+<p class="admonition-title"><span class="caption-number">Exercise 87 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(a,b,c\)</span> des réels de <span class="math notranslate nohighlight">\([0,1]\)</span>. Montrer qu’au moins une des quantités suivantes est plus petite que <span class="math notranslate nohighlight">\(\frac{1}{4}\)</span> : <span class="math notranslate nohighlight">\(a(1-b), \; b(1-c), \; c(1-a)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-88"> Exercise 87</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(a(1-b)b(1-c)c(1-a) = a(1-a) b(1-b) c(1-c) \leq \frac{1}{4^3}\)</span> d’où la conclusion.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-89">
+
+<p class="admonition-title"><span class="caption-number">Exercise 88 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \inf \{ (x_1+ \ldots+ x_n)(\frac{1}{x_1} + \ldots + \frac{1}{x_n}) \; | \; x_1, \ldots, x_n \in \R_+^*\}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-23">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-89"> Exercise 88</a></p>
+<div class="section" id="solution-content">
+<p>Notons <span class="math notranslate nohighlight">\(A_n = \{ (x_1+ \ldots+ x_n)(\frac{1}{x_1} + \ldots + \frac{1}{x_n}) \; | \; x_1, \ldots, x_n \in \R_+^*\}\)</span>.</p>
+<p>Avec Cauchy-Schwarz, on a immédiatement que <span class="math notranslate nohighlight">\(\inf(A_n) \geq n^2\)</span> et le cas <span class="math notranslate nohighlight">\(x_1=x_2=\ldots=x_n=1\)</span> permet de conclure que <span class="math notranslate nohighlight">\(\inf(A_n) = n^2\)</span>.</p>
+<p>Supposons qu’on ne connaisse pas Cauchy-Schwarz et retrouvons ce résultat par récurrence sur <span class="math notranslate nohighlight">\(n\)</span>.
+<strong>Pour <span class="math notranslate nohighlight">\(n=2\)</span></strong> On développe</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(x_1 + x_2)\cdot(\frac{1}{x_1} + \frac{1}{x_2}) &amp;= 2 + \frac{x_2}{x_1} + \frac{x_1}{x_2} \\
+&amp;\geq 2 + 2 \quad \textrm{par étude de la fonction $x \mapsto x + \frac{1}{x}$}
+\end{align*}\]</div>
+<p>et avec le cas <span class="math notranslate nohighlight">\(x_1 = x_2 = 1\)</span>, on trouve <span class="math notranslate nohighlight">\(\inf A_2 = 4\)</span>. Ce cas nous donne l’idée d’évaluer <span class="math notranslate nohighlight">\(x_1=x_2=\ldots=x_n=1\)</span>, et on essaye donc de prouver que <span class="math notranslate nohighlight">\(\inf A_n = n^2\)</span>.
+<strong>Hérédité</strong> On regarde</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(x_1+ \ldots+ x_n + x_{n+1})(\frac{1}{x_1} + \ldots + \frac{1}{x_n} + \frac{1}{x_{n+1}}) &amp;= (x_1+ \ldots+ x_n)(\frac{1}{x_1} + \ldots + \frac{1}{x_n}) + 1 + \sum_{i=1}^n\frac{x_i}{x_{n+1}} + \frac{x_{n+1}}{x_i} \\
+&amp;\geq \inf A_n + 2n + 1 = (n+1)^2
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-90">
+
+<p class="admonition-title"><span class="caption-number">Exercise 89 </span></p>
+<div class="section" id="exercise-content">
+<ol class="simple">
+<li><p>Montrer pour <span class="math notranslate nohighlight">\(n\in \N\)</span> que <span class="math notranslate nohighlight">\(\sqrt{n} \in \Q \Leftrightarrow \sqrt{n} \in \N\)</span></p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(a,b \in \N\)</span> qui ne sont pas des carrés parfaits. Montrer que <span class="math notranslate nohighlight">\(\sqrt{a}+\sqrt{b}\)</span> est irrationnel.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-25">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-90"> Exercise 89</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Le sens retour est évident. Soit <span class="math notranslate nohighlight">\(n\)</span> qui n’est pas un carré parfait. Il s’agit de montrer que <span class="math notranslate nohighlight">\(\sqrt{n}\)</span> est irrationnel, supposons par l’absurde qu’il ne l’est pas et on écrit <span class="math notranslate nohighlight">\(n = \frac{p^2}{q^2}\)</span>, soit <span class="math notranslate nohighlight">\(nq^2 = p^2\)</span>. Par identification des exposants dans la décomposition en facteur premier des deux termes, tous les exposants de la décomposition de <span class="math notranslate nohighlight">\(n\)</span> en facteur premier sont pairs, <span class="math notranslate nohighlight">\(n\)</span> est donc un carré parfait, ce qui est une contradiction.</p></li>
+<li><p>On note <span class="math notranslate nohighlight">\(x = \sqrt{a}+\sqrt{b}\)</span> et <span class="math notranslate nohighlight">\(y = \sqrt{a}-\sqrt{b}\)</span>. On a <span class="math notranslate nohighlight">\(xy \in \Q\)</span> donc <span class="math notranslate nohighlight">\(x\)</span> et <span class="math notranslate nohighlight">\(y\)</span> sont soit tous deux rationnels, soit tous deux irrationnels. Mais <span class="math notranslate nohighlight">\(x+y \notin \Q\)</span>, ils sont donc irrationnels.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-91">
+
+<p class="admonition-title"><span class="caption-number">Exercise 90 </span></p>
+<div class="section" id="exercise-content">
+<p>Un nombre univers est un nombre tel que toute séquence finie de chiffres apparaît dans son développement décimal.</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Exhiber un nombre univers.
+1. Montrer que l&#39;ensemble des nombres univers est dense dans $\R$.
+</pre></div>
+</div>
+<p>À titre informatif, sachez qu’on peut montrer que <em>l’ensemble des nombres univers est indénombrable</em>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-27">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-91"> Exercise 90</a></p>
+<div class="section" id="solution-content">
+<p>\leavevmode</p>
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\alpha=  0.012345678910111213141516\ldots\)</span></p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(a&lt;b\in\R\)</span>. On montre qu’il existe un nombre univers dans <span class="math notranslate nohighlight">\(]a,b[\)</span>. Soit <span class="math notranslate nohighlight">\(k\)</span> tel que <span class="math notranslate nohighlight">\(a + 2\times10^{-k}&lt;b\)</span>. <span class="math notranslate nohighlight">\(10^{-k}\lfloor 10^ka\rfloor = 10^{-k-1}\alpha\)</span> convient.</p></li>
+</ol>
+<p>Montrons que l’ensemble des nombres univers est indénombrable. Pour cela, notons <span class="math notranslate nohighlight">\(\alpha = 0.a_0b_0a_1b_1a_2\ldots\)</span> où <span class="math notranslate nohighlight">\(a_n\)</span> est l’écriture en base 10 de <span class="math notranslate nohighlight">\(2n\)</span>, et <span class="math notranslate nohighlight">\(b_n\)</span> de <span class="math notranslate nohighlight">\(2n+1\)</span>. Remarquons que <span class="math notranslate nohighlight">\(a_ib_i \neq b_ia_i\)</span> pour tout <span class="math notranslate nohighlight">\(i\)</span> (par exemple car il n’ont pas la même valeur modulo <span class="math notranslate nohighlight">\(2\)</span>). À <span class="math notranslate nohighlight">\((u_n) \in \{0,1\}^{\N}\)</span> on associe <span class="math notranslate nohighlight">\(f(u_n) = 0.c_0c_1c_2\ldots\)</span> où</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\begin{cases}
+c_i = a_ib_i \qquad \textrm{si $u_i = 1$}\\
+c_i = b_ia_i \qquad \textrm{sinon}
+\end{cases}
+\end{equation*}\]</div>
+<p>Il suffit de remarquer pour conclure que <span class="math notranslate nohighlight">\(f\)</span> est une fonction injective de <span class="math notranslate nohighlight">\(\{0,1\}^{\N}\)</span> vers <span class="math notranslate nohighlight">\(\mathcal{U}\)</span> l’ensemble des nombres univers.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-92">
+
+<p class="admonition-title"><span class="caption-number">Exercise 91 </span> (nombre incommensurable)</p>
+<div class="section" id="exercise-content">
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(x \in \R\)</span> un irrationnel. On note <span class="math notranslate nohighlight">\(D(\cdot)\)</span> la fonction partie fractionnaire. Montrer que <span class="math notranslate nohighlight">\(\{D(nx) \; | \; n\in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,1]\)</span>.</p></li>
+<li><p>On dit que <span class="math notranslate nohighlight">\(x\)</span> et <span class="math notranslate nohighlight">\(y\)</span> sont incommensurables si leur rapport est irrationnel. Soit <span class="math notranslate nohighlight">\(x,y\)</span> incommensurables. Si <span class="math notranslate nohighlight">\(z\)</span> est un réel, on note <span class="math notranslate nohighlight">\(z \mod{y} = y D(z/y) \in [0, y[\)</span>. Montrer que l’ensemble <span class="math notranslate nohighlight">\(\{nx \mod y \; | \; n \in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,y[\)</span>. En déduire que <span class="math notranslate nohighlight">\(\{ \cos(n) | n \in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,1]\)</span>. <em>Indication : on admet l’irrationnalité de <span class="math notranslate nohighlight">\(\pi\)</span></em></p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-29">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-92"> Exercise 91 (nombre incommensurable)</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(A = \{D(nx) \; | \; n\in \N \}\)</span>. Commençons par remarquer que par irrationnalité de <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(D(nx)&gt;0\)</span> pour tout <span class="math notranslate nohighlight">\(n\)</span>. Il s’agit donc montrer que la borne inférieure de <span class="math notranslate nohighlight">\(A\)</span> est <span class="math notranslate nohighlight">\(0\)</span>.</p></li>
+</ol>
+<p><strong><span class="math notranslate nohighlight">\(A\)</span> n’admet pas de minimum</strong> Soit <span class="math notranslate nohighlight">\(\delta = D(nx)\)</span>. Si <span class="math notranslate nohighlight">\(\delta\)</span> est rationnel, égal à <span class="math notranslate nohighlight">\(p/q\)</span>, alors <span class="math notranslate nohighlight">\(D(nqx)=0\)</span> ce qui est impossible. Ainsi <span class="math notranslate nohighlight">\(\delta\)</span> est irrationnel. Considérons alors <span class="math notranslate nohighlight">\(k = \lfloor \frac{1}{\delta} \rfloor\)</span>. Par irrationalité de <span class="math notranslate nohighlight">\(\delta\)</span>, <span class="math notranslate nohighlight">\(k\delta &lt; 1\)</span> et <span class="math notranslate nohighlight">\((k+1)\delta &gt; 1\)</span>. Notons <span class="math notranslate nohighlight">\(\eta = 1-k\delta &gt; 0\)</span>. On a <span class="math notranslate nohighlight">\(D(nkx) = k\delta\)</span> et <span class="math notranslate nohighlight">\(D(n(k+1)x) = 1 + (\delta - \eta) - 1 = \delta - \eta &lt; \delta\)</span>. Cela prouve que <span class="math notranslate nohighlight">\(A\)</span> n’admet pas de minimum.
+<strong>L’infinimum de <span class="math notranslate nohighlight">\(A\)</span> est <span class="math notranslate nohighlight">\(0\)</span></strong> Notons <span class="math notranslate nohighlight">\(a = \inf A\)</span>, et supposons par l’absurde <span class="math notranslate nohighlight">\(a&gt;0\)</span>. Soit <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> tel que <span class="math notranslate nohighlight">\(\varepsilon &lt; a\)</span>. Puisque <span class="math notranslate nohighlight">\(a\)</span> n’est pas atteint, on peut trouver <span class="math notranslate nohighlight">\(n&lt;m\)</span> tels que <span class="math notranslate nohighlight">\(a &lt; D(mx) &lt; D(nx) &lt; a + \varepsilon\)</span>. On pose <span class="math notranslate nohighlight">\(\delta = D(nx) - D(mx) &lt; \varepsilon\)</span></p>
+<div class="proof lemma admonition" id="lemma-30">
+<p class="admonition-title"><span>Lemma </span></p>
+<div class="lemma-content section" id="proof-content">
+<p>Soit <span class="math notranslate nohighlight">\(a,b \in \N\)</span>. Alors</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+
+D(ax) + D(bx) =
+\begin{cases}
+D((a+b)x)\\
+\textrm{ou} \\
+1+D((a+b)x)
+\end{cases}
+\end{equation*}\]</div>
+</div>
+</div><div class="proof admonition" id="proof">
+<p>Proof. On écrit <span class="math notranslate nohighlight">\(ax = n_a + D(ax)\)</span>, <span class="math notranslate nohighlight">\(bx = n_b + D(bx)\)</span>. Il vient <span class="math notranslate nohighlight">\((a+b)x = n_{a+b} + D((a+b)x) =  n_a + n_b + D(ax) + D(bx)\)</span>. Or <span class="math notranslate nohighlight">\(0 &lt; D(ax) + D(bx) &lt; 2\)</span> et de là le résultat.</p>
+</div>
+</div>
+</div>
+<p>D’après le lemme on a donc <span class="math notranslate nohighlight">\(D(nx) + D((m-n)x) = 1 + D(mx)\)</span>, soit <span class="math notranslate nohighlight">\(D((m-n)x) = 1 - \delta\)</span>. En particulier, <span class="math notranslate nohighlight">\(\delta\)</span> est irrationnel. Informellement, ajouter <span class="math notranslate nohighlight">\((m-n)x\)</span> revient à retirer <span class="math notranslate nohighlight">\(\delta\)</span> de la partie fractionnaire. En considérant les multiples de <span class="math notranslate nohighlight">\((m-n)\)</span>, pn peut ainsi atteindre <span class="math notranslate nohighlight">\(1-\delta\)</span>, <span class="math notranslate nohighlight">\(1-2\delta\)</span>, <span class="math notranslate nohighlight">\(1-3\delta\)</span>, etc. On peut retirer <span class="math notranslate nohighlight">\(\delta\)</span> jusqu’à trouver une partie fractionnaire plus petite que <span class="math notranslate nohighlight">\(a\)</span>. Rendons cet argument formel.</p>
+<p>Soit <span class="math notranslate nohighlight">\(k = \lfloor \frac{1}{\delta} \rfloor\)</span>. Par irrationnalité de <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(k\delta &lt; 1\)</span> et <span class="math notranslate nohighlight">\((k+1)\delta &gt; 1\)</span>. Notons <span class="math notranslate nohighlight">\(\eta = 1-k\delta &gt; 0\)</span> et remarquons que <span class="math notranslate nohighlight">\(\eta &lt; \delta &lt; \varepsilon &lt; a\)</span>. On écrit</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+k(m-n)x &amp;= k (\lfloor mx \rfloor - \lfloor nx \rfloor) + k(D(mx) - D(nx)) \\
+&amp;= k (\lfloor mx \rfloor - \lfloor nx \rfloor) - k\delta \\
+&amp;= k (\lfloor mx \rfloor - \lfloor nx \rfloor) -1 + \eta\\
+\end{align*}\]</div>
+<p>Ainsi <span class="math notranslate nohighlight">\(D(k(m-n)x) = \eta &lt; a\)</span>, ce qui est impossible !</p>
+<ol class="simple">
+<li><p>Par la question <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(\{D(n\frac{x}{y}) \; | \; n\in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,1]\)</span> donc  <span class="math notranslate nohighlight">\(\{yD(n\frac{x}{y}) \; | \; n\in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,y]\)</span>. Ensuite <span class="math notranslate nohighlight">\(\pi\)</span> est irrationnel donc <span class="math notranslate nohighlight">\(\frac{1}{2\pi}\)</span> également, donc <span class="math notranslate nohighlight">\(1\)</span> et <span class="math notranslate nohighlight">\(2\pi\)</span> sont incommensurables, donc <span class="math notranslate nohighlight">\(\{ n \mod{2\pi}\}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,2\pi]\)</span> et cela conclut.</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+
+```{exercise}
+:label: exo-93
+Soit $\mathcal{S}$ une famille finie de segment de $\R$, telle que $\forall I,J \in \mathcal{S}, \; I \cap J\neq \emptyset$. Montrer que $\underset{I \in \mathcal{S}}{\bigcap} I \neq \emptyset$. Et si la famille est infinie ?
+</pre></div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-31">
+
+<p class="admonition-title">Solution to</p>
+<div class="section" id="solution-content">
+<p>On note <span class="math notranslate nohighlight">\(I_1 = [a_1, b_1], I_2 = [a_2, b_2], \ldots, I_n = [a_n, b_n]\)</span> les segments de <span class="math notranslate nohighlight">\(\mathcal{S}\)</span>. Notons <span class="math notranslate nohighlight">\(a = \max a_i = a_{\gamma}\)</span> et <span class="math notranslate nohighlight">\(b = \min b_i = b_{\delta}\)</span>. Puisque <span class="math notranslate nohighlight">\(I_{\gamma}\)</span> et <span class="math notranslate nohighlight">\(I_{\delta}\)</span> sont d’intersection non vide, il vient <span class="math notranslate nohighlight">\(a \leq b\)</span>. On montre alors facilement que <span class="math notranslate nohighlight">\([a,b] \subset\underset{I \in \mathcal{S}}{\bigcap} I \neq \emptyset\)</span>. Si la famille est infinie, on remplace <span class="math notranslate nohighlight">\(\min\)</span> et <span class="math notranslate nohighlight">\(\max\)</span> par <span class="math notranslate nohighlight">\(\inf\)</span> et <span class="math notranslate nohighlight">\(\sup\)</span> mais les inégalités subsistent.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-94">
+
+<p class="admonition-title"><span class="caption-number">Exercise 92 </span></p>
+<div class="section" id="exercise-content">
+<p>PROOF UNCOMPLETE</p>
+<p>Soit <span class="math notranslate nohighlight">\(\alpha, \beta \in \R\)</span>. On pose <span class="math notranslate nohighlight">\(A = \{E(n\alpha) \; | \; n \in \N \}\)</span> et <span class="math notranslate nohighlight">\(B = \{E(n\beta) \; | \; n \in \N \}\)</span>. Montrer que <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span> forment une partition de <span class="math notranslate nohighlight">\(\N^*\)</span> si et seulement si <span class="math notranslate nohighlight">\(\alpha\)</span> et <span class="math notranslate nohighlight">\(\beta\)</span> sont irrationnels et vérifient <span class="math notranslate nohighlight">\(\frac{1}{\alpha} + \frac{1}{\beta} = 1\)</span>.</p>
+<p><em>Indication : introduire la fonction de densité d’une partie <span class="math notranslate nohighlight">\(P\)</span> de <span class="math notranslate nohighlight">\(\N\)</span> <span class="math notranslate nohighlight">\(d(P) = \lim Card(P\cap[\![1;n]\!])/n\)</span></em>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-33">
+
+<p class="admonition-title">Solution to</p>
+<div class="section" id="solution-content">
+<p>Pour le sens retour, on suppose qu’il existe <span class="math notranslate nohighlight">\(k = E(na) = E(mb)\)</span>. Alors <span class="math notranslate nohighlight">\(k &lt; na, mb &lt; k+1\)</span> (les inégalités étant strictes par irrationnalité). On peut alors écrire</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+k &amp;= \frac{k}{a} + \frac{k}{b} \\
+&amp;&lt; n+m &lt;\frac{k+1}{a} + \frac{k+1}{b} = k+1
+\end{align*}\]</div>
+<p>Ce qui induit une contradiction.</p>
+<p>Poiur le sens direct, on remarque que la densité de <span class="math notranslate nohighlight">\(A\)</span> est <span class="math notranslate nohighlight">\(\frac{1}{a}\)</span>, que la densité de <span class="math notranslate nohighlight">\(B\)</span> est <span class="math notranslate nohighlight">\(\frac{1}{b}\)</span> et que la densité se somme pour l’union disjointe.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-95">
+
+<p class="admonition-title"><span class="caption-number">Exercise 93 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que <span class="math notranslate nohighlight">\(\R\)</span> et <span class="math notranslate nohighlight">\(\R^2\)</span> sont équipotents. En déduire que <span class="math notranslate nohighlight">\(\R^a\)</span> et <span class="math notranslate nohighlight">\(\R^b\)</span> sont équipotents, pour <span class="math notranslate nohighlight">\(a,b \in \N^*\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-35">
+
+<p class="admonition-title">Solution to</p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(\R \cong \{0,1\}^\N\)</span>. Il suffit de montrer que <span class="math notranslate nohighlight">\(\N \cong \Z\)</span>. C’est facile. Cela donne</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+f : \begin{cases}
+\{0,1\}^\N \times  \{0,1\}^\N \rightarrow  \{0,1\}^\N \\
+(a_1, a_2, \ldots),(b_1, b_2, \ldots) \mapsto (a_1, b_1, a_2, b_2, \dots)
+\end{cases}
+\end{equation*}\]</div>
+<p>Ensuite par récurrence <span class="math notranslate nohighlight">\(\R \cong \R^n\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-96">
+
+<p class="admonition-title"><span class="caption-number">Exercise 94 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver une injection de <span class="math notranslate nohighlight">\(\sigma : \R \rightarrow \mathcal{P}(\N)\)</span> telle que <span class="math notranslate nohighlight">\(\sigma(x)\)</span> soit infinie pour tout réel <span class="math notranslate nohighlight">\(x\)</span>, et telle que <span class="math notranslate nohighlight">\(\sigma(x)\cap\sigma(y)\)</span> soit finie pour tout <span class="math notranslate nohighlight">\(x\neq y\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-37">
+
+<p class="admonition-title">Solution to</p>
+<div class="section" id="solution-content">
+<p>On cherche tout d’abord <span class="math notranslate nohighlight">\(\sigma : ]0,1[ \rightarrow \mathcal{P}(\N)\)</span>. À un réel d’écriture binaire <span class="math notranslate nohighlight">\(0,a_1a_2a_3\ldots\)</span> on associe <span class="math notranslate nohighlight">\(\{ \sum a_i2^i \; | \; \forall i \in \N, \; a_i=0\}\)</span>. On vérifie que <span class="math notranslate nohighlight">\(\sigma\)</span> vérifie les hypothèses voulues. Ensuite il ne reste plus qu’à composer à droite par (par exemple) <span class="math notranslate nohighlight">\(1/2(1+\arctan)\)</span> qui envoie injectivement <span class="math notranslate nohighlight">\(\R\)</span> sur <span class="math notranslate nohighlight">\(]0,1[\)</span>.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/preliminaires"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Manipulations%20alg%C3%A9briques.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Manipulations algébriques</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../analyse_reelle/Suites%20num%C3%A9riques.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Suites numériques</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

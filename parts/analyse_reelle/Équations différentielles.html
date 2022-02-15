@@ -1,0 +1,717 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Équations différentielles &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Groupes" href="../algebre_commutative/Groupes.html" />
+    <link rel="prev" title="Études locales et asymptotiques" href="%C3%89tudes%20locales%20et%20asymptotiques.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/analyse_reelle/Équations différentielles.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Équations différentielles</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="equations-differentielles">
+<h1>Équations différentielles<a class="headerlink" href="#equations-differentielles" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-254">
+
+<p class="admonition-title"><span class="caption-number">Exercise 215 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(a \in \R^*\)</span> et <span class="math notranslate nohighlight">\(f \in \mathcal{C}^0(\R,\R)\)</span>, <span class="math notranslate nohighlight">\(T\)</span>-périodique. Montrer que l’équation <span class="math notranslate nohighlight">\(y'+ay=f\)</span> admet une unique solution qui soit <span class="math notranslate nohighlight">\(T\)</span>-périodique.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-254"> Exercise 215</a></p>
+<div class="section" id="solution-content">
+<p>La méthode de la variation des constantes amène</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+y(x) = e^{-ax}(K + \int_{0}^x e^{at}f(t)dt)
+\end{equation*}\]</div>
+<p>Avec le changement de variable <span class="math notranslate nohighlight">\(s=t-T\)</span> pour <span class="math notranslate nohighlight">\(y(x-T)\)</span> on trouve</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ y(x)-y(x-T) = e^{-xT} (K + \int_0^T e^{aT}f(t)dt)
+\end{equation*}\]</div>
+<p>Ainsi <span class="math notranslate nohighlight">\(y\)</span> est <span class="math notranslate nohighlight">\(T\)</span>-périodique si et seulement si <span class="math notranslate nohighlight">\(K = -\int_0^T e^{aT}f(t)dt\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-255">
+
+<p class="admonition-title"><span class="caption-number">Exercise 216 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver les solutions <span class="math notranslate nohighlight">\(\mathcal{C}^2\)</span> sur <span class="math notranslate nohighlight">\(\R\)</span> de l’équation</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ y'' + y = \max(e^x,1)
+\end{equation*}\]</div>
+<p>vérifiant <span class="math notranslate nohighlight">\(y(0)=y'(0)=0\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-255"> Exercise 216</a></p>
+<div class="section" id="solution-content">
+<p>Sur <span class="math notranslate nohighlight">\(\R^+\)</span> la solution générale est <span class="math notranslate nohighlight">\(A\cos(x)+B\sin(x)+\frac{e^x}{2}\)</span> d’où pour respecter les conditions au bord <span class="math notranslate nohighlight">\(y_{| \R^+} = \frac{1}{2}(e^x-cos(x)-sin(x))\)</span>.
+Sur <span class="math notranslate nohighlight">\(\R^-\)</span> la solution générale est <span class="math notranslate nohighlight">\(A\cos(x)+B\sin(x)+1\)</span> d’où pour respecter les conditions au bord <span class="math notranslate nohighlight">\(y_{| \R^-} = 1-\cos(x)\)</span>. On vérifie enfin le bon raccord <span class="math notranslate nohighlight">\(y''(0)=0\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-256">
+
+<p class="admonition-title"><span class="caption-number">Exercise 217 </span></p>
+<div class="section" id="exercise-content">
+<p>Résoudre <span class="math notranslate nohighlight">\(y' = |y-t|\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-256"> Exercise 217</a></p>
+<div class="section" id="solution-content">
+<p>Là où <span class="math notranslate nohighlight">\(y \geq t\)</span> on a <span class="math notranslate nohighlight">\(y\)</span> de la forme <span class="math notranslate nohighlight">\(t+1+Ke^t\)</span>. Là où <span class="math notranslate nohighlight">\(y \leq t\)</span>, on a <span class="math notranslate nohighlight">\(y\)</span> de la forme <span class="math notranslate nohighlight">\(t-1+Ke^{-t}\)</span>. On remarque que dans tous les cas, <span class="math notranslate nohighlight">\(y(t)-t\)</span> s’annule au plus une fois sur <span class="math notranslate nohighlight">\(\R\)</span>. Il ne peut donc y avoir au plus qu’un point de raccord. Ainsi trois situations se présentent</p>
+<ol class="simple">
+<li><p>si <span class="math notranslate nohighlight">\(y \leq t\)</span> pour tout <span class="math notranslate nohighlight">\(t\)</span>, on a <span class="math notranslate nohighlight">\(y = x - 1 - Ke^{-x}\)</span> avec <span class="math notranslate nohighlight">\(K \geq 0\)</span></p></li>
+<li><p>si <span class="math notranslate nohighlight">\(y \geq t\)</span> pour tout <span class="math notranslate nohighlight">\(t\)</span>, on a <span class="math notranslate nohighlight">\(y = x + 1 + Ke^x\)</span> avec <span class="math notranslate nohighlight">\(K \geq 0\)</span></p></li>
+<li><p>sinon <span class="math notranslate nohighlight">\(y\)</span> s’annule une seule fois, mettons en <span class="math notranslate nohighlight">\(t_0\)</span>, et alors <span class="math notranslate nohighlight">\(\forall t &gt; t_0, \; y(t)=t+1-e^{t-t_0}\)</span> et <span class="math notranslate nohighlight">\(\forall t \geq t_0, \; y(t) = t-1 + e^{t_0-t}\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-257">
+
+<p class="admonition-title"><span class="caption-number">Exercise 218 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f \in \mathcal{C}^1(\R^+, \R)\)</span> telle que <span class="math notranslate nohighlight">\(f'+f\)</span> bornée sur <span class="math notranslate nohighlight">\(\R^+\)</span>. Montrer que <span class="math notranslate nohighlight">\(f\)</span> est bornée.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-257"> Exercise 218</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(z = f' +f\)</span>. On écrit la solution générale de cette équation différentielle avec la variation de la constante. Il est alors évident que <span class="math notranslate nohighlight">\(f\)</span> est bornée.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-258">
+
+<p class="admonition-title"><span class="caption-number">Exercise 219 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\lambda \in \R\)</span>. Trouver les fonctions dérivables de <span class="math notranslate nohighlight">\(\R\)</span> dans <span class="math notranslate nohighlight">\(\R\)</span> vérifiant</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f'(x) = f(\lambda - x)
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-258"> Exercise 219</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(f\)</span> est <span class="math notranslate nohighlight">\(\mathcal{C}^2\)</span> et vérifie <span class="math notranslate nohighlight">\(f'' + f = 0\)</span>. Cela conduit à la solution générale <span class="math notranslate nohighlight">\(f = A\sin(x + \phi)\)</span>. La condition <span class="math notranslate nohighlight">\(f'(x) = f(\lambda - x)\)</span> impose alors <span class="math notranslate nohighlight">\(\frac{\pi}{2} - \phi = \lambda + \phi \mod{2\pi}\)</span>. et finalement <span class="math notranslate nohighlight">\(f = A\sin(x + \frac{\pi}{4} - \frac{\lambda}{2})\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-259">
+
+<p class="admonition-title"><span class="caption-number">Exercise 220 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(p \geq q\)</span> deux fonctions de <span class="math notranslate nohighlight">\(\R\)</span> dans <span class="math notranslate nohighlight">\(\R\)</span>. Soit <span class="math notranslate nohighlight">\(f\)</span> une solution de <span class="math notranslate nohighlight">\(y'' + py = 0\)</span> et <span class="math notranslate nohighlight">\(g\)</span> une solution de <span class="math notranslate nohighlight">\(y'' + qy = 0\)</span>. Montrer que <span class="math notranslate nohighlight">\(f\)</span> s’annule entre deux zéros de <span class="math notranslate nohighlight">\(g\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-259"> Exercise 220</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(a&lt;b\)</span> deux zéros consécutifs de <span class="math notranslate nohighlight">\(g\)</span>. On suppose par l’absurde que <span class="math notranslate nohighlight">\(f\)</span> ne s’annule pas sur <span class="math notranslate nohighlight">\([a,b]\)</span>. Quitte à changer <span class="math notranslate nohighlight">\(f\)</span> en <span class="math notranslate nohighlight">\(-f\)</span> on peut supposer que <span class="math notranslate nohighlight">\(f\)</span> est strictement positive sur cet intervalle. De même on suppose que <span class="math notranslate nohighlight">\(g\)</span> est strictement positive sur <span class="math notranslate nohighlight">\(]a,b[\)</span>. En particulier <span class="math notranslate nohighlight">\(g'(a) &gt; 0\)</span> et <span class="math notranslate nohighlight">\(g'(b) &lt; 0\)</span>. Considérons alors le wronskien <span class="math notranslate nohighlight">\(\phi = fg'-f'g\)</span>. <span class="math notranslate nohighlight">\(\phi\)</span> est dérivable et <span class="math notranslate nohighlight">\(\phi' = fg''-f''g = fg(p-q) \geq 0\)</span>.  Or <span class="math notranslate nohighlight">\(\phi(a) \geq 0\)</span> et <span class="math notranslate nohighlight">\(\phi(b) \leq 0\)</span>. Par croissance de <span class="math notranslate nohighlight">\(\phi\)</span> il vient <span class="math notranslate nohighlight">\(\phi_{|[a,b]}=0\)</span>. De là <span class="math notranslate nohighlight">\(\frac{g}{f}\)</span> est constante sur <span class="math notranslate nohighlight">\([a,b]\)</span> et vaut <span class="math notranslate nohighlight">\(0\)</span> en <span class="math notranslate nohighlight">\(a\)</span> donc sur <span class="math notranslate nohighlight">\([a,b]\)</span>. Absurde !</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-260">
+
+<p class="admonition-title"><span class="caption-number">Exercise 221 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver les fonctions deux fois dérivables de <span class="math notranslate nohighlight">\(\R\)</span> dans <span class="math notranslate nohighlight">\(\R\)</span> vérifiant <span class="math notranslate nohighlight">\(\forall x \in \R\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f''(x)-10f'(x)+29f(x) = 0
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-260"> Exercise 221</a></p>
+<div class="section" id="solution-content">
+<p>Le discrimant du polynôme caractéristique vaut <span class="math notranslate nohighlight">\(-16\)</span>. Les racines du polynôme sont donc <span class="math notranslate nohighlight">\(\lambda_1 = 5-2i\)</span> et <span class="math notranslate nohighlight">\(\lambda_2 = 5+2i\)</span>. Les solutions de l’équation
+sont donc</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-261">
+
+<p class="admonition-title"><span class="caption-number">Exercise 222 </span></p>
+<div class="section" id="exercise-content">
+<p>Considérons l’équation différentielle <span class="math notranslate nohighlight">\(y'' + y = P\)</span> où <span class="math notranslate nohighlight">\(P\)</span> est un polynôme. Montrer que cette équation admet une unique solution polynômiale et expliciter cette solution. En déduire les solutions générales de l’équation.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-261"> Exercise 222</a></p>
+<div class="section" id="solution-content">
+<p>L’unicité vient de ce que <span class="math notranslate nohighlight">\(\phi : Q \rightarrow Q''+Q\)</span> est injective. On vérifie que <span class="math notranslate nohighlight">\(x \mapsto \sum \limits_{k=0}^n (-1)^k P^{(2k)}(x)\)</span> est solution. La solution générale s’obtient en ajoutant la forme générale d’une solution à l’équation homogène.</p>
+<p>Plus de détails :
+<strong>Unicité</strong> Il s’agit de prouver l’injectivité de <span class="math notranslate nohighlight">\(\phi : Q \mapsto Q + Q''\)</span>. On peut par exemple remarquer que <span class="math notranslate nohighlight">\(\phi\)</span> est un endormorphisme de l’espace des polynôme <span class="math notranslate nohighlight">\(\C[X]\)</span>, et qu’il suffit donc de regarder son noyau. Un argument sur le degré permet de conclure.
+<strong>Existence</strong> On veut ici trouver une solution explicite <span class="math notranslate nohighlight">\(Q\)</span> avec</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+Q + Q'' = P
+\end{align*}\]</div>
+<p>Une approche peut consister comme suit. On commence par <span class="math notranslate nohighlight">\(Q\)</span> en fonction du reste. On écrit donc <span class="math notranslate nohighlight">\(Q = P - Q''\)</span>, et on cherche à se débarasser de <span class="math notranslate nohighlight">\(Q''\)</span>. En dérivant deux fois : <span class="math notranslate nohighlight">\(Q^{(2)} = P^{(2)} - Q^{(4)}\)</span>. Et on procède récursivement pour faire disparaître le terme en <span class="math notranslate nohighlight">\(Q^{(k)}\)</span> à droite qui nous embête :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+Q &amp;= P - Q^{(2)} \\
+&amp;= P - P^{(2)} + Q^{(4)} \\
+&amp;= P - P^{(2)} + P^{(4)} - Q^{(6)} \\
+&amp; \ \, \vdots \\
+\end{align*}\]</div>
+<p>Cela fournit la solution explicitée plus haut.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-262">
+
+<p class="admonition-title"><span class="caption-number">Exercise 223 </span></p>
+<div class="section" id="exercise-content">
+<p>Résoudre l’équation différentielle <span class="math notranslate nohighlight">\(y'''-3y''+y'-3y = 0\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-262"> Exercise 223</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(z=y'-3y\)</span> vérifie <span class="math notranslate nohighlight">\(z'' + z = 0\)</span>. De là <span class="math notranslate nohighlight">\(z= A\cos(t) + B \sin(t)\)</span>. On résoud pour <span class="math notranslate nohighlight">\(y\)</span> à partir de là.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-263">
+
+<p class="admonition-title"><span class="caption-number">Exercise 224 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(y \in C^2(\R_+^*,\R)\)</span> une solution de l’équation <span class="math notranslate nohighlight">\((E) \; : \; x^2y''-y=x\)</span>. Montrer que <span class="math notranslate nohighlight">\(z=y(e^t)\)</span> vérifie une certaine équation différentielle. En déduire la solution générale pour <span class="math notranslate nohighlight">\((E)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-263"> Exercise 224</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(z' = e^ty'(e^t)\)</span> puis</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+z'' &amp;= e^{2t} y''(e^t) + e^ty'(e^t) \\
+&amp;= x^2y''(x) + z' \\
+&amp;= e^t + z + z'
+\end{align*}\]</div>
+<p>Et la résolution pour <span class="math notranslate nohighlight">\(z\)</span> est classique.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-264">
+
+<p class="admonition-title"><span class="caption-number">Exercise 225 </span> (lemme de Gronwall)</p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : \R_+ \rightarrow \R\)</span> et <span class="math notranslate nohighlight">\(g : \R_+ \rightarrow \R_+\)</span> continues et soit <span class="math notranslate nohighlight">\(A \geq 0\)</span>, tels que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall x \in \R_+^*, \quad f(x) \leq A + \int_0^x f(t)g(t)dt
+\end{equation*}\]</div>
+<p>Montrer que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall x \in \R_+^*, \quad f(x) \leq A\exp{\int_0^x g(t)dt}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Équations différentielles-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-264"> Exercise 225 (lemme de Gronwall)</a></p>
+<div class="section" id="solution-content">
+<p>On pose <span class="math notranslate nohighlight">\(F(t) = A + \int_0^x f(t)g(t)dt\)</span>. On a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\frac{f}{F} \leq 1 &amp;\Rightarrow \frac{fg}{F} \leq g \\
+&amp;\Rightarrow \ln(F)' \leq g \\
+&amp;\Rightarrow \ln(F(x))-\ln(F(0)) \leq \int_0^x g(t)dt \\
+&amp;\Rightarrow F(x) \leq A\int_0^xg(t)dt \\
+&amp;\Rightarrow f \leq A\int_0^x g(t)dt
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-265">
+
+<p class="admonition-title"><span class="caption-number">Exercise 226 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(a,b \in \R \rightarrow \R\)</span> continues et <span class="math notranslate nohighlight">\((E) \; : \; y''= ay' + by\)</span>, et <span class="math notranslate nohighlight">\(y_0\)</span> une solution non nulle de <span class="math notranslate nohighlight">\((E)\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que les zéros de <span class="math notranslate nohighlight">\(y_0\)</span> sont isolés.</p></li>
+<li><p>Montrer que les zéros de <span class="math notranslate nohighlight">\(y_0\)</span> sont en nombre fini sur tout segment.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(y_1\)</span> une solution de <span class="math notranslate nohighlight">\((E)\)</span>. Soit <span class="math notranslate nohighlight">\(x_0&lt;x_1\)</span> deux zéros de <span class="math notranslate nohighlight">\(y_0\)</span>. Montrer que si <span class="math notranslate nohighlight">\(y_1(x_0) = 0\)</span>, alors <span class="math notranslate nohighlight">\(y_0\)</span> et <span class="math notranslate nohighlight">\(y_1\)</span> sont liés, et sinon <span class="math notranslate nohighlight">\(y_1\)</span> s’annule sur <span class="math notranslate nohighlight">\(]y_0, y_1[\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-266">
+
+<p class="admonition-title"><span class="caption-number">Exercise 227 </span></p>
+<div class="section" id="exercise-content">
+<p>Résoudre l’équation fonctionnelle suivante d’inconnue une fonction <span class="math notranslate nohighlight">\(f\)</span> dérivable.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall x,y \in \R, \quad f(x+y)=e^xf(y)+e^yf(x)
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-267">
+
+<p class="admonition-title"><span class="caption-number">Exercise 228 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer les fonctions <span class="math notranslate nohighlight">\(f : \R \rightarrow \R\)</span> continues telles que <span class="math notranslate nohighlight">\(x \mapsto f(x) - \int_0^x tf(t) \; dt\)</span> est constante.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/analyse_reelle"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="%C3%89tudes%20locales%20et%20asymptotiques.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Études locales et asymptotiques</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../algebre_commutative/Groupes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Groupes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

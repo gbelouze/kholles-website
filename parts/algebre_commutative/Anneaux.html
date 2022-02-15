@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anneaux &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Polynômes" href="Polyn%C3%B4mes.html" />
+    <link rel="prev" title="Groupe cyclique" href="Groupe%20cyclique.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/algebre_commutative/Anneaux.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Anneaux</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="anneaux">
+<h1>Anneaux<a class="headerlink" href="#anneaux" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-281">
+
+<p class="admonition-title"><span class="caption-number">Exercise 252 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A,B\)</span> deux anneaux commutatifs, et <span class="math notranslate nohighlight">\(f\)</span> une application de <span class="math notranslate nohighlight">\(A\)</span> vers <span class="math notranslate nohighlight">\(B\)</span> qui préserve la somme, le carré et l’unité. On suppose de plus <span class="math notranslate nohighlight">\(2\)</span> régulier dans <span class="math notranslate nohighlight">\(B\)</span>. Montrer que <span class="math notranslate nohighlight">\(f\)</span> est un morphisme d’anneau. Trouver un contre-exemple si on ne suppose plus que <span class="math notranslate nohighlight">\(f\)</span> préserve l’unité.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-281"> Exercise 252</a></p>
+<div class="section" id="solution-content">
+<p>Il suffit de montrer quer <span class="math notranslate nohighlight">\(f\)</span> préserve le produit. On prend <span class="math notranslate nohighlight">\(x,y \in A\)</span>. En écrivant <span class="math notranslate nohighlight">\(2xy = (x+y)^2-x^2-y^2\)</span>, on montre <span class="math notranslate nohighlight">\(2f(x)f(y) = 2f(xy)\)</span> et on utilise la régularité de <span class="math notranslate nohighlight">\(2\)</span>. Pour le contre-exemple remarquons que <span class="math notranslate nohighlight">\(f(1)\)</span> est toujours idempotent. Il faut donc se placer dans un anneau qui admet d’autre idempotent que <span class="math notranslate nohighlight">\(1\)</span> et <span class="math notranslate nohighlight">\(0\)</span>, par exemple dans un anneau produit (prendre par exemple <span class="math notranslate nohighlight">\(\phi : A \rightarrow B\)</span> un morphisme et <span class="math notranslate nohighlight">\(f:A\rightarrow B^2\)</span> défini  par <span class="math notranslate nohighlight">\(f(a) = (\phi(a), 0)\)</span>).</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-282">
+
+<p class="admonition-title"><span class="caption-number">Exercise 253 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau commutatif. Montrer que <span class="math notranslate nohighlight">\(A\)</span> possède un idempotent différent de <span class="math notranslate nohighlight">\(0\)</span> et <span class="math notranslate nohighlight">\(1\)</span> si et seulement si <span class="math notranslate nohighlight">\(A\)</span> est isomorphe à un anneau produit <span class="math notranslate nohighlight">\(B\times C\)</span> avec <span class="math notranslate nohighlight">\(B\)</span> et <span class="math notranslate nohighlight">\(C\)</span> des anneaux non nuls.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-282"> Exercise 253</a></p>
+<div class="section" id="solution-content">
+<p>Le sens retour est trivial. Considérons <span class="math notranslate nohighlight">\(b\)</span> différent de <span class="math notranslate nohighlight">\(0\)</span> et de <span class="math notranslate nohighlight">\(1\)</span> un idempotent de <span class="math notranslate nohighlight">\(A\)</span>, et notons <span class="math notranslate nohighlight">\(c = 1-b\)</span>. <span class="math notranslate nohighlight">\(c\)</span> est également idempotent non trivial. Notons <span class="math notranslate nohighlight">\(B = Id(b)\)</span> et <span class="math notranslate nohighlight">\(C = Id(c)\)</span> et considérons le morphisme</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\phi :
+\begin{cases}
+A &amp;\rightarrow B \times C \\
+x &amp;\mapsto (bx, cx)
+\end{cases}
+\end{align*}\]</div>
+<p><span class="math notranslate nohighlight">\(\phi\)</span> est clairement un morphisme et est bijectif de réciproque la somme. On peut munir <span class="math notranslate nohighlight">\(B\)</span> et <span class="math notranslate nohighlight">\(C\)</span> d’une structure d’anneau. Pour <span class="math notranslate nohighlight">\(B\)</span> par exemple, il suffit de considérer que l’unité est <span class="math notranslate nohighlight">\(b\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="anneau-integre-fini">
+
+<p class="admonition-title"><span class="caption-number">Exercise 254 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau intègre fini. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est un corps.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#anneau-integre-fini"> Exercise 254</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(a \in A \setminus \{ 0 \}\)</span>. Le morphisme <span class="math notranslate nohighlight">\(x \mapsto ax\)</span> est injectif donc bijectif donc il existe un inverse <span class="math notranslate nohighlight">\(b\)</span> à droite de <span class="math notranslate nohighlight">\(a\)</span>. De même il existe un inverse <span class="math notranslate nohighlight">\(c\)</span> à gauche de <span class="math notranslate nohighlight">\(a\)</span>. Puis <span class="math notranslate nohighlight">\(1 = ca = c (ab) a = (ca)(ba) = ba\)</span> donc <span class="math notranslate nohighlight">\(b=c\)</span> et <span class="math notranslate nohighlight">\(A\)</span> est un corps.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-284">
+
+<p class="admonition-title"><span class="caption-number">Exercise 255 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau  dont les seuls idéaux sont les idéaux triviaux. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est un corps.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-284"> Exercise 255</a></p>
+<div class="section" id="solution-content">
+<p>Pour <span class="math notranslate nohighlight">\(a \in A \setminus \{ 0 \}\)</span> on a <span class="math notranslate nohighlight">\(Id(a) = A\)</span> donc <span class="math notranslate nohighlight">\(1 \in Id(a)\)</span> donc <span class="math notranslate nohighlight">\(a\)</span> est inversible à gauche, à droite et avec le même raisonnement que dans l’exercice <a class="reference internal" href="#anneau-integre-fini"><span class="std std-numref">Exercise 254</span></a>, ce sont les mêmes inverses.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-285">
+
+<p class="admonition-title"><span class="caption-number">Exercise 256 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau commutatif dont tous les idéaux sont premiers. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est un corps.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-285"> Exercise 256</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(x \in A\)</span>. On regarde <span class="math notranslate nohighlight">\(Id(x^2)\)</span> qui contient <span class="math notranslate nohighlight">\(x^2\)</span> donc <span class="math notranslate nohighlight">\(x\)</span>, donc on peut écrire <span class="math notranslate nohighlight">\(x = x^2a\)</span> pour un certain<span class="math notranslate nohighlight">\(a\)</span>, puis <span class="math notranslate nohighlight">\(x(1-xa)=0\)</span>. Il reste à remarquer que <span class="math notranslate nohighlight">\(\{ 0 \}\)</span> est premier, donc <span class="math notranslate nohighlight">\(A\)</span> est intègre. Ainsi <span class="math notranslate nohighlight">\(1=ax\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-286">
+
+<p class="admonition-title"><span class="caption-number">Exercise 257 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau intègre possèdant un nombre fini d’idéaux. Montrer que <span class="math notranslate nohighlight">\(A\)</span> un est un corps.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-286"> Exercise 257</a></p>
+<div class="section" id="solution-content">
+<p>Pour <span class="math notranslate nohighlight">\(a \in A \setminus \{ 0 \}\)</span> on regarde les idéaux <span class="math notranslate nohighlight">\(I_n = a^nA\)</span> qui forment une suite décroissante. Elle est donc stationnaire d’où l’existence de <span class="math notranslate nohighlight">\(m \in \N\)</span> tel que <span class="math notranslate nohighlight">\(I_{m+1}=I_m\)</span>. De là il existe <span class="math notranslate nohighlight">\(x \in A\)</span> tel que <span class="math notranslate nohighlight">\(a^{m+1}x = a^m\)</span>. Par intégrité, <span class="math notranslate nohighlight">\(x\)</span> est inverse à droite de <span class="math notranslate nohighlight">\(a\)</span>. De même il existe un innverse à gauche et la conclusion suit.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-287">
+
+<p class="admonition-title"><span class="caption-number">Exercise 258 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(I_n\)</span> une suite croissante d’idéaux de <span class="math notranslate nohighlight">\(\mathbb{K}[X]\)</span> où <span class="math notranslate nohighlight">\(\mathbb{K}\)</span> est un corps. Montrer que <span class="math notranslate nohighlight">\((I_n)\)</span> est stationnaire.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-287"> Exercise 258</a></p>
+<div class="section" id="solution-content">
+<p>Facile quand on utilise le fait que <span class="math notranslate nohighlight">\(I_n = Id(P_n)\)</span> pour un certain <span class="math notranslate nohighlight">\(P_n \in I_n\)</span>. La suite <span class="math notranslate nohighlight">\(deg(P_n)\)</span> est alors décroissante donc stationnaire.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-288">
+
+<p class="admonition-title"><span class="caption-number">Exercise 259 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau de Boole, i.e. <span class="math notranslate nohighlight">\(\forall a \in A, \; a^2=a\)</span>. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est commutatif. Indication : montrer que <span class="math notranslate nohighlight">\(\forall a \in A, \; a = -a\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-288"> Exercise 259</a></p>
+<div class="section" id="solution-content">
+<p>On a pour <span class="math notranslate nohighlight">\(a \in A\)</span>, <span class="math notranslate nohighlight">\((a+a) = (a+a)^2 = a^2+a^2+a^2+a^2=a+a+a+a\)</span> donc <span class="math notranslate nohighlight">\(a+a = 0\)</span>  soit <span class="math notranslate nohighlight">\(a=-a\)</span>. Puis pour <span class="math notranslate nohighlight">\(x,y \in A\)</span>, on regarde <span class="math notranslate nohighlight">\((x+y)^2\)</span>. La conclusion suit facilement.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-289">
+
+<p class="admonition-title"><span class="caption-number">Exercise 260 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que si <span class="math notranslate nohighlight">\(I\)</span> est maximal, alors <span class="math notranslate nohighlight">\(I\)</span> est premier.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-289"> Exercise 260</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(x,y \in A\)</span> tels que. On suppose <span class="math notranslate nohighlight">\(x \notin I\)</span>. On regarde l’idéal <span class="math notranslate nohighlight">\(J = I + Id(x)\)</span> qui par maximalité de <span class="math notranslate nohighlight">\(I\)</span> est égal à <span class="math notranslate nohighlight">\(A\)</span>. Il existe donc <span class="math notranslate nohighlight">\(i \in I, u \in A\)</span> tels que <span class="math notranslate nohighlight">\(1 = i + ux\)</span>. De là <span class="math notranslate nohighlight">\(y = iy + uxy\)</span>. Mais <span class="math notranslate nohighlight">\(iy \in I\)</span> et <span class="math notranslate nohighlight">\(uxy \in I\)</span> donc <span class="math notranslate nohighlight">\(y \in I\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-290">
+
+<p class="admonition-title"><span class="caption-number">Exercise 261 </span></p>
+<div class="section" id="exercise-content">
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau, <span class="math notranslate nohighlight">\(u\)</span> une unité de <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(n\)</span> un nilpotent qui commute avec <span class="math notranslate nohighlight">\(u\)</span>. Montrer que <span class="math notranslate nohighlight">\(u+n\)</span> est encore une unité.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(a,b\)</span> deux éléments de <span class="math notranslate nohighlight">\(A\)</span> tel que <span class="math notranslate nohighlight">\(1-ab\)</span> soit inversible. Montrer que <span class="math notranslate nohighlight">\(1-ba\)</span> est inversible.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-290"> Exercise 261</a></p>
+<div class="section" id="solution-content">
+<p>\leavevmode</p>
+<ol class="simple">
+<li><p>Intuition : <span class="math notranslate nohighlight">\(\frac{1}{1-x} = \sum x^k\)</span>. Déjà remarquer que <span class="math notranslate nohighlight">\(\frac{n}{u}\)</span> est nilpotent, donc on peut se permettre de faire l’exercice pour simplement <span class="math notranslate nohighlight">\(u=1\)</span>. Avec l’intuition, on montre alors facilement que <span class="math notranslate nohighlight">\(\sum_{k \leq \mathcal{N}(n)} (-n)^k\)</span> est bien l’inverse cherché (attention à montrer qu’il est inverse des deux côtés).</p></li>
+<li><p>Pareil avec l’intuition, il faut regarder <span class="math notranslate nohighlight">\(1 + b\frac{1}{1-ab}a\)</span> et vérifier qu’il s’agit bien de l’inverse cherché (des deux côtés !).</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-291">
+
+<p class="admonition-title"><span class="caption-number">Exercise 262 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau, et <span class="math notranslate nohighlight">\(a \in A\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que l’ensemble des inverses à gauche de <span class="math notranslate nohighlight">\(a\)</span> est en bijection avec <span class="math notranslate nohighlight">\(Ker(\cdot a)\)</span> (noyau de l’homothétie).</p></li>
+<li><p>On suppose <span class="math notranslate nohighlight">\(Ker(\cdot a)\)</span> fini non vide. Soit <span class="math notranslate nohighlight">\(\kappa\)</span> dans <span class="math notranslate nohighlight">\(Ker(\cdot a)\)</span>. Montrer qu’il existe <span class="math notranslate nohighlight">\(m&gt;0\)</span>, tel que <span class="math notranslate nohighlight">\(\kappa = g^m \kappa\)</span>. <em>Indication : considérer <span class="math notranslate nohighlight">\((a^n\kappa)\)</span></em>.</p></li>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(1-ag \in Ker(g\cdot) \cap Ker(\cdot a)\)</span>.</p></li>
+<li><p>En déduire que <span class="math notranslate nohighlight">\(a\)</span> admet <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span> ou une infinité d’inverses à gauche.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-291"> Exercise 262</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>On fixe <span class="math notranslate nohighlight">\(g_0\)</span> inverse à gauche de <span class="math notranslate nohighlight">\(a\)</span> (traiter le cas sans inverse à gauche séparément). On a
+<span class="math notranslate nohighlight">\(ga = 1 \Leftrightarrow ga = g_0a \Leftrightarrow (g-g_0)a = 0 \Leftrightarrow g \in g_0 + Ker(\cdot a)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\((a^n\kappa)\)</span> n’est pas injective.</p></li>
+<li><p>Simple vérification</p></li>
+<li><p>Il suffit de montrer le résultat sur <span class="math notranslate nohighlight">\(Ker(\cdot a)\)</span>. On le suppose non vide de taille fini. Alors avec les questions précédentes <span class="math notranslate nohighlight">\(Ker(g\cdot) \cap Ker(\cdot a) = \{ 0 \}\)</span> donc <span class="math notranslate nohighlight">\(ag = 1\)</span> donc <span class="math notranslate nohighlight">\(g\)</span> est l’unique inverse de <span class="math notranslate nohighlight">\(a\)</span>.</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/algebre_commutative"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Groupe%20cyclique.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Groupe cyclique</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Polyn%C3%B4mes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Polynômes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

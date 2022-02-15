@@ -1,0 +1,875 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Études locales et asymptotiques &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Équations différentielles" href="%C3%89quations%20diff%C3%A9rentielles.html" />
+    <link rel="prev" title="Convexité, inégalité arithmético-géométrique" href="Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/analyse_reelle/Études locales et asymptotiques.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Études locales et asymptotiques</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="etudes-locales-et-asymptotiques">
+<h1>Études locales et asymptotiques<a class="headerlink" href="#etudes-locales-et-asymptotiques" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-202">
+
+<p class="admonition-title"><span class="caption-number">Exercise 197 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer les <span class="math notranslate nohighlight">\(\lambda \in \R\)</span> tels que <span class="math notranslate nohighlight">\(\sin(\lambda x) \underset{+\infty}{=} o(\sin(x))\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-202"> Exercise 197</a></p>
+<div class="section" id="solution-content">
+<p>Si <span class="math notranslate nohighlight">\(\lambda \neq 0\)</span>, <span class="math notranslate nohighlight">\(\sin(\lambda x)^{-1}(\{1\})\)</span> est non majoré, donc on nie le petit <span class="math notranslate nohighlight">\(o\)</span> avec <span class="math notranslate nohighlight">\(\varepsilon = \frac{1}{2}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-203">
+
+<p class="admonition-title"><span class="caption-number">Exercise 198 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(a, b &gt;0\)</span>. Déterminer un équivalent de <span class="math notranslate nohighlight">\(\ln(\ln(ax + b)) - \ln(\ln(x))\)</span> en <span class="math notranslate nohighlight">\(+\infty\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-203"> Exercise 198</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\ln(\ln(ax+b)) &amp;= \ln(\ln(ax)+\ln(1+\frac{b}{ax})) \\
+&amp;= \ln(\ln(ax))+\ln(1+\frac{\frac{b}{ax}-\frac{b^2}{2(ax)^2}}{\ln(a)+\ln(x)}) \\
+&amp;= \ln(\ln(x))+\ln(1+\frac{\ln(a)}{\ln(x)})+o()
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-204">
+
+<p class="admonition-title"><span class="caption-number">Exercise 199 </span></p>
+<div class="section" id="exercise-content">
+<p>Posons <span class="math notranslate nohighlight">\(f_0 : x \mapsto 1-x\)</span> et pour tout <span class="math notranslate nohighlight">\(n\in \N\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+f_{n+1} = \frac{1}{2-f_n}
+\end{equation*}\]</div>
+<p>Déterminer le DL en 0 à l’ordre <span class="math notranslate nohighlight">\(m \in \N\)</span> de <span class="math notranslate nohighlight">\(f_n\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-204"> Exercise 199</a></p>
+<div class="section" id="solution-content">
+<p>On remarque que <span class="math notranslate nohighlight">\(f_n\)</span> est une homographie. On écrit donc</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f_n =\frac{a_n x -b_n}{c_n x -d_n}
+\end{equation*}\]</div>
+<p>ce qui conduit à deux systèmes de deux relations de récurrence mutuellement récursives. On résoud pour trouver <span class="math notranslate nohighlight">\(a_n = n-1\)</span>, <span class="math notranslate nohighlight">\(c_n = n\)</span> et <span class="math notranslate nohighlight">\(b_n = d_n = -1\)</span>. De là le développement à l’ordre <span class="math notranslate nohighlight">\(m\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f_n(x) \underset{0}{=} 1 + \sum_{k=1}^m (-1)^kn^{k-1}x^k + o(x^m)
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-205">
+
+<p class="admonition-title"><span class="caption-number">Exercise 200 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\alpha &gt; 0\)</span>. Trouver une condition nécessaire et suffisante sur <span class="math notranslate nohighlight">\(\alpha\)</span> pour que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ e^{(x+1)^{\alpha}} \underset{+\infty}{\sim} e^{x^{\alpha}}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-205"> Exercise 200</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+e^{(x+1)^{\alpha}} &amp;= e^{x^{\alpha}(1+\frac{\alpha}{x}+o(\frac{1}{x}))} \\
+&amp;= e^{x^{\alpha}} e^{\frac{\alpha}{x^{1-\alpha}}+o(\frac{1}{x^{1-\alpha}})}
+\end{align*}\]</div>
+<p>D’où la condition <span class="math notranslate nohighlight">\(\alpha &lt; 1\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-206">
+
+<p class="admonition-title"><span class="caption-number">Exercise 201 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver <span class="math notranslate nohighlight">\(a, b \in \R\)</span> tels que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ a\sin(x)+b\tan(x) \underset{0}{=} x + o(x^5)
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-206"> Exercise 201</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\sin(x) &amp;\underset{0}{=} x - \frac{x^3}{3} + o(x^4) \\
+\tan(x) &amp;\underset{0}{=} x + \frac{x^3}{3} + o(x^4) \\
+&amp;\Leftrightarrow
+\begin{cases}
+a+b &amp;= 1 \\
+-a+2b &amp;= 0 \\
+\end{cases} \\
+&amp;\Leftrightarrow
+\begin{cases}
+a &amp;= \frac{2}{3} \\
+b &amp;= \frac{1}{3} \\
+\end{cases} \\
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-207">
+
+<p class="admonition-title"><span class="caption-number">Exercise 202 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer le DL à l’ordre <span class="math notranslate nohighlight">\(8\)</span> en <span class="math notranslate nohighlight">\(0\)</span> de</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ (\cos(x) -1)(\sh(x)-x) - (\ch(x)-1)(\sin(x)-x)
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-207"> Exercise 202</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(\cos(x) -1)(\sh(x)-x) &amp;= (-\frac{x^2}{2} + \frac{x^4}{4!} + o(x^5))(\frac{x^3}{3!} + \frac{x^5}{5!}+o(x^6)) \\
+(\ch(x)-1)(\sin(x)-x) &amp;= (\frac{x^2}{2} + \frac{x^4}{4!} + o(x^5))(\frac{x^3}{3!} - \frac{x^5}{5!}+o(x^6)) \\
+(\cos(x) -1)(\sh(x)-x) - (\ch(x)-1)(\sin(x)-x) &amp;= -\frac{x^5}{6} + o(x^8) \\
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-208">
+
+<p class="admonition-title"><span class="caption-number">Exercise 203 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver la limite en <span class="math notranslate nohighlight">\(+\infty\)</span> de</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \left (  \frac{\ln(x+1)}{\ln(x)} \right )^{x\ln(x)}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-208"> Exercise 203</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+\ln(\ln(x+1))-\ln(\ln(x)) &amp;= \ln(\ln(x) + \frac{1}{x}  + o(\frac{1}{x})) - \ln(\ln(x)) \\
+&amp;= \ln(1 + \frac{1}{x\ln(x)} + o(\frac{1}{x\ln(x)})) \\
+&amp;= \frac{1}{x\ln(x)} + o(\frac{1}{x\ln(x)}) \\
+\left (  \frac{\ln(x+1)}{\ln(x)} \right )^{x\ln(x)} &amp;= e^{x\ln(x)(\frac{1}{x\ln(x)} + o(\frac{1}{x\ln(x)}))} \\
+&amp;= e^{1+o(1)} \\
+\underset{+\infty}{\longrightarrow} e
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-209">
+
+<p class="admonition-title"><span class="caption-number">Exercise 204 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer le DL à l’ordre <span class="math notranslate nohighlight">\(5\)</span> en <span class="math notranslate nohighlight">\(0\)</span> de</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \int_0^x \frac{\sin(t)}{t}dt
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-209"> Exercise 204</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(x - \frac{x^3}{18}+\frac{x^5}{4\times 5!} + o(x^5)\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-210">
+
+<p class="admonition-title"><span class="caption-number">Exercise 205 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer le DL à l’ordre <span class="math notranslate nohighlight">\(5\)</span> en <span class="math notranslate nohighlight">\(0\)</span> de</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ (\cos(x))^2
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-210"> Exercise 205</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(1 - x^2 + \frac{x^4}{3} + o(x^5)\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-211">
+
+<p class="admonition-title"><span class="caption-number">Exercise 206 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer le DL à l’ordre <span class="math notranslate nohighlight">\(3\)</span> en <span class="math notranslate nohighlight">\(0\)</span> de</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \frac{\ln(1+x)}{\sin(x)}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-211"> Exercise 206</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(1-\frac{x}{2}+\frac{x^2}{2}-\frac{x^3}{3} + o(x^3)\)</span></p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-212">
+
+<p class="admonition-title"><span class="caption-number">Exercise 207 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver une relation de récurrence sur les coefficients du DL de</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f : x \mapsto e^{\arctan(x)}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-212"> Exercise 207</a></p>
+<div class="section" id="solution-content">
+<p>On dérive une fois <span class="math notranslate nohighlight">\(f\)</span> pour trouver la relation <span class="math notranslate nohighlight">\(f'(x) = (1+x^2)f(x)\)</span>. Cette relation se réécrit comme une relation de récurrence sur les coefficients :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ (k+2)a_{k+2} = a_{k+1} + ka_k
+\end{equation*}\]</div>
+<p>en utilisant l’unicité du développement limité.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-213">
+
+<p class="admonition-title"><span class="caption-number">Exercise 208 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f : x \mapsto x e^{x^2}\)</span>. Montrer que <span class="math notranslate nohighlight">\(f\)</span> est bijective de <span class="math notranslate nohighlight">\(\R\)</span> dans <span class="math notranslate nohighlight">\(\R\)</span>. Déterminer un développement limité à l’ordre 6 en <span class="math notranslate nohighlight">\(0\)</span> de <span class="math notranslate nohighlight">\(f^{-1}\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-23">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-213"> Exercise 208</a></p>
+<div class="section" id="solution-content">
+<p>La bijectivité est évidente. Remarquons que la fonction <span class="math notranslate nohighlight">\(f\)</span> est impaire. Ainsi <span class="math notranslate nohighlight">\(-f^{-1}(f(x))= -x = f^{-1}(f(-x)) = f^{-1}(-f(x))\)</span> donc par surjectivité de <span class="math notranslate nohighlight">\(f\)</span> on a pour tout <span class="math notranslate nohighlight">\(t \in \R\)</span>, <span class="math notranslate nohighlight">\(-f^{-1}(t) = f^{-1}(-t)\)</span>, bref <span class="math notranslate nohighlight">\(f^{-1}\)</span> est impaire et son développement limité en 0 s’écrit donc</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f^{-1}(x) \underset{0}{=} a_1 x + a_3 x^3 + a_5 x^5 + o(x^6)
+\end{equation*}\]</div>
+<p>On injecte alors le DL de <span class="math notranslate nohighlight">\(f\)</span> et on identifie au DL de l’identité pour finalement trouver</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f^{-1}(x) \underset{0}{=} x - x^3 - \frac{7}{2} x^5 + o(x^6)
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-214">
+
+<p class="admonition-title"><span class="caption-number">Exercise 209 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que <span class="math notranslate nohighlight">\(x + \ln(x) = n\)</span> admet une unique solution <span class="math notranslate nohighlight">\(x_n\)</span> dans <span class="math notranslate nohighlight">\(\R\)</span> et donner un développement asymptotique à trois termes de <span class="math notranslate nohighlight">\(x_n\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-25">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-214"> Exercise 209</a></p>
+<div class="section" id="solution-content">
+<p>Existence et unicité sont évidentes. On remarque que <span class="math notranslate nohighlight">\(x_n \leq n\)</span> et que <span class="math notranslate nohighlight">\(x_n \rightarrow +\infty\)</span>. Ensuite il s’agit de développement et de réinjections successives dans l’équation <span class="math notranslate nohighlight">\(x_n = n - \ln(x_n)\)</span> pour trouver</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ x_n = n -\ln(n) + \frac{\ln(n)}{n} + o(\frac{\ln(n)}{n})
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-215">
+
+<p class="admonition-title"><span class="caption-number">Exercise 210 </span></p>
+<div class="section" id="exercise-content">
+<p>À l’aide d’une étude asymptotique de <span class="math notranslate nohighlight">\(x \mapsto \sqrt{x^4 + x^3 + 1}\)</span>, montrer que <span class="math notranslate nohighlight">\(\{ (x, y) \in \Z \; | \; y^2 = x^4 + x^3 + 1 \}\)</span> est fini.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-27">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-215"> Exercise 210</a></p>
+<div class="section" id="solution-content">
+<p>On obtient le développpement <span class="math notranslate nohighlight">\(\sqrt{x^4 + x^3 + 1} \underset{+\infty}{=} x^2 + \frac{x}{2} - \frac{1}{8} + \frac{1}{72x} + o(\frac{1}{x})\)</span>. De là pour <span class="math notranslate nohighlight">\(n\)</span> assez grand, <span class="math notranslate nohighlight">\(| \frac{1}{72n} + o(\frac{1}{n}) | &lt; \frac{1}{8}\)</span>. De là l’ensemble est majoré et dans <span class="math notranslate nohighlight">\(\Z^2\)</span> donc fini.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-216">
+
+<p class="admonition-title"><span class="caption-number">Exercise 211 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer pour <span class="math notranslate nohighlight">\(n \in \N\)</span> que l’équation</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ P_n(x) = x^n + \ldots + x^2 + x -1 = 0
+\end{equation*}\]</div>
+<p>admet une unique solution réelle positive <span class="math notranslate nohighlight">\(u_n\)</span>. Trouver un développement asymptotique à deux dermes de <span class="math notranslate nohighlight">\(u_n\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-29">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-216"> Exercise 211</a></p>
+<div class="section" id="solution-content">
+<p>L’unicité vient par stricte croissance sur <span class="math notranslate nohighlight">\(\R^+\)</span>. L’existence suit du TVI, de la valeur en <span class="math notranslate nohighlight">\(0\)</span> et de la valeur en <span class="math notranslate nohighlight">\(1\)</span> de <span class="math notranslate nohighlight">\(P_n\)</span>. Ensuite <span class="math notranslate nohighlight">\(x_n\)</span> est strictement décroissante car à <span class="math notranslate nohighlight">\(x &gt; 0\)</span> fixé, <span class="math notranslate nohighlight">\((P_n(x))_n\)</span> strictement croissante. Ainsi <span class="math notranslate nohighlight">\(x_n\)</span> converge, mettons vers <span class="math notranslate nohighlight">\(l \in [0, 1[\)</span>. On a donc d’une part <span class="math notranslate nohighlight">\(\forall n \in \N, \; P_n(l) &lt; 0\)</span> i.e. <span class="math notranslate nohighlight">\( 1-l^n&lt; 2(1-l)\)</span> donc <span class="math notranslate nohighlight">\( 1 \leq 2(1-l)\)</span> et d’autre part pour tout <span class="math notranslate nohighlight">\(\lambda &gt; l\)</span> il existe un rang tel que <span class="math notranslate nohighlight">\(P_n(\lambda) &gt; 0\)</span> d’où <span class="math notranslate nohighlight">\(\frac{1}{1-\lambda} &gt; 2\)</span>. Bref nécessairement <span class="math notranslate nohighlight">\( 1 = 2(1-l)\)</span> puis <span class="math notranslate nohighlight">\(l = \frac{1}{2}\)</span>.
+Par ailleurs on peut toujours écrire <span class="math notranslate nohighlight">\(u_n^{n+1}-2u_n +1= 0\)</span>. On étudie <span class="math notranslate nohighlight">\(\varepsilon_n = u_n - \frac{1}{2}\)</span>. On a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ u_n^{n+1}-2\varepsilon_n = 0
+\end{equation*}\]</div>
+<p>d’où pour tout <span class="math notranslate nohighlight">\(\alpha &gt; 0\)</span>, <span class="math notranslate nohighlight">\(\varepsilon_n = o((\frac{1}{2}+\alpha)^n)\)</span>. En particulier <span class="math notranslate nohighlight">\(n\varepsilon_n = o(1)\)</span>. On écrit alors</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+2\varepsilon_n &amp;= (\frac{1}{2} + \varepsilon_n)^{n+1} \\
+&amp;= e^{(n+1)(\ln(\frac{1}{2}) + \ln(1+2\varepsilon_n)))} \\
+&amp;= \frac{1}{2^{n+1}}e^{2(n+1)\varepsilon_n + o(n\varepsilon_n)} \\
+&amp;= \frac{1}{2^{n+1}}(1+o(1))
+\end{align*}\]</div>
+<p>Et finalement <span class="math notranslate nohighlight">\(u_n = \frac{1}{2} + \frac{1}{2^{n+2}} + o(\frac{1}{2^n})\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-217">
+
+<p class="admonition-title"><span class="caption-number">Exercise 212 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver <span class="math notranslate nohighlight">\(a, b \in \R\)</span> tels que <span class="math notranslate nohighlight">\(\cos(x)-\frac{1-ax^2}{1-bx^2} = o(x^n)\)</span> avec <span class="math notranslate nohighlight">\(n\)</span> maximal.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-31">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-217"> Exercise 212</a></p>
+<div class="section" id="solution-content">
+<p>On trouve <span class="math notranslate nohighlight">\(a=-\frac{5}{12}, b =\frac{1}{12}\)</span>.
+On écrit le DL ce <span class="math notranslate nohighlight">\(\cos\)</span> :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ cos(x) = 1 -\frac{1}{2}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + o(x^6)
+\end{equation*}\]</div>
+<p>Puis celui de <span class="math notranslate nohighlight">\(\frac{1-ax^2}{1-bx^2}\)</span> (après calculs):</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \frac{1-ax^2}{1-bx^2} = 1 + (a-b)x^2 - b(a-b)x^4 + b^2(a-b)x^6 + o(x^6)
+\end{equation*}\]</div>
+<p>On a alors</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \cos(x)-\frac{1-ax^2}{1-bx^2} = o(x^n) = (-\frac{1}{2} - (a-b))x^2 + (\frac{1}{24} + b(a-b)) x^4 + (-\frac{1}{720}-b^2(a-b))x^6 + o(x^6)
+\end{equation*}\]</div>
+<p>Ce qui conduit aux valeurs annoncées.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-218">
+
+<p class="admonition-title"><span class="caption-number">Exercise 213 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f \in \C^2(\R)\)</span> telle que <span class="math notranslate nohighlight">\(\forall x, y \in \R^2\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f(x-y)f(x+y) \leq f(x^2)
+\end{equation*}\]</div>
+<p>Montrer que <span class="math notranslate nohighlight">\(\forall x \in \R\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+f(x)f''(x) \leq f'(x)^2
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-33">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-218"> Exercise 213</a></p>
+<div class="section" id="solution-content">
+<p>On applique Taylor-Lagrange à l’ordre 2 sur <span class="math notranslate nohighlight">\(f(x-y)\)</span> et <span class="math notranslate nohighlight">\(f(x+y)\)</span>, puis on multiplie les égalités pour obtenir</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ f(x-y)f(x+y)-f(x^2) = y^2(f(x)f''(x) - f'(x)^2) + o(y^2)
+\end{equation*}\]</div>
+<p>Puis pour <span class="math notranslate nohighlight">\(y\)</span> suffisamment petit, <span class="math notranslate nohighlight">\(f(x-y)f(x+y)-f(x^2)\)</span> est du même signe que <span class="math notranslate nohighlight">\(f(x)f''(x) - f'(x)^2\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-219">
+
+<p class="admonition-title"><span class="caption-number">Exercise 214 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \inf \{ \sup_{[0,1]} |f''| \; | \; f \in \C^2([0,1], \R), \;f(0)=0, \; f(1)=1, \; f'(0)=f'(1) = 0\}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_reelle/Études locales et asymptotiques-solution-35">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-219"> Exercise 214</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(\alpha\)</span> la réponse. Soit <span class="math notranslate nohighlight">\(f\)</span> dans l’ensemble décrit. On peut écrire <span class="math notranslate nohighlight">\(f(1/2) = f(1-1/2) = f(0+1/2)\)</span>. On écrit les deux égalités de Taylor-Lagrange correspondantes</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f(1/2) &amp;= 1 + \frac{f''(c_1)}{8} \quad &amp;c_1 \in ]1/2, 1[ \\
+f(1/2) &amp;=  \frac{f''(c_2)}{8} \quad&amp;c_2 \in ]0, 1/2[ \\
+\end{align*}\]</div>
+<p>Selon la position de <span class="math notranslate nohighlight">\(f(1/2)\)</span> par rapport à <span class="math notranslate nohighlight">\(1/2\)</span>, cela apporte <span class="math notranslate nohighlight">\(\alpha \geq 4\)</span>. Pour l’égalité, on prend l’exemple de <span class="math notranslate nohighlight">\(x \mapsto 2x^2\)</span> entre <span class="math notranslate nohighlight">\(0\)</span> et <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>, et <span class="math notranslate nohighlight">\(1-2(x-1)^2\)</span> entre <span class="math notranslate nohighlight">\(1/2\)</span> et <span class="math notranslate nohighlight">\(1\)</span>  (on obtient cet exemple en intégrant deux fois <span class="math notranslate nohighlight">\(4\)</span> sur <span class="math notranslate nohighlight">\([0,1/2]\)</span> et <span class="math notranslate nohighlight">\(-4\)</span> sur <span class="math notranslate nohighlight">\([1/2, 1]\)</span>).</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/analyse_reelle"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Convexité, inégalité arithmético-géométrique</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="%C3%89quations%20diff%C3%A9rentielles.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Équations différentielles</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

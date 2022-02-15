@@ -1,0 +1,735 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Relation binaire, relation d’ordre, relation d’équivalence &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Nombres complexes" href="Nombres%20complexes.html" />
+    <link rel="prev" title="Ensembles et applications" href="Ensembles%20et%20applications.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Relation binaire, relation d’ordre, relation d’équivalence</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="relation-binaire-relation-d-ordre-relation-d-equivalence">
+<h1>Relation binaire, relation d’ordre, relation d’équivalence<a class="headerlink" href="#relation-binaire-relation-d-ordre-relation-d-equivalence" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-43">
+
+<p class="admonition-title"><span class="caption-number">Exercise 43 </span></p>
+<div class="section" id="exercise-content">
+<ol class="simple">
+<li><p>Montrer l’inégalité de Cauchy-Schwarz <span class="math notranslate nohighlight">\((\sum x_iy_i)^2 \leq (\sum x_i^2)(\sum y_i^2)\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble de cardinal <span class="math notranslate nohighlight">\(n\)</span>, <span class="math notranslate nohighlight">\(\mathscr{R}\)</span> une relation d’équivalence sur <span class="math notranslate nohighlight">\(E\)</span> ayant <span class="math notranslate nohighlight">\(k\)</span> classes d’équivalence et <span class="math notranslate nohighlight">\(G = {(x, y) \in E^2 \; | \; x\mathscr{R}y}\)</span> le graphe d’équivalence de <span class="math notranslate nohighlight">\(\mathscr{R}\)</span> supposé de cardinal <span class="math notranslate nohighlight">\(p\)</span>. Montrer que <span class="math notranslate nohighlight">\(n^2 \leq kp\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-43"> Exercise 43</a></p>
+<div class="section" id="solution-content">
+<ol>
+<li><div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+    (\sum x_iy_i)^2  &amp;= \sum x_i^2y_i^2 + 2\sum_{i&lt;j} (x_iy_i)(x_jy_j) \\
+    (\sum x_i^2)(\sum y_i^2) &amp;= \sum x_i^2y_i^2 + \sum_{i&lt;j} x_i^2y_j^2 + x_j^2y_i^2 \\
+    &amp;= (\sum x_iy_i)^2 + \sum_{i&lt;j} x_i^2y_j^2 - 2(x_iy_ix_jy_j) + x_j^2y_i^2 \\
+    &amp;= (\sum x_iy_i)^2 + \sum_{i&lt;j} (x_iy_j-x_jy_i)^2 \\
+    &amp;\geq (\sum x_iy_i)^2
+    \end{align*}\]</div>
+</li>
+<li><p>On a <span class="math notranslate nohighlight">\(n = |c_1| + \ldots + |c_k|\)</span> et <span class="math notranslate nohighlight">\(p = |c_1|^2 + \ldots + |c_k|^2\)</span>. On applique Cauchy-Schwarz avec <span class="math notranslate nohighlight">\(x_i = |c_i|\)</span> et <span class="math notranslate nohighlight">\(y_i = 1\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-44">
+
+<p class="admonition-title"><span class="caption-number">Exercise 44 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble et <span class="math notranslate nohighlight">\(A\)</span> une partie de <span class="math notranslate nohighlight">\(E\)</span>. On définit une relation <span class="math notranslate nohighlight">\(\mathscr{R}\)</span> sur <span class="math notranslate nohighlight">\(\mathcal{P}(E)\)</span> par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ x \mathscr{R} y \Leftrightarrow X \cup A = Y \cup A
+\end{equation*}\]</div>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(\mathscr{R}\)</span> est une relation d’équivalence.</p></li>
+<li><p>Décrire la classe d’équivalence de <span class="math notranslate nohighlight">\(X \in \mathcal{P}(E)\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-44"> Exercise 44</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Évident</p></li>
+<li><p>Soit pour <span class="math notranslate nohighlight">\(X \subset E\)</span>, <span class="math notranslate nohighlight">\(\tilde{X} = X \setminus A\)</span>. On montre que <span class="math notranslate nohighlight">\(\tilde{X}\)</span> est un représentant de la classe d’équivalence pour <span class="math notranslate nohighlight">\(X\)</span>, et que <span class="math notranslate nohighlight">\(X \mathscr{R} Y\)</span> si et seulement si <span class="math notranslate nohighlight">\(\tilde{X} = \tilde{Y}\)</span>. Dès lors</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \bar{X} = \{ (X \setminus A) \cup B \; | \; B \subset A\}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-45">
+
+<p class="admonition-title"><span class="caption-number">Exercise 45 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\mathscr{R}\)</span> une relation binaire sur <span class="math notranslate nohighlight">\(X\)</span>. Montrer qu’il existe une unique relation d’équivalence <span class="math notranslate nohighlight">\(\overset{*}{\mathscr{R}}\)</span> vérifiant</p>
+<ol class="simple">
+<li><p><em>coherence</em> <span class="math notranslate nohighlight">\(x \mathscr{R} y \Rightarrow x \overset{*}{\mathscr{R}} y\)</span></p></li>
+<li><p>si une relation d’équivalence <span class="math notranslate nohighlight">\(\sim\)</span> vérife <em>coherence</em>, alors les classes d’équivalence de <span class="math notranslate nohighlight">\(\sim\)</span> contiennent les classes d’équivalence de <span class="math notranslate nohighlight">\(\mathscr{R}\)</span>.</p></li>
+</ol>
+<p>Cette relation d’équivalence s’appelle la clôture réflexive, symétrique, transitive de <span class="math notranslate nohighlight">\(\mathscr{R}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-47">
+
+<p class="admonition-title"><span class="caption-number">Exercise 46 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\preccurlyeq\)</span> la relation binaire définie sur le demi-plan <span class="math notranslate nohighlight">\(E = \{(a,b) \in \R^2 \; | \; a \leq b \}\)</span> par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ (a,b) \preccurlyeq (a',b') \Leftrightarrow (a,b)=(a',b') \textrm{ ou } b \leq a'
+\end{equation*}\]</div>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(\preccurlyeq\)</span> est une relation d’ordre sur <span class="math notranslate nohighlight">\(E\)</span>.</p></li>
+<li><p>S’agit-il d’une relation d’ordre totale ?</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence-solution-6">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-47"> Exercise 46</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>On applique la définition.</p></li>
+<li><p><span class="math notranslate nohighlight">\((1,2)\)</span> et <span class="math notranslate nohighlight">\((1,3)\)</span> ne sont pas comparables.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-48">
+
+<p class="admonition-title"><span class="caption-number">Exercise 47 </span> (Ordre lexicographique] \label{lexico)</p>
+<div class="section" id="exercise-content">
+<p>Sur <span class="math notranslate nohighlight">\(E = \N^2\)</span>, on définit la relation binaire <span class="math notranslate nohighlight">\(\preccurlyeq\)</span> par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ (x,y) \preccurlyeq (x',y') \Leftrightarrow x &lt; x' \textrm{ ou } (x=x' \textrm{ et } y \leq y')
+\end{equation*}\]</div>
+<ol class="simple">
+<li><p>Vérifier que <span class="math notranslate nohighlight">\(\preccurlyeq\)</span> est une relation d’ordre sur <span class="math notranslate nohighlight">\(E\)</span>.</p></li>
+<li><p>S’agit-il d’une relation d’ordre totale ? S’agit-il d’un bon ordre ?</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence-solution-8">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-48"> Exercise 47 (Ordre lexicographique] \label{lexico)</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Vérifier la définition.</p></li>
+<li><p>Oui et oui. Il suffit de vérifier que toute partie non vide possède un minimum, ce qui est facile en ne considérant que les éléments dont la première coordonnée est minimale.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-49">
+
+<p class="admonition-title"><span class="caption-number">Exercise 48 </span> (lemme de Newman)</p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble et <span class="math notranslate nohighlight">\(\rightarrow\)</span> une relation sur <span class="math notranslate nohighlight">\(E\)</span>. On note <span class="math notranslate nohighlight">\(\overset{*}{\rightarrow}\)</span> la clôture réflexive, transitive de <span class="math notranslate nohighlight">\(\rightarrow\)</span>. On dit que <span class="math notranslate nohighlight">\(\rightarrow\)</span></p>
+<ul class="simple">
+<li><p>est <strong>confluente</strong> si</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall x, y, z \in E, \; z \overset{*}{\leftarrow} x \overset{*}{\rightarrow} y \Rightarrow ( \exists v \in E, \; y \overset{*}{\rightarrow} v \textrm{ et } z \overset{*}{\rightarrow} v)
+\end{equation*}\]</div>
+<ul class="simple">
+<li><p>est <strong>localement confluente</strong> si</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall x, y, z \in E, \; z \leftarrow x \rightarrow y \Rightarrow ( \exists v \in E, \; y \overset{*}{\rightarrow} v \textrm{ et } z \overset{*}{\rightarrow} v)
+\end{equation*}\]</div>
+<p>On veut montrer que si <span class="math notranslate nohighlight">\(\rightarrow\)</span> est bien fondée, alors <span class="math notranslate nohighlight">\(\rightarrow\)</span> est localement confulente si et seulement si <span class="math notranslate nohighlight">\(\rightarrow\)</span> est confluente.</p>
+<p>Soit <span class="math notranslate nohighlight">\(P(x)\)</span> la propriété</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall y, z \in E, \; z \overset{*}{\leftarrow} x \overset{*}{\rightarrow} y \Rightarrow ( \exists v \in E, \; y \overset{*}{\rightarrow} v \textrm{ et } z \overset{*}{\rightarrow} v)
+\end{equation*}\]</div>
+<ol class="simple">
+<li><p>Montrer la propriété en supposant que tous les successeurs de <span class="math notranslate nohighlight">\(x\)</span> vérifient <span class="math notranslate nohighlight">\(P\)</span>. <em>Indication : utiliser deux fois l’hypothèse d’induction</em>.</p></li>
+<li><p>Conclure par l’absurde.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-50">
+
+<p class="admonition-title"><span class="caption-number">Exercise 49 </span> (Ordre alphabétique)</p>
+<div class="section" id="exercise-content">
+<p>On se donne <span class="math notranslate nohighlight">\(\prec\)</span> un ordre stricte sur un alphabet <span class="math notranslate nohighlight">\(\mathcal{A}\)</span>.
+On définit l’ordre lexicographique sur les mots de <span class="math notranslate nohighlight">\(\mathcal{A}\)</span> par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ u \leq_{lex} v \Leftrightarrow \begin{cases}
+u \textrm{ est préfixe de } v \\
+\textrm{ou}\\
+\exists w, s, t \in \mathcal{A}^*, \; a,b \in \mathcal{A}, \; a \prec b \textrm{ et } u = was, \; v = wbt
+\end{cases}
+\end{equation*}\]</div>
+<p>On définit l’ordre militaire sur les mots de <span class="math notranslate nohighlight">\(\mathcal{A}\)</span> par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ u \leq_{mil} v \Leftrightarrow \begin{cases}
+|u| &lt; |v| \\
+\textrm{ou}\\
+|u| = |v| \textrm{ et } u \leq_{lex} v
+\end{cases}
+\end{equation*}\]</div>
+<p>Montrer que l’ordre militaire est bien fondé, mais que l’ordre lexicographique ne l’est pas.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-50"> Exercise 49 (Ordre alphabétique)</a></p>
+<div class="section" id="solution-content">
+<p><strong>L’ordre lexicographique n’est pas bien fondé</strong>
+Il suffit de trouver un contre-exemple. Par exemple, <span class="math notranslate nohighlight">\(u_n = a^nb\)</span> est strictement décroissante pour l’odre lexicographique.</p>
+<p><strong>L’ordre militaire est bien fondé</strong>
+Supposons par l’absurde qu’on puisse trouver <span class="math notranslate nohighlight">\((u_n)\)</span> une suite strictement décroissante pour l’ordre militaire. Remarquons que la suite <span class="math notranslate nohighlight">\(|u_n|\)</span> est une suite d’entiers décroissante, donc constante à partir d’un certain rang, mettons <span class="math notranslate nohighlight">\(N\)</span>. Cela fournit donc une suite <span class="math notranslate nohighlight">\((v_n)\)</span> telle que <span class="math notranslate nohighlight">\(v_{n+1} &lt;_{lex} v_n\)</span> pour tout <span class="math notranslate nohighlight">\(n\)</span> et <span class="math notranslate nohighlight">\(|v_n|\)</span> est constante. On va montrer la propriété suivante, par récurrence sur la taille de <span class="math notranslate nohighlight">\(w_n\)</span></p>
+<div class="proof lemma admonition" id="lemma-12">
+<p class="admonition-title"><span>Lemma </span></p>
+<div class="lemma-content section" id="proof-content">
+<p>Soit <span class="math notranslate nohighlight">\(w_n\)</span> une suite de taille constante et décroissante pour <span class="math notranslate nohighlight">\(\leq_{lex}\)</span>. Alors <span class="math notranslate nohighlight">\(w_n\)</span> est stationnaire (i.e. constante à partir d’un certain rang)</p>
+</div>
+</div><p>Alors <span class="math notranslate nohighlight">\(v_n\)</span> constituera une contradiction.</p>
+<p>L’initialisation où <span class="math notranslate nohighlight">\(w_n\)</span> est juste une lettre est immédiate parce que <span class="math notranslate nohighlight">\(\mathcal{A}\)</span> est fini, et donc <span class="math notranslate nohighlight">\(\prec\)</span> est un bon ordre. Soit maintenant donc <span class="math notranslate nohighlight">\(v_n\)</span> de taille constante <span class="math notranslate nohighlight">\(p+1\)</span>. Considérons <span class="math notranslate nohighlight">\(w_n\)</span> les <span class="math notranslate nohighlight">\(p\)</span> premières lettres de <span class="math notranslate nohighlight">\(v_n\)</span>, et <span class="math notranslate nohighlight">\(z_n\)</span> la dernière lettre, i.e. <span class="math notranslate nohighlight">\(v_n = w_nz_n\)</span>. Alors <span class="math notranslate nohighlight">\(w_n\)</span> et <span class="math notranslate nohighlight">\(z_n\)</span> sont décroissantes pour <span class="math notranslate nohighlight">\(\leq_{lex}\)</span>, donc par hypothèse de récurrence stationnaire, donc <span class="math notranslate nohighlight">\(v_n\)</span> l’est également.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-51">
+
+<p class="admonition-title"><span class="caption-number">Exercise 50 </span></p>
+<div class="section" id="exercise-content">
+<p>On suppose que la relation “être l’ami de” est réflive et symétrique, et que le nombre de personnes est fini. Montrer qu’il existe deux personnes ayant autant d’amis.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence-solution-14">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-51"> Exercise 50</a></p>
+<div class="section" id="solution-content">
+<p>Par l’absurde, la fonction nombre d’amis est une bijection avec <span class="math notranslate nohighlight">\([\,| 1, n |\,]\)</span> où <span class="math notranslate nohighlight">\(n\)</span> est le nombre de personnes. En particulier, il existe une personne amie qu’avec elle-même, et une avec tout le monde. Cela entre en contradiction avec la symétrie.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-52">
+
+<p class="admonition-title"><span class="caption-number">Exercise 51 </span></p>
+<div class="section" id="exercise-content">
+<p>On suppose que la relation “avoir serré la main” est irréflexive et symétrique, et que l’ensemble des personnes est fini. Montrer que le nombre de personnes ayant serré un nombre impair de mains est pair.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence-solution-16">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-52"> Exercise 51</a></p>
+<div class="section" id="solution-content">
+<p>On regarde <span class="math notranslate nohighlight">\(p = |{(x,y) \; | \; \textrm{\)</span>x<span class="math notranslate nohighlight">\( et \)</span>y<span class="math notranslate nohighlight">\( se sont serrés la main}}|\)</span>. Notons <span class="math notranslate nohighlight">\(\Delta\)</span> la relation “a serré la main de”. Par symétrie et irréflexivité, <span class="math notranslate nohighlight">\(p\)</span> est pair. En effet, en notant <span class="math notranslate nohighlight">\(x_1, \ldots, x_n\)</span> les personnes, on peut écrire</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*} p &amp;= \sum_{1\leq i,j \leq n, \; x_i \Delta x_j} 1 \\
+&amp;= \sum_{1\leq i,j \leq n, \; i \neq j, \; x_i \Delta x_j} 1 \qquad &amp;\textrm{(irréfléxivité)}\\
+&amp;= \sum_{1\leq i&lt;j \leq n, \; x_i \Delta x_j} 2 \qquad &amp;\textrm{(symétrie)}\\
+&amp;= 0 \mod{2}
+\end{align*}\]</div>
+<p>Or <span class="math notranslate nohighlight">\(p = \sum_i |\{ \textrm{mains serrées par \)</span>x_i<span class="math notranslate nohighlight">\(}\}|\)</span>. Notons <span class="math notranslate nohighlight">\(I\)</span> la partie de <span class="math notranslate nohighlight">\(1, \ldots, n\)</span> correspondant aux personnes ayant serré un nombre impair de mains, et <span class="math notranslate nohighlight">\(J\)</span> son complémentaire. On a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+p &amp;= \sum_{i=1}^n |\{y \; | \; x_i\Delta y\}| \\
+&amp;= \sum_{i \in I} 1 + \sum_{i \in J} 0 \mod{2} \\
+&amp;= |I| \mod{2}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-53">
+
+<p class="admonition-title"><span class="caption-number">Exercise 52 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\((E, \preccurlyeq)\)</span> un ensemble ordonné tel que toute partie non vide admet un plus petit élément et un plus grand élément. Montrer que <span class="math notranslate nohighlight">\(E\)</span> est fini.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence-solution-18">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-53"> Exercise 52</a></p>
+<div class="section" id="solution-content">
+<p>Si <span class="math notranslate nohighlight">\(E\)</span> est infini, on peut prendre son plus grand élément, puis le plus grand des restant, etc. ce qui construit une suite infinie stricement décroissante.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-54">
+
+<p class="admonition-title"><span class="caption-number">Exercise 53 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble ordonné par une relation <span class="math notranslate nohighlight">\(\leq\)</span>. On considère un tableau à <span class="math notranslate nohighlight">\(n\)</span> lignes et <span class="math notranslate nohighlight">\(p\)</span> colonnes d’éléments de <span class="math notranslate nohighlight">\(E\)</span>. Comparer</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \underset{1 \leq j \leq p}{\max} \left ( \underset{1 \leq i \leq n}{\min} a_{i,j} \right )
+\end{equation*}\]</div>
+<p>et</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \underset{1 \leq i \leq n}{\min} \left ( \underset{1 \leq j \leq p}{\max} a_{i,j} \right )
+\end{equation*}\]</div>
+<p>Donner un cas de non égalité.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Relation binaire, relation d'ordre, relation d'équivalence-solution-20">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-54"> Exercise 53</a></p>
+<div class="section" id="solution-content">
+<p>Le plus petit des géants est plus grand que le plus grand des nains.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/preliminaires"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Ensembles%20et%20applications.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Ensembles et applications</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Nombres%20complexes.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Nombres complexes</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

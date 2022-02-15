@@ -1,0 +1,811 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ensembles et applications &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Relation binaire, relation d’ordre, relation d’équivalence" href="Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html" />
+    <link rel="prev" title="Calculus : intégration, fonctions usuelles" href="Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/preliminaires/Ensembles et applications.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Ensembles et applications</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="ensembles-et-applications">
+<h1>Ensembles et applications<a class="headerlink" href="#ensembles-et-applications" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-26">
+
+<p class="admonition-title"><span class="caption-number">Exercise 26 </span></p>
+<div class="section" id="exercise-content">
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(A,B\)</span> des parties de <span class="math notranslate nohighlight">\(E\)</span>. Résoudre pour <span class="math notranslate nohighlight">\(X\in E\)</span> l’équation <span class="math notranslate nohighlight">\(X \bigcup A = X \bigcap B\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(A,B\)</span> des parties de <span class="math notranslate nohighlight">\(E\)</span>. Résoudre pour <span class="math notranslate nohighlight">\(X\in E\)</span> l’équation <span class="math notranslate nohighlight">\(X \bigcup A = \overline{X} \bigcap B\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-26"> Exercise 26</a></p>
+<div class="section" id="solution-content">
+<ol>
+<li><p>On a toujours <span class="math notranslate nohighlight">\(A \subset X \bigcup A\)</span> et <span class="math notranslate nohighlight">\(X \bigcap B \subset B\)</span>. Une condition nécessaire à l’existence de solution est donc <span class="math notranslate nohighlight">\(A \subset B\)</span>.</p>
+<p>De plus si <span class="math notranslate nohighlight">\(X\)</span> est solution, pour avoir l’inclusion du membre de gauche dans celui de droite, il faut <span class="math notranslate nohighlight">\(X \subset B\)</span>. L’équation se réécrit alors:
+<span class="math notranslate nohighlight">\(X \bigcup A = X\)</span>, soit <span class="math notranslate nohighlight">\(A \subset X\)</span>. Ainsi on trouve <span class="math notranslate nohighlight">\(\mathcal{S} = \{ A \bigcup Y \; | \; Y \in (B \setminus A)\}\)</span>.</p>
+</li>
+<li><p>Analyse : soit <span class="math notranslate nohighlight">\(X\)</span> solution. <span class="math notranslate nohighlight">\(\emptyset = X \bigcap (\overline{X} \bigcap B) = X \bigcap (X \bigcup A) = X\)</span>. Synthèse : <span class="math notranslate nohighlight">\(\emptyset\)</span> est solution si et seulement si
+<span class="math notranslate nohighlight">\(A = B\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-27">
+
+<p class="admonition-title"><span class="caption-number">Exercise 27 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\((u_n)_{n \in \mathbb{N}}\)</span> une suite. On dit que <span class="math notranslate nohighlight">\((u_n)\)</span> est de Cauchy si</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall \varepsilon &gt; 0, \; \exists N \in \mathbb{N}, \; \forall n,p &gt; N, \; |u_n-u_p|&lt;\varepsilon
+\end{equation*}\]</div>
+<ol>
+<li><p>Comparer cette définition avec</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+     \forall \varepsilon &gt; 0, \; \exists n \in \mathbb{N}, \; \forall p &gt; n, \; |u_n-u_p|&lt;\varepsilon
+    \end{equation*}\]</div>
+</li>
+<li><p>Exprimer le caractère borné d’une suite à l’aide de quantificateurs. Montrer qu’une suite de Cauchy est bornée.</p></li>
+<li><p>Montrer qu’une suite convergente est de Cauchy.</p></li>
+<li><p>Comparer la définition d’une suite de Cauchy avec la suivante</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall \varepsilon &gt; 0, \; \exists N \in \mathbb{N}, \; \forall n &gt; N, \; |u_{n+1} - u_n| &lt; \varepsilon
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-28">
+
+<p class="admonition-title"><span class="caption-number">Exercise 28 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(x_1, \; \ldots, \, x_p\)</span> des entiers tels que pour tout <span class="math notranslate nohighlight">\(k\)</span>, <span class="math notranslate nohighlight">\(0 \leq x_k \leq k\)</span> et <span class="math notranslate nohighlight">\(x_p \neq 0\)</span>.
+La suite finie <span class="math notranslate nohighlight">\((x_1, \; \ldots, \, x_p)\)</span> s’appelle l’écriture factorielle de l’entier <span class="math notranslate nohighlight">\(n = \sum \limits_{k=1}^{p} x_kk!\)</span>.</p>
+<p>Montrer que cette écriture existe et est unique pour tout entier naturel <span class="math notranslate nohighlight">\(n\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-29">
+
+<p class="admonition-title"><span class="caption-number">Exercise 29 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(u_n=\sum \limits_{k=1}^n \lfloor \frac{n}{k} \rfloor\)</span>. Trouver les entiers <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> pour lesquels <span class="math notranslate nohighlight">\(u_n\)</span> est pair.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-30">
+
+<p class="admonition-title"><span class="caption-number">Exercise 30 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\((u_n)_{n \in \mathbb{N}}\)</span> une suite. On définit la <span class="math notranslate nohighlight">\(\sigma(u_n)\)</span> comme l’ensemble des valeurs prises une infinité de fois par <span class="math notranslate nohighlight">\((u_n)\)</span>.</p>
+<p>Exprimer <span class="math notranslate nohighlight">\(\sigma(u_n)\)</span> à l’aide de quantificateurs, puis à l’aide d’opérations ensemblistes sur les <span class="math notranslate nohighlight">\(U_n = \{ u_i \; | \; i \geq n \}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-31">
+
+<p class="admonition-title"><span class="caption-number">Exercise 31 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que le raisonnement par récurrence est valide, i.e. <span class="math notranslate nohighlight">\(\left ( P(0) \textrm{ et } (P(n) \Rightarrow P(n+1)) \right ) \Rightarrow \forall n, \; P(n)\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-32">
+
+<p class="admonition-title"><span class="caption-number">Exercise 32 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 2.9 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span> deux parties de E. Considérons</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+    \phi \longmapsto\begin{cases}
+     P(E) \;  \rightarrow \; P(A) \times P(B) \\
+
+     X \; \mapsto (A \bigcap X, B \bigcap X )
+    \end{cases}
+\end{equation*}\]</div>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(\phi\)</span> est injective si, et seulement si, <span class="math notranslate nohighlight">\(A \cup B = E\)</span>.</p></li>
+<li><p>Trouver une condition nécessaire et suffisante pour que <span class="math notranslate nohighlight">\(\phi\)</span> soit surjective.</p></li>
+<li><p>On suppose que <span class="math notranslate nohighlight">\(\phi\)</span> est bijective. Calculer <span class="math notranslate nohighlight">\(\phi^{-1}\)</span>.</p></li>
+</ol>
+<p>Difficulté : *</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-8">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-32"> Exercise 32</a></p>
+<div class="section" id="solution-content">
+<ol>
+<li><p><span class="math notranslate nohighlight">\((\Rightarrow)\)</span> On raisonne par contraposée en se donnant <span class="math notranslate nohighlight">\(x \in E \setminus A \cup B\)</span>. Alors <span class="math notranslate nohighlight">\(\forall X\)</span>, <span class="math notranslate nohighlight">\(\phi (X) = \phi(X\cup \{ x \} )\)</span>
+d’où la non injectivité.</p>
+<p><span class="math notranslate nohighlight">\((\Leftarrow)\)</span> Par contraposée encore. Soit <span class="math notranslate nohighlight">\(X\)</span> et <span class="math notranslate nohighlight">\(Y\)</span> de même image par <span class="math notranslate nohighlight">\(\phi\)</span>, et par exemple soit <span class="math notranslate nohighlight">\(x \in X \setminus Y\)</span>. Il est immédiat
+que <span class="math notranslate nohighlight">\(x \notin A\)</span> et <span class="math notranslate nohighlight">\(x \notin B\)</span>.</p>
+</li>
+<li><p>La condition est <span class="math notranslate nohighlight">\(A \bigcap B = \emptyset \)</span>.</p></li>
+<li><div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+        \phi^{-1} \longmapsto\begin{cases}
+         P(A) \times P(B) \;  \rightarrow \; P(E) \\
+
+        (X_1, Y_1) \; \mapsto X_1 \cup Y_1
+        \end{cases}
+    \end{equation*}\]</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-33">
+
+<p class="admonition-title"><span class="caption-number">Exercise 33 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 2.22 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(E= \{ x_1, \; \ldots, \; x_p\}\)</span>. Prouver que l’on peut ordonner les éléments de <span class="math notranslate nohighlight">\(P(E)\)</span> en respectant
+les 4 règles suivantes :</p>
+<ul class="simple">
+<li><p>on commence par <span class="math notranslate nohighlight">\(\emptyset\)</span>,</p></li>
+<li><p>on termine par un singleton,</p></li>
+<li><p>chaque élément de <span class="math notranslate nohighlight">\(P(E)\)</span> apparaît une et une seule fois,</p></li>
+<li><p>chaque terme de la suite est obtenu par l’ajout ou le retrait d’un seul élément au terme précédent.
+Difficulté : *</p></li>
+</ul>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-10">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-33"> Exercise 33</a></p>
+<div class="section" id="solution-content">
+<p>On prouve le résultat par récurrence. Soit <span class="math notranslate nohighlight">\(\emptyset = a_1, \ldots, a_{2^p} = \{ x_p \}\)</span> une suite de parties convenable associée à <span class="math notranslate nohighlight">\(E={x_1, \ldots, x_p}\)</span>.</p>
+<p>Une suite convenable associée à <span class="math notranslate nohighlight">\(E \cup \{ x_{p+1} \}\)</span> est alors</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ a_1, \ldots, a_{2^p}, a_{2^p} \cup \{x_{p+1} \}, \ldots, a_1 \cup \{x_{p+1} \} = \{x_{p+1} \}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-34">
+
+<p class="admonition-title"><span class="caption-number">Exercise 34 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver une bijection entre <span class="math notranslate nohighlight">\(\mathbb{R}\)</span> et <span class="math notranslate nohighlight">\(\mathbb{R}\setminus \mathbb{Z}\)</span>. Difficulté : **</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-12">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-34"> Exercise 34</a></p>
+<div class="section" id="solution-content">
+<p>On note <span class="math notranslate nohighlight">\(x_n = \sum \limits_{k=1}^n \frac{1}{2^k}\)</span>. On considère alors la bijection</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+    \phi : \; x \longmapsto\begin{cases}
+     m + x_{n+1} \; \text{si } x \text{ est de la forme } x=m+x_n \text{ où } m \in \mathbb{Z} \\
+
+    x \text{ sinon}
+    \end{cases}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-35">
+
+<p class="admonition-title"><span class="caption-number">Exercise 35 </span></p>
+<div class="section" id="exercise-content">
+<p>Voir énoncé 2.17 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(f\)</span> : <span class="math notranslate nohighlight">\(\mathbb{N} \rightarrow \mathbb{N}\)</span> injective et <span class="math notranslate nohighlight">\(g\)</span> : <span class="math notranslate nohighlight">\(\mathbb{N} \rightarrow \mathbb{N}\)</span> surjective, telles que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall n \in \mathbb{N}, \; f(n) \leq g(n)
+\end{equation*}\]</div>
+<p>Montrer que <span class="math notranslate nohighlight">\(f=g\)</span>.
+Difficulté : **</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-14">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-35"> Exercise 35</a></p>
+<div class="section" id="solution-content">
+<p>Soit par l’absurde <span class="math notranslate nohighlight">\(n\)</span> tel que <span class="math notranslate nohighlight">\(f(n)&lt;g(n)\)</span>. Par surjectivité de <span class="math notranslate nohighlight">\(g\)</span> il existe <span class="math notranslate nohighlight">\(a_0, \, a_1, \ldots, a_{g(n)}=n\)</span> tels que
+<span class="math notranslate nohighlight">\(\forall i, \; g(a_i)=i\)</span>. Par injectivité de <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(Card \{ f(a_i) | i =0, \ldots, g(n) \} = g(n)+1\)</span>. Or par hypothèse,
+<span class="math notranslate nohighlight">\(\{ f(a_i) | i =0, \ldots, g(n) \} \subset [\![0;g(n)-1]\!]\)</span> ce qui amène la contradiction.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-36">
+
+<p class="admonition-title"><span class="caption-number">Exercise 36 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble et <span class="math notranslate nohighlight">\(X \subset E\)</span>. La fonction indicatrice de <span class="math notranslate nohighlight">\(X\)</span> est définie par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+    \mathds{1}_X \longmapsto\begin{cases}
+     E \;  \rightarrow \; &amp;\{ 0,1 \} \\
+
+     x \; \mapsto &amp;1 \textrm{ si } x \in X \\
+     &amp;0 \textrm{ sinon}
+    \end{cases}
+\end{equation*}\]</div>
+<ol class="simple">
+<li><p>Soit <span class="math notranslate nohighlight">\(A,B \subset E\)</span>. Exprimer <span class="math notranslate nohighlight">\(\mathds{1}_{A \bigcup B}, \; \mathds{1}_{A \bigcap B}, \; \mathds{1}_{A \setminus B}\)</span> en fonction de <span class="math notranslate nohighlight">\(\mathds{1}_A\)</span> et <span class="math notranslate nohighlight">\(\mathds{1}_B\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(A_1\)</span>, <span class="math notranslate nohighlight">\(A_2\)</span>, <span class="math notranslate nohighlight">\(\ldots\)</span>, <span class="math notranslate nohighlight">\(A_n\)</span> des sous-ensembles de <span class="math notranslate nohighlight">\(E\)</span>. Prouver l’égalité suivante</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\mathds{1}_{A_1 \cup A_2 \cup \ldots \cup A_n} = \sum \limits_{k=1}^n (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-16">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-36"> Exercise 36</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(\mathds{1}_{A \bigcap B} = \mathds{1}_A \mathds{1}_B\)</span>, <span class="math notranslate nohighlight">\(\mathds{1}_{A \setminus B} = \mathds{1}_A (1 - \mathds{1}_B)\)</span> et enfin <span class="math notranslate nohighlight">\(\mathds{1}_{A \bigcup B} = \mathds{1}_A + \mathds{1}_B - \mathds{1}_A \mathds{1}_B\)</span>.</p></li>
+<li><p>On prouve le résultat par récurrence, l’initialisation ayant été faite à la question précédente. On applique l’hypothèse de récurrence avec <span class="math notranslate nohighlight">\(A_n \bigcup A_{n+1}\)</span> au lieu de <span class="math notranslate nohighlight">\(A_n\)</span>.</p></li>
+</ol>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+&amp; \mathds{1}_{A_1 \cup A_2 \cup \ldots \cup A_{n+1}} \\ &amp;= \mathds{1}_{A_n \bigcup A_{n+1}} + \sum \limits_{k=1}^{n-1} (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n-1} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}} - \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}\mathds{1}_{A_n \bigcup A_{n+1}} \\
+&amp;= \mathds{1}_{A_n} + \mathds{1}_{A_{n+1}} - \mathds{1}_{A_n} \mathds{1}_{A_{n+1}} + \sum \limits_{k=1}^{n-1} (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n-1} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}} - \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}(\mathds{1}_{A_n} + \mathds{1}_{A_{n+1}} - \mathds{1}_{A_n} \mathds{1}_{A_{n+1}}) \\
+&amp;= \sum \limits_{k=1}^{n+1} (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n+1} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-37">
+
+<p class="admonition-title"><span class="caption-number">Exercise 37 </span></p>
+<div class="section" id="exercise-content">
+<p>Trouver une bijection entre <span class="math notranslate nohighlight">\(\mathbb{N}\)</span> et <span class="math notranslate nohighlight">\(\mathbb{N}^2\)</span>. Montrer que <span class="math notranslate nohighlight">\(\forall n \in \mathbb{N}\)</span>, <span class="math notranslate nohighlight">\(\mathbb{N}\)</span> et <span class="math notranslate nohighlight">\(\mathbb{N}^n\)</span> sont en bijection. Montrer que l’ensemble des suites d’entiers
+nulles à partir d’un certain rang est en bijection avec <span class="math notranslate nohighlight">\(\mathbb{N}\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-18">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-37"> Exercise 37</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\((n,p) \longrightarrow (2n+1)2^p-1\)</span>. Le second résultat se montre par récurrence et en utilisant le cas <span class="math notranslate nohighlight">\(n=2\)</span>. On note alors <span class="math notranslate nohighlight">\(\phi_n\)</span> des bijections de <span class="math notranslate nohighlight">\(\mathbb{N}\)</span> dans <span class="math notranslate nohighlight">\(\mathbb{S}^n\)</span>
+où <span class="math notranslate nohighlight">\(\mathbb{S}^n\)</span> désigne l’ensemble des suites d’entiers nulles à partir du rang <span class="math notranslate nohighlight">\(n+1\)</span> exactement. On utilise alors un procédé diagonal : Si on note <span class="math notranslate nohighlight">\(\phi_2'\)</span> et <span class="math notranslate nohighlight">\(\phi_2''\)</span> les
+deux premières composantes de <span class="math notranslate nohighlight">\(\phi_2\)</span>, alors <span class="math notranslate nohighlight">\(n \longrightarrow \phi_{\phi_2'(n)}(\phi_2''(n))\)</span> convient.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-38">
+
+<p class="admonition-title"><span class="caption-number">Exercise 38 </span></p>
+<div class="section" id="exercise-content">
+<p>Existence d’un point fixe pour une fonction <span class="math notranslate nohighlight">\(f : \mathcal{P}(E) \rightarrow \mathcal{P}(E)\)</span> croissante.</p>
+<p><em>Indication : considérer le plus grand <span class="math notranslate nohighlight">\(A\)</span> vérifiant <span class="math notranslate nohighlight">\(A \subset f(A)\)</span>.</em></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-20">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-38"> Exercise 38</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\((A_i)_{i \in I}\)</span> l’ensemble des parties de <span class="math notranslate nohighlight">\(E\)</span> vérifiant <span class="math notranslate nohighlight">\(A_i \subset f(A_i)\)</span>. Soit <span class="math notranslate nohighlight">\(A = \cup_{i\in I}A_i\)</span>. Alors <span class="math notranslate nohighlight">\(f(A) = \cup f(A_i)\)</span> donc <span class="math notranslate nohighlight">\(A \subset f(A)\)</span>. Par croissance de <span class="math notranslate nohighlight">\(f\)</span>, <span class="math notranslate nohighlight">\(f(A) \subset f(f(A))\)</span> donc par maximalité de <span class="math notranslate nohighlight">\(A\)</span>, <span class="math notranslate nohighlight">\(f(A) \subset A\)</span>. Bref <span class="math notranslate nohighlight">\(A = f(A)\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-39">
+
+<p class="admonition-title"><span class="caption-number">Exercise 39 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble. Montrer que <span class="math notranslate nohighlight">\(E\)</span> est infini ssi toute fonction <span class="math notranslate nohighlight">\(f\)</span> de <span class="math notranslate nohighlight">\(E\)</span> dans lui-même admet une partie stable non triviale.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-22">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-39"> Exercise 39</a></p>
+<div class="section" id="solution-content">
+<p>Si <span class="math notranslate nohighlight">\(E\)</span> est fini, considérer <span class="math notranslate nohighlight">\(f\)</span> un cycle de support <span class="math notranslate nohighlight">\(E\)</span>. Si <span class="math notranslate nohighlight">\(E\)</span> est infini, considérons <span class="math notranslate nohighlight">\(f : E \rightarrow E\)</span>, et choisissons <span class="math notranslate nohighlight">\(x \in E\)</span> quelconque. Soit <span class="math notranslate nohighlight">\(A = \underset{n \in \N}{\cup} f^{\circ n}(x)\)</span>. De toute évidence <span class="math notranslate nohighlight">\(A\)</span> est stable par <span class="math notranslate nohighlight">\(f\)</span>. Si <span class="math notranslate nohighlight">\(A\)</span> est fini, <span class="math notranslate nohighlight">\(A \neq E\)</span> et <span class="math notranslate nohighlight">\(A\)</span> convient. Sinon, <span class="math notranslate nohighlight">\(A\)</span> n’est pas cyclique et en particulier <span class="math notranslate nohighlight">\(x \notin \underset{n \geq 1}{\cup} f^{\circ n}(x) = B\)</span>. <span class="math notranslate nohighlight">\(B\)</span> est stable et convient.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-40">
+
+<p class="admonition-title"><span class="caption-number">Exercise 40 </span></p>
+<div class="section" id="exercise-content">
+<p>On dit que <span class="math notranslate nohighlight">\(f, g \; : \; X \rightarrow Y\)</span> possèdent un coégalisateur <span class="math notranslate nohighlight">\(e : Y \rightarrow Q\)</span> lorsque</p>
+<ol class="simple">
+<li><p><em>Commutation</em> <span class="math notranslate nohighlight">\(e \circ f = e \circ g\)</span></p></li>
+<li><p><em>Maximalité</em> pour toute fonction <span class="math notranslate nohighlight">\(d : Y \rightarrow Q'\)</span> telle que <span class="math notranslate nohighlight">\(d \circ f = d \circ g\)</span>, il existe une unique fonction <span class="math notranslate nohighlight">\(h : Q \rightarrow Q'\)</span> vérifiant <span class="math notranslate nohighlight">\(h \circ e = d\)</span>.</p></li>
+</ol>
+<p>Montrer que si <span class="math notranslate nohighlight">\(e\)</span> existe, alors <span class="math notranslate nohighlight">\(e\)</span> est surjective. <em>Indication : montrer que <span class="math notranslate nohighlight">\(\phi\)</span> est surjective si et seulement si pour toute paire de fonction <span class="math notranslate nohighlight">\(h_1, h_2\)</span>, <span class="math notranslate nohighlight">\(h_1 \circ \phi = h_2 \circ \phi \Rightarrow h_1 = h_2\)</span></em></p>
+<p>Montrer qu’il existe toujours un coégalisateur.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-24">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-40"> Exercise 40</a></p>
+<div class="section" id="solution-content">
+<p>La première question se fait avec l’indication et en utilisant le critère <em>Maximalité</em>. Pour la deuxième question, on considère la relation binaire <span class="math notranslate nohighlight">\(\mathscr{R}\)</span> sur <span class="math notranslate nohighlight">\(Y\)</span> définie par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ y_1 \mathscr{R} y_2 \Leftrightarrow \exists x \in X, \; \begin{cases}
+y_1 = f(x) \\
+y_2 = g(x)
+\end{cases}
+\end{equation*}\]</div>
+<p>et on s’intéresse aux classes d’équivalences de <span class="math notranslate nohighlight">\(\overset{*}{\mathscr{R}}\)</span> la clôture réflexive symétrique transitive de <span class="math notranslate nohighlight">\(\mathscr{R}\)</span>. Définissons <span class="math notranslate nohighlight">\(e : \begin{cases} Y \rightarrow Y / \overset{*}{\mathscr{R}} \\ y \longmapsto \bar{y} \end{cases}\)</span>. On montre que <span class="math notranslate nohighlight">\(e\)</span> est un coégalisateur. Le seul point délicat est de montrer que <span class="math notranslate nohighlight">\(d\)</span> est nécessairement constante sur les classes d’équivalence. Faire un dessin.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-41">
+
+<p class="admonition-title"><span class="caption-number">Exercise 41 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer qu’on ne peut pas surjecter un ensemble sur ses parties.</p>
+<p><em>Indication : considérer <span class="math notranslate nohighlight">\(P = \{x \; | x \notin f(x) \}\)</span></em></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-26">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-41"> Exercise 41</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(P\)</span> a un antécédent par <span class="math notranslate nohighlight">\(f\)</span>, soit <span class="math notranslate nohighlight">\(y\)</span>. Si <span class="math notranslate nohighlight">\(y \in P\)</span>, <span class="math notranslate nohighlight">\(y \notin f(y) = P\)</span>. Si <span class="math notranslate nohighlight">\(y \notin P\)</span>, <span class="math notranslate nohighlight">\(y \in P\)</span>. Bref, absurde.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-42">
+
+<p class="admonition-title"><span class="caption-number">Exercise 42 </span> (théorème de Bernstein)</p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A,B\)</span> des ensembles tels qu’il existe <span class="math notranslate nohighlight">\(f : A \rightarrow B\)</span> injective, <span class="math notranslate nohighlight">\(g : B \rightarrow A\)</span> injective. On veut montrer que <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span> sont en bijection.</p>
+<ol class="simple">
+<li><p>Montrer qu’il suffit de trouver une bijection entre <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(g(B)\)</span>.</p></li>
+<li><p>Soit <span class="math notranslate nohighlight">\(A_0 = A \setminus g(B)\)</span>. On définit <span class="math notranslate nohighlight">\(A_{n+1} = (g \circ f)(A_n)\)</span>. Montrer qu’il suffit de trouver une bijection entre <span class="math notranslate nohighlight">\(X = \underset{n \in \N}{\cup}A_n\)</span> et <span class="math notranslate nohighlight">\(Y = \underset{n \geq 1}{\cup}A_n\)</span>.</p></li>
+<li><p>Conclure</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/Ensembles et applications-solution-28">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-42"> Exercise 42 (théorème de Bernstein)</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p><span class="math notranslate nohighlight">\(B\)</span> et <span class="math notranslate nohighlight">\(g(B)\)</span> sont en bijection par injectivité de <span class="math notranslate nohighlight">\(g\)</span>.</p></li>
+<li><p>Considérons <span class="math notranslate nohighlight">\(\sigma : X \rightarrow Y \)</span> qu’on prolonge en <span class="math notranslate nohighlight">\(\tilde{\sigma}\)</span> sur <span class="math notranslate nohighlight">\(A\)</span> par l’identité. <span class="math notranslate nohighlight">\(\tilde{\sigma}\)</span> est injective, et bijective dans <span class="math notranslate nohighlight">\((A\setminus X) \cup Y\)</span>. Remarquons que pour tout <span class="math notranslate nohighlight">\(n \geq 1\)</span>, <span class="math notranslate nohighlight">\(A_n \subset g(B)\)</span>. Ainsi <span class="math notranslate nohighlight">\(A_0 \cup Y = \emptyset\)</span>. Dès lors, <span class="math notranslate nohighlight">\((A\setminus X) \cap Y = A \setminus A_0 = g(B)\)</span>. Il suit que <span class="math notranslate nohighlight">\(\tilde{\sigma}\)</span> est une bijection de <span class="math notranslate nohighlight">\(A\)</span> vers <span class="math notranslate nohighlight">\(g(B)\)</span>, ce qui conclut avec la première question.</p></li>
+<li><p><span class="math notranslate nohighlight">\(\phi = g\circ f\)</span> consititue une bijection de <span class="math notranslate nohighlight">\(X\)</span> vers <span class="math notranslate nohighlight">\(Y\)</span>.</p></li>
+</ol>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/preliminaires"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Calculus : intégration, fonctions usuelles</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Relation binaire, relation d’ordre, relation d’équivalence</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

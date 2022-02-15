@@ -1,0 +1,943 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matrices &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Systèmes linéaires" href="Syst%C3%A8mes%20lin%C3%A9aires.html" />
+    <link rel="prev" title="Espaces vectoriels" href="Espaces%20vectoriels.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_vectorielle/Suites%20de%20fonctions.html">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/algebre_lineaire/Matrices.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Matrices</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="matrices">
+<h1>Matrices<a class="headerlink" href="#matrices" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-375">
+
+<p class="admonition-title"><span class="caption-number">Exercise 346 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer le centre de <span class="math notranslate nohighlight">\(\M_n(\R)\)</span> (les matrices qui commutent avec tout le monde).</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-375"> Exercise 346</a></p>
+<div class="section" id="solution-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> une matrice du centre. Soit <span class="math notranslate nohighlight">\(1 \leq i,j \leq n\)</span>. <span class="math notranslate nohighlight">\((E_{i,j}A)_{k,l} = \sum_{u=1}^n \delta_{k=i, u=j}A_{u,l} = \delta_{k=i}A_{j,l}\)</span>. Ainsi seule la ligne <span class="math notranslate nohighlight">\(i\)</span> de <span class="math notranslate nohighlight">\(E_{i,j}A\)</span> est non nulle, et est égale à la ligne <span class="math notranslate nohighlight">\(j\)</span> de <span class="math notranslate nohighlight">\(A\)</span>. De même, seule la colonne <span class="math notranslate nohighlight">\(j\)</span> de <span class="math notranslate nohighlight">\(AE_{i,j}\)</span> est non nulle, et est égale à la <span class="math notranslate nohighlight">\(i\)</span>-ième colonne de <span class="math notranslate nohighlight">\(A\)</span>. Ainsi <span class="math notranslate nohighlight">\(AE_{i,j}-E_{i,j}A=0\)</span> implique <span class="math notranslate nohighlight">\(\forall i \neq j\)</span>, <span class="math notranslate nohighlight">\(A_{i,j}=0\)</span> et <span class="math notranslate nohighlight">\(A_{i,i}=A_{j,j}\)</span>. Ainsi les seules matrices possibles sont les <span class="math notranslate nohighlight">\(\lambda I_n\)</span>, et on vérifie qu’elles conviennent.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-377">
+
+<p class="admonition-title"><span class="caption-number">Exercise 347 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(E=\Vect(\sin,\cos,\ch,\sh)\)</span>. Donner la matrice de l’opérateur de dérivation dans la base canonique <span class="math notranslate nohighlight">\(\B = (\sin,\cos,\ch,\sh)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-377"> Exercise 347</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+begin{pmatrix
+0end &amp; 0 &amp; 0 \\
+1 &amp;  0 &amp; 0 &amp; 0 \\
+0 &amp;  0 &amp; 0 &amp; 1 \\
+0 &amp;  0 &amp; 1 &amp; 0 \\
+\end{pmatrix}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-378">
+
+<p class="admonition-title"><span class="caption-number">Exercise 348 </span></p>
+<div class="section" id="exercise-content">
+<p>Calculer <span class="math notranslate nohighlight">\(A^n\)</span> pour $A =</p>
+<div class="amsmath math notranslate nohighlight" id="equation-6ad21f93-505b-427f-87e7-9ad9d2ef7d6b">
+<span class="eqno">(1)<a class="headerlink" href="#equation-6ad21f93-505b-427f-87e7-9ad9d2ef7d6b" title="Permalink to this equation">¶</a></span>\[\begin{pmatrix}
+1 &amp; 2 &amp; 1 \\
+0 &amp; 1 &amp; 2 \\
+0 &amp; 0 &amp; 1 \\
+\end{pmatrix}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-378"> Exercise 348</a></p>
+<div class="section" id="solution-content">
+<p>On écrit <span class="math notranslate nohighlight">\(A = I_3 + B\)</span>, où $B=</p>
+<div class="amsmath math notranslate nohighlight" id="equation-91349b29-bb10-482b-ad86-0d7bdbcda41a">
+<span class="eqno">(2)<a class="headerlink" href="#equation-91349b29-bb10-482b-ad86-0d7bdbcda41a" title="Permalink to this equation">¶</a></span>\[\begin{pmatrix}
+0 &amp; 2 &amp; 1 \\
+0 &amp; 0 &amp; 2 \\
+0 &amp; 0 &amp; 0 \\
+\end{pmatrix}\]</div>
+<p>On calcule :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+
+B^2 =
+\begin{pmatrix}
+0 &amp; 0 &amp; 4 \\
+0 &amp; 0 &amp; 0 \\
+0 &amp; 0 &amp; 0 \\
+\end{pmatrix}
+\end{equation*}\]</div>
+<p>De là,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+A^n &amp;= \sum_{k=0}^n {n \choose k} B^k I_3^{n-k} \\
+&amp;= I_3 + nB + \frac{n(n-1)}{2}B^2 \\
+&amp;= \begin{pmatrix}
+1 &amp; 2n &amp; n(2n-1) \\
+0 &amp; 1 &amp; 2n \\
+0 &amp; 0 &amp; 1 \\
+\end{pmatrix}
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-379">
+
+<p class="admonition-title"><span class="caption-number">Exercise 349 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit $J_n =</p>
+<div class="amsmath math notranslate nohighlight" id="equation-92591ed3-931e-4de8-ab46-f78a2f5b8a5c">
+<span class="eqno">(3)<a class="headerlink" href="#equation-92591ed3-931e-4de8-ab46-f78a2f5b8a5c" title="Permalink to this equation">¶</a></span>\[\begin{pmatrix}
+1 &amp; 1 &amp; \ldots &amp; 1 \\
+0 &amp; 1 &amp; \ldots &amp; 1 \\
+\vdots &amp; \ddots &amp; \ddots &amp; 1 \\
+0 &amp; \ldots &amp; 0 &amp; 1 \\
+\end{pmatrix}\]</div>
+<p>Calculer l’inverse de <span class="math notranslate nohighlight">\(J_n\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-379"> Exercise 349</a></p>
+<div class="section" id="solution-content">
+<p>C’est un cas particulier de
+<span class="math notranslate nohighlight">\(\begin{pmatrix}
+1 &amp; a &amp; \ldots &amp; a^{n-1} \\
+0 &amp; 1 &amp; \ddots &amp; \vdots \\
+\vdots &amp; \ddots &amp; \ddots &amp; a \\
+0 &amp; \ldots &amp; 0 &amp; 1 \\
+\end{pmatrix}\)</span>
+avec <span class="math notranslate nohighlight">\(a=1\)</span>, et le cas particulier se calcule facilement.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-380">
+
+<p class="admonition-title"><span class="caption-number">Exercise 350 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit $ A_n=</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a54c54a3-1399-4ea2-a70b-afae315ab644">
+<span class="eqno">(4)<a class="headerlink" href="#equation-a54c54a3-1399-4ea2-a70b-afae315ab644" title="Permalink to this equation">¶</a></span>\[\begin{pmatrix}
+1 &amp; a &amp; \ldots &amp; a^{n-1} \\
+0 &amp; 1 &amp; \ldots &amp; \vdots \\
+\vdots &amp; \ddots &amp; \ddots &amp; a \\
+0 &amp; \ldots &amp; 0 &amp; 1 \\
+\end{pmatrix}\]</div>
+<p>Calculer l’inverse de <span class="math notranslate nohighlight">\(A_n\)</span></p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-9">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-380"> Exercise 350</a></p>
+<div class="section" id="solution-content">
+<p>Notons<span class="math notranslate nohighlight">\(A = \begin{pmatrix}
+0 &amp; a &amp; \ldots &amp; 0 \\
+0 &amp; 0 &amp; \ddots &amp; \vdots \\
+\vdots &amp; \ddots &amp; \ddots &amp; a \\
+0 &amp; \ldots &amp; 0 &amp; 0 \\
+\end{pmatrix}\)</span>
+Alors <span class="math notranslate nohighlight">\(A\)</span> est <span class="math notranslate nohighlight">\(n\)</span>-nilpotente et <span class="math notranslate nohighlight">\(A_n = \sum_{k=0}^{n-1} A^k\)</span>. Par analogie avec les sommes géométriques réelles, l’inverse est <span class="math notranslate nohighlight">\(I-A\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-381">
+
+<p class="admonition-title"><span class="caption-number">Exercise 351 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer l’équivalence</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ A \textrm{ antisymétrique } \Leftrightarrow \forall X \in \R^n, \; X^TAX = 0
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-11">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-381"> Exercise 351</a></p>
+<div class="section" id="solution-content">
+<p>On commence par le sens retour. Avec <span class="math notranslate nohighlight">\(X = e_i\)</span>, on obtient <span class="math notranslate nohighlight">\(A_{i,i}=0\)</span>. Puis avec <span class="math notranslate nohighlight">\(i \neq j\)</span>,</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+0 &amp;= (e_i + e_j)^T A (e_i+e_j) \\
+&amp;= e_i^TAe_i + e_j^TAe_j + e_i^TAe_j + e_j^TAe_i \\
+&amp;= e_i^TAe_j + e_j^TAe_i \\
+&amp;= A_{i,j} + A_{j,i} \\
+\end{align*}\]</div>
+<p>Pour le sens aller, on a pour tout <span class="math notranslate nohighlight">\(i,j\)</span>, <span class="math notranslate nohighlight">\(e_i^TAe_j = 0\)</span> donc cela reste vrai pour tout <span class="math notranslate nohighlight">\(X\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-382">
+
+<p class="admonition-title"><span class="caption-number">Exercise 352 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\phi\)</span> l’endomorphisme de transposition de <span class="math notranslate nohighlight">\(\M_n(\C)\)</span>. Calculer <span class="math notranslate nohighlight">\(det(\phi)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-13">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-382"> Exercise 352</a></p>
+<div class="section" id="solution-content">
+<p>On peut être malin et dire que dans si <span class="math notranslate nohighlight">\(B_1\)</span> est une base des matrices symétriques, <span class="math notranslate nohighlight">\(B_2\)</span> des matrices antisymétriques, alors <span class="math notranslate nohighlight">\(B = (B_1,B_2)\)</span> est une base de <span class="math notranslate nohighlight">\(\M_n(\C)\)</span> dans laquelle <span class="math notranslate nohighlight">\(\phi\)</span> est diagonale, avec exactement <span class="math notranslate nohighlight">\(|B_2|=\frac{n(n-1)}{2}\)</span> occurrences de <span class="math notranslate nohighlight">\(-1\)</span>. Sinon on exprime <span class="math notranslate nohighlight">\(\phi\)</span> dans la base canonique. C’est un matrice de permutation d’un certain <span class="math notranslate nohighlight">\(\sigma \in S_{n^2}\)</span>, donc <span class="math notranslate nohighlight">\(det(\phi) = \epsilon(\sigma)\)</span>. La décomposition de <span class="math notranslate nohighlight">\(\sigma\)</span> en produit de cycles à support disjoint est un produit de transpositions. Seuls les <span class="math notranslate nohighlight">\((E_{i,i})\)</span> sont stables par <span class="math notranslate nohighlight">\(\sigma\)</span>, il y a donc <span class="math notranslate nohighlight">\(\frac{n^2-n}{2}\)</span> transpositions, d’où le déterminant <span class="math notranslate nohighlight">\((-1)^{\frac{n(n-1)}{2}}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-383">
+
+<p class="admonition-title"><span class="caption-number">Exercise 353 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau, <span class="math notranslate nohighlight">\(n \in A\)</span> un nilpotent. Montrer que <span class="math notranslate nohighlight">\(e_A + n\)</span> est inversible. En déduire que l’ensemble des matrices triangulaires supérieures avec des <span class="math notranslate nohighlight">\(1\)</span> sur la diagonale est stable par passage à l’inverse.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-15">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-383"> Exercise 353</a></p>
+<div class="section" id="solution-content">
+<p>On s’inspire du développement en série entière de <span class="math notranslate nohighlight">\(\frac{1}{1+x}\)</span> : soit <span class="math notranslate nohighlight">\(k\)</span> l’ordre de nilpotence de <span class="math notranslate nohighlight">\(n\)</span></p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ (e_A+n)(\sum_{i=0}^{k-1} (-n)^i) = e_A + n^k = e_A
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-384">
+
+<p class="admonition-title"><span class="caption-number">Exercise 354 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\Delta = Diag(a_1, \ldots, a_n) \in \M_n(\R)\)</span>. Soit <span class="math notranslate nohighlight">\(M \in \M_n(\R)\)</span>. Calculer <span class="math notranslate nohighlight">\(\Delta M - M\Delta\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-17">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-384"> Exercise 354</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+(\Delta M - M\Delta)_{l,k} &amp;= (a_l-a_k)M_{l,k} \\
+\end{align*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-385">
+
+<p class="admonition-title"><span class="caption-number">Exercise 355 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(x,\theta \in \R\)</span>. Calculer les puissances de la matrice</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+
+\begin{pmatrix}
+x+\sin(\theta) &amp; \cos(\theta) \\
+\cos(\theta) &amp; x - \sin(\theta)
+\end{pmatrix}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-19">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-385"> Exercise 355</a></p>
+<div class="section" id="solution-content">
+<p>On note $M_{\theta} =</p>
+<div class="amsmath math notranslate nohighlight" id="equation-1320ae7e-45c4-404f-8302-8dfdec9eb765">
+<span class="eqno">(5)<a class="headerlink" href="#equation-1320ae7e-45c4-404f-8302-8dfdec9eb765" title="Permalink to this equation">¶</a></span>\[\begin{pmatrix}
+\sin(\theta) &amp; \cos(\theta) \\
+\cos(\theta) &amp; -\sin(\theta)
+\end{pmatrix}\]</div>
+<p>Calculons ses puissances :</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+
+M_{\theta}^2 =
+\begin{pmatrix}
+1 &amp; 0 \\
+0 &amp; 1
+\end{pmatrix}
+\end{equation*}\]</div>
+<p>Ainsi</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+M^m &amp;= (xI_n + M_{\theta})^m \\
+&amp;= \sum_{k=0}^m {m \choose k} x^{m-k}M_{\theta}^{k} \\
+&amp;= (\sum_{k=0}^m {m \choose 2k} x^{m-2k})I_n + (\sum_{k=0}^{m}{m \choose 2k+1} x^{m-2k-1})M_{\theta}
+\end{align*}\]</div>
+<p>On doit pouvoir mettre en forme en regardant <span class="math notranslate nohighlight">\(S_1 = \sum_{k=0}^{m}{m \choose 2k} x^{2k}\)</span> et <span class="math notranslate nohighlight">\(S_2 = \sum_{k=0}^{m}{m \choose 2k+1} x^{2k+1}\)</span>. On a</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\begin{cases}
+S_1+S_2 &amp;= (1+x)^k \\
+S_1-S_2 &amp;= (1-x)^k
+\end{cases}
+\end{equation*}\]</div>
+<p>D’où <span class="math notranslate nohighlight">\(S_1 = \frac{(1+x)^k+(1-x)^k}{2}\)</span> et <span class="math notranslate nohighlight">\(S_2 = \frac{(1+x)^k-(1-x)^k}{2}\)</span>. En regardant la parité de <span class="math notranslate nohighlight">\(m\)</span> cela permet d’écrire une forme un peu plus compacte.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-386">
+
+<p class="admonition-title"><span class="caption-number">Exercise 356 </span></p>
+<div class="section" id="exercise-content">
+<p>Résoudre dans <span class="math notranslate nohighlight">\(\M_n(\R)\)</span> l’équation</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+X+X^T = tr(X)A
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-21">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-386"> Exercise 356</a></p>
+<div class="section" id="solution-content">
+<p>On passe à la trace qui amène l’équation <span class="math notranslate nohighlight">\(2tr(X)=tr(X)tr(A)\)</span>. Si <span class="math notranslate nohighlight">\(tr(X)=0\)</span>, on est conduit <span class="math notranslate nohighlight">\(X\)</span> antisymétrique et on vérifie que cela fonctionne. Sinon, si <span class="math notranslate nohighlight">\(tr(A)\neq 2\)</span>, il n’y a pas de solution. Sinon, si <span class="math notranslate nohighlight">\(A\)</span> n’est pas symétrique il n’y a pas de solution. Sinon, l’équation se traduit sur les coefficients de <span class="math notranslate nohighlight">\(X\)</span> : pour un certain <span class="math notranslate nohighlight">\(\lambda \in \R\)</span> (ce sera la trace de <span class="math notranslate nohighlight">\(X\)</span>), <span class="math notranslate nohighlight">\(\forall i,j, \; x_{i,j} + x_{j,i} = \lambda a_{i,j}\)</span>. On vérifie que le respect de ces conditions satisfait l’équation générale.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-387">
+
+<p class="admonition-title"><span class="caption-number">Exercise 357 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A \in \M_n(\C)\)</span> à diagonale dominante, i.e. <span class="math notranslate nohighlight">\(\forall i, \; |a_{i,i}| &gt; \sum_{j \neq i} |a_{i,j}|\)</span>. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est inversible.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-23">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-387"> Exercise 357</a></p>
+<div class="section" id="solution-content">
+<p>Il suffit de montrer que <span class="math notranslate nohighlight">\(A\)</span> est injective. Or il vient très naturellement (écrire le système) que <span class="math notranslate nohighlight">\(AX=0 \Leftrightarrow X=0\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-388">
+
+<p class="admonition-title"><span class="caption-number">Exercise 358 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer les réels <span class="math notranslate nohighlight">\(\lambda\)</span> tels qu’il existe une matrice non nulle <span class="math notranslate nohighlight">\(A\in \M_n(\R)\)</span> vérifiant <span class="math notranslate nohighlight">\(A^T = \lambda A\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-25">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-388"> Exercise 358</a></p>
+<div class="section" id="solution-content">
+<p>En transposant l’équation on obtient la condition <span class="math notranslate nohighlight">\(\lambda^2 = 1\)</span>. On vérifie que <span class="math notranslate nohighlight">\(\lambda=1\)</span> et <span class="math notranslate nohighlight">\(\lambda=-1\)</span> conviennent (matrices symétriques et antisymétriques).</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-389">
+
+<p class="admonition-title"><span class="caption-number">Exercise 359 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(M \in \M_n(\R)\)</span>, calculer <span class="math notranslate nohighlight">\(JMJ\)</span> où <span class="math notranslate nohighlight">\(J\)</span> est la matrice dont tous les cooefficients sont égaux à <span class="math notranslate nohighlight">\(1\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-27">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-389"> Exercise 359</a></p>
+<div class="section" id="solution-content">
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+(\sum_{i,j} m_{i,j}) J
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-390">
+
+<p class="admonition-title"><span class="caption-number">Exercise 360 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A \in \M_n(\R)\)</span> telle que <span class="math notranslate nohighlight">\(A^n=0\)</span> et <span class="math notranslate nohighlight">\(A^{n-1}\neq 0\)</span>. Soit <span class="math notranslate nohighlight">\(u\)</span> l’endomorphisme canoniquement associé à <span class="math notranslate nohighlight">\(A\)</span>. Montrer qu’il existe <span class="math notranslate nohighlight">\(x_0\)</span> tel que <span class="math notranslate nohighlight">\(\mathcal{B}(x_0) =(u^{n-1}(x_0), \ldots, u(x_0), x_0)\)</span> soit une base de <span class="math notranslate nohighlight">\(\R_n\)</span>. Quelle est la matrice de <span class="math notranslate nohighlight">\(u\)</span> dans cette base ?</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-29">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-390"> Exercise 360</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(x_0\)</span> tel que <span class="math notranslate nohighlight">\(A^{n-1}X_0 \neq 0\)</span> convient et existe par hypothèse.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ mat_{\mathcal{B}(x_0)}(u) =
+\begin{pmatrix}
+0 &amp; 1 &amp; 0 &amp; \ldots  \\
+0 &amp; 0 &amp; \ddots &amp; \ddots  \\
+0 &amp; \ldots &amp; 0 &amp; 1  \\
+0 &amp; \ldots &amp; \ldots &amp; 0 \\
+\end{pmatrix}
+\end{equation*}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-391">
+
+<p class="admonition-title"><span class="caption-number">Exercise 361 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer le sous-espace de <span class="math notranslate nohighlight">\(\M_n(\R)\)</span> engendré par <span class="math notranslate nohighlight">\(GL_n(\R)\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-31">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-391"> Exercise 361</a></p>
+<div class="section" id="solution-content">
+<p>Il s’agit de <span class="math notranslate nohighlight">\(\M_n(\R)\)</span>, en remarquant par exemple que <span class="math notranslate nohighlight">\(I_n + E_{i,j}\)</span> est inversible.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-392">
+
+<p class="admonition-title"><span class="caption-number">Exercise 362 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(M \in \R^n\)</span> matrice définie par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\begin{cases}
+M_{i,j} = {j-1 \choose i-1} \; \textrm{si } i \leq j \\
+M_{i,j} = 0 \; \textrm{sinon}
+\end{cases}
+\end{equation*}\]</div>
+<p>Soit <span class="math notranslate nohighlight">\(u\)</span> l’endomorphisme de <span class="math notranslate nohighlight">\(\R_n[X]\)</span> canoniquement associé. Calculer <span class="math notranslate nohighlight">\(u(P)\)</span> pour tout <span class="math notranslate nohighlight">\(P\)</span>. En déduire que <span class="math notranslate nohighlight">\(M\)</span> est inversible et calculer son inverse. Montrer que <span class="math notranslate nohighlight">\(M^{-1} = \Delta M \Delta\)</span> pour un certain <span class="math notranslate nohighlight">\(\Delta\)</span> diagonale.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-33">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-392"> Exercise 362</a></p>
+<div class="section" id="solution-content">
+<p>On calcule <span class="math notranslate nohighlight">\(u(X^k)\)</span> pour <span class="math notranslate nohighlight">\(k \leq n\)</span>.</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ u(X^k) = \sum_{i=1}^k {k-1 \choose i-1} X^i = (X+1)^k
+\end{equation*}\]</div>
+<p>D’où <span class="math notranslate nohighlight">\(u : P(X) \mapsto P(X+1)\)</span>. <span class="math notranslate nohighlight">\(u\)</span> est donc inversible, d’inverse <span class="math notranslate nohighlight">\(u^{-1} : P(X) \mapsto P(X-1)\)</span> et l’inverse de <span class="math notranslate nohighlight">\(M\)</span> est définie par</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+\begin{cases}
+M^{-1}_{i,j} = (-1)^{(i-1)(j-1)} {j-1 \choose i-1} \; \textrm{si } i \leq j \\
+M^{-1}_{i,j} = 0 \; \textrm{sinon}
+\end{cases}
+\end{equation*}\]</div>
+<p>On calcule pour $\Delta =</p>
+<div class="amsmath math notranslate nohighlight" id="equation-61666c07-023a-45ab-a1f8-dbdc8ab1fa0a">
+<span class="eqno">(6)<a class="headerlink" href="#equation-61666c07-023a-45ab-a1f8-dbdc8ab1fa0a" title="Permalink to this equation">¶</a></span>\[\begin{pmatrix} d_1 &amp; 0 &amp; 0 \\
+0 &amp; \vdots &amp; 0 \\
+0 &amp; 0 &amp; d_n \\
+\end{pmatrix}\]</div>
+</div>
+</div>
+<div class="exercise admonition" id="exo-393">
+
+<p class="admonition-title"><span class="caption-number">Exercise 363 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que toute matrice <span class="math notranslate nohighlight">\(M\)</span> de <span class="math notranslate nohighlight">\(\M_n(\R)\)</span> admet un polynôme annulateur. Montrer que si <span class="math notranslate nohighlight">\(A \in \M_n(\R)\)</span> est inversible, alors <span class="math notranslate nohighlight">\(A^{-1}\)</span> est un polynôme en <span class="math notranslate nohighlight">\(A\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-35">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-393"> Exercise 363</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(M^0, M^1, \ldots, M^{n^2}\)</span> est liée. Si <span class="math notranslate nohighlight">\(P(A)=0\)</span> on écrit <span class="math notranslate nohighlight">\(P=X^k\times Q\)</span> avec <span class="math notranslate nohighlight">\(Q \land X=1\)</span>. D’où l’existence de <span class="math notranslate nohighlight">\(U, V\)</span> tels que <span class="math notranslate nohighlight">\(U(X)Q(X)+XV(X)=1\)</span>. Or par inversibilité de <span class="math notranslate nohighlight">\(A^k\)</span>, <span class="math notranslate nohighlight">\(Ker(Q(A))=Ker(Q(A)A^k)=\R^n\)</span> donc <span class="math notranslate nohighlight">\(Q(A)=0\)</span>. De là <span class="math notranslate nohighlight">\(AV(A)=I_n\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-394">
+
+<p class="admonition-title"><span class="caption-number">Exercise 364 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que tout hyperplan <span class="math notranslate nohighlight">\(H\)</span> de <span class="math notranslate nohighlight">\(\M_n(\R)\)</span> (<span class="math notranslate nohighlight">\(n \geq 2\)</span>) contient une matrice inversible.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-37">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-394"> Exercise 364</a></p>
+<div class="section" id="solution-content">
+<p>On écrit <span class="math notranslate nohighlight">\(f(A)=\sum_{i,j} \alpha_{i,j}A_{i,j}\)</span> telle que <span class="math notranslate nohighlight">\(H=Ker(f)\)</span>. S’il existe un coefficient <span class="math notranslate nohighlight">\(\alpha_{i,j}\)</span> en dehors de la diagonale, non nul, on prend <span class="math notranslate nohighlight">\(M=I+\alpha E_{i,j}\)</span> avec <span class="math notranslate nohighlight">\(\alpha\)</span> bien choisi pour que <span class="math notranslate nohighlight">\(M\in H\)</span>. Sinon on trouve une matrice inversible avec des <span class="math notranslate nohighlight">\(0\)</span> sur sa diagonale, elle est dans <span class="math notranslate nohighlight">\(H\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-395">
+
+<p class="admonition-title"><span class="caption-number">Exercise 365 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A \in M_n(\R)\)</span> non inversible. Montrer qu’il existe une matrice <span class="math notranslate nohighlight">\(B\)</span> telle que <span class="math notranslate nohighlight">\(\forall \lambda \in \R^*\)</span>, <span class="math notranslate nohighlight">\(A+\lambda B\)</span> est inversible.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-39">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-395"> Exercise 365</a></p>
+<div class="section" id="solution-content">
+<p>Par équivalence en passant par <span class="math notranslate nohighlight">\(J_r\)</span> on se ramène à <span class="math notranslate nohighlight">\(A\)</span> triangulaire stricte. <span class="math notranslate nohighlight">\(B=I_n\)</span> convient alors.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-396">
+
+<p class="admonition-title"><span class="caption-number">Exercise 366 </span></p>
+<div class="section" id="exercise-content">
+<p>Montrer que toute matrice nilpotente est de trace nulle.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-41">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-396"> Exercise 366</a></p>
+<div class="section" id="solution-content">
+<p>On montre par récurrence qu’elle est semblable à une matrice triangulaire supérieure stricte. Le noyau est non trivial donc on peut choisir une base de sorte que la première colonne soit nulle. Puis si <span class="math notranslate nohighlight">\(N\)</span> est la matrice de taille <span class="math notranslate nohighlight">\(n-1\)</span>, en bas à droite, un calcul par bloc montre que <span class="math notranslate nohighlight">\(N\)</span> est nilpotente.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-397">
+
+<p class="admonition-title"><span class="caption-number">Exercise 367 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(A \in \M_n(\R)\)</span>. Montrer que pour <span class="math notranslate nohighlight">\(r&gt;0\)</span> suffisamment petit, <span class="math notranslate nohighlight">\(A+rI\)</span> est inversible.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/algebre_lineaire/Matrices-solution-43">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-397"> Exercise 367</a></p>
+<div class="section" id="solution-content">
+<p><span class="math notranslate nohighlight">\(det(A+rI)\)</span> est un polynôme en <span class="math notranslate nohighlight">\(r\)</span>, non nul d’après l’exercice des matrices à diagonales dominantes, donc ne s’annule pas sur une voisinage de <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(0\)</span> exclu.</p>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/algebre_lineaire"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Espaces%20vectoriels.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Espaces vectoriels</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Syst%C3%A8mes%20lin%C3%A9aires.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Systèmes linéaires</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suites de fonctions &#8212; Exercices de kholles</title>
+    
+  <link href="../../_static/css/theme.css" rel="stylesheet">
+  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/exercise.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>window.MathJax = {"TeX": {"Macros": {"N": "\\mathbb{N}", "sh": "\\textrm{sh}", "ch": "\\textrm{ch}", "th": "\\textrm{th}", "R": "\\mathbb{R}", "C": "\\mathbb{C}", "K": "\\mathbb{K}", "Q": "\\mathbb{Q}", "Z": "\\mathbb{Z}", "M": "\\mathcal{M}", "L": "\\mathcal{L}", "B": "\\mathcal{B}", "Vect": "\\textrm{Vect}", "S": "\\mathcal{S}", "P": "\\mathcal{P}"}}, "options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Dénombrement" href="../probabilites/D%C3%A9nombrement.html" />
+    <link rel="prev" title="Topologie" href="Topologie.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Exercices de kholles</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Préliminaires
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Calculus%20%3A%20int%C3%A9gration%2C%20fonctions%20usuelles.html">
+   Calculus : intégration, fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Ensembles%20et%20applications.html">
+   Ensembles et applications
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Relation%20binaire%2C%20relation%20d%27ordre%2C%20relation%20d%27%C3%A9quivalence.html">
+   Relation binaire, relation d’ordre, relation d’équivalence
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Nombres%20complexes.html">
+   Nombres complexes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/Manipulations%20alg%C3%A9briques.html">
+   Manipulations algébriques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../preliminaires/R%2C%20Q%2C%20N.html">
+   R, Q, N
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse réelle et complexe
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Suites%20num%C3%A9riques.html">
+   Suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convergence%20des%20suites%20num%C3%A9riques.html">
+   Convergence des suites numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/S%C3%A9ries%20num%C3%A9riques.html">
+   Séries numériques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Fonctions%20usuelles.html">
+   Fonctions usuelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Limites%20de%20fonctions%2C%20continuit%C3%A9.html">
+   Limites de fonctions, continuité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/D%C3%A9rivabilit%C3%A9.html">
+   Dérivabilité
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Taylor-Young.html">
+   Taylor-Young
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/Convexit%C3%A9%2C%20in%C3%A9galit%C3%A9%20arithm%C3%A9tico-g%C3%A9om%C3%A9trique.html">
+   Convexité, inégalité arithmético-géométrique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89tudes%20locales%20et%20asymptotiques.html">
+   Études locales et asymptotiques
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../analyse_reelle/%C3%89quations%20diff%C3%A9rentielles.html">
+   Équations différentielles
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre commutative
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupes.html">
+   Groupes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Groupe%20cyclique.html">
+   Groupe cyclique
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Anneaux.html">
+   Anneaux
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Polyn%C3%B4mes.html">
+   Polynômes
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Fractions%20rationnelles.html">
+   Fractions rationnelles
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_commutative/Arithm%C3%A9tique.html">
+   Arithmétique
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Algèbre linéaire
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Espaces%20vectoriels.html">
+   Espaces vectoriels
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Matrices.html">
+   Matrices
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/Syst%C3%A8mes%20lin%C3%A9aires.html">
+   Systèmes linéaires
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../algebre_lineaire/R%C3%A9duction.html">
+   Réduction
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Analyse vectorielle et fonctionnelle
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Topologie.html">
+   Topologie
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Suites de fonctions
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Probabilités
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../probabilites/D%C3%A9nombrement.html">
+   Dénombrement
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../../_sources/parts/analyse_vectorielle/Suites de fonctions.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/gbelouze/kholles-website"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Suites de fonctions</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[    \newcommand \sh {\textrm{sh}}
+    \newcommand \ch {\textrm{ch}}
+    \renewcommand \th {\textrm{th}}
+    \newcommand \R {\mathbb{R}}
+    \newcommand \C {\mathbb{C}}
+    \newcommand \K {\mathbb{K}}
+    \newcommand \Q {\mathbb{Q}}
+    \newcommand \N {\mathbb{N}}
+    \newcommand \Z {\mathbb{Z}}
+    \newcommand \M {\mathcal{M}}
+    \renewcommand \L {\mathcal{L}}
+    \newcommand \B {\mathcal{B}}
+    \newcommand \Vect {\textrm{Vect}}
+    \renewcommand \S {\mathcal{S}}
+    \renewcommand \P {\mathcal{P}}\]</div>
+<div class="tex2jax_ignore mathjax_ignore section" id="suites-de-fonctions">
+<h1>Suites de fonctions<a class="headerlink" href="#suites-de-fonctions" title="Permalink to this headline">¶</a></h1>
+<div class="exercise admonition" id="exo-407">
+
+<p class="admonition-title"><span class="caption-number">Exercise 389 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer les <span class="math notranslate nohighlight">\(\alpha\)</span> tels que <span class="math notranslate nohighlight">\(f_n(x)= n^{\alpha}\cos^n(x)\sin(x)\)</span> converge uniformément sur <span class="math notranslate nohighlight">\([0;\frac{\pi}{2}]\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_vectorielle/Suites de fonctions-solution-1">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-407"> Exercise 389</a></p>
+<div class="section" id="solution-content">
+<p>Il y a convergence en <span class="math notranslate nohighlight">\(0\)</span> vers <span class="math notranslate nohighlight">\(0\)</span>. Puis <span class="math notranslate nohighlight">\(\forall x \in ]0;\frac{\pi}{2}], \;|\cos(x)| &lt; 1\)</span> donc <span class="math notranslate nohighlight">\(f_n(x) \rightarrow 0\)</span>. Bref il y a CVS vers <span class="math notranslate nohighlight">\(0\)</span>. Puis on calcule</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f'_n(x) &amp;= n^{\alpha}(-n\cos^{n-1}(x)\sin^2(x)+\cos^{n+1}(x)) \\
+&amp;= n^{\alpha}\cos^{n-1}(x)(-n+(n+1)\cos^2(x))\\
+\end{align*}\]</div>
+<p>s’annule en <span class="math notranslate nohighlight">\(x_n = \arctan{\frac{1}{\sqrt{n}}}\)</span>. où <span class="math notranslate nohighlight">\(f_n\)</span> est maximum. En inégrant le développement limité du DL de <span class="math notranslate nohighlight">\(\arctan\)</span> on trouve</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \arctan(x) \underset{0}{=} x + O(x^3)
+\end{equation*}\]</div>
+<p>D’où</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{align*}
+f_n(x_n) &amp;= \left (\frac{1}{\sqrt{n}}+O(\frac{1}{n^{3/2}}) \right )(1-\frac{x_n^2}{2}+O(x_n^4))^nn^{\alpha} \\
+&amp;\sim \frac{e^{-1/2}}{\sqrt{n}}n^{\alpha}
+\end{align*}\]</div>
+<p>Et ainsi <span class="math notranslate nohighlight">\(\sup f_n \rightarrow 0\)</span> si et seulement si <span class="math notranslate nohighlight">\(\alpha &lt; \frac{1}{2}\)</span>.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-408">
+
+<p class="admonition-title"><span class="caption-number">Exercise 390 </span> (Une limite classique)</p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f_n(x) = \frac{x^n}{n!}e^{-x}\)</span> sur <span class="math notranslate nohighlight">\(\R^+\)</span>. Déterminer le mode de convergence de <span class="math notranslate nohighlight">\(f\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_vectorielle/Suites de fonctions-solution-3">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-408"> Exercise 390 (Une limite classique)</a></p>
+<div class="section" id="solution-content">
+<p>Après dérivation, <span class="math notranslate nohighlight">\(f_n\)</span> admet son maximum en <span class="math notranslate nohighlight">\(n\)</span> et <span class="math notranslate nohighlight">\(f_n(n) = \frac{n^n}{n!}e^{-n}\)</span>. Avec Stirling <span class="math notranslate nohighlight">\(f_n(n)\rightarrow 0 = f_{+\infty}\)</span>. Il y a bien CVU.</p>
+</div>
+</div>
+<div class="exercise admonition" id="exo-409">
+
+<p class="admonition-title"><span class="caption-number">Exercise 391 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(f_n\)</span> une famille de fonction de <span class="math notranslate nohighlight">\(X\)</span> un ensemble vers <span class="math notranslate nohighlight">\(\R\)</span>, toutes bornées et telles que <span class="math notranslate nohighlight">\((f_n)\)</span> converge uniformément vers <span class="math notranslate nohighlight">\(f:X\rightarrow \R\)</span>.</p>
+<ol class="simple">
+<li><p>Montrer que <span class="math notranslate nohighlight">\(f\)</span> est bornée.</p></li>
+<li><p>Montrer que <span class="math notranslate nohighlight">\(\sup_X f_n \rightarrow \sup_X f\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_vectorielle/Suites de fonctions-solution-5">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-409"> Exercise 391</a></p>
+<div class="section" id="solution-content">
+<ol class="simple">
+<li><p>Immédiat</p></li>
+<li><p>On prend <span class="math notranslate nohighlight">\(n_{\varepsilon}\)</span> tel que <span class="math notranslate nohighlight">\(\forall n \geq n_{\varepsilon}, \; ||f-f_n||_{\infty} &lt; \varepsilon\)</span>.</p></li>
+</ol>
+</div>
+</div>
+<div class="exercise admonition" id="exo-410">
+
+<p class="admonition-title"><span class="caption-number">Exercise 392 </span></p>
+<div class="section" id="exercise-content">
+<p>Déterminer l’adhérence de <span class="math notranslate nohighlight">\(\mathcal{C}_C(\R,\C)\)</span> fonctions continues à support compact dans <span class="math notranslate nohighlight">\((\mathcal{C}(\R,\C), ||.||_{\infty}\)</span> espace des fonctions continues. Autrement dit trouver l’ensemble des fonctions continues <span class="math notranslate nohighlight">\(f\)</span> telle qu’il existe une suite <span class="math notranslate nohighlight">\((f_n)\)</span> stationnaires à <span class="math notranslate nohighlight">\(0\)</span> en <span class="math notranslate nohighlight">\(\infty\)</span> qui converge uniformément vers <span class="math notranslate nohighlight">\(f\)</span>.</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/analyse_vectorielle/Suites de fonctions-solution-7">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-410"> Exercise 392</a></p>
+<div class="section" id="solution-content">
+<p>On montre que ce sont les fonctions nulles en <span class="math notranslate nohighlight">\(\infty\)</span>.</p>
+<p>Si <span class="math notranslate nohighlight">\((f_n) \in (\mathcal{C}_C(\R,\C))^{\N}\)</span> CVU vers <span class="math notranslate nohighlight">\(f\)</span>, alors en choisissant <span class="math notranslate nohighlight">\(f_n\)</span> proche de <span class="math notranslate nohighlight">\(f\)</span> à <span class="math notranslate nohighlight">\(\varepsilon\)</span> près, il vient que <span class="math notranslate nohighlight">\(|f|\)</span> est plus petite que <span class="math notranslate nohighlight">\(\varepsilon\)</span> en <span class="math notranslate nohighlight">\(\infty\)</span>.</p>
+<p>Si <span class="math notranslate nohighlight">\(f \rightarrow 0\)</span> en <span class="math notranslate nohighlight">\(\infty\)</span>, alors on prend <span class="math notranslate nohighlight">\(f_n\)</span> égale à <span class="math notranslate nohighlight">\(f\)</span> sur <span class="math notranslate nohighlight">\([-n,n]\)</span> puis qui “descend être stationnaire en <span class="math notranslate nohighlight">\(0\)</span>”. Il vient <span class="math notranslate nohighlight">\(||f-f_n||&lt; 2 \underset{|x|\geq n}{\sup} |f|\)</span> et le membre gauche tend vers <span class="math notranslate nohighlight">\(0\)</span> quand <span class="math notranslate nohighlight">\(n\)</span> tend vers <span class="math notranslate nohighlight">\(+\infty\)</span>.</p>
+</div>
+</div>
+<p>\end{document}</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./parts/analyse_vectorielle"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="Topologie.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Topologie</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../probabilites/D%C3%A9nombrement.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Dénombrement</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Gabriel Belouze<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
