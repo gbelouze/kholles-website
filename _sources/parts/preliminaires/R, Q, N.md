@@ -295,7 +295,6 @@ Un nombre univers est un nombre tel que toute séquence finie de chiffres appara
 
 ```{solution} exo-91
 :class: dropdown
-\leavevmode
 
 1. $\alpha=  0.012345678910111213141516\ldots$
 1. Soit $a<b\in\R$. On montre qu'il existe un nombre univers dans $]a,b[$. Soit $k$ tel que $a + 2\times10^{-k}<b$. $10^{-k}\lfloor 10^ka\rfloor = 10^{-k-1}\alpha$ convient.

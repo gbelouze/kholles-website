@@ -254,7 +254,6 @@ Soit $E,F$ deux espaces vectoriels normés et $f : E \rightarrow F$. On note $Gr
 
 ```{solution} exo-169
 :class: dropdown
-\leavevmode
 
 1. Soit $(x_n, y_n)$ une suite de $Gr(f)$ qui converge vers $(x,y) \in E\times F$. Alors $x_n \rightarrow x$ donc par contuinité de $f$, $y_n = f(x_n) \rightarrow f(x)$, puis par unicité de la limité, $y=f(x)$ et finalement $(x,y) \in Gr(f)$.
 1. Soit $x_n$ une suite de $E$ qui converge vers $x\in E$. On pose $y_n = f(x_n)$. Soit $y$ une valeur d'adhérence de $y_n$, associée à une extractrice $\phi$. Alors $(x_{\phi(n)}, y_{\phi(n)})$ est une suite d e$Gr(f)$ qui converge vers $(x,y)$. $Gr(f)$ étant fermé, on a $(x,y) \in Gr(f)$ i.e. $y=f(x)$. Ainsi $y_n$ admet au plus une seule valeur d'adhérence. $f(E)$ étant compacte, $y_n$ en admet au moins une. Finalement $y_n$ admet une et une seule valeur d'adhérence donc converge, vers $f(x)$.
@@ -303,7 +302,6 @@ Soit $f : [0,1] \rightarrow \R$ continue telle que $f(0) = f(1) = 0$.
 
 ```{solution} exo-172
 :class: dropdown
-\leavevmode
 
 1. Soit $g = f(\cdot) - f (\frac{1}{2} + \cdot)$. On a $g(0) + g(\frac{1}{2}) = 0$ donc $g$ touche $0$.
 1. Soit $g = f(\cdot) - f (\frac{1}{n} + \cdot)$. On a $g(0) + g(\frac{1}{n}) + \ldots + g(1 - \frac{1}{n}) = 0$ donc $g$ touche $0$.
@@ -328,7 +326,6 @@ Soit $E$ un espace de Banach (espace vectoriel normé complet), et $f : E \right
 
 ```{solution} exo-173
 :class: dropdown
-\leavevmode
 1. Par récurrence $||u_{n+1} - u_{n}|| \leq k^n ||u_1 - u_0||$. Donc $u$ est de Cauchy, donc converge.
 1. Pour l'unicité, soit $l'$ tel que $f(l') = l'$. Alors $||l'-l|| = ||f(l') - f(l)|| \leq k ||l' -l||$ donc $||l' - l || = 0$. Pour le fait que $l$ est un point fixe, $f$ est lipschitzienne donc continue, donc $f(u_n) \rightarrow f(l)$. Mais $f(u_n) \rightarrow l$ donc $l = f(l)$.
 ```

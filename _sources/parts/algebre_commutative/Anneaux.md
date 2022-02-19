@@ -129,7 +129,6 @@ Soit $x,y \in A$ tels que. On suppose $x \notin I$. On regarde l'idéal $J = I +
 
 ```{solution} exo-290
 :class: dropdown
-\leavevmode
 
 1. Intuition : $\frac{1}{1-x} = \sum x^k$. Déjà remarquer que $\frac{n}{u}$ est nilpotent, donc on peut se permettre de faire l'exercice pour simplement $u=1$. Avec l'intuition, on montre alors facilement que $\sum_{k \leq \mathcal{N}(n)} (-n)^k$ est bien l'inverse cherché (attention à montrer qu'il est inverse des deux côtés).
 1. Pareil avec l'intuition, il faut regarder $1 + b\frac{1}{1-ab}a$ et vérifier qu'il s'agit bien de l'inverse cherché (des deux côtés !).

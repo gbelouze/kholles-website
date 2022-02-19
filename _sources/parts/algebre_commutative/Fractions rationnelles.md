@@ -27,11 +27,11 @@ Un résultat important : si $P$ est à racines simples (notons les $(x_i)$), $Q 
 :label: exo-310
 Décomposer en éléments simples les fractions rationnelles suivantes.
 
-    1. $F_1=\frac{1}{X^n-1}$ dans $\C[X]$
-    1. $F_2 = \frac{n!}{(X-1)(X-2)\ldots(X-n)}$ dans $\R[X]$.
-    1. $F_3 = \frac{1}{X^{2n}+1}$ dans $\C[X]$ puis $\R[X]$
-    1. $F_4 = \frac{X+1}{X^8(X+2)}$
-    1. $F_5 = \frac{X^2}{(X^2-1)^2}$
+1. $F_1=\frac{1}{X^n-1}$ dans $\C[X]$
+1. $F_2 = \frac{n!}{(X-1)(X-2)\ldots(X-n)}$ dans $\R[X]$.
+1. $F_3 = \frac{1}{X^{2n}+1}$ dans $\C[X]$ puis $\R[X]$
+1. $F_4 = \frac{X+1}{X^8(X+2)}$
+1. $F_5 = \frac{X^2}{(X^2-1)^2}$
 
 ```
 
@@ -160,7 +160,7 @@ DES de $\frac{P}{Q}$ pour en déduire $S = \underset{x\rightarrow +\infty}{\lim}
 ```
 
 
-```{exercise} théorème de Gauss-Lucas]\leavevmod
+```{exercise} théorème de Gauss-Lucas]
 :label: exo-315
 
 1. Soit $P \in \C[X]$ non constant. Montrer que les racines de $P'$ appartiennent à l'enveloppe convexe des racines de $P$.
