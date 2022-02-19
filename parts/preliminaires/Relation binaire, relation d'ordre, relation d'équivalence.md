@@ -128,7 +128,7 @@ Sur $E = \N^2$, on définit la relation binaire $\preccurlyeq$ par
 :class: margin
 Une relation binaire $\rightarrow$ est bien fondée s'il n'existe pas de suite infinie $x_n \rightarrow x_{n+1}$.
 ```
-```{exercise} lemme de Newman
+````{exercise} lemme de Newman
 :label: exo-49
 Soit $E$ un ensemble et $\rightarrow$ une relation sur $E$. On note $\overset{*}{\rightarrow}$ la clôture réflexive, transitive de $\rightarrow$. On dit que $\rightarrow$
 
@@ -148,9 +148,15 @@ Soit $P(x)$ la propriété
  \forall y, z \in E, \; z \overset{*}{\leftarrow} x \overset{*}{\rightarrow} y \Rightarrow ( \exists v \in E, \; y \overset{*}{\rightarrow} v \textrm{ et } z \overset{*}{\rightarrow} v)
 \end{equation*}
 
-1. Montrer la propriété en supposant que tous les successeurs de $x$ vérifient $P$. *Indication : utiliser deux fois l'hypothèse d'induction*.
-1. Conclure par l'absurde.
-```
+1. 
+    Montrer la propriété en supposant que tous les successeurs de $x$ vérifient $P$.
+    ```{admonition} Indication
+    :class: tip
+    Utiliser deux fois l'hypothèse d'induction
+    ```
+1. 
+    Conclure par l'absurde.
+````
 
 
 

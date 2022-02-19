@@ -110,14 +110,20 @@ On se donne $(\Omega_n)$ comme dans l'énoncé. Soit $x \in E$ et $B=\mathcal{B}
 ```
 
 
-```{exercise} Une application du théorème de Baire
+````{exercise} Une application du théorème de Baire
 :label: exo-136
 Soit $f : \R_+ \rightarrow \R$ continue vérifiant la propriété
 \begin{equation*}
 \forall a > 0, \; f(na) \underset{n \rightarrow + \infty}{\longrightarrow} 0
 \end{equation*}
-Montrer que $f$ tend vers $0$ en $+\infty$. Indication : la propriété de Baire a un énoncé équivalent en terme de fermés. C'est plutôt celle-ci qu'il faut utiliser.
+Montrer que $f$ tend vers $0$ en $+\infty$.
+
+```{admonition} Indication
+:class: tip
+La propriété de Baire a un énoncé équivalent en terme de fermés. C'est plutôt celle-ci qu'il faut utiliser.
 ```
+````
+
 ```{solution} exo-136
 :class: dropdown
 Pour $\varepsilon > 0$ on regarde les fermés $F_p = \{ a \geq 0 \; | \; |f(na)| \leq \varepsilon \forall n \geq p \}$. L'union des $F_p$ est $\R$ d'après l'hypothèse, donc l'un au moins de ces $F_p$, mettons $F_{p_0}$ est d'intérieur non vide et contient par exemple $[a,b]$ avec $a<b$, donc contient tous les $[na;nb]$. Fixons $N$ suffisamment grand pour que $(N+1)a < Nb$ et soit $x > Nb$. Fixons aussi $n \geq N$ tel que $nb \leq x < (n+1)b$. Alors $x \in [nb, (n+1)b] \subset [(n+1)a;(n+1)b] \subset F_{p_0}$ donc $x \in F_{p_0}$. Si on rergarde de loin ce qu'on a montré :

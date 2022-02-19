@@ -61,8 +61,8 @@ On va montrer que la limite est $1$. Soit $l$ la limite
 ```{exercise}
 :label: exo-80
 
-    1. Trouver une injection de $\R$ vers $\P(\N)$.
-    1. Trouver une injection de $\P(\N)$ vers $\R$.
+1. Trouver une injection de $\R$ vers $\P(\N)$.
+1. Trouver une injection de $\P(\N)$ vers $\R$.
 
 ```
 
@@ -70,31 +70,36 @@ On va montrer que la limite est $1$. Soit $l$ la limite
 :class: dropdown
 
 
-    1. On définit l'image de $x$ par $\phi$ de la manière suivante : si le développement de $x$ est
+1.
+    On définit l'image de $x$ par $\phi$ de la manière suivante : si le développement de $x$ est
     $ x=0,a_1a_2\ldots
     $
-    on pose \begin{equation*}
+    on pose
+    \begin{equation*}
      \phi(x) = \{ 1a_{\frac{n(n+1)}{2}}\ldots a_{\frac{(n+1)(n+2)}{2}-1} \; | \; n \in \N^* \}
     \end{equation*}
-
     Meilleure solution : prendre la réciproque de la question 2, en binaire.
-    2. On définit l'image de $A \in \P(\N)$ par $\psi$ de la manière suivante:
+2. 
+    On définit l'image de $A \in \P(\N)$ par $\psi$ de la manière suivante:
     \begin{equation*}
      \psi(x) = \sum_{n=1}^{+\infty} \mathds{1}_{n \in A} 10^{-n}
-    \end{equation*}
-
-
+    \<end>equation*</end>
 ```
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-81
 
-    1. Soit $n \in \N^*$ et $a_1, \ldots, a_n$ des éléments de $[\![0,9]\!]$ non tous égaux à $9$. On note $x$ le réel dont le développement décimal est $0,a_1\ldots a_na_1\ldots a_na_1\ldots a_n\ldots$. Justifier l'existence et trouver $p,q \in \N$ tels que $x= \frac{p}{q}$.
-    1. Réciproquement, montrer que si $x$ est rationnel, alors son développement décimal est périodique à partir d'un certain rang. Indication : on admettra que si $u$ et $v$ sont premiers entre eux, alors il existe $n$ tels que $u^n = 1 \mod{v}$.
-
-```
+1. 
+    Soit $n \in \N^*$ et $a_1, \ldots, a_n$ des éléments de $[\![0,9]\!]$ non tous égaux à $9$. On note $x$ le réel dont le développement décimal est $0,a_1\ldots a_na_1\ldots a_na_1\ldots a_n\ldots$. Justifier l'existence et trouver $p,q \in \N$ tels que $x= \frac{p}{q}$.
+2. 
+    Réciproquement, montrer que si $x$ est rationnel, alors son développement décimal est périodique à partir d'un certain rang.
+    ```{admonition} Indication
+    :class: tip
+    On admettra que si $u$ et $v$ sont premiers entre eux, alors il existe $n$ tels que $u^n = 1 \mod{v}$.
+    ```
+````
 
 ```{solution} exo-81
 :class: dropdown
@@ -373,14 +378,17 @@ On note $I_1 = [a_1, b_1], I_2 = [a_2, b_2], \ldots, I_n = [a_n, b_n]$ les segme
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-94
 PROOF UNCOMPLETE
 
 Soit $\alpha, \beta \in \R$. On pose $A = \{E(n\alpha) \; | \; n \in \N \}$ et $B = \{E(n\beta) \; | \; n \in \N \}$. Montrer que $A$ et $B$ forment une partition de $\N^*$ si et seulement si $\alpha$ et $\beta$ sont irrationnels et vérifient $\frac{1}{\alpha} + \frac{1}{\beta} = 1$.
 
-*Indication : introduire la fonction de densité d'une partie $P$ de $\N$ $d(P) = \lim Card(P\cap[\![1;n]\!])/n$*.
+```{admonition} Indication
+:class: tip
+Introduire la fonction de densité d'une partie $P$ de $\N$ $d(P) = \lim Card(P\cap[\![1;n]\!])/n$*.
 ```
+````
 
 ```{solution} exo-94
 :class: dropdown

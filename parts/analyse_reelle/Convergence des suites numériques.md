@@ -221,13 +221,15 @@ Le sens direct est évident. Pour le sens retour, si $(u_n)$ ne converge pas ver
 ```
 
 
-```{exercise}
+````{exercise}
 :label: exo-114
-Voir énoncé 6.35 du poly de Mansuy. Soit $(u_n)_n$ une suite bornée telle que $u_n + \frac{1}{2}u_{2n} \rightarrow 1$. Que dire de $u_n$ ?
-Indication : On pourra demander de montrer qu'une suite bornée converge si et seulement si elle admet exactement une valeur d'adhérence.
-
-Et si on abandonne l'hypothèse $(u_n)$ bornée ?
+Soit $(u_n)_n$ une suite bornée telle que $u_n + \frac{1}{2}u_{2n} \rightarrow 1$. Que dire de $u_n$ ?
+```{admonition} Indication
+:class: tip
+On pourra demander de montrer qu'une suite bornée converge si et seulement si elle admet exactement une valeur d'adhérence.
 ```
+Et si on abandonne l'hypothèse $(u_n)$ bornée ?
+````
 
 ```{solution} exo-114
 :class: dropdown
@@ -383,11 +385,14 @@ On note $\phi_k$ une extractrice associée à $l_k$, que l'on choisit de sorte q
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-125
 Soit $u_n = \sum \limits_{k=0}^n\frac{1}{k!}$ et $v_n = u_n + \frac{1}{nn!}$. Montrer que $(u_n)$ et $(v_n)$ convergent vers la même limite, notée $e$. Montrer que $e \notin \Q$.
-Indication : Montrer que $(u_n)$ et $(v_n)$ sont adjacentes.
+```{admonition} Indication
+:class: tip
+Montrer que $(u_n)$ et $(v_n)$ sont adjacentes.
 ```
+````
 
 
 

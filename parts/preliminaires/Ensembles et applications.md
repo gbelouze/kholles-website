@@ -259,12 +259,15 @@ deux premières composantes de $\phi_2$, alors $n \longrightarrow \phi_{\phi_2'(
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-38
 Existence d'un point fixe pour une fonction $f : \mathcal{P}(E) \rightarrow \mathcal{P}(E)$ croissante.
 
-*Indication : considérer le plus grand $A$ vérifiant $A \subset f(A)$.*
+```{admonition} Indication
+:class: tip
+Considérer le plus grand $A$ vérifiant $A \subset f(A)$.*
 ```
+````
 
 ```{solution} exo-38
 :class: dropdown
@@ -286,16 +289,20 @@ Si $E$ est infini, considérons $f : E \rightarrow E$, et choisissons $x \in E$ 
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-40
 On dit que $f, g \; : \; X \rightarrow Y$ possèdent un coégalisateur $e : Y \rightarrow Q$ lorsque
 1. *Commutativité* $e \circ f = e \circ g$
 1. *Maximalité* pour toute fonction $d : Y \rightarrow Q'$ telle que $d \circ f = d \circ g$, il existe une unique fonction $h : Q \rightarrow Q'$ vérifiant $h \circ e = d$.
 
-Montrer que si $e$ existe, alors $e$ est surjective. *Indication : montrer que $\phi$ est surjective si et seulement si pour toute paire de fonction $h_1, h_2$, $h_1 \circ \phi = h_2 \circ \phi \Rightarrow h_1 = h_2$*
+Montrer que si $e$ existe, alors $e$ est surjective. 
+```{admonition} Indication
+:class: tip
+Montrer que $\phi$ est surjective si et seulement si pour toute paire de fonction $h_1, h_2$, $h_1 \circ \phi = h_2 \circ \phi \Rightarrow h_1 = h_2$
+```
 
 Montrer qu'il existe toujours un coégalisateur.
-```
+````
 
 ```{solution} exo-40
 :class: dropdown
