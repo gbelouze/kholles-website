@@ -230,7 +230,6 @@ Soit $f : \R\rightarrow\R$ dérivable, et $a \in \R$ tel que $f'(a) \neq 0$.
 ```
 ```{solution} exo-191
 :class: dropdown
-\leavevmode
 
 1. Pour tout $\varepsilon > 0$, il existe un voisinage $V$ tel que $x \in V \setminus \{ a \} \Rightarrow |\frac{f(x)-f(a)}{x-a} - f'(a)| \leq \varepsilon $. Avec $\varepsilon = \frac{f'(a)}{2}$ on a $|f(x) - f(a)| \geq |\frac{f'(a)}{2}(x-a)| > 0$.
 1. Si $f'$ est continue en $a$, $f'$ est de signe strictement constant sur un voisinage de $a$, donc $f$ y est strictement monotone donc injective. Un contre-exemple est fourni par $x \mapsto x^2\sin(\frac{1}{x}) + \alpha x$ en $0$ pour n'importe quel $|\alpha| < 1$.
@@ -275,7 +274,6 @@ Soit $f :[a,b] \rightarrow \R$ dérivable.
 
 ```{solution} exo-194
 :class: dropdown
-\leavevmode
 
 1. Si $f$ n'est pas injective, Rolle nous donne une dérivée nulle, donc $f$ est injective, continue donc monotone.
 1. Soit $c < d$ et $\alpha \in [f(c), f(d)]$. La contraposée de la question précédente, appliquée à $f(x) - \alpha x$, fournit $\gamma$ tel que $f'(\gamma) - \alpha = 0$. Ainsi, $f'([a,b])$ est convexe, donc est un intervalle.
