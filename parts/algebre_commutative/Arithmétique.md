@@ -245,9 +245,9 @@ pour $b \in \Z/p\Z$, on a $a \mapsto ba$ bijective donc $S_k = b^kS_k$. Puis si 
 :label: exo-338
 Soit $p \geq 3$ premier. On dit que $a \in (\Z/p\Z)^*$ est un carré s'il existe $b \in \Z/p\Z$ tel que $a = b^2$.
 
-    1. Montrer qu'il y a $\frac{p-1}{2}$ carrés dans $(\Z/p\Z)^*$.
-    1. Montrer que $a$ est un carré si et seulement si $a^{\frac{p-1}{2}}=1$
-    1. En déduire que
+1. Montrer qu'il y a $\frac{p-1}{2}$ carrés dans $(\Z/p\Z)^*$.
+1. Montrer que $a$ est un carré si et seulement si $a^{\frac{p-1}{2}}=1$
+1. En déduire que
     \begin{equation*}
     f_p \begin{cases}
     (\Z/p\Z)* \rightarrow &\{ -1, 1 \} \\

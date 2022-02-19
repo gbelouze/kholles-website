@@ -31,8 +31,10 @@ On se place à $n$ suffisamment grand pour que $|u_{n+1}| \leq \varepsilon |u_n|
 
 ```{exercise}
 :label: exo-144
-Soit $(u_n)$ une suite de réels positifs et \begin{equation*}
- v_n = \frac{u_n}{1+u_n} \end{equation*}
+Soit $(u_n)$ une suite de réels positifs et
+\begin{equation*}
+ v_n = \frac{u_n}{1+u_n}
+\end{equation*}
 
 Montrer que les séries de terme général $u_n$ et $v_n$ sont de même nature.
 ```

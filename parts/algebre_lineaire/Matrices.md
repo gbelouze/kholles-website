@@ -36,8 +36,8 @@ Soit $E=\Vect(\sin,\cos,\ch,\sh)$. Donner la matrice de l'opérateur de dérivat
 ```{solution} exo-377
 :class: dropdown
 \begin{equation*}
-begin{pmatrix
-0end & 0 & 0 \\
+begin{pmatrix}
+0 & 0 & 0 \\
 1 &  0 & 0 & 0 \\
 0 &  0 & 0 & 1 \\
 0 &  0 & 1 & 0 \\
@@ -47,25 +47,31 @@ begin{pmatrix
 
 ```{exercise}
 :label: exo-378
-Calculer $A^n$ pour $A =
+Calculer $A^n$ pour
+\begin{equation*}
+A =
 \begin{pmatrix}
 1 & 2 & 1 \\
 0 & 1 & 2 \\
 0 & 0 & 1 \\
-\end{pmatrix}$
+\end{pmatrix}
+\end{equation*}
 ```
 
 ```{solution} exo-378
 :class: dropdown
-On écrit $A = I_3 + B$, où $B=
+On écrit $A = I_3 + B$, où 
+\begin{equation*}
+B=
 \begin{pmatrix}
 0 & 2 & 1 \\
 0 & 0 & 2 \\
 0 & 0 & 0 \\
-\end{pmatrix}$
+\end{pmatrix}
+\end{equation*}
 On calcule :
-\begin{equation*}
 
+\begin{equation*}
 B^2 =
 \begin{pmatrix}
 0 & 0 & 4 \\
@@ -87,48 +93,58 @@ A^n &= \sum_{k=0}^n {n \choose k} B^k I_3^{n-k} \\
 
 ```{exercise}
 :label: exo-379
-Soit $J_n =
+Soit
+\begin{equation*}
+J_n =
 \begin{pmatrix}
 1 & 1 & \ldots & 1 \\
 0 & 1 & \ldots & 1 \\
 \vdots & \ddots & \ddots & 1 \\
 0 & \ldots & 0 & 1 \\
-\end{pmatrix}$
+\end{pmatrix}
+\end{equation*}
 Calculer l'inverse de $J_n$
 ```
 
 ```{solution} exo-379
 :class: dropdown
 C'est un cas particulier de
-$\begin{pmatrix}
+\begin{equation*}
+\begin{pmatrix}
 1 & a & \ldots & a^{n-1} \\
 0 & 1 & \ddots & \vdots \\
 \vdots & \ddots & \ddots & a \\
 0 & \ldots & 0 & 1 \\
-\end{pmatrix}$
+\end{pmatrix}
+\end{equation*}
 avec $a=1$, et le cas particulier se calcule facilement.
 ```
 
 ```{exercise}
 :label: exo-380
-Soit $ A_n=
+Soit 
+\begin{equation*}
+A_n=
 \begin{pmatrix}
 1 & a & \ldots & a^{n-1} \\
 0 & 1 & \ldots & \vdots \\
 \vdots & \ddots & \ddots & a \\
 0 & \ldots & 0 & 1 \\
-\end{pmatrix}$
-Calculer l'inverse de $A_n$
+\end{pmatrix}
+\end{equation*}
+Calculer l'inverse de $A_n$.
 ```
 
 ```{solution} exo-380
 :class: dropdown
-Notons$A = \begin{pmatrix}
+Notons
+\begin{equation*}
+A = \begin{pmatrix}
 0 & a & \ldots & 0 \\
 0 & 0 & \ddots & \vdots \\
 \vdots & \ddots & \ddots & a \\
 0 & \ldots & 0 & 0 \\
-\end{pmatrix}$
+\end{pmatrix} \end{equation*}
 Alors $A$ est $n$-nilpotente et $A_n = \sum_{k=0}^{n-1} A^k$. Par analogie avec les sommes géométriques réelles, l'inverse est $I-A$.
 ```
 
@@ -193,7 +209,6 @@ Soit $\Delta = Diag(a_1, \ldots, a_n) \in \M_n(\R)$. Soit $M \in \M_n(\R)$. Calc
 :label: exo-385
 Soit $x,\theta \in \R$. Calculer les puissances de la matrice
 \begin{equation*}
-
 \begin{pmatrix}
 x+\sin(\theta) & \cos(\theta) \\
 \cos(\theta) & x - \sin(\theta)
@@ -203,14 +218,18 @@ x+\sin(\theta) & \cos(\theta) \\
 
 ```{solution} exo-385
 :class: dropdown
-On note $M_{\theta} =
+On note 
+\begin{equation*}
+M_{\theta} =
 \begin{pmatrix}
 \sin(\theta) & \cos(\theta) \\
 \cos(\theta) & -\sin(\theta)
-\end{pmatrix} $
-Calculons ses puissances :
-\begin{equation*}
+\end{pmatrix}
+\end{equation*}
 
+Calculons ses puissances :
+
+\begin{equation*}
 M_{\theta}^2 =
 \begin{pmatrix}
 1 & 0 \\
@@ -335,11 +354,15 @@ M^{-1}_{i,j} = (-1)^{(i-1)(j-1)} {j-1 \choose i-1} \; \textrm{si } i \leq j \\
 M^{-1}_{i,j} = 0 \; \textrm{sinon}
 \end{cases}
 \end{equation*}
-On calcule pour $\Delta =
+On calcule pour
+\begin{equation*}
+\Delta =
 \begin{pmatrix} d_1 & 0 & 0 \\
 0 & \vdots & 0 \\
 0 & 0 & d_n \\
-\end{pmatrix}$, $(\Delta M \Delta)_{i,j} = d_i d_j M_{i,j}$. Ainsi $d_k = (-1)^{k-1}$ donne la bonne matrice diagonale.
+\end{pmatrix}
+\end{equation*}
+$(\Delta M \Delta)_{i,j} = d_i d_j M_{i,j}$. Ainsi $d_k = (-1)^{k-1}$ donne la bonne matrice diagonale.
 ```
 
 

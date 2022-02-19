@@ -131,8 +131,7 @@ et
 :class: dropdown
 
 1. ${a+b \choose a}$
-
-2.
+2. À faire
 
 ```
 

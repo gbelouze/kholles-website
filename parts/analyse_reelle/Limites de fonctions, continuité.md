@@ -117,8 +117,7 @@ Soit $a,b \in [0,T]$ tels que $f$ atteigne son minimum et son maximum respective
 
 ```{exercise}
 :label: exo-161
-Voir exercice 8.31 du poly de Mansuy. Soit $f \; \: \; \mathbb{R}_+ \longrightarrow \mathbb{R}$ continue et surjective. Montrer que $f^{-1}(\{0\})$ est infini.
-Difficulté : */**
+Soit $f \; \: \; \mathbb{R}_+ \longrightarrow \mathbb{R}$ continue et surjective. Montrer que $f^{-1}(\{0\})$ est infini.
 ```
 
 ```{solution} exo-161
@@ -130,7 +129,7 @@ Montrons que cet ensemble n'est pas majoré. Soit $A>0$, par continuité de $f$,
 
 ```{exercise}
 :label: exo-162
-Voir exercice 8.28 du poly de Mansuy. Soit $f$ et $g$ deux fonctions continues sur $[0,1]$ telles que
+Soit $f$ et $g$ deux fonctions continues sur $[0,1]$ telles que
 \begin{equation*}
 \forall x \in [0,1], \qquad 0 < f(x) <g(x).
 \end{equation*}
@@ -138,7 +137,6 @@ Montrer qu'il existe $D>C>1$ tels que
 \begin{equation*}
 \forall x \in [0,1], \qquad Cf(x) < g(x)<Df(x).
 \end{equation*}
-Difficulté : **
 ```
 ```{solution} exo-162
 :class: dropdown
@@ -151,8 +149,8 @@ On regarde la fonction $\frac{g}{f}$ définie et continue sur le segment $[0,1]$
 
 ```{exercise}
 :label: exo-163
-Voir exercice 8.26 du poly de Mansuy. Déterminer les fonctions $f \; : \; \mathbb{R} \longrightarrow \mathbb{R}$ continues telles que $f(\mathbb{Q}) \subset \mathbb{R} \setminus \mathbb{Q}$ et $f(\mathbb{R} \setminus \mathbb{Q}) \subset \mathbb{Q}$.
-Difficulté : *** (nécessite les notions de dénombrabilité)
+Déterminer les fonctions $f \; : \; \mathbb{R} \longrightarrow \mathbb{R}$ continues telles que $f(\mathbb{Q}) \subset \mathbb{R} \setminus \mathbb{Q}$ et $f(\mathbb{R} \setminus \mathbb{Q}) \subset \mathbb{Q}$.
+⚠️ nécessite des notions de dénombrabilité
 ```
 
 ```{solution} exo-163
@@ -347,26 +345,31 @@ D'où $f(l) = l$.
 
 ```{exercise}
 :label: exo-175
-Site de Michel Quercia.
-Evn :
+Site de Michel Quercia, Espaces vectoriels normés.
+1. (exercice 87) Soient $E,F$ deux espaces vectoriel normés et $f:E \rightarrow F$ continue. Soit $(K_n)$ une suite décroissante de compacts de $E$.
+Montrer que $f(\bigcap_n K_n) = \bigcap_n f(K_n)$.
+2. (exercice 95)
+3. (exercice 98 avec espace de Banach plutôt que de dimension finie, puis 101)
+4. (exercice 102)
+5. (exercice 109)
+6. Montrer que la norme est une fonction continue.
 
-1. 87. Prendre $k_i \in K_i$ tels que $f(k_i) = x$, remarquer quepour chaque $K_i$ on peut extraire une sous-suite convergente dans $K_i$ et faire l'habituelle composée de dénombrables extractrices.
-1. 95
-1. 98 avec de Banach (complet) plutôt que de dimension finie, puis 101
-1. 102
-1. 109. Penser au fait que $||f(\cdot)||$ est continue. Pour la réciproque penser à la caractérisation des applications linéaires continues.
-1. Montrer que la norme est continue. Solution : elle est 1-lipschitzienne.
-
-Continu :
-
-1. 30
-1. 21
-1. 23
-1. 17
-1. 16
-
+Site de Michel Quercia. Continuité.
+1. (exercice 30)
+2. (exercice 21)
+3. (exercice 23)
+4. (exercice 17)
+5. (exercice 16)
 ```
 
+```{solution} exo-175
+1. Prendre $k_i \in K_i$ tels que $f(k_i) = x$, remarquer quepour chaque $K_i$ on peut extraire une sous-suite convergente dans $K_i$ et faire l'habituelle composée de dénombrables extractrices.
+2.
+3.
+4.
+5. Penser au fait que $||f(\cdot)||$ est continue. Pour la réciproque penser à la caractérisation des applications linéaires continues.
+6. La norme est 1-lipschitzienne.
+```
 
 
 

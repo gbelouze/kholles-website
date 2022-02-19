@@ -55,7 +55,6 @@ Soit $(u_n)_{n \in \mathbb{N}}$ une suite. On dit que $(u_n)$ est de Cauchy si
     \begin{equation*}
      \forall \varepsilon > 0, \; \exists n \in \mathbb{N}, \; \forall p > n, \; |u_n-u_p|<\varepsilon
     \end{equation*}
-
 2.
     Exprimer le caractère borné d'une suite à l'aide de quantificateurs. Montrer qu'une suite de Cauchy est bornée.
 3.
@@ -104,7 +103,7 @@ Montrer que le raisonnement par récurrence est valide, i.e. $\left ( P(0) \text
 
 ```{exercise}
 :label: exo-32
-Voir énoncé 2.9 du poly de Mansuy. Soit $A$ et $B$ deux parties de E. Considérons
+Soit $A$ et $B$ deux parties de E. Considérons
 \begin{equation*}
     \phi \longmapsto\begin{cases}
      P(E) \;  \rightarrow \; P(A) \times P(B) \\
@@ -116,8 +115,6 @@ Voir énoncé 2.9 du poly de Mansuy. Soit $A$ et $B$ deux parties de E. Considé
 1. Montrer que $\phi$ est injective si, et seulement si, $A \cup B = E$.
 1. Trouver une condition nécessaire et suffisante pour que $\phi$ soit surjective.
 1. On suppose que $\phi$ est bijective. Calculer $\phi^{-1}$.
-
-Difficulté : *
 ```
 
 ```{solution} exo-32
@@ -146,14 +143,13 @@ Difficulté : *
 
 ```{exercise}
 :label: exo-33
-Voir énoncé 2.22 du poly de Mansuy. Soit $E= \{ x_1, \; \ldots, \; x_p\}$. Prouver que l'on peut ordonner les éléments de $P(E)$ en respectant
+Soit $E= \{ x_1, \; \ldots, \; x_p\}$. Prouver que l'on peut ordonner les éléments de $P(E)$ en respectant
 les 4 règles suivantes :
 
 - on commence par $\emptyset$,
 - on termine par un singleton,
 - chaque élément de $P(E)$ apparaît une et une seule fois,
 - chaque terme de la suite est obtenu par l'ajout ou le retrait d'un seul élément au terme précédent.
-Difficulté : *
 ```
 
 ```{solution} exo-33
@@ -171,7 +167,7 @@ Une suite convenable associée à $E \cup \{ x_{p+1} \}$ est alors
 
 ```{exercise}
 :label: exo-34
-Trouver une bijection entre $\mathbb{R}$ et $\mathbb{R}\setminus \mathbb{Z}$. Difficulté : **
+Trouver une bijection entre $\mathbb{R}$ et $\mathbb{R}\setminus \mathbb{Z}$.
 ```
 
 ```{solution} exo-34
@@ -190,12 +186,11 @@ On note $x_n = \sum \limits_{k=1}^n \frac{1}{2^k}$. On considère alors la bijec
 
 ```{exercise}
 :label: exo-35
-Voir énoncé 2.17 du poly de Mansuy. Soit $f$ : $\mathbb{N} \rightarrow \mathbb{N}$ injective et $g$ : $\mathbb{N} \rightarrow \mathbb{N}$ surjective, telles que
+Soit $f$ : $\mathbb{N} \rightarrow \mathbb{N}$ injective et $g$ : $\mathbb{N} \rightarrow \mathbb{N}$ surjective, telles que
 \begin{equation*}
  \forall n \in \mathbb{N}, \; f(n) \leq g(n)
 \end{equation*}
 Montrer que $f=g$.
-Difficulté : **
 ```
 
 ```{solution} exo-35
@@ -219,26 +214,27 @@ Soit $E$ un ensemble et $X \subset E$. La fonction indicatrice de $X$ est défin
     \end{cases}
 \end{equation*}
 
-1. Soit $A,B \subset E$. Exprimer $\mathds{1}_{A \bigcup B}, \; \mathds{1}_{A \bigcap B}, \; \mathds{1}_{A \setminus B}$ en fonction de $\mathds{1}_A$ et $\mathds{1}_B$.
-
-2. Soit $A_1$, $A_2$, $\ldots$, $A_n$ des sous-ensembles de $E$. Prouver l'égalité suivante
-\begin{equation*}
-\mathds{1}_{A_1 \cup A_2 \cup \ldots \cup A_n} = \sum \limits_{k=1}^n (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}
-\end{equation*}
-
+1.
+    Soit $A,B \subset E$. Exprimer $\mathds{1}_{A \bigcup B}, \; \mathds{1}_{A \bigcap B}, \; \mathds{1}_{A \setminus B}$ en fonction de $\mathds{1}_A$ et $\mathds{1}_B$.
+2.
+    Soit $A_1$, $A_2$, $\ldots$, $A_n$ des sous-ensembles de $E$. Prouver l'égalité suivante
+    \begin{equation*}
+    \mathds{1}_{A_1 \cup A_2 \cup \ldots \cup A_n} = \sum \limits_{k=1}^n (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}
+    \end{equation*}
 ```
 
 ```{solution} exo-36
 :class: dropdown
 
-1. $\mathds{1}_{A \bigcap B} = \mathds{1}_A \mathds{1}_B$, $\mathds{1}_{A \setminus B} = \mathds{1}_A (1 - \mathds{1}_B)$ et enfin $\mathds{1}_{A \bigcup B} = \mathds{1}_A + \mathds{1}_B - \mathds{1}_A \mathds{1}_B$.
-
-2. On prouve le résultat par récurrence, l'initialisation ayant été faite à la question précédente. On applique l'hypothèse de récurrence avec $A_n \bigcup A_{n+1}$ au lieu de $A_n$.
-\begin{align*}
-& \mathds{1}_{A_1 \cup A_2 \cup \ldots \cup A_{n+1}} \\ &= \mathds{1}_{A_n \bigcup A_{n+1}} + \sum \limits_{k=1}^{n-1} (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n-1} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}} - \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}\mathds{1}_{A_n \bigcup A_{n+1}} \\
-&= \mathds{1}_{A_n} + \mathds{1}_{A_{n+1}} - \mathds{1}_{A_n} \mathds{1}_{A_{n+1}} + \sum \limits_{k=1}^{n-1} (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n-1} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}} - \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}(\mathds{1}_{A_n} + \mathds{1}_{A_{n+1}} - \mathds{1}_{A_n} \mathds{1}_{A_{n+1}}) \\
-&= \sum \limits_{k=1}^{n+1} (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n+1} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}
-\end{align*}
+1.
+    $\mathds{1}_{A \bigcap B} = \mathds{1}_A \mathds{1}_B$, $\mathds{1}_{A \setminus B} = \mathds{1}_A (1 - \mathds{1}_B)$ et enfin $\mathds{1}_{A \bigcup B} = \mathds{1}_A + \mathds{1}_B - \mathds{1}_A \mathds{1}_B$.
+2. 
+    On prouve le résultat par récurrence, l'initialisation ayant été faite à la question précédente. On applique l'hypothèse de récurrence avec $A_n \bigcup A_{n+1}$ au lieu de $A_n$.
+    \begin{align*}
+    & \mathds{1}_{A_1 \cup A_2 \cup \ldots \cup A_{n+1}} \\ &= \mathds{1}_{A_n \bigcup A_{n+1}} + \sum \limits_{k=1}^{n-1} (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n-1} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}} - \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}\mathds{1}_{A_n \bigcup A_{n+1}} \\
+    &= \mathds{1}_{A_n} + \mathds{1}_{A_{n+1}} - \mathds{1}_{A_n} \mathds{1}_{A_{n+1}} + \sum \limits_{k=1}^{n-1} (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n-1} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}} - \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}(\mathds{1}_{A_n} + \mathds{1}_{A_{n+1}} - \mathds{1}_{A_n} \mathds{1}_{A_{n+1}}) \\
+    &= \sum \limits_{k=1}^{n+1} (-1)^{k-1} \sum \limits_{1 \leq i_1 \leq \ldots \leq i_k \leq n+1} \mathds{1}_{A_{i_1}} \ldots \mathds{1}_{A_{i_k}}
+    \end{align*}
 
 ```
 
@@ -318,12 +314,15 @@ et on s'intéresse aux classes d'équivalences de $\overset{*}{\mathscr{R}}$ la 
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-41
 Montrer qu'on ne peut pas surjecter un ensemble sur ses parties.
 
-*Indication : considérer $P = \{x \; | x \notin f(x) \}$*
+```{admonition} Indication
+:class: tip
+Considérer $P = \{x \; | x \notin f(x) \}$*
 ```
+````
 
 ```{solution} exo-41
 :class: dropdown
