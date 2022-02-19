@@ -97,10 +97,14 @@ Soit $I_n$ une suite croissante d'idéaux de $\mathbb{K}[X]$ où $\mathbb{K}$ es
 Facile quand on utilise le fait que $I_n = Id(P_n)$ pour un certain $P_n \in I_n$. La suite $deg(P_n)$ est alors décroissante donc stationnaire.
 ```
 
-```{exercise}
+````{exercise}
 :label: exo-288
-Soit $A$ un anneau de Boole, i.e. $\forall a \in A, \; a^2=a$. Montrer que $A$ est commutatif. Indication : montrer que $\forall a \in A, \; a = -a$.
+Soit $A$ un anneau de Boole, i.e. $\forall a \in A, \; a^2=a$. Montrer que $A$ est commutatif.
+```{admonition} Indication
+:class: tip
+Montrer que $\forall a \in A, \; a = -a$.
 ```
+````
 
 ```{solution} exo-288
 :class: dropdown
@@ -135,26 +139,32 @@ Soit $x,y \in A$ tels que. On suppose $x \notin I$. On regarde l'idéal $J = I +
 
 ```
 
-```{exercise}
+````{exercise}
 :label: exo-291
 Soit $A$ un anneau, et $a \in A$.
 
 1. Montrer que l'ensemble des inverses à gauche de $a$ est en bijection avec $Ker(\cdot a)$ (noyau de l'homothétie).
-1. On suppose $Ker(\cdot a)$ fini non vide. Soit $\kappa$ dans $Ker(\cdot a)$. Montrer qu'il existe $m>0$, tel que $\kappa = g^m \kappa$. *Indication : considérer $(a^n\kappa)$*.
+1. On suppose $Ker(\cdot a)$ fini non vide. Soit $\kappa$ dans $Ker(\cdot a)$. Montrer qu'il existe $m>0$, tel que $\kappa = g^m \kappa$.
+```{admonition} Indication
+:class: tip
+Considérer $(a^n\kappa)$*.
 1. Montrer que $1-ag \in Ker(g\cdot) \cap Ker(\cdot a)$.
 1. En déduire que $a$ admet $0$, $1$ ou une infinité d'inverses à gauche.
-
 ```
+````
 
 ```{solution} exo-291
 :class: dropdown
 
-1. On fixe $g_0$ inverse à gauche de $a$ (traiter le cas sans inverse à gauche séparément). On a
-$ga = 1 \Leftrightarrow ga = g_0a \Leftrightarrow (g-g_0)a = 0 \Leftrightarrow g \in g_0 + Ker(\cdot a)$.
-
-2. $(a^n\kappa)$ n'est pas injective.
-3. Simple vérification
-4. Il suffit de montrer le résultat sur $Ker(\cdot a)$. On le suppose non vide de taille fini. Alors avec les questions précédentes $Ker(g\cdot) \cap Ker(\cdot a) = \{ 0 \}$ donc $ag = 1$ donc $g$ est l'unique inverse de $a$.
+1.
+    On fixe $g_0$ inverse à gauche de $a$ (traiter le cas sans inverse à gauche séparément). On a
+    $ga = 1 \Leftrightarrow ga = g_0a \Leftrightarrow (g-g_0)a = 0 \Leftrightarrow g \in g_0 + Ker(\cdot a)$.
+2. 
+    $(a^n\kappa)$ n'est pas injective.
+3. 
+    Simple vérification
+4. 
+    Il suffit de montrer le résultat sur $Ker(\cdot a)$. On le suppose non vide de taille fini. Alors avec les questions précédentes $Ker(g\cdot) \cap Ker(\cdot a) = \{ 0 \}$ donc $ag = 1$ donc $g$ est l'unique inverse de $a$.
 
 ```
 

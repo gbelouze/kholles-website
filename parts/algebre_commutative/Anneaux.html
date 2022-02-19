@@ -400,28 +400,28 @@
 <h1>Anneaux<a class="headerlink" href="#anneaux" title="Permalink to this headline">¶</a></h1>
 <div class="exercise admonition" id="exo-281">
 
-<p class="admonition-title"><span class="caption-number">Exercise 252 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 253 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(A,B\)</span> deux anneaux commutatifs, et <span class="math notranslate nohighlight">\(f\)</span> une application de <span class="math notranslate nohighlight">\(A\)</span> vers <span class="math notranslate nohighlight">\(B\)</span> qui préserve la somme, le carré et l’unité. On suppose de plus <span class="math notranslate nohighlight">\(2\)</span> régulier dans <span class="math notranslate nohighlight">\(B\)</span>. Montrer que <span class="math notranslate nohighlight">\(f\)</span> est un morphisme d’anneau. Trouver un contre-exemple si on ne suppose plus que <span class="math notranslate nohighlight">\(f\)</span> préserve l’unité.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-281"> Exercise 252</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-281"> Exercise 253</a></p>
 <div class="section" id="solution-content">
 <p>Il suffit de montrer quer <span class="math notranslate nohighlight">\(f\)</span> préserve le produit. On prend <span class="math notranslate nohighlight">\(x,y \in A\)</span>. En écrivant <span class="math notranslate nohighlight">\(2xy = (x+y)^2-x^2-y^2\)</span>, on montre <span class="math notranslate nohighlight">\(2f(x)f(y) = 2f(xy)\)</span> et on utilise la régularité de <span class="math notranslate nohighlight">\(2\)</span>. Pour le contre-exemple remarquons que <span class="math notranslate nohighlight">\(f(1)\)</span> est toujours idempotent. Il faut donc se placer dans un anneau qui admet d’autre idempotent que <span class="math notranslate nohighlight">\(1\)</span> et <span class="math notranslate nohighlight">\(0\)</span>, par exemple dans un anneau produit (prendre par exemple <span class="math notranslate nohighlight">\(\phi : A \rightarrow B\)</span> un morphisme et <span class="math notranslate nohighlight">\(f:A\rightarrow B^2\)</span> défini  par <span class="math notranslate nohighlight">\(f(a) = (\phi(a), 0)\)</span>).</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-282">
 
-<p class="admonition-title"><span class="caption-number">Exercise 253 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 254 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau commutatif. Montrer que <span class="math notranslate nohighlight">\(A\)</span> possède un idempotent différent de <span class="math notranslate nohighlight">\(0\)</span> et <span class="math notranslate nohighlight">\(1\)</span> si et seulement si <span class="math notranslate nohighlight">\(A\)</span> est isomorphe à un anneau produit <span class="math notranslate nohighlight">\(B\times C\)</span> avec <span class="math notranslate nohighlight">\(B\)</span> et <span class="math notranslate nohighlight">\(C\)</span> des anneaux non nuls.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-282"> Exercise 253</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-282"> Exercise 254</a></p>
 <div class="section" id="solution-content">
 <p>Le sens retour est trivial. Considérons <span class="math notranslate nohighlight">\(b\)</span> différent de <span class="math notranslate nohighlight">\(0\)</span> et de <span class="math notranslate nohighlight">\(1\)</span> un idempotent de <span class="math notranslate nohighlight">\(A\)</span>, et notons <span class="math notranslate nohighlight">\(c = 1-b\)</span>. <span class="math notranslate nohighlight">\(c\)</span> est également idempotent non trivial. Notons <span class="math notranslate nohighlight">\(B = Id(b)\)</span> et <span class="math notranslate nohighlight">\(C = Id(c)\)</span> et considérons le morphisme</p>
 <div class="amsmath math notranslate nohighlight">
@@ -437,105 +437,109 @@ x &amp;\mapsto (bx, cx)
 </div>
 <div class="exercise admonition" id="anneau-integre-fini">
 
-<p class="admonition-title"><span class="caption-number">Exercise 254 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 255 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau intègre fini. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est un corps.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#anneau-integre-fini"> Exercise 254</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#anneau-integre-fini"> Exercise 255</a></p>
 <div class="section" id="solution-content">
 <p>Soit <span class="math notranslate nohighlight">\(a \in A \setminus \{ 0 \}\)</span>. Le morphisme <span class="math notranslate nohighlight">\(x \mapsto ax\)</span> est injectif donc bijectif donc il existe un inverse <span class="math notranslate nohighlight">\(b\)</span> à droite de <span class="math notranslate nohighlight">\(a\)</span>. De même il existe un inverse <span class="math notranslate nohighlight">\(c\)</span> à gauche de <span class="math notranslate nohighlight">\(a\)</span>. Puis <span class="math notranslate nohighlight">\(1 = ca = c (ab) a = (ca)(ba) = ba\)</span> donc <span class="math notranslate nohighlight">\(b=c\)</span> et <span class="math notranslate nohighlight">\(A\)</span> est un corps.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-284">
 
-<p class="admonition-title"><span class="caption-number">Exercise 255 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 256 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau  dont les seuls idéaux sont les idéaux triviaux. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est un corps.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-284"> Exercise 255</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-284"> Exercise 256</a></p>
 <div class="section" id="solution-content">
-<p>Pour <span class="math notranslate nohighlight">\(a \in A \setminus \{ 0 \}\)</span> on a <span class="math notranslate nohighlight">\(Id(a) = A\)</span> donc <span class="math notranslate nohighlight">\(1 \in Id(a)\)</span> donc <span class="math notranslate nohighlight">\(a\)</span> est inversible à gauche, à droite et avec le même raisonnement que dans l’exercice <a class="reference internal" href="#anneau-integre-fini"><span class="std std-numref">Exercise 254</span></a>, ce sont les mêmes inverses.</p>
+<p>Pour <span class="math notranslate nohighlight">\(a \in A \setminus \{ 0 \}\)</span> on a <span class="math notranslate nohighlight">\(Id(a) = A\)</span> donc <span class="math notranslate nohighlight">\(1 \in Id(a)\)</span> donc <span class="math notranslate nohighlight">\(a\)</span> est inversible à gauche, à droite et avec le même raisonnement que dans l’exercice <a class="reference internal" href="#anneau-integre-fini"><span class="std std-numref">Exercise 255</span></a>, ce sont les mêmes inverses.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-285">
 
-<p class="admonition-title"><span class="caption-number">Exercise 256 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 257 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau commutatif dont tous les idéaux sont premiers. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est un corps.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-285"> Exercise 256</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-285"> Exercise 257</a></p>
 <div class="section" id="solution-content">
 <p>Soit <span class="math notranslate nohighlight">\(x \in A\)</span>. On regarde <span class="math notranslate nohighlight">\(Id(x^2)\)</span> qui contient <span class="math notranslate nohighlight">\(x^2\)</span> donc <span class="math notranslate nohighlight">\(x\)</span>, donc on peut écrire <span class="math notranslate nohighlight">\(x = x^2a\)</span> pour un certain<span class="math notranslate nohighlight">\(a\)</span>, puis <span class="math notranslate nohighlight">\(x(1-xa)=0\)</span>. Il reste à remarquer que <span class="math notranslate nohighlight">\(\{ 0 \}\)</span> est premier, donc <span class="math notranslate nohighlight">\(A\)</span> est intègre. Ainsi <span class="math notranslate nohighlight">\(1=ax\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-286">
 
-<p class="admonition-title"><span class="caption-number">Exercise 257 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 258 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau intègre possèdant un nombre fini d’idéaux. Montrer que <span class="math notranslate nohighlight">\(A\)</span> un est un corps.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-11">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-286"> Exercise 257</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-286"> Exercise 258</a></p>
 <div class="section" id="solution-content">
 <p>Pour <span class="math notranslate nohighlight">\(a \in A \setminus \{ 0 \}\)</span> on regarde les idéaux <span class="math notranslate nohighlight">\(I_n = a^nA\)</span> qui forment une suite décroissante. Elle est donc stationnaire d’où l’existence de <span class="math notranslate nohighlight">\(m \in \N\)</span> tel que <span class="math notranslate nohighlight">\(I_{m+1}=I_m\)</span>. De là il existe <span class="math notranslate nohighlight">\(x \in A\)</span> tel que <span class="math notranslate nohighlight">\(a^{m+1}x = a^m\)</span>. Par intégrité, <span class="math notranslate nohighlight">\(x\)</span> est inverse à droite de <span class="math notranslate nohighlight">\(a\)</span>. De même il existe un innverse à gauche et la conclusion suit.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-287">
 
-<p class="admonition-title"><span class="caption-number">Exercise 258 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 259 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(I_n\)</span> une suite croissante d’idéaux de <span class="math notranslate nohighlight">\(\mathbb{K}[X]\)</span> où <span class="math notranslate nohighlight">\(\mathbb{K}\)</span> est un corps. Montrer que <span class="math notranslate nohighlight">\((I_n)\)</span> est stationnaire.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-13">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-287"> Exercise 258</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-287"> Exercise 259</a></p>
 <div class="section" id="solution-content">
 <p>Facile quand on utilise le fait que <span class="math notranslate nohighlight">\(I_n = Id(P_n)\)</span> pour un certain <span class="math notranslate nohighlight">\(P_n \in I_n\)</span>. La suite <span class="math notranslate nohighlight">\(deg(P_n)\)</span> est alors décroissante donc stationnaire.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-288">
 
-<p class="admonition-title"><span class="caption-number">Exercise 259 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 260 </span></p>
 <div class="section" id="exercise-content">
-<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau de Boole, i.e. <span class="math notranslate nohighlight">\(\forall a \in A, \; a^2=a\)</span>. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est commutatif. Indication : montrer que <span class="math notranslate nohighlight">\(\forall a \in A, \; a = -a\)</span>.</p>
+<p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau de Boole, i.e. <span class="math notranslate nohighlight">\(\forall a \in A, \; a^2=a\)</span>. Montrer que <span class="math notranslate nohighlight">\(A\)</span> est commutatif.</p>
+<div class="tip admonition">
+<p class="admonition-title">Indication</p>
+<p>Montrer que <span class="math notranslate nohighlight">\(\forall a \in A, \; a = -a\)</span>.</p>
+</div>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-15">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-288"> Exercise 259</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-288"> Exercise 260</a></p>
 <div class="section" id="solution-content">
 <p>On a pour <span class="math notranslate nohighlight">\(a \in A\)</span>, <span class="math notranslate nohighlight">\((a+a) = (a+a)^2 = a^2+a^2+a^2+a^2=a+a+a+a\)</span> donc <span class="math notranslate nohighlight">\(a+a = 0\)</span>  soit <span class="math notranslate nohighlight">\(a=-a\)</span>. Puis pour <span class="math notranslate nohighlight">\(x,y \in A\)</span>, on regarde <span class="math notranslate nohighlight">\((x+y)^2\)</span>. La conclusion suit facilement.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-289">
 
-<p class="admonition-title"><span class="caption-number">Exercise 260 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 261 </span></p>
 <div class="section" id="exercise-content">
 <p>Montrer que si <span class="math notranslate nohighlight">\(I\)</span> est maximal, alors <span class="math notranslate nohighlight">\(I\)</span> est premier.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-17">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-289"> Exercise 260</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-289"> Exercise 261</a></p>
 <div class="section" id="solution-content">
 <p>Soit <span class="math notranslate nohighlight">\(x,y \in A\)</span> tels que. On suppose <span class="math notranslate nohighlight">\(x \notin I\)</span>. On regarde l’idéal <span class="math notranslate nohighlight">\(J = I + Id(x)\)</span> qui par maximalité de <span class="math notranslate nohighlight">\(I\)</span> est égal à <span class="math notranslate nohighlight">\(A\)</span>. Il existe donc <span class="math notranslate nohighlight">\(i \in I, u \in A\)</span> tels que <span class="math notranslate nohighlight">\(1 = i + ux\)</span>. De là <span class="math notranslate nohighlight">\(y = iy + uxy\)</span>. Mais <span class="math notranslate nohighlight">\(iy \in I\)</span> et <span class="math notranslate nohighlight">\(uxy \in I\)</span> donc <span class="math notranslate nohighlight">\(y \in I\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-290">
 
-<p class="admonition-title"><span class="caption-number">Exercise 261 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 262 </span></p>
 <div class="section" id="exercise-content">
 <ol class="simple">
 <li><p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau, <span class="math notranslate nohighlight">\(u\)</span> une unité de <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(n\)</span> un nilpotent qui commute avec <span class="math notranslate nohighlight">\(u\)</span>. Montrer que <span class="math notranslate nohighlight">\(u+n\)</span> est encore une unité.</p></li>
@@ -545,7 +549,7 @@ x &amp;\mapsto (bx, cx)
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-19">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-290"> Exercise 261</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-290"> Exercise 262</a></p>
 <div class="section" id="solution-content">
 <ol class="simple">
 <li><p>Intuition : <span class="math notranslate nohighlight">\(\frac{1}{1-x} = \sum x^k\)</span>. Déjà remarquer que <span class="math notranslate nohighlight">\(\frac{n}{u}\)</span> est nilpotent, donc on peut se permettre de faire l’exercice pour simplement <span class="math notranslate nohighlight">\(u=1\)</span>. Avec l’intuition, on montre alors facilement que <span class="math notranslate nohighlight">\(\sum_{k \leq \mathcal{N}(n)} (-n)^k\)</span> est bien l’inverse cherché (attention à montrer qu’il est inverse des deux côtés).</p></li>
@@ -555,20 +559,26 @@ x &amp;\mapsto (bx, cx)
 </div>
 <div class="exercise admonition" id="exo-291">
 
-<p class="admonition-title"><span class="caption-number">Exercise 262 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 263 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(A\)</span> un anneau, et <span class="math notranslate nohighlight">\(a \in A\)</span>.</p>
 <ol class="simple">
 <li><p>Montrer que l’ensemble des inverses à gauche de <span class="math notranslate nohighlight">\(a\)</span> est en bijection avec <span class="math notranslate nohighlight">\(Ker(\cdot a)\)</span> (noyau de l’homothétie).</p></li>
-<li><p>On suppose <span class="math notranslate nohighlight">\(Ker(\cdot a)\)</span> fini non vide. Soit <span class="math notranslate nohighlight">\(\kappa\)</span> dans <span class="math notranslate nohighlight">\(Ker(\cdot a)\)</span>. Montrer qu’il existe <span class="math notranslate nohighlight">\(m&gt;0\)</span>, tel que <span class="math notranslate nohighlight">\(\kappa = g^m \kappa\)</span>. <em>Indication : considérer <span class="math notranslate nohighlight">\((a^n\kappa)\)</span></em>.</p></li>
+<li><p>On suppose <span class="math notranslate nohighlight">\(Ker(\cdot a)\)</span> fini non vide. Soit <span class="math notranslate nohighlight">\(\kappa\)</span> dans <span class="math notranslate nohighlight">\(Ker(\cdot a)\)</span>. Montrer qu’il existe <span class="math notranslate nohighlight">\(m&gt;0\)</span>, tel que <span class="math notranslate nohighlight">\(\kappa = g^m \kappa\)</span>.</p></li>
+</ol>
+<div class="tip admonition">
+<p class="admonition-title">Indication</p>
+<p>Considérer <span class="math notranslate nohighlight">\((a^n\kappa)\)</span>*.</p>
+<ol class="simple">
 <li><p>Montrer que <span class="math notranslate nohighlight">\(1-ag \in Ker(g\cdot) \cap Ker(\cdot a)\)</span>.</p></li>
 <li><p>En déduire que <span class="math notranslate nohighlight">\(a\)</span> admet <span class="math notranslate nohighlight">\(0\)</span>, <span class="math notranslate nohighlight">\(1\)</span> ou une infinité d’inverses à gauche.</p></li>
 </ol>
 </div>
 </div>
+</div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Anneaux-solution-21">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-291"> Exercise 262</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-291"> Exercise 263</a></p>
 <div class="section" id="solution-content">
 <ol class="simple">
 <li><p>On fixe <span class="math notranslate nohighlight">\(g_0\)</span> inverse à gauche de <span class="math notranslate nohighlight">\(a\)</span> (traiter le cas sans inverse à gauche séparément). On a

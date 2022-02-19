@@ -21,8 +21,7 @@
 
 ```{exercise}
 :label: exo-67
-Voir énoncé 4.2 du poly de Mansuy. Calculer par télescopage $S=\sum \limits_{k=0}^n \frac{k}{(k+1)!}$.
-Difficulté : *
+Calculer par télescopage $S=\sum \limits_{k=0}^n \frac{k}{(k+1)!}$.
 ```
 
 ```{solution} exo-67
@@ -37,8 +36,7 @@ S &= \sum \limits_{k=0}^n \frac{1}{k!} - \frac{1}{(k+1)!} \\
 
 ```{exercise}
 :label: exo-68
-Voir énoncé 4.2 du poly de Mansuy. Calculer par télescopage $S=\sum \limits_{k=0}^n \frac{1}{\sqrt{k+1} + \sqrt{k}}$.
-Difficulté : *
+Calculer par télescopage $S=\sum \limits_{k=0}^n \frac{1}{\sqrt{k+1} + \sqrt{k}}$.
 ```
 
 ```{solution} exo-68
@@ -53,8 +51,7 @@ S &= \sum \limits_{k=0}^n \frac{\sqrt{k+1}-\sqrt{k}}{(\sqrt{k+1}+\sqrt{k})(\sqrt
 
 ```{exercise}
 :label: exo-69
-Voir énoncé 4.3 du poly de Mansuy, première somme. Calculer $S_1 = \sum \limits_{k=0, k \equiv 0[3]}^n {n\choose k}$.
-Difficulté : **
+Calculer $S_1 = \sum \limits_{k=0, k \equiv 0[3]}^n {n\choose k}$.
 ```
 
 ```{solution} exo-69
@@ -78,8 +75,7 @@ D'où en sommant les trois égalités $S_1 = \frac{1}{3}(2^n-j^n-j^{2n})$.
 
 ```{exercise}
 :label: exo-70
-Voir énoncé 4.3 du poly de Mansuy, deuxième somme. Calculer $S_1 = \sum \limits_{k=0}^n {n\choose 2k}(-1)^k $.
-Difficulté : **
+Calculer $S_1 = \sum \limits_{k=0}^n {n\choose 2k}(-1)^k $.
 ```
 
 ```{solution} exo-70
@@ -101,8 +97,7 @@ D'où en sommant les deux égalités $S_1 = \frac{1}{2}((1-i)^n+(1+i)^n)$.
 
 ```{exercise}
 :label: exo-71
-Voir énoncé 4.3 du poly de Mansuy, troisième somme. Calculer $S_1(t) = \sum \limits_{k=0}^n {2n+1\choose 2k+1}t^{2k+1}$.
-Difficulté : **
+Calculer $S_1(t) = \sum \limits_{k=0}^n {2n+1\choose 2k+1}t^{2k+1}$.
 ```
 
 ```{solution} exo-71
@@ -124,10 +119,9 @@ D'où en sommant les deux égalités $S_1(t) = \frac{1}{2}((1+t)^{2n+1}-(1-t)^{2
 
 ```{exercise}
 :label: exo-72
-Voir énoncé 4.11 du poly de Mansuy. Soit $x_1, \; \ldots, \, x_p$ des entiers tels que pour tout $k$, $0 \leq x_k \leq k$ et $x_p \neq 0$.
+Soit $x_1, \; \ldots, \, x_p$ des entiers tels que pour tout $k$, $0 \leq x_k \leq k$ et $x_p \neq 0$.
 La suite finnie $(x_1, \; \ldots, \, x_p)$ s'appelle l'écriture factorielle de l'entier $n = \sum \limits_{k=1}^{p} x_kk!$.
 Montrer que cette écriture existe et est unique pour tout entier naturel $n$.
-Difficulté : **
 ```
 
 
@@ -143,8 +137,7 @@ $[\![0,p!-1]\!]$ et $\{(x_1, \, \ldots, \, x_{p-1}), \; 0 \leq x_k \leq k\}$ ont
 
 ```{exercise}
 :label: exo-73
-Voir énoncé 4.8 du poly de Mansuy. Calculer pour tout $\theta \in \mathbb{R}$, la somme $S_1 = \sum \limits_{k=0}^n {n \choose k} \cos(k \theta)$.
-Difficulté : **
+Calculer pour tout $\theta \in \mathbb{R}$, la somme $S_1 = \sum \limits_{k=0}^n {n \choose k} \cos(k \theta)$.
 ```
 
 ```{solution} exo-73
@@ -158,8 +151,7 @@ On a alors $S_1 = \mathfrak{Re}(S_1 + S_2) = \mathfrak{Re}((1+e{i\theta})^n)$.
 
 ```{exercise}
 :label: exo-74
-Voir énoncé 4.10 du poly de Mansuy. Simplifier $(1-2z+z^2) \sum \limits_{k=1}^n kz^k$.
-Difficulté : **
+Simplifier $(1-2z+z^2) \sum \limits_{k=1}^n kz^k$.
 ```
 
 ```{solution} exo-74
@@ -173,7 +165,7 @@ $nX^{n+2}-(n+1)X^{n+1} +X$ coïncident sur un ensemble infini donc sur $\mathbb{
 
 ```{exercise}
 :label: exo-75
-Soit $E$ un ensemble de cardinal $n$. Calculer $S = \sum \limits_{A,B \subset E} |A \bigcap B|$. Difficulté :  **
+Soit $E$ un ensemble de cardinal $n$. Calculer $S = \sum \limits_{A,B \subset E} |A \bigcap B|$.
 ```
 
 ```{solution} exo-75

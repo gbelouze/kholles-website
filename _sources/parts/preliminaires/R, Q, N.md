@@ -61,8 +61,8 @@ On va montrer que la limite est $1$. Soit $l$ la limite
 ```{exercise}
 :label: exo-80
 
-    1. Trouver une injection de $\R$ vers $\P(\N)$.
-    1. Trouver une injection de $\P(\N)$ vers $\R$.
+1. Trouver une injection de $\R$ vers $\P(\N)$.
+1. Trouver une injection de $\P(\N)$ vers $\R$.
 
 ```
 
@@ -70,31 +70,36 @@ On va montrer que la limite est $1$. Soit $l$ la limite
 :class: dropdown
 
 
-    1. On définit l'image de $x$ par $\phi$ de la manière suivante : si le développement de $x$ est
+1.
+    On définit l'image de $x$ par $\phi$ de la manière suivante : si le développement de $x$ est
     $ x=0,a_1a_2\ldots
     $
-    on pose \begin{equation*}
+    on pose
+    \begin{equation*}
      \phi(x) = \{ 1a_{\frac{n(n+1)}{2}}\ldots a_{\frac{(n+1)(n+2)}{2}-1} \; | \; n \in \N^* \}
     \end{equation*}
-
     Meilleure solution : prendre la réciproque de la question 2, en binaire.
-    2. On définit l'image de $A \in \P(\N)$ par $\psi$ de la manière suivante:
+2. 
+    On définit l'image de $A \in \P(\N)$ par $\psi$ de la manière suivante:
     \begin{equation*}
      \psi(x) = \sum_{n=1}^{+\infty} \mathds{1}_{n \in A} 10^{-n}
-    \end{equation*}
-
-
+    \<end>equation*</end>
 ```
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-81
 
-    1. Soit $n \in \N^*$ et $a_1, \ldots, a_n$ des éléments de $[\![0,9]\!]$ non tous égaux à $9$. On note $x$ le réel dont le développement décimal est $0,a_1\ldots a_na_1\ldots a_na_1\ldots a_n\ldots$. Justifier l'existence et trouver $p,q \in \N$ tels que $x= \frac{p}{q}$.
-    1. Réciproquement, montrer que si $x$ est rationnel, alors son développement décimal est périodique à partir d'un certain rang. Indication : on admettra que si $u$ et $v$ sont premiers entre eux, alors il existe $n$ tels que $u^n = 1 \mod{v}$.
-
-```
+1. 
+    Soit $n \in \N^*$ et $a_1, \ldots, a_n$ des éléments de $[\![0,9]\!]$ non tous égaux à $9$. On note $x$ le réel dont le développement décimal est $0,a_1\ldots a_na_1\ldots a_na_1\ldots a_n\ldots$. Justifier l'existence et trouver $p,q \in \N$ tels que $x= \frac{p}{q}$.
+2. 
+    Réciproquement, montrer que si $x$ est rationnel, alors son développement décimal est périodique à partir d'un certain rang.
+    ```{admonition} Indication
+    :class: tip
+    On admettra que si $u$ et $v$ sont premiers entre eux, alors il existe $n$ tels que $u^n = 1 \mod{v}$.
+    ```
+````
 
 ```{solution} exo-81
 :class: dropdown
@@ -131,12 +136,13 @@ Soit $k \in \N$. On définit $(a_n)_{n \in N}$ la suite telle que $a_n$ est le c
  x = 0,a_1a_2a_3\ldots
 \end{equation*}
 
-    1. Montrer que pour tout $n \in \N$, il existe un entier $q$ tel que
+1. 
+    Montrer que pour tout $n \in \N$, il existe un entier $q$ tel que
     \begin{equation*}
      {n+10k!\choose k} = {n\choose k} + 10q
     \end{equation*}
-
-    1. En déduire que $x \in \Q$
+1.
+    En déduire que $x \in \Q$
 
 ```
 
@@ -287,8 +293,8 @@ et avec le cas $x_1 = x_2 = 1$, on trouve $\inf A_2 = 4$. Ce cas nous donne l'id
 :label: exo-91
 Un nombre univers est un nombre tel que toute séquence finie de chiffres apparaît dans son développement décimal.
 
-    1. Exhiber un nombre univers.
-    1. Montrer que l'ensemble des nombres univers est dense dans $\R$.
+1. Exhiber un nombre univers.
+1. Montrer que l'ensemble des nombres univers est dense dans $\R$.
 
 À titre informatif, sachez qu'on peut montrer que *l'ensemble des nombres univers est indénombrable*.
 ```
@@ -311,53 +317,54 @@ Il suffit de remarquer pour conclure que $f$ est une fonction injective de $\{0,
 
 
 
-```{exercise} nombre incommensurable
+````{exercise} nombre incommensurable
 :label: exo-92
 
 1. Soit $x \in \R$ un irrationnel. On note $D(\cdot)$ la fonction partie fractionnaire. Montrer que $\{D(nx) \; | \; n\in \N \}$ est dense dans $[0,1]$.
-1. On dit que $x$ et $y$ sont incommensurables si leur rapport est irrationnel. Soit $x,y$ incommensurables. Si $z$ est un réel, on note $z \mod{y} = y D(z/y) \in [0, y[$. Montrer que l'ensemble $\{nx \mod y \; | \; n \in \N \}$ est dense dans $[0,y[$. En déduire que $\{ \cos(n) | n \in \N \}$ est dense dans $[0,1]$. *Indication : on admet l'irrationnalité de $\pi$*
-
+1. On dit que $x$ et $y$ sont incommensurables si leur rapport est irrationnel. Soit $x,y$ incommensurables. Si $z$ est un réel, on note $z \mod{y} = y D(z/y) \in [0, y[$. Montrer que l'ensemble $\{nx \mod y \; | \; n \in \N \}$ est dense dans $[0,y[$. En déduire que $\{ \cos(n) | n \in \N \}$ est dense dans $[0,1]$. 
+```{admonition} Indication
+:class: tip
+On admet l'irrationnalité de $\pi$
 ```
+````
 
 ````{solution} exo-92
 :class: dropdown
 
-1. Soit $A = \{D(nx) \; | \; n\in \N \}$. Commençons par remarquer que par irrationnalité de $x$, $D(nx)>0$ pour tout $n$. Il s'agit donc montrer que la borne inférieure de $A$ est $0$.
+1.
+    Soit $A = \{D(nx) \; | \; n\in \N \}$. Commençons par remarquer que par irrationnalité de $x$, $D(nx)>0$ pour tout $n$. Il s'agit donc montrer que la borne inférieure de $A$ est $0$.
 
-**$A$ n'admet pas de minimum** Soit $\delta = D(nx)$. Si $\delta$ est rationnel, égal à $p/q$, alors $D(nqx)=0$ ce qui est impossible. Ainsi $\delta$ est irrationnel. Considérons alors $k = \lfloor \frac{1}{\delta} \rfloor$. Par irrationalité de $\delta$, $k\delta < 1$ et $(k+1)\delta > 1$. Notons $\eta = 1-k\delta > 0$. On a $D(nkx) = k\delta$ et $D(n(k+1)x) = 1 + (\delta - \eta) - 1 = \delta - \eta < \delta$. Cela prouve que $A$ n'admet pas de minimum.
-**L'infinimum de $A$ est $0$** Notons $a = \inf A$, et supposons par l'absurde $a>0$. Soit $\varepsilon > 0$ tel que $\varepsilon < a$. Puisque $a$ n'est pas atteint, on peut trouver $n<m$ tels que $a < D(mx) < D(nx) < a + \varepsilon$. On pose $\delta = D(nx) - D(mx) < \varepsilon$
+    **$A$ n'admet pas de minimum** Soit $\delta = D(nx)$. Si $\delta$ est rationnel, égal à $p/q$, alors $D(nqx)=0$ ce qui est impossible. Ainsi $\delta$ est irrationnel. Considérons alors $k = \lfloor \frac{1}{\delta} \rfloor$. Par irrationalité de $\delta$, $k\delta < 1$ et $(k+1)\delta > 1$. Notons $\eta = 1-k\delta > 0$. On a $D(nkx) = k\delta$ et $D(n(k+1)x) = 1 + (\delta - \eta) - 1 = \delta - \eta < \delta$. Cela prouve que $A$ n'admet pas de minimum.
+    **L'infinimum de $A$ est $0$** Notons $a = \inf A$, et supposons par l'absurde $a>0$. Soit $\varepsilon > 0$ tel que $\varepsilon < a$. Puisque $a$ n'est pas atteint, on peut trouver $n<m$ tels que $a < D(mx) < D(nx) < a + \varepsilon$. On pose $\delta = D(nx) - D(mx) < \varepsilon$
 
-```{prf:lemma}
-:nonumber:
-Soit $a,b \in \N$. Alors 
-\begin{equation*}
+    ```{prf:lemma}
+    :nonumber:
+    Soit $a,b \in \N$. Alors 
+    \begin{equation*}
 
-D(ax) + D(bx) =
-\begin{cases}
-D((a+b)x)\\
-\textrm{ou} \\
-1+D((a+b)x)
-\end{cases}
-\end{equation*}
-```
-```{prf:proof}
-On écrit $ax = n_a + D(ax)$, $bx = n_b + D(bx)$. Il vient $(a+b)x = n_{a+b} + D((a+b)x) =  n_a + n_b + D(ax) + D(bx)$. Or $0 < D(ax) + D(bx) < 2$ et de là le résultat.
-```
+    D(ax) + D(bx) =
+    \begin{cases}
+    D((a+b)x)\\
+    \textrm{ou} \\
+    1+D((a+b)x)
+    \end{cases}
+    \end{equation*}
+    ```
+    ```{prf:proof}
+    On écrit $ax = n_a + D(ax)$, $bx = n_b + D(bx)$. Il vient $(a+b)x = n_{a+b} + D((a+b)x) =  n_a + n_b + D(ax) + D(bx)$. Or $0 < D(ax) + D(bx) < 2$ et de là le résultat.
+    ```
+    D'après le lemme on a donc $D(nx) + D((m-n)x) = 1 + D(mx)$, soit $D((m-n)x) = 1 - \delta$. En particulier, $\delta$ est irrationnel. Informellement, ajouter $(m-n)x$ revient à retirer $\delta$ de la partie fractionnaire. En considérant les multiples de $(m-n)$, pn peut ainsi atteindre $1-\delta$, $1-2\delta$, $1-3\delta$, etc. On peut retirer $\delta$ jusqu'à trouver une partie fractionnaire plus petite que $a$. Rendons cet argument formel.
+
+    Soit $k = \lfloor \frac{1}{\delta} \rfloor$. Par irrationnalité de $x$, $k\delta < 1$ et $(k+1)\delta > 1$. Notons $\eta = 1-k\delta > 0$ et remarquons que $\eta < \delta < \varepsilon < a$. On écrit
+    \begin{align*}
+    k(m-n)x &= k (\lfloor mx \rfloor - \lfloor nx \rfloor) + k(D(mx) - D(nx)) \\
+    &= k (\lfloor mx \rfloor - \lfloor nx \rfloor) - k\delta \\
+    &= k (\lfloor mx \rfloor - \lfloor nx \rfloor) -1 + \eta\\
+    \end{align*}
+    Ainsi $D(k(m-n)x) = \eta < a$, ce qui est impossible !
+2.
+    Par la question $1$, $\{D(n\frac{x}{y}) \; | \; n\in \N \}$ est dense dans $[0,1]$ donc  $\{yD(n\frac{x}{y}) \; | \; n\in \N \}$ est dense dans $[0,y]$. Ensuite $\pi$ est irrationnel donc $\frac{1}{2\pi}$ également, donc $1$ et $2\pi$ sont incommensurables, donc $\{ n \mod{2\pi}\}$ est dense dans $[0,2\pi]$ et cela conclut.
 ````
-
-D'après le lemme on a donc $D(nx) + D((m-n)x) = 1 + D(mx)$, soit $D((m-n)x) = 1 - \delta$. En particulier, $\delta$ est irrationnel. Informellement, ajouter $(m-n)x$ revient à retirer $\delta$ de la partie fractionnaire. En considérant les multiples de $(m-n)$, pn peut ainsi atteindre $1-\delta$, $1-2\delta$, $1-3\delta$, etc. On peut retirer $\delta$ jusqu'à trouver une partie fractionnaire plus petite que $a$. Rendons cet argument formel.
-
-Soit $k = \lfloor \frac{1}{\delta} \rfloor$. Par irrationnalité de $x$, $k\delta < 1$ et $(k+1)\delta > 1$. Notons $\eta = 1-k\delta > 0$ et remarquons que $\eta < \delta < \varepsilon < a$. On écrit
-\begin{align*}
-k(m-n)x &= k (\lfloor mx \rfloor - \lfloor nx \rfloor) + k(D(mx) - D(nx)) \\
-&= k (\lfloor mx \rfloor - \lfloor nx \rfloor) - k\delta \\
-&= k (\lfloor mx \rfloor - \lfloor nx \rfloor) -1 + \eta\\
-\end{align*}
-Ainsi $D(k(m-n)x) = \eta < a$, ce qui est impossible !
-
-2. Par la question $1$, $\{D(n\frac{x}{y}) \; | \; n\in \N \}$ est dense dans $[0,1]$ donc  $\{yD(n\frac{x}{y}) \; | \; n\in \N \}$ est dense dans $[0,y]$. Ensuite $\pi$ est irrationnel donc $\frac{1}{2\pi}$ également, donc $1$ et $2\pi$ sont incommensurables, donc $\{ n \mod{2\pi}\}$ est dense dans $[0,2\pi]$ et cela conclut.
-
-```
 
 
 
@@ -373,14 +380,17 @@ On note $I_1 = [a_1, b_1], I_2 = [a_2, b_2], \ldots, I_n = [a_n, b_n]$ les segme
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-94
 PROOF UNCOMPLETE
 
 Soit $\alpha, \beta \in \R$. On pose $A = \{E(n\alpha) \; | \; n \in \N \}$ et $B = \{E(n\beta) \; | \; n \in \N \}$. Montrer que $A$ et $B$ forment une partition de $\N^*$ si et seulement si $\alpha$ et $\beta$ sont irrationnels et vérifient $\frac{1}{\alpha} + \frac{1}{\beta} = 1$.
 
-*Indication : introduire la fonction de densité d'une partie $P$ de $\N$ $d(P) = \lim Card(P\cap[\![1;n]\!])/n$*.
+```{admonition} Indication
+:class: tip
+Introduire la fonction de densité d'une partie $P$ de $\N$ $d(P) = \lim Card(P\cap[\![1;n]\!])/n$*.
 ```
+````
 
 ```{solution} exo-94
 :class: dropdown
@@ -403,7 +413,7 @@ Montrer que $\R$ et $\R^2$ sont équipotents. En déduire que $\R^a$ et $\R^b$ s
 
 ```{solution} exo-95
 :class: dropdown
-$\R \cong \{0,1\}^\N$. Il suffit de montrer que $\N \cong \Z$. C'est facile. Cela donne
+$\R \cong \{0,1\}^\N$. Il suffit de montrer que $\{0,1\}^\N \ times \{0,1\}^\N \cong \{0,1\}^\N$. C'est facile. Cela donne
 \begin{equation*}
 f : \begin{cases}
 \{0,1\}^\N \times  \{0,1\}^\N \rightarrow  \{0,1\}^\N \\
@@ -422,7 +432,7 @@ Trouver une injection de $\sigma : \R \rightarrow \mathcal{P}(\N)$ telle que $\s
 ```
 ```{solution} exo-96
 :class: dropdown
-On cherche tout d'abord $\sigma : ]0,1[ \rightarrow \mathcal{P}(\N)$. À un réel d'écriture binaire $0,a_1a_2a_3\ldots$ on associe $\{ \sum a_i2^i \; | \; \forall i \in \N, \; a_i=0\}$. On vérifie que $\sigma$ vérifie les hypothèses voulues. Ensuite il ne reste plus qu'à composer à droite par (par exemple) $1/2(1+\arctan)$ qui envoie injectivement $\R$ sur $]0,1[$.
+On cherche tout d'abord $\sigma : ]0,1[ \rightarrow \mathcal{P}(\N)$. À un réel d'écriture binaire $0,a_1a_2a_3\ldots$ on associe $\{ \sum^n a_i2^i \; | \; \forall n \in \N, \; a_n=0\}$. On vérifie que $\sigma$ vérifie les hypothèses voulues. Ensuite il ne reste plus qu'à composer à droite par (par exemple) $1/2(1+\arctan)$ qui envoie injectivement $\R$ sur $]0,1[$.
 ```
 
 

@@ -21,9 +21,8 @@
 
 ```{exercise}
 :label: exo-103
-Voir énoncé 6.6 du poly de Mansuy. Soit $(u_n)$ et $(v_n)$ deux suites réelles de majorants $l$ et $l'$ respectivement, telles que $u_n+v_n \rightarrow l+l'$.
+Soit $(u_n)$ et $(v_n)$ deux suites réelles de majorants $l$ et $l'$ respectivement, telles que $u_n+v_n \rightarrow l+l'$.
 Que dire de $u_n$ ?
-Difficulté : *
 ```
 
 ```{solution} exo-103
@@ -38,9 +37,7 @@ $|l-u_n| \leq |l-u_n| + |l'-v_n| = |l+l' - (u_n +v_n)| < \varepsilon$ d'où le r
 
 ```{exercise}
 :label: exo-104
-Voir énoncé 6.3 du poly de Mansuy. Soit $(u_n)$ une suite réelle convergente vers $l$. Est-ce que $(\lfloor u_n \rfloor)$ est convergente ? Et si $l \notin \Z$ ?
-
-Difficulté : *
+Soit $(u_n)$ une suite réelle convergente vers $l$. Est-ce que $(\lfloor u_n \rfloor)$ est convergente ? Et si $l \notin \Z$ ?
 ```
 
 ```{solution} exo-104
@@ -52,11 +49,10 @@ Un contre-exemple est fourni par $\frac{(-1)^n}{n}$.
 
 ```{exercise}
 :label: exo-105
-Voir énoncé 6.14 du poly de Mansuy. Soit $(u_n)_n$ et $(v_n)_n$ deux suites équivalentes de limite $+\mathcal{1}$. Montrer que
+Soit $(u_n)_n$ et $(v_n)_n$ deux suites équivalentes de limite $+\mathcal{1}$. Montrer que
 \begin{equation*}
- \ln (u_n) \sim \ln (v_n) \end{equation*}
-
-Difficulté : *
+ \ln (u_n) \sim \ln (v_n)
+\end{equation*}
 ```
 
 ```{solution} exo-105
@@ -68,8 +64,7 @@ $\ln (u_n)-\ln (v_n) = \ln(\frac{u_n}{v_n}) \longrightarrow 0$. Or $\ln(u_n) \lo
 
 ```{exercise}
 :label: exo-106
-Voir énoncé 6.8 du poly de Mansuy. Étudier par inégalité la convergence de la suite définie par $u_n = n^2\sum \limits_{k=1}^{n}\frac{1}{k+n^3}$.
-Difficulté : *
+Étudier par inégalité la convergence de la suite définie par $u_n = n^2\sum \limits_{k=1}^{n}\frac{1}{k+n^3}$.
 ```
 
 ```{solution} exo-106
@@ -82,12 +77,11 @@ Par encadrement, $v_n \rightarrow 1$.
 
 ```{exercise}
 :label: exo-107
-Voir énoncé 6.15 du poly de Mansuy. Soit $(u_n)_n$ telle que $u_n \sim \frac{1}{n}$ et
+Soit $(u_n)_n$ telle que $u_n \sim \frac{1}{n}$ et
 \begin{equation*}
  \forall n \geq 1, \; \; u_n \leq \frac{1}{n} + \frac{2}{n^2} \end{equation*}
 
 A-t-on $u_n = \frac{1}{n} + O(\frac{1}{n^2})$ ? Et si on ajoute la condition $u_n \geq \frac{1}{n}$ ?
-Difficulté : *
 ```
 
 ```{solution} exo-107
@@ -100,8 +94,7 @@ devient vrai puisque $|u_n - \frac{1}{n^2}| \leq \frac{2}{n^2}$.
 
 ```{exercise}
 :label: exo-108
-Voir énoncé 6.4 du poly de Mansuy. Soit $a>0$, étudier la convergence de la suite $u_n=(\lfloor a^n \rfloor^{\frac{1}{n}})_n$.
-Difficulté = */**
+Soit $a>0$, étudier la convergence de la suite $u_n=(\lfloor a^n \rfloor^{\frac{1}{n}})_n$.
 ```
 
 ```{solution} exo-108
@@ -118,12 +111,10 @@ de $u_n$ vers $a$.
 
 ```{exercise}
 :label: exo-109
-Voir énoncé 6.5 du poly de Mansuy. Soit $\alpha = 2 + \sqrt{3}$ et $\beta = 2 -\sqrt{3}$.
+Soit $\alpha = 2 + \sqrt{3}$ et $\beta = 2 -\sqrt{3}$.
 
 1. Montrer que pour tout $n\in \mathbb{N}$, $u_n=\alpha^n + \beta^n \in \mathbb{N}$.
-1. Étudier la convergence de $(\alpha^n - \lfloor \alpha^n \rfloor)_n$.
-
-Difficulté : **
+2. Étudier la convergence de $(\alpha^n - \lfloor \alpha^n \rfloor)_n$.
 ```
 
 ```{solution} exo-109
@@ -146,12 +137,16 @@ Difficulté : **
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-110
-Voir énoncé 6.7 du poly de Mansuy. Soit $(u_n)_n$ et$(v_n)_n$ deux suites telles que $u_n^2+v_n^2+u_nv_n \rightarrow 0$. Que dire de $u_n$ et $v_n$ ?
-Indication : pour faciliter l'exercice, on pourra plutôt demander de montrer que leur limite est 0.
-Difficulté : **
+Soit $(u_n)_n$ et$(v_n)_n$ deux suites telles que $u_n^2+v_n^2+u_nv_n \rightarrow 0$. Que dire de $u_n$ et $v_n$ ?
+
+```{admonition} Indication
+:class: tip
+Pour faciliter l'exercice, on pourra plutôt demander de montrer que leur limite est 0.
 ```
+
+````
 
 ```{solution} exo-110
 :class: dropdown
@@ -164,32 +159,27 @@ Finalement on trouve que $u_n^2 + v_n^2 \longrightarrow 0$ ce qui conduit au ré
 
 ```{exercise}
 :label: exo-111
-Voir énoncé 6.21 du poly de Mansuy.
-
 1. Montrer que pour tout $n\in \mathbb{N}^*$, l'équation $e^x = n-x$ admet une unique solution positive que l'on notera $x_n$.
-1. Déterminer deux termes du développement asymptotique de $x_n$.
-
-Difficulté : **
+2. Déterminer deux termes du développement asymptotique de $x_n$.
 ```
 
 ```{solution} exo-111
 :class: dropdown
 
-1. On étudie la fonction $f_n(x) = e^x - n + x$ de dérivée strictement positive sur $\mathbb{R}_+$ donc strictement croissante sur cet intervalle. De plus
-$f(0) \leq 0$ et $f(n) > 0$ d'où le résultat.
-
+1.
+    On étudie la fonction $f_n(x) = e^x - n + x$ de dérivée strictement positive sur $\mathbb{R}_+$ donc strictement croissante sur cet intervalle. De plus
+    $f(0) \leq 0$ et $f(n) > 0$ d'où le résultat.
 2.
-$x_n = n - e^{x_n} \geq 0$ donc $\forall n, \; x_n \leq \ln (n)$. Ainsi $e^{x_n} \sim n$ donc (voir exercice 6.14 du poly de Mansuy) \begin{equation*}
- x_n \sim \ln (n)\end{equation*}
+    $x_n = n - e^{x_n} \geq 0$ donc $\forall n, \; x_n \leq \ln (n)$. Ainsi $e^{x_n} \sim n$ donc
+    \begin{equation*}
+     x_n \sim \ln (n)
+    \end{equation*}
 
-On écrit $\alpha_n = \ln(n) - x_n \geq 0$. On a donc $\alpha_n = o(\ln (n))$. En repartant de l'égalité de définition de $x_n$ on obtient alors
-$e^{\ln(n)-\alpha_n} = n-\ln(n) + \alpha_n $ ce qui amène $\ln(n)-\alpha_n = \ln (n - \ln (n) + \alpha_n)$ puis $\alpha_n = -\ln (1 - \frac{\ln (n)-\alpha_n}{n}) \sim -\ln (1 - \frac{\ln (n)}{n}) $.
-On utilise alors l'équivalent $\ln (1+x) \underset{x\rightarrow 0}{\sim} x$ qui se retrouve par exemple avec le théorème des accroissements finis. Bref,
-\begin{equation*}
- u_n = \ln (n) - \ln(\ln(n)) + o( \ln(\ln(n)))\end{equation*}
-
-
-
+    On écrit $\alpha_n = \ln(n) - x_n \geq 0$. On a donc $\alpha_n = o(\ln (n))$. En repartant de l'égalité de définition de $x_n$ on obtient alors
+    $e^{\ln(n)-\alpha_n} = n-\ln(n) + \alpha_n $ ce qui amène $\ln(n)-\alpha_n = \ln (n - \ln (n) + \alpha_n)$ puis $\alpha_n = -\ln (1 - \frac{\ln (n)-\alpha_n}{n}) \sim -\ln (1 - \frac{\ln (n)}{n}) $.
+    On utilise alors l'équivalent $\ln (1+x) \underset{x\rightarrow 0}{\sim} x$ qui se retrouve par exemple avec le théorème des accroissements finis. Bref,
+    \begin{equation*}
+     u_n = \ln (n) - \ln(\ln(n)) + o( \ln(\ln(n)))\end{equation*}
 ```
 
 
@@ -197,8 +187,7 @@ On utilise alors l'équivalent $\ln (1+x) \underset{x\rightarrow 0}{\sim} x$ qui
 
 ```{exercise}
 :label: exo-112
-Voir énoncé 6.36 du poly de Mansuy. Soit $\phi \; : \; \mathbb{N} \rightarrow \mathbb{Q}$ bijective. Déterminer les valeurs d'adhérence de la suite $(\phi(n))_n$.
-Difficulté : **
+Soit $\phi \; : \; \mathbb{N} \rightarrow \mathbb{Q}$ bijective. Déterminer les valeurs d'adhérence de la suite $(\phi(n))_n$.
 ```
 
 
@@ -221,13 +210,15 @@ Le sens direct est évident. Pour le sens retour, si $(u_n)$ ne converge pas ver
 ```
 
 
-```{exercise}
+````{exercise}
 :label: exo-114
-Voir énoncé 6.35 du poly de Mansuy. Soit $(u_n)_n$ une suite bornée telle que $u_n + \frac{1}{2}u_{2n} \rightarrow 1$. Que dire de $u_n$ ?
-Indication : On pourra demander de montrer qu'une suite bornée converge si et seulement si elle admet exactement une valeur d'adhérence.
-
-Et si on abandonne l'hypothèse $(u_n)$ bornée ?
+Soit $(u_n)_n$ une suite bornée telle que $u_n + \frac{1}{2}u_{2n} \rightarrow 1$. Que dire de $u_n$ ?
+```{admonition} Indication
+:class: tip
+On pourra demander de montrer qu'une suite bornée converge si et seulement si elle admet exactement une valeur d'adhérence.
 ```
+Et si on abandonne l'hypothèse $(u_n)$ bornée ?
+````
 
 ```{solution} exo-114
 :class: dropdown
@@ -383,11 +374,14 @@ On note $\phi_k$ une extractrice associée à $l_k$, que l'on choisit de sorte q
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-125
 Soit $u_n = \sum \limits_{k=0}^n\frac{1}{k!}$ et $v_n = u_n + \frac{1}{nn!}$. Montrer que $(u_n)$ et $(v_n)$ convergent vers la même limite, notée $e$. Montrer que $e \notin \Q$.
-Indication : Montrer que $(u_n)$ et $(v_n)$ sont adjacentes.
+```{admonition} Indication
+:class: tip
+Montrer que $(u_n)$ et $(v_n)$ sont adjacentes.
 ```
+````
 
 
 

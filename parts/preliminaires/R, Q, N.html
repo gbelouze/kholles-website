@@ -444,40 +444,47 @@
 
 <p class="admonition-title"><span class="caption-number">Exercise 79 </span></p>
 <div class="section" id="exercise-content">
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Trouver une injection de $\R$ vers $\P(\N)$.
-1. Trouver une injection de $\P(\N)$ vers $\R$.
-</pre></div>
-</div>
+<ol class="simple">
+<li><p>Trouver une injection de <span class="math notranslate nohighlight">\(\R\)</span> vers <span class="math notranslate nohighlight">\(\P(\N)\)</span>.</p></li>
+<li><p>Trouver une injection de <span class="math notranslate nohighlight">\(\P(\N)\)</span> vers <span class="math notranslate nohighlight">\(\R\)</span>.</p></li>
+</ol>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-6">
 
 <p class="admonition-title">Solution to<a class="reference internal" href="#exo-80"> Exercise 79</a></p>
 <div class="section" id="solution-content">
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. On définit l&#39;image de $x$ par $\phi$ de la manière suivante : si le développement de $x$ est
-$ x=0,a_1a_2\ldots
-$
-on pose \begin{equation*}
- \phi(x) = \{ 1a_{\frac{n(n+1)}{2}}\ldots a_{\frac{(n+1)(n+2)}{2}-1} \; | \; n \in \N^* \}
-\end{equation*}
-
-Meilleure solution : prendre la réciproque de la question 2, en binaire.
-2. On définit l&#39;image de $A \in \P(\N)$ par $\psi$ de la manière suivante:
+<ol>
+<li><p>On définit l’image de <span class="math notranslate nohighlight">\(x\)</span> par <span class="math notranslate nohighlight">\(\phi\)</span> de la manière suivante : si le développement de <span class="math notranslate nohighlight">\(x\)</span> est
+<span class="math notranslate nohighlight">\( x=0,a_1a_2\ldots
+ \)</span>
+on pose</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+     \phi(x) = \{ 1a_{\frac{n(n+1)}{2}}\ldots a_{\frac{(n+1)(n+2)}{2}-1} \; | \; n \in \N^* \}
+    \end{equation*}\]</div>
+<p>Meilleure solution : prendre la réciproque de la question 2, en binaire.</p>
+</li>
+<li><p>On définit l’image de <span class="math notranslate nohighlight">\(A \in \P(\N)\)</span> par <span class="math notranslate nohighlight">\(\psi\)</span> de la manière suivante:
 \begin{equation*}
- \psi(x) = \sum_{n=1}^{+\infty} \mathds{1}_{n \in A} 10^{-n}
-\end{equation*}
-</pre></div>
-</div>
+\psi(x) = \sum_{n=1}^{+\infty} \mathds{1}_{n \in A} 10^{-n}
+&lt;end&gt;equation*</end></p></li>
+</ol>
 </div>
 </div>
 <div class="exercise admonition" id="exo-81">
 
 <p class="admonition-title"><span class="caption-number">Exercise 80 </span></p>
 <div class="section" id="exercise-content">
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Soit $n \in \N^*$ et $a_1, \ldots, a_n$ des éléments de $[\![0,9]\!]$ non tous égaux à $9$. On note $x$ le réel dont le développement décimal est $0,a_1\ldots a_na_1\ldots a_na_1\ldots a_n\ldots$. Justifier l&#39;existence et trouver $p,q \in \N$ tels que $x= \frac{p}{q}$.
-1. Réciproquement, montrer que si $x$ est rationnel, alors son développement décimal est périodique à partir d&#39;un certain rang. Indication : on admettra que si $u$ et $v$ sont premiers entre eux, alors il existe $n$ tels que $u^n = 1 \mod{v}$.
-</pre></div>
+<ol>
+<li><p>Soit <span class="math notranslate nohighlight">\(n \in \N^*\)</span> et <span class="math notranslate nohighlight">\(a_1, \ldots, a_n\)</span> des éléments de <span class="math notranslate nohighlight">\([\![0,9]\!]\)</span> non tous égaux à <span class="math notranslate nohighlight">\(9\)</span>. On note <span class="math notranslate nohighlight">\(x\)</span> le réel dont le développement décimal est <span class="math notranslate nohighlight">\(0,a_1\ldots a_na_1\ldots a_na_1\ldots a_n\ldots\)</span>. Justifier l’existence et trouver <span class="math notranslate nohighlight">\(p,q \in \N\)</span> tels que <span class="math notranslate nohighlight">\(x= \frac{p}{q}\)</span>.</p></li>
+<li><p>Réciproquement, montrer que si <span class="math notranslate nohighlight">\(x\)</span> est rationnel, alors son développement décimal est périodique à partir d’un certain rang.</p>
+<div class="tip admonition">
+<p class="admonition-title">Indication</p>
+<p>On admettra que si <span class="math notranslate nohighlight">\(u\)</span> et <span class="math notranslate nohighlight">\(v\)</span> sont premiers entre eux, alors il existe <span class="math notranslate nohighlight">\(n\)</span> tels que <span class="math notranslate nohighlight">\(u^n = 1 \mod{v}\)</span>.</p>
 </div>
+</li>
+</ol>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-8">
@@ -518,14 +525,15 @@ Meilleure solution : prendre la réciproque de la question 2, en binaire.
 \[\begin{equation*}
  x = 0,a_1a_2a_3\ldots
 \end{equation*}\]</div>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Montrer que pour tout $n \in \N$, il existe un entier $q$ tel que
-\begin{equation*}
- {n+10k!\choose k} = {n\choose k} + 10q
-\end{equation*}
-
-1. En déduire que $x \in \Q$
-</pre></div>
-</div>
+<ol>
+<li><p>Montrer que pour tout <span class="math notranslate nohighlight">\(n \in \N\)</span>, il existe un entier <span class="math notranslate nohighlight">\(q\)</span> tel que</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+     {n+10k!\choose k} = {n\choose k} + 10q
+    \end{equation*}\]</div>
+</li>
+<li><p>En déduire que <span class="math notranslate nohighlight">\(x \in \Q\)</span></p></li>
+</ol>
 </div>
 </div>
 <div class="exercise admonition" id="exo-83">
@@ -694,10 +702,10 @@ n(n+\alpha) = n^2 + 2n\alpha + \alpha^2 - n^2
 <p class="admonition-title"><span class="caption-number">Exercise 90 </span></p>
 <div class="section" id="exercise-content">
 <p>Un nombre univers est un nombre tel que toute séquence finie de chiffres apparaît dans son développement décimal.</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>1. Exhiber un nombre univers.
-1. Montrer que l&#39;ensemble des nombres univers est dense dans $\R$.
-</pre></div>
-</div>
+<ol class="simple">
+<li><p>Exhiber un nombre univers.</p></li>
+<li><p>Montrer que l’ensemble des nombres univers est dense dans <span class="math notranslate nohighlight">\(\R\)</span>.</p></li>
+</ol>
 <p>À titre informatif, sachez qu’on peut montrer que <em>l’ensemble des nombres univers est indénombrable</em>.</p>
 </div>
 </div>
@@ -726,17 +734,20 @@ c_i = b_ia_i \qquad \textrm{sinon}
 <div class="section" id="exercise-content">
 <ol class="simple">
 <li><p>Soit <span class="math notranslate nohighlight">\(x \in \R\)</span> un irrationnel. On note <span class="math notranslate nohighlight">\(D(\cdot)\)</span> la fonction partie fractionnaire. Montrer que <span class="math notranslate nohighlight">\(\{D(nx) \; | \; n\in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,1]\)</span>.</p></li>
-<li><p>On dit que <span class="math notranslate nohighlight">\(x\)</span> et <span class="math notranslate nohighlight">\(y\)</span> sont incommensurables si leur rapport est irrationnel. Soit <span class="math notranslate nohighlight">\(x,y\)</span> incommensurables. Si <span class="math notranslate nohighlight">\(z\)</span> est un réel, on note <span class="math notranslate nohighlight">\(z \mod{y} = y D(z/y) \in [0, y[\)</span>. Montrer que l’ensemble <span class="math notranslate nohighlight">\(\{nx \mod y \; | \; n \in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,y[\)</span>. En déduire que <span class="math notranslate nohighlight">\(\{ \cos(n) | n \in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,1]\)</span>. <em>Indication : on admet l’irrationnalité de <span class="math notranslate nohighlight">\(\pi\)</span></em></p></li>
+<li><p>On dit que <span class="math notranslate nohighlight">\(x\)</span> et <span class="math notranslate nohighlight">\(y\)</span> sont incommensurables si leur rapport est irrationnel. Soit <span class="math notranslate nohighlight">\(x,y\)</span> incommensurables. Si <span class="math notranslate nohighlight">\(z\)</span> est un réel, on note <span class="math notranslate nohighlight">\(z \mod{y} = y D(z/y) \in [0, y[\)</span>. Montrer que l’ensemble <span class="math notranslate nohighlight">\(\{nx \mod y \; | \; n \in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,y[\)</span>. En déduire que <span class="math notranslate nohighlight">\(\{ \cos(n) | n \in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,1]\)</span>.</p></li>
 </ol>
+<div class="tip admonition">
+<p class="admonition-title">Indication</p>
+<p>On admet l’irrationnalité de <span class="math notranslate nohighlight">\(\pi\)</span></p>
+</div>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-29">
 
 <p class="admonition-title">Solution to<a class="reference internal" href="#exo-92"> Exercise 91 (nombre incommensurable)</a></p>
 <div class="section" id="solution-content">
-<ol class="simple">
-<li><p>Soit <span class="math notranslate nohighlight">\(A = \{D(nx) \; | \; n\in \N \}\)</span>. Commençons par remarquer que par irrationnalité de <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(D(nx)&gt;0\)</span> pour tout <span class="math notranslate nohighlight">\(n\)</span>. Il s’agit donc montrer que la borne inférieure de <span class="math notranslate nohighlight">\(A\)</span> est <span class="math notranslate nohighlight">\(0\)</span>.</p></li>
-</ol>
+<ol>
+<li><p>Soit <span class="math notranslate nohighlight">\(A = \{D(nx) \; | \; n\in \N \}\)</span>. Commençons par remarquer que par irrationnalité de <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(D(nx)&gt;0\)</span> pour tout <span class="math notranslate nohighlight">\(n\)</span>. Il s’agit donc montrer que la borne inférieure de <span class="math notranslate nohighlight">\(A\)</span> est <span class="math notranslate nohighlight">\(0\)</span>.</p>
 <p><strong><span class="math notranslate nohighlight">\(A\)</span> n’admet pas de minimum</strong> Soit <span class="math notranslate nohighlight">\(\delta = D(nx)\)</span>. Si <span class="math notranslate nohighlight">\(\delta\)</span> est rationnel, égal à <span class="math notranslate nohighlight">\(p/q\)</span>, alors <span class="math notranslate nohighlight">\(D(nqx)=0\)</span> ce qui est impossible. Ainsi <span class="math notranslate nohighlight">\(\delta\)</span> est irrationnel. Considérons alors <span class="math notranslate nohighlight">\(k = \lfloor \frac{1}{\delta} \rfloor\)</span>. Par irrationalité de <span class="math notranslate nohighlight">\(\delta\)</span>, <span class="math notranslate nohighlight">\(k\delta &lt; 1\)</span> et <span class="math notranslate nohighlight">\((k+1)\delta &gt; 1\)</span>. Notons <span class="math notranslate nohighlight">\(\eta = 1-k\delta &gt; 0\)</span>. On a <span class="math notranslate nohighlight">\(D(nkx) = k\delta\)</span> et <span class="math notranslate nohighlight">\(D(n(k+1)x) = 1 + (\delta - \eta) - 1 = \delta - \eta &lt; \delta\)</span>. Cela prouve que <span class="math notranslate nohighlight">\(A\)</span> n’admet pas de minimum.
 <strong>L’infinimum de <span class="math notranslate nohighlight">\(A\)</span> est <span class="math notranslate nohighlight">\(0\)</span></strong> Notons <span class="math notranslate nohighlight">\(a = \inf A\)</span>, et supposons par l’absurde <span class="math notranslate nohighlight">\(a&gt;0\)</span>. Soit <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> tel que <span class="math notranslate nohighlight">\(\varepsilon &lt; a\)</span>. Puisque <span class="math notranslate nohighlight">\(a\)</span> n’est pas atteint, on peut trouver <span class="math notranslate nohighlight">\(n&lt;m\)</span> tels que <span class="math notranslate nohighlight">\(a &lt; D(mx) &lt; D(nx) &lt; a + \varepsilon\)</span>. On pose <span class="math notranslate nohighlight">\(\delta = D(nx) - D(mx) &lt; \varepsilon\)</span></p>
 <div class="proof lemma admonition" id="lemma-30">
@@ -757,47 +768,49 @@ D((a+b)x)\\
 </div><div class="proof admonition" id="proof">
 <p>Proof. On écrit <span class="math notranslate nohighlight">\(ax = n_a + D(ax)\)</span>, <span class="math notranslate nohighlight">\(bx = n_b + D(bx)\)</span>. Il vient <span class="math notranslate nohighlight">\((a+b)x = n_{a+b} + D((a+b)x) =  n_a + n_b + D(ax) + D(bx)\)</span>. Or <span class="math notranslate nohighlight">\(0 &lt; D(ax) + D(bx) &lt; 2\)</span> et de là le résultat.</p>
 </div>
-</div>
-</div>
 <p>D’après le lemme on a donc <span class="math notranslate nohighlight">\(D(nx) + D((m-n)x) = 1 + D(mx)\)</span>, soit <span class="math notranslate nohighlight">\(D((m-n)x) = 1 - \delta\)</span>. En particulier, <span class="math notranslate nohighlight">\(\delta\)</span> est irrationnel. Informellement, ajouter <span class="math notranslate nohighlight">\((m-n)x\)</span> revient à retirer <span class="math notranslate nohighlight">\(\delta\)</span> de la partie fractionnaire. En considérant les multiples de <span class="math notranslate nohighlight">\((m-n)\)</span>, pn peut ainsi atteindre <span class="math notranslate nohighlight">\(1-\delta\)</span>, <span class="math notranslate nohighlight">\(1-2\delta\)</span>, <span class="math notranslate nohighlight">\(1-3\delta\)</span>, etc. On peut retirer <span class="math notranslate nohighlight">\(\delta\)</span> jusqu’à trouver une partie fractionnaire plus petite que <span class="math notranslate nohighlight">\(a\)</span>. Rendons cet argument formel.</p>
 <p>Soit <span class="math notranslate nohighlight">\(k = \lfloor \frac{1}{\delta} \rfloor\)</span>. Par irrationnalité de <span class="math notranslate nohighlight">\(x\)</span>, <span class="math notranslate nohighlight">\(k\delta &lt; 1\)</span> et <span class="math notranslate nohighlight">\((k+1)\delta &gt; 1\)</span>. Notons <span class="math notranslate nohighlight">\(\eta = 1-k\delta &gt; 0\)</span> et remarquons que <span class="math notranslate nohighlight">\(\eta &lt; \delta &lt; \varepsilon &lt; a\)</span>. On écrit</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-k(m-n)x &amp;= k (\lfloor mx \rfloor - \lfloor nx \rfloor) + k(D(mx) - D(nx)) \\
-&amp;= k (\lfloor mx \rfloor - \lfloor nx \rfloor) - k\delta \\
-&amp;= k (\lfloor mx \rfloor - \lfloor nx \rfloor) -1 + \eta\\
-\end{align*}\]</div>
+    k(m-n)x &amp;= k (\lfloor mx \rfloor - \lfloor nx \rfloor) + k(D(mx) - D(nx)) \\
+    &amp;= k (\lfloor mx \rfloor - \lfloor nx \rfloor) - k\delta \\
+    &amp;= k (\lfloor mx \rfloor - \lfloor nx \rfloor) -1 + \eta\\
+    \end{align*}\]</div>
 <p>Ainsi <span class="math notranslate nohighlight">\(D(k(m-n)x) = \eta &lt; a\)</span>, ce qui est impossible !</p>
-<ol class="simple">
+</li>
 <li><p>Par la question <span class="math notranslate nohighlight">\(1\)</span>, <span class="math notranslate nohighlight">\(\{D(n\frac{x}{y}) \; | \; n\in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,1]\)</span> donc  <span class="math notranslate nohighlight">\(\{yD(n\frac{x}{y}) \; | \; n\in \N \}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,y]\)</span>. Ensuite <span class="math notranslate nohighlight">\(\pi\)</span> est irrationnel donc <span class="math notranslate nohighlight">\(\frac{1}{2\pi}\)</span> également, donc <span class="math notranslate nohighlight">\(1\)</span> et <span class="math notranslate nohighlight">\(2\pi\)</span> sont incommensurables, donc <span class="math notranslate nohighlight">\(\{ n \mod{2\pi}\}\)</span> est dense dans <span class="math notranslate nohighlight">\([0,2\pi]\)</span> et cela conclut.</p></li>
 </ol>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-
-
-```{exercise}
-:label: exo-93
-Soit $\mathcal{S}$ une famille finie de segment de $\R$, telle que $\forall I,J \in \mathcal{S}, \; I \cap J\neq \emptyset$. Montrer que $\underset{I \in \mathcal{S}}{\bigcap} I \neq \emptyset$. Et si la famille est infinie ?
-</pre></div>
 </div>
-<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-31">
+</div>
+<div class="exercise admonition" id="exo-93">
 
-<p class="admonition-title">Solution to</p>
+<p class="admonition-title"><span class="caption-number">Exercise 92 </span></p>
+<div class="section" id="exercise-content">
+<p>Soit <span class="math notranslate nohighlight">\(\mathcal{S}\)</span> une famille finie de segment de <span class="math notranslate nohighlight">\(\R\)</span>, telle que <span class="math notranslate nohighlight">\(\forall I,J \in \mathcal{S}, \; I \cap J\neq \emptyset\)</span>. Montrer que <span class="math notranslate nohighlight">\(\underset{I \in \mathcal{S}}{\bigcap} I \neq \emptyset\)</span>. Et si la famille est infinie ?</p>
+</div>
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-32">
+
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-93"> Exercise 92</a></p>
 <div class="section" id="solution-content">
 <p>On note <span class="math notranslate nohighlight">\(I_1 = [a_1, b_1], I_2 = [a_2, b_2], \ldots, I_n = [a_n, b_n]\)</span> les segments de <span class="math notranslate nohighlight">\(\mathcal{S}\)</span>. Notons <span class="math notranslate nohighlight">\(a = \max a_i = a_{\gamma}\)</span> et <span class="math notranslate nohighlight">\(b = \min b_i = b_{\delta}\)</span>. Puisque <span class="math notranslate nohighlight">\(I_{\gamma}\)</span> et <span class="math notranslate nohighlight">\(I_{\delta}\)</span> sont d’intersection non vide, il vient <span class="math notranslate nohighlight">\(a \leq b\)</span>. On montre alors facilement que <span class="math notranslate nohighlight">\([a,b] \subset\underset{I \in \mathcal{S}}{\bigcap} I \neq \emptyset\)</span>. Si la famille est infinie, on remplace <span class="math notranslate nohighlight">\(\min\)</span> et <span class="math notranslate nohighlight">\(\max\)</span> par <span class="math notranslate nohighlight">\(\inf\)</span> et <span class="math notranslate nohighlight">\(\sup\)</span> mais les inégalités subsistent.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-94">
 
-<p class="admonition-title"><span class="caption-number">Exercise 92 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 93 </span></p>
 <div class="section" id="exercise-content">
 <p>PROOF UNCOMPLETE</p>
 <p>Soit <span class="math notranslate nohighlight">\(\alpha, \beta \in \R\)</span>. On pose <span class="math notranslate nohighlight">\(A = \{E(n\alpha) \; | \; n \in \N \}\)</span> et <span class="math notranslate nohighlight">\(B = \{E(n\beta) \; | \; n \in \N \}\)</span>. Montrer que <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span> forment une partition de <span class="math notranslate nohighlight">\(\N^*\)</span> si et seulement si <span class="math notranslate nohighlight">\(\alpha\)</span> et <span class="math notranslate nohighlight">\(\beta\)</span> sont irrationnels et vérifient <span class="math notranslate nohighlight">\(\frac{1}{\alpha} + \frac{1}{\beta} = 1\)</span>.</p>
-<p><em>Indication : introduire la fonction de densité d’une partie <span class="math notranslate nohighlight">\(P\)</span> de <span class="math notranslate nohighlight">\(\N\)</span> <span class="math notranslate nohighlight">\(d(P) = \lim Card(P\cap[\![1;n]\!])/n\)</span></em>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Indication</p>
+<p>Introduire la fonction de densité d’une partie <span class="math notranslate nohighlight">\(P\)</span> de <span class="math notranslate nohighlight">\(\N\)</span> <span class="math notranslate nohighlight">\(d(P) = \lim Card(P\cap[\![1;n]\!])/n\)</span>*.</p>
 </div>
 </div>
-<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-33">
+</div>
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-34">
 
-<p class="admonition-title">Solution to</p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-94"> Exercise 93</a></p>
 <div class="section" id="solution-content">
 <p>Pour le sens retour, on suppose qu’il existe <span class="math notranslate nohighlight">\(k = E(na) = E(mb)\)</span>. Alors <span class="math notranslate nohighlight">\(k &lt; na, mb &lt; k+1\)</span> (les inégalités étant strictes par irrationnalité). On peut alors écrire</p>
 <div class="amsmath math notranslate nohighlight">
@@ -811,16 +824,16 @@ k &amp;= \frac{k}{a} + \frac{k}{b} \\
 </div>
 <div class="exercise admonition" id="exo-95">
 
-<p class="admonition-title"><span class="caption-number">Exercise 93 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 94 </span></p>
 <div class="section" id="exercise-content">
 <p>Montrer que <span class="math notranslate nohighlight">\(\R\)</span> et <span class="math notranslate nohighlight">\(\R^2\)</span> sont équipotents. En déduire que <span class="math notranslate nohighlight">\(\R^a\)</span> et <span class="math notranslate nohighlight">\(\R^b\)</span> sont équipotents, pour <span class="math notranslate nohighlight">\(a,b \in \N^*\)</span>.</p>
 </div>
 </div>
-<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-35">
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-36">
 
-<p class="admonition-title">Solution to</p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-95"> Exercise 94</a></p>
 <div class="section" id="solution-content">
-<p><span class="math notranslate nohighlight">\(\R \cong \{0,1\}^\N\)</span>. Il suffit de montrer que <span class="math notranslate nohighlight">\(\N \cong \Z\)</span>. C’est facile. Cela donne</p>
+<p><span class="math notranslate nohighlight">\(\R \cong \{0,1\}^\N\)</span>. Il suffit de montrer que <span class="math notranslate nohighlight">\(\{0,1\}^\N \ times \{0,1\}^\N \cong \{0,1\}^\N\)</span>. C’est facile. Cela donne</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
 f : \begin{cases}
@@ -833,16 +846,16 @@ f : \begin{cases}
 </div>
 <div class="exercise admonition" id="exo-96">
 
-<p class="admonition-title"><span class="caption-number">Exercise 94 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 95 </span></p>
 <div class="section" id="exercise-content">
 <p>Trouver une injection de <span class="math notranslate nohighlight">\(\sigma : \R \rightarrow \mathcal{P}(\N)\)</span> telle que <span class="math notranslate nohighlight">\(\sigma(x)\)</span> soit infinie pour tout réel <span class="math notranslate nohighlight">\(x\)</span>, et telle que <span class="math notranslate nohighlight">\(\sigma(x)\cap\sigma(y)\)</span> soit finie pour tout <span class="math notranslate nohighlight">\(x\neq y\)</span></p>
 </div>
 </div>
-<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-37">
+<div class="solution dropdown admonition" id="parts/preliminaires/R, Q, N-solution-38">
 
-<p class="admonition-title">Solution to</p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-96"> Exercise 95</a></p>
 <div class="section" id="solution-content">
-<p>On cherche tout d’abord <span class="math notranslate nohighlight">\(\sigma : ]0,1[ \rightarrow \mathcal{P}(\N)\)</span>. À un réel d’écriture binaire <span class="math notranslate nohighlight">\(0,a_1a_2a_3\ldots\)</span> on associe <span class="math notranslate nohighlight">\(\{ \sum a_i2^i \; | \; \forall i \in \N, \; a_i=0\}\)</span>. On vérifie que <span class="math notranslate nohighlight">\(\sigma\)</span> vérifie les hypothèses voulues. Ensuite il ne reste plus qu’à composer à droite par (par exemple) <span class="math notranslate nohighlight">\(1/2(1+\arctan)\)</span> qui envoie injectivement <span class="math notranslate nohighlight">\(\R\)</span> sur <span class="math notranslate nohighlight">\(]0,1[\)</span>.</p>
+<p>On cherche tout d’abord <span class="math notranslate nohighlight">\(\sigma : ]0,1[ \rightarrow \mathcal{P}(\N)\)</span>. À un réel d’écriture binaire <span class="math notranslate nohighlight">\(0,a_1a_2a_3\ldots\)</span> on associe <span class="math notranslate nohighlight">\(\{ \sum^n a_i2^i \; | \; \forall n \in \N, \; a_n=0\}\)</span>. On vérifie que <span class="math notranslate nohighlight">\(\sigma\)</span> vérifie les hypothèses voulues. Ensuite il ne reste plus qu’à composer à droite par (par exemple) <span class="math notranslate nohighlight">\(1/2(1+\arctan)\)</span> qui envoie injectivement <span class="math notranslate nohighlight">\(\R\)</span> sur <span class="math notranslate nohighlight">\(]0,1[\)</span>.</p>
 </div>
 </div>
 </div>

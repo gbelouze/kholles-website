@@ -50,8 +50,8 @@ Vrai pour tous les diadiques puis densité des diadiques.
 :label: exo-271
 Soit $(x_1, \ldots, x_n)$ des réels strictement positifs
 
-    1. Montrer que $\frac{x_1}{x_2} + \ldots + \frac{x_{n-1}}{x_n} + \frac{x_n}{x_1} \geq n$
-    1. Montrer que $\sum_{i,j = 1}^n \frac{x_i}{x_j} \geq n^2$.
+1. Montrer que $\frac{x_1}{x_2} + \ldots + \frac{x_{n-1}}{x_n} + \frac{x_n}{x_1} \geq n$
+1. Montrer que $\sum_{i,j = 1}^n \frac{x_i}{x_j} \geq n^2$.
 
 ```
 
@@ -59,8 +59,8 @@ Soit $(x_1, \ldots, x_n)$ des réels strictement positifs
 ```{solution} exo-271
 :class: dropdown
 
-    1. Concavité de $\ln$ : $\ln(\frac{1}{n}\sum \frac{x_i}{x_{i+1}}) \geq \frac{1}{n} \sum \ln(\frac{x_i}{x_{i+1}}) =0$
-    1. Cas $n=2$ de l'inégalité précédente pour toute paire $i,j$.
+1. Concavité de $\ln$ : $\ln(\frac{1}{n}\sum \frac{x_i}{x_{i+1}}) \geq \frac{1}{n} \sum \ln(\frac{x_i}{x_{i+1}}) =0$
+1. Cas $n=2$ de l'inégalité précédente pour toute paire $i,j$.
 
 ```
 
@@ -151,8 +151,8 @@ On utilise la convexité de $y \mapsto \exp(y\ln(x))$ et on écrit
 (Éventuellement la première question peut juste servir d'indication)
 Soit $f:\R\rightarrow\R$ convexe.
 
-    1. On suppose que $\lim_{+\infty}f = 0$, montrer que $f$ est positive.
-    1. On suppose que $f$ admet une asymptote. Montrer que la courbe est toujours au dessus de l'asymptote.
+1. On suppose que $\lim_{+\infty}f = 0$, montrer que $f$ est positive.
+1. On suppose que $f$ admet une asymptote. Montrer que la courbe est toujours au dessus de l'asymptote.
 
 ```
 
@@ -178,20 +178,20 @@ Par croissance des cordes, on a $\frac{f(x)-f(0)}{x}$ croissante. Cela conclut.
 :label: exo-278
 Soit $f : \R^+ \rightarrow \R$ positive, bornée, de classe $\mathbb{C}^2$ telle que $f \leq f''$.
 
-    1. Montrer que $f$ est convexe et décroissante.
-    1. Montrer que $f$ et $f'$ tendent vers 0 en $+\infty$.
-    1. Soit $g$ et $h$ définies par $g(x)=f(x)e^{x}$ et $h(x)=(f'(x)+f(x))e^{-x}$ pour $x\geq 0$. Étudier les variations de $g$ et le signe de $h$.
-    1. En déduire que pour $x \geq 0$, on a $f(x) \leq f(0)e^{-x}$.
+1. Montrer que $f$ est convexe et décroissante.
+1. Montrer que $f$ et $f'$ tendent vers 0 en $+\infty$.
+1. Soit $g$ et $h$ définies par $g(x)=f(x)e^{x}$ et $h(x)=(f'(x)+f(x))e^{-x}$ pour $x\geq 0$. Étudier les variations de $g$ et le signe de $h$.
+1. En déduire que pour $x \geq 0$, on a $f(x) \leq f(0)e^{-x}$.
 
 ```
 
 ```{solution} exo-278
 :class: dropdown
 
-    1. La convexité vient de ce que $f'' \geq 0$. $f'$ est croissante. Si elle n'est pas tout le temps négative, $f$ diverge en $+\infty$.
-    1. $f$ et $f'$ convergent par monotonie. Donc $f'$ converge vers $0$ (sinon $f$ ne converge pas). Puis si $f$ converge vers une limite strictement positive, $f''$ reste grande et donc $f'$ diverge.
-    1. On a $h' = (f''-f)e^{-x} \geq 0$. Donc $h$ est croissante et $h \underset{+\infty}{\rightarrow} 0$, donc $h$ est toujours négative. Il suit que $g$ est décroissante.
-    1. Immédiat
+1. La convexité vient de ce que $f'' \geq 0$. $f'$ est croissante. Si elle n'est pas tout le temps négative, $f$ diverge en $+\infty$.
+1. $f$ et $f'$ convergent par monotonie. Donc $f'$ converge vers $0$ (sinon $f$ ne converge pas). Puis si $f$ converge vers une limite strictement positive, $f''$ reste grande et donc $f'$ diverge.
+1. On a $h' = (f''-f)e^{-x} \geq 0$. Donc $h$ est croissante et $h \underset{+\infty}{\rightarrow} 0$, donc $h$ est toujours négative. Il suit que $g$ est décroissante.
+1. Immédiat
 
 ```
 

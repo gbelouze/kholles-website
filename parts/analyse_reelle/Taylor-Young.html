@@ -400,7 +400,7 @@
 <h1>Taylor-Young<a class="headerlink" href="#taylor-young" title="Permalink to this headline">¶</a></h1>
 <div class="exercise admonition" id="exo-198">
 
-<p class="admonition-title"><span class="caption-number">Exercise 181 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 182 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(f : \R \rightarrow \R\)</span> une fonction <span class="math notranslate nohighlight">\(\mathcal{C}^{\infty}\)</span> et <span class="math notranslate nohighlight">\(\lambda &gt; 0\)</span> telles que <span class="math notranslate nohighlight">\(\forall n\)</span></p>
 <div class="amsmath math notranslate nohighlight">
@@ -413,14 +413,14 @@ f^{(n)}(0) &amp;= 0 \\
 </div>
 <div class="exercise admonition" id="exo-199">
 
-<p class="admonition-title"><span class="caption-number">Exercise 182 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 183 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(f : \R^+ \rightarrow \R\)</span> de classe <span class="math notranslate nohighlight">\(\C^{\infty}\)</span> telle que <span class="math notranslate nohighlight">\(f(0) = \lim_{\infty} f = 0\)</span>. Montrer qu’il y a une suite <span class="math notranslate nohighlight">\((a_n)\)</span> strictement croissante telle que <span class="math notranslate nohighlight">\(f^{(n)}(a_n) = 0\)</span> pour tout <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Taylor-Young-solution-2">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-199"> Exercise 182</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-199"> Exercise 183</a></p>
 <div class="section" id="solution-content">
 <p>Par récurrence sur <span class="math notranslate nohighlight">\(n\)</span>, l’initialisation étant acquise avec <span class="math notranslate nohighlight">\(a_0=0\)</span>. Supposons donc donnés <span class="math notranslate nohighlight">\(a_0 &lt; a_1 &lt; \ldots &lt; a_n\)</span> tels que <span class="math notranslate nohighlight">\(f^{(k)}(a_k) = 0\)</span>, et par l’absurde que <span class="math notranslate nohighlight">\(f^{(n+1)}\)</span> ne s’annule pas sur <span class="math notranslate nohighlight">\([a_n, +\infty[\)</span>, par exemple est positive (quitte à remplacer <span class="math notranslate nohighlight">\(f\)</span> par <span class="math notranslate nohighlight">\(-f\)</span>). Choisissons <span class="math notranslate nohighlight">\(a&gt;a_n\)</span>, ainsi <span class="math notranslate nohighlight">\(f^{(n)}\)</span> est strictement croissante sur <span class="math notranslate nohighlight">\([a, +\infty[\)</span>. On écrit</p>
 <div class="amsmath math notranslate nohighlight">
@@ -432,55 +432,52 @@ f(a + x) - \sum_{k=0}^{n-1} \frac{f^{(k)}(a)x^n}{n!} = \frac{f^{(n)}(c_x)x^{n}}{
 </div>
 <div class="exercise admonition" id="exo-200">
 
-<p class="admonition-title"><span class="caption-number">Exercise 183 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 184 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(f : \R \rightarrow \R\)</span> un application <span class="math notranslate nohighlight">\(\mathcal{C}^{\infty}\)</span>. On note</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
  M_k = || f^{(k)} ||_{\infty}
 \end{equation*}\]</div>
-<ol class="simple">
-<li><p>On suppose <span class="math notranslate nohighlight">\(M_0\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span> finis. Montrer</p></li>
-</ol>
+<ol>
+<li><p>On suppose <span class="math notranslate nohighlight">\(M_0\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span> finis. Montrer</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
-M_1 \leq \sqrt{2M_1M_2}
-\end{equation*}\]</div>
-<ol class="simple">
-<li><p>On suppose <span class="math notranslate nohighlight">\(M_0\)</span> et <span class="math notranslate nohighlight">\(M_n\)</span> finis. Montrer</p></li>
-</ol>
+    M_1 \leq \sqrt{2M_1M_2}
+    \end{equation*}\]</div>
+</li>
+<li><p>On suppose <span class="math notranslate nohighlight">\(M_0\)</span> et <span class="math notranslate nohighlight">\(M_n\)</span> finis. Montrer</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
- \forall k \in [\![0, n]\!], M_k \leq 2^{k(n-k)/2} M_0^{1-k/n}M_n^{k/n}
-\end{equation*}\]</div>
-<ol class="simple">
+     \forall k \in [\![0, n]\!], M_k \leq 2^{k(n-k)/2} M_0^{1-k/n}M_n^{k/n}
+    \end{equation*}\]</div>
+</li>
 <li><p>La constante <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> est-elle optimale ?</p></li>
 </ol>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Taylor-Young-solution-4">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-200"> Exercise 183</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-200"> Exercise 184</a></p>
 <div class="section" id="solution-content">
-<ol class="simple">
-<li><p>On écrit classiquement</p></li>
-</ol>
+<ol>
+<li><p>On écrit classiquement</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-f(x + h) &amp;= f(x) + f'(x)h + f''(x)\frac{h^2}{2} \\
-f'(x) &amp;= \frac{f(x+h)-f(x)}{h} + \frac{f''(x)h}{2}\\
-&amp;\leq \frac{2M_0}{h} + \frac{M_2 h}{2}
-\end{align*}\]</div>
+    f(x + h) &amp;= f(x) + f'(x)h + f''(x)\frac{h^2}{2} \\
+    f'(x) &amp;= \frac{f(x+h)-f(x)}{h} + \frac{f''(x)h}{2}\\
+    &amp;\leq \frac{2M_0}{h} + \frac{M_2 h}{2}
+    \end{align*}\]</div>
 <p>La borne est minimisée en <span class="math notranslate nohighlight">\(h = \sqrt{2\frac{M_0}{M_2}}\)</span>, et vaut <span class="math notranslate nohighlight">\(2\sqrt{M_0M_2}\)</span>. C’est bien mais ce n’est pas suffisant. On utilise la fameuse idée de la pseudo dérivée seconde en regardant à gauche et à droite de <span class="math notranslate nohighlight">\(x\)</span></p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-f(x + h) &amp;= f(x) + f'(x)h + f''(c_1)\frac{h^2}{2} \\
-f(x - h) &amp;= f(x) + f'(x)h + f''(c_2)\frac{h^2}{2} \\
-\frac{f(x + h) - f(x-h)}{2} &amp;= f'(x)h + \frac{f''(c_1)+f''(c_2)}{2}\frac{h^2}{2} \\
-|f'(x)| &amp;\leq \frac{M_0}{h} + \frac{M_2 h}{2}
-\end{align*}\]</div>
+    f(x + h) &amp;= f(x) + f'(x)h + f''(c_1)\frac{h^2}{2} \\
+    f(x - h) &amp;= f(x) + f'(x)h + f''(c_2)\frac{h^2}{2} \\
+    \frac{f(x + h) - f(x-h)}{2} &amp;= f'(x)h + \frac{f''(c_1)+f''(c_2)}{2}\frac{h^2}{2} \\
+    |f'(x)| &amp;\leq \frac{M_0}{h} + \frac{M_2 h}{2}
+    \end{align*}\]</div>
 <p>Et c’est gagné.</p>
-<ol class="simple">
+</li>
 <li><p>Par récurrence, mais c’est pas facile.</p></li>
 <li><p>La réponse est oui. On va chercher à maximiser <span class="math notranslate nohighlight">\(M_1\)</span> pour <span class="math notranslate nohighlight">\(M_0\)</span> et <span class="math notranslate nohighlight">\(M_2\)</span> fixés. S’il n’y pas la contrainte de <span class="math notranslate nohighlight">\(M_2\)</span>, on fait bouger <span class="math notranslate nohighlight">\(f'\)</span> très vite (un pic d’intégrale petite) pour atteindre des grandes valeurs tout en contraignant <span class="math notranslate nohighlight">\(f\)</span>. Avec <span class="math notranslate nohighlight">\(M_2\)</span> on contrôle la vitesse de variation de <span class="math notranslate nohighlight">\(f'\)</span>, mais on a donc tout intérêt à pousser les contraintes au maximum, c’est-à-dire de prendre <span class="math notranslate nohighlight">\(f''\)</span> en créneau égale à <span class="math notranslate nohighlight">\(M_2\)</span> puis <span class="math notranslate nohighlight">\(-M_2\)</span>. On fait le calcul et ça marche. Mais la fonction n’est que <span class="math notranslate nohighlight">\(\mathcal{C}_1\)</span> donc on smooth <span class="math notranslate nohighlight">\(f''\)</span> de plus en plus proche de la fonction en créneau. In fine on se rapproche de <span class="math notranslate nohighlight">\(\sqrt{2}\)</span> arbitrairement proche.</p></li>
 </ol>
@@ -488,20 +485,20 @@ f(x - h) &amp;= f(x) + f'(x)h + f''(c_2)\frac{h^2}{2} \\
 </div>
 <div class="exercise admonition" id="exo-201">
 
-<p class="admonition-title"><span class="caption-number">Exercise 184 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 185 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(f:[0,1]\rightarrow \R\)</span> de classe <span class="math notranslate nohighlight">\(\mathcal{C}^2\)</span> vérifiant <span class="math notranslate nohighlight">\(f(0)=f'(0)=f'(1)=0\)</span> et <span class="math notranslate nohighlight">\(f(1)=1\)</span>. Montrer qu’il existe <span class="math notranslate nohighlight">\(c\in[0,1]\)</span> tel que <span class="math notranslate nohighlight">\(|f''(c)|\geq 4.\)</span>. La constante <span class="math notranslate nohighlight">\(4\)</span> est elle optimale ?</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Taylor-Young-solution-6">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-201"> Exercise 184</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-201"> Exercise 185</a></p>
 <div class="section" id="solution-content">
 <p>On regarde ce qu’il se passe en <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span>, en écrivant</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-f(1/2) \quad( = f(1 - 1/2)) \quad  &amp;= f(0) + 1/2f'(0) + \frac{f''(c_1)}{8} \\
-f(1/2) \quad( = f(1 - 1/2)) \quad  &amp;= f(1) - 1/2f'(1) + \frac{f''(c_2)}{8} \\
+f(1/2)  = f(0 + 1/2) &amp;= f(0) + 1/2f'(0) + \frac{f''(c_1)}{8} \\
+f(1/2)  = f(1 - 1/2) &amp;= f(1) - 1/2f'(1) + \frac{f''(c_2)}{8} \\
 \end{align*}\]</div>
 <p>Et on conclut en considérant la première formule si <span class="math notranslate nohighlight">\(f(1/2) &gt; 1/2\)</span>, la deuxième sinon.</p>
 <p>La constante est optimale, pour cela on prend deux bouts de parabole entre <span class="math notranslate nohighlight">\(0\)</span> et <span class="math notranslate nohighlight">\(1/2\)</span> puis entre <span class="math notranslate nohighlight">\(1/2\)</span> et <span class="math notranslate nohighlight">\(1\)</span> (la dérivée seconde est un créneau valant <span class="math notranslate nohighlight">\(4\)</span> puis <span class="math notranslate nohighlight">\(-4\)</span>).</p>

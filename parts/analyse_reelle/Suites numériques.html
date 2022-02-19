@@ -400,20 +400,19 @@
 <h1>Suites numériques<a class="headerlink" href="#suites-numeriques" title="Permalink to this headline">¶</a></h1>
 <div class="exercise admonition" id="exo-97">
 
-<p class="admonition-title"><span class="caption-number">Exercise 95 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 96 </span></p>
 <div class="section" id="exercise-content">
-<p>Voir énoncé 5.2 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(\alpha \in \mathbb{R}\)</span> et <span class="math notranslate nohighlight">\((u_n)_n\)</span> la suite définie par :</p>
+<p>Soit <span class="math notranslate nohighlight">\(\alpha \in \mathbb{R}\)</span> et <span class="math notranslate nohighlight">\((u_n)_n\)</span> la suite définie par :</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
  \forall n \in \mathbb{N}, \; \; u_{n+2} - 2 \cos(\alpha )u_{n+1} + u_n = 0
 \end{equation*}\]</div>
-<p>Donner l’expression de <span class="math notranslate nohighlight">\(u_n\)</span> en fonction de <span class="math notranslate nohighlight">\(n\)</span>.
-Difficulté : <em>/</em>*</p>
+<p>Donner l’expression de <span class="math notranslate nohighlight">\(u_n\)</span> en fonction de <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Suites numériques-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-97"> Exercise 95</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-97"> Exercise 96</a></p>
 <div class="section" id="solution-content">
 <p>Classiquement on regarde le polynôme <span class="math notranslate nohighlight">\(P(x)=X^2-2 \cos ( \alpha ) X + 1 = (X-e^{i\alpha})(X-e^{-i\alpha})\)</span>. Il vient <span class="math notranslate nohighlight">\(u_n = A e^{in\alpha} + B e^{-in\alpha}\)</span> où <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span> vérifient
 <span class="math notranslate nohighlight">\(A+B=u_0\)</span> et <span class="math notranslate nohighlight">\(A e^{i\alpha} + B e^{-i\alpha} = u_1\)</span> ce qui fournit sans difficulté les valeurs de <span class="math notranslate nohighlight">\(A\)</span> et <span class="math notranslate nohighlight">\(B\)</span>.</p>
@@ -421,17 +420,19 @@ Difficulté : <em>/</em>*</p>
 </div>
 <div class="exercise admonition" id="exo-99">
 
-<p class="admonition-title"><span class="caption-number">Exercise 96 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 97 </span></p>
 <div class="section" id="exercise-content">
-<p>Voir énoncé 5.11 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\((u_n)_n\)</span> une suite définie par <span class="math notranslate nohighlight">\(u_0=1\)</span> et \begin{equation*}
-\forall n \in \mathbb{N}, ; u_{n+1} = (\prod \limits_{k=0}^n u_k) +2 \end{equation*}</p>
-<p>Déterminer l’expression, pour <span class="math notranslate nohighlight">\(n \geq 1\)</span>, de <span class="math notranslate nohighlight">\(u_n\)</span> en fonction de <span class="math notranslate nohighlight">\(n\)</span>.
-Difficulté : **</p>
+<p>Soit <span class="math notranslate nohighlight">\((u_n)_n\)</span> une suite définie par <span class="math notranslate nohighlight">\(u_0=1\)</span> et</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ \forall n \in \mathbb{N}, \; u_{n+1} = (\prod \limits_{k=0}^n u_k) +2 
+\end{equation*}\]</div>
+<p>Déterminer l’expression, pour <span class="math notranslate nohighlight">\(n \geq 1\)</span>, de <span class="math notranslate nohighlight">\(u_n\)</span> en fonction de <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Suites numériques-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-99"> Exercise 96</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-99"> Exercise 97</a></p>
 <div class="section" id="solution-content">
 <p>Soit <span class="math notranslate nohighlight">\(n\geq1\)</span>. On réécrit la relation de récurrence <span class="math notranslate nohighlight">\(u_{n+1} = u_n(\prod \limits_{k=0}^{n-1} u_k) + 2 = (u_n-2)u_n +2\)</span>.
 On introduit alors <span class="math notranslate nohighlight">\(v_n =u_n-1\)</span> qui vérifie la relation de récurrence <span class="math notranslate nohighlight">\(v_{n+1}=v_n^2\)</span>. Cela amène <span class="math notranslate nohighlight">\(\forall n \geq 1, \; u_n = 2^{2^{n-1}}+1\)</span>.</p>
@@ -439,14 +440,14 @@ On introduit alors <span class="math notranslate nohighlight">\(v_n =u_n-1\)</sp
 </div>
 <div class="exercise admonition" id="exo-100">
 
-<p class="admonition-title"><span class="caption-number">Exercise 97 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 98 </span></p>
 <div class="section" id="exercise-content">
 <p>Voir énoncé 5.8 du poly de Mansuy.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Suites numériques-solution-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-100"> Exercise 97</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-100"> Exercise 98</a></p>
 <div class="section" id="solution-content">
 <p>La suite <span class="math notranslate nohighlight">\(v_n = u_n+1\)</span> vérifie la relation de récurrence <span class="math notranslate nohighlight">\(v_{n+1} = 2v_n + 3^n\)</span>. La suite <span class="math notranslate nohighlight">\((3_n)_{n\in \mathbb{N}}\)</span> vérifie la même relation de récurrence.
 Ainsi <span class="math notranslate nohighlight">\(w_n = v_n - 3^n\)</span> vérifie <span class="math notranslate nohighlight">\(w_{n+1} = 2w_n\)</span>. On trouve alors facilement une expression de <span class="math notranslate nohighlight">\(u_n\)</span>.</p>
@@ -454,16 +455,15 @@ Ainsi <span class="math notranslate nohighlight">\(w_n = v_n - 3^n\)</span> vér
 </div>
 <div class="exercise admonition" id="exo-101">
 
-<p class="admonition-title"><span class="caption-number">Exercise 98 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 99 </span></p>
 <div class="section" id="exercise-content">
-<p>Voir énoncé 5.14 du poly de Mansuy. Considérons la suite <span class="math notranslate nohighlight">\((u_n)_{n\geq1}\)</span>, dont les valeurs sont successivement 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, <span class="math notranslate nohighlight">\(\ldots\)</span>. Donner
-une expression explicite de <span class="math notranslate nohighlight">\(u_n\)</span> en fonction de <span class="math notranslate nohighlight">\(n\)</span>.
-Difficulté : **</p>
+<p>Considérons la suite <span class="math notranslate nohighlight">\((u_n)_{n\geq1}\)</span>, dont les valeurs sont successivement 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, <span class="math notranslate nohighlight">\(\ldots\)</span>. Donner
+une expression explicite de <span class="math notranslate nohighlight">\(u_n\)</span> en fonction de <span class="math notranslate nohighlight">\(n\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Suites numériques-solution-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-101"> Exercise 98</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-101"> Exercise 99</a></p>
 <div class="section" id="solution-content">
 <p>La formule <span class="math notranslate nohighlight">\(\sum \limits_{k=1}^n k = \frac{n(n+1)}{2}\)</span> amène que <span class="math notranslate nohighlight">\(\forall p \in ] \frac{n(n-1)}{2}, \; \frac{n(n+1)}{2}], \; u_p = n\)</span>.
 La limite a lieu lorsque <span class="math notranslate nohighlight">\(2p = n(n+1)\)</span> soit <span class="math notranslate nohighlight">\(n=\frac{-1+\sqrt{1+8p}}{2}\)</span>. Ainsi <span class="math notranslate nohighlight">\(u_n = \lceil \frac{-1+\sqrt{1+8n}}{2} \rceil\)</span>.</p>
@@ -471,15 +471,14 @@ La limite a lieu lorsque <span class="math notranslate nohighlight">\(2p = n(n+1
 </div>
 <div class="exercise admonition" id="exo-102">
 
-<p class="admonition-title"><span class="caption-number">Exercise 99 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 100 </span></p>
 <div class="section" id="exercise-content">
-<p>Voir énoncé 5.12 du poly de Mansuy. Soit <span class="math notranslate nohighlight">\(u_n=\sum \limits_{k=1}^n \lfloor \frac{n}{k} \rfloor\)</span>. Trouver les entiers <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> pour lesquels <span class="math notranslate nohighlight">\(u_n\)</span> est pair.
-Difficulté : **</p>
+<p>Soit <span class="math notranslate nohighlight">\(u_n=\sum \limits_{k=1}^n \lfloor \frac{n}{k} \rfloor\)</span>. Trouver les entiers <span class="math notranslate nohighlight">\(n \in \mathbb{N}\)</span> pour lesquels <span class="math notranslate nohighlight">\(u_n\)</span> est pair.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Suites numériques-solution-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-102"> Exercise 99</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-102"> Exercise 100</a></p>
 <div class="section" id="solution-content">
 <p>On se propose d’établir une relation de récurrence sur <span class="math notranslate nohighlight">\(u_n\)</span>. On regarde</p>
 <div class="amsmath math notranslate nohighlight">

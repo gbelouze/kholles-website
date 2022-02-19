@@ -399,99 +399,102 @@
 <h1>Dénombrement<a class="headerlink" href="#denombrement" title="Permalink to this headline">¶</a></h1>
 <div class="exercise admonition" id="exo-243">
 
-<p class="admonition-title"><span class="caption-number">Exercise 393 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 394 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(S\)</span> de cardinal <span class="math notranslate nohighlight">\(n \geq 2\)</span> et soit <span class="math notranslate nohighlight">\(A_1,...,A_m\)</span> des parties de <span class="math notranslate nohighlight">\(S\)</span> vérifiant : <span class="math notranslate nohighlight">\(\forall x,y \in S\)</span> avec <span class="math notranslate nohighlight">\(x \neq y\)</span>, il existe <span class="math notranslate nohighlight">\(i\)</span> tel qu’on ait soit <span class="math notranslate nohighlight">\(x\in A_i, y\notin A_i\)</span>, soit <span class="math notranslate nohighlight">\(x \notin A_i, y\in A_i\)</span>. Montrer que <span class="math notranslate nohighlight">\(m \geq \log_2(n)\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-243"> Exercise 393</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-243"> Exercise 394</a></p>
 <div class="section" id="solution-content">
 <p>À chaque élément <span class="math notranslate nohighlight">\(x\)</span> de <span class="math notranslate nohighlight">\(S\)</span> on associe une clef <span class="math notranslate nohighlight">\(\phi(x) = (\mathds{1}_{x \in A_1}, \ldots, \mathds{1}_{x\in A_m})\)</span>. La condition de l’énoncé implique que <span class="math notranslate nohighlight">\(\phi\)</span> est injective. Ainsi <span class="math notranslate nohighlight">\(|S| \leq |\{0,1\}^m|\)</span>, i.e. <span class="math notranslate nohighlight">\(n \leq 2^m\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-244">
 
-<p class="admonition-title"><span class="caption-number">Exercise 394 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 395 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble de cardinal <span class="math notranslate nohighlight">\(n\)</span>. Dénombrer les <span class="math notranslate nohighlight">\(m\)</span>-uplets <span class="math notranslate nohighlight">\((X_1, X_2, \ldots, X_m) \in \P(E)^m\)</span> tels que <span class="math notranslate nohighlight">\(X_1 \subset X_2 \subset \ldots \subset X_m\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-244"> Exercise 394</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-244"> Exercise 395</a></p>
 <div class="section" id="solution-content">
 <p>Pour chaque élément, on a <span class="math notranslate nohighlight">\(m+1\)</span> choix d’appartenance (à personne, au dernier, aux deux derniers, …, à tout le monde), d’où <span class="math notranslate nohighlight">\((m+1)^n\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-245">
 
-<p class="admonition-title"><span class="caption-number">Exercise 395 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 396 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(E\)</span> un ensemble de cardinal <span class="math notranslate nohighlight">\(n\)</span>, et soit <span class="math notranslate nohighlight">\(p \leq n\)</span>. Dénombrer les <span class="math notranslate nohighlight">\(m\)</span>-uplets <span class="math notranslate nohighlight">\((X_1, X_2, \ldots, X_m) \in \P(E)^m\)</span> tels que <span class="math notranslate nohighlight">\(\bigcap \limits_{i=1}^m X_i\)</span> est de cardinal <span class="math notranslate nohighlight">\(p\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-245"> Exercise 395</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-245"> Exercise 396</a></p>
 <div class="section" id="solution-content">
 <p>À chaque élément on associe une clef d’appartenance à valeur dans <span class="math notranslate nohighlight">\(\{0,1\}^m\)</span>. Exactement <span class="math notranslate nohighlight">\(p\)</span> éléments ont la clef <span class="math notranslate nohighlight">\((1,1,\ldots,1)\)</span>. Il y a <span class="math notranslate nohighlight">\(2^m-1\)</span> autres clefs possibles, d’où finalement <span class="math notranslate nohighlight">\({n \choose p}(2^m-1)^{n-p}\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-246">
 
-<p class="admonition-title"><span class="caption-number">Exercise 396 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 397 </span></p>
 <div class="section" id="exercise-content">
 <p>On dit que <span class="math notranslate nohighlight">\((a_1,\ldots,a_p) \in \N^p\)</span> est une <span class="math notranslate nohighlight">\(p\)</span>-décomposition de <span class="math notranslate nohighlight">\(n\)</span> si <span class="math notranslate nohighlight">\(n=a_1+\ldots+a_p\)</span>. Si de plus <span class="math notranslate nohighlight">\(\forall i, a_i &gt;0\)</span>, on parle de <span class="math notranslate nohighlight">\(p\)</span>-décomposition stricte. Dénombrer les <span class="math notranslate nohighlight">\(p\)</span>-décompositions et les <span class="math notranslate nohighlight">\(p\)</span>-décomposition stricte.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-246"> Exercise 396</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-246"> Exercise 397</a></p>
 <div class="section" id="solution-content">
 <p>Pour les <span class="math notranslate nohighlight">\(p\)</span>-décompositions strictes. On écrit <span class="math notranslate nohighlight">\(n = 1+1+\ldots+1\)</span> et on transforme <span class="math notranslate nohighlight">\(p-1\)</span> “+” en séparation. On touve donc <span class="math notranslate nohighlight">\({n-1 \choose p-1}\)</span>. Pour les <span class="math notranslate nohighlight">\(p\)</span>-décompositions, on a une bijection entre les <span class="math notranslate nohighlight">\(p\)</span>-décompositions et les <span class="math notranslate nohighlight">\(p\)</span>-décompositions strictes de <span class="math notranslate nohighlight">\(n+p\)</span> et on trouve <span class="math notranslate nohighlight">\({n+p-1 \choose p-1}\)</span></p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-247">
 
-<p class="admonition-title"><span class="caption-number">Exercise 397 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 398 </span></p>
 <div class="section" id="exercise-content">
-<p>Soit <span class="math notranslate nohighlight">\((a_i)\)</span> une suite finie de <span class="math notranslate nohighlight">\(mn+1\)</span> réels distincts. Montrer qu’il existe soit une sous-suite décroissante de longueur <span class="math notranslate nohighlight">\(m+1\)</span>, soit une sous-suite croissante de longueur <span class="math notranslate nohighlight">\(n+1\)</span>.
-<em>Indication : Considérer <span class="math notranslate nohighlight">\(\alpha_i\)</span> la longueur de la plus grande sous-suite croissante finissant en <span class="math notranslate nohighlight">\(x_i\)</span>, et <span class="math notranslate nohighlight">\(\beta_i\)</span> de la plus grande suite décroissante.</em></p>
+<p>Soit <span class="math notranslate nohighlight">\((a_i)\)</span> une suite finie de <span class="math notranslate nohighlight">\(mn+1\)</span> réels distincts. Montrer qu’il existe soit une sous-suite décroissante de longueur <span class="math notranslate nohighlight">\(m+1\)</span>, soit une sous-suite croissante de longueur <span class="math notranslate nohighlight">\(n+1\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Indication</p>
+<p>Considérer <span class="math notranslate nohighlight">\(\alpha_i\)</span> la longueur de la plus grande sous-suite croissante finissant en <span class="math notranslate nohighlight">\(x_i\)</span>, et <span class="math notranslate nohighlight">\(\beta_i\)</span> de la plus grande suite décroissante.```</p>
+</div>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-247"> Exercise 397</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-247"> Exercise 398</a></p>
 <div class="section" id="solution-content">
 <p><span class="math notranslate nohighlight">\(f(a_i) = (\alpha_i, \beta_i)\)</span> est injective. Principe des tiroirs.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-248">
 
-<p class="admonition-title"><span class="caption-number">Exercise 398 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 399 </span></p>
 <div class="section" id="exercise-content">
 <p>Trouver une relation de récurrence sur le nombre d’involutions d’un ensemble à <span class="math notranslate nohighlight">\(n\)</span> éléments. <em>Rappel : une involution est sa propre biijection réciproque.</em></p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-11">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-248"> Exercise 398</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-248"> Exercise 399</a></p>
 <div class="section" id="solution-content">
 <p><span class="math notranslate nohighlight">\(u_{n+2} = u_{n+1} + (n+1)u_n\)</span></p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-249">
 
-<p class="admonition-title"><span class="caption-number">Exercise 399 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 400 </span></p>
 <div class="section" id="exercise-content">
 <p>Une barrière circulaire est constituée de 17 poteaux dont 5 sont pourris. Montrer qu’il existe un ensemble de 7 poteaux consécutifs dont 3 sont pourris.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-13">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-249"> Exercise 399</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-249"> Exercise 400</a></p>
 <div class="section" id="solution-content">
 <p>Soient <span class="math notranslate nohighlight">\(p_1, \ldots, p_{17}\)</span> ces poteaux. À chaque poteau <span class="math notranslate nohighlight">\(p_i\)</span>, on associe l’ensemble <span class="math notranslate nohighlight">\(E_{p_i}\)</span> qui est l’ensemble des 7 poteaux consécutifs commençant à <span class="math notranslate nohighlight">\(p_i\)</span>. Remarquons que tout poteau <span class="math notranslate nohighlight">\(p\)</span> appartient à exactement 7 tels ensembles. On note également <span class="math notranslate nohighlight">\(E\)</span> l’ensemble des poteaux pourris. Ensuite on définit</p>
 <div class="amsmath math notranslate nohighlight">
@@ -512,7 +515,7 @@
 </div>
 <div class="exercise admonition" id="exo-250">
 
-<p class="admonition-title"><span class="caption-number">Exercise 400 </span> (Chemins du plan)</p>
+<p class="admonition-title"><span class="caption-number">Exercise 401 </span> (Chemins du plan)</p>
 <div class="section" id="exercise-content">
 <ol class="simple">
 <li><p>Dénombrer le nombre de chemins de <span class="math notranslate nohighlight">\(\Z^2\)</span> allant de <span class="math notranslate nohighlight">\((0,0)\)</span> à <span class="math notranslate nohighlight">\((a,b)\)</span> en n’effectuant que des déplacements vers le nord ou vers l’est.</p></li>
@@ -532,52 +535,56 @@
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-15">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-250"> Exercise 400 (Chemins du plan)</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-250"> Exercise 401 (Chemins du plan)</a></p>
 <div class="section" id="solution-content">
 <ol class="simple">
 <li><p><span class="math notranslate nohighlight">\({a+b \choose a}\)</span></p></li>
-<li></li>
+<li><p>À faire</p></li>
 </ol>
 </div>
 </div>
 <div class="exercise admonition" id="exo-251">
 
-<p class="admonition-title"><span class="caption-number">Exercise 401 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 402 </span></p>
 <div class="section" id="exercise-content">
 <p>En combien de façon peut-on paver un damier <span class="math notranslate nohighlight">\(2\times n\)</span> avec des pièces <span class="math notranslate nohighlight">\(2 \times 1\)</span> ?</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-17">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-251"> Exercise 401</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-251"> Exercise 402</a></p>
 <div class="section" id="solution-content">
 <p>Soit <span class="math notranslate nohighlight">\(C_n\)</span> ce nombre. <span class="math notranslate nohighlight">\(C_1 = 1\)</span>, et <span class="math notranslate nohighlight">\(C_{n+2} = C_{n+1} + C_n\)</span> donc c’est fibonacci.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-252">
 
-<p class="admonition-title"><span class="caption-number">Exercise 402 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 403 </span></p>
 <div class="section" id="exercise-content">
-<p>On note <span class="math notranslate nohighlight">\(F^{(n)}_p\)</span> l’ensemble des parties de <span class="math notranslate nohighlight">\([\![1,n]\!]\)</span> ne contenant pas deux entiers consécutifs. Déterminer <span class="math notranslate nohighlight">\(|F^{(n)}_p|\)</span>. <em>Indication : pour un élément <span class="math notranslate nohighlight">\(a_1 &lt; a_2 &lt; \ldots &lt; a_p\)</span> de <span class="math notranslate nohighlight">\(F^{(n)}_p\)</span>, considérer <span class="math notranslate nohighlight">\(b_k = a_k-k+1\)</span>.</em></p>
+<p>On note <span class="math notranslate nohighlight">\(F^{(n)}_p\)</span> l’ensemble des parties de <span class="math notranslate nohighlight">\([\![1,n]\!]\)</span> ne contenant pas deux entiers consécutifs. Déterminer <span class="math notranslate nohighlight">\(|F^{(n)}_p|\)</span>.</p>
+<div class="tip admonition">
+<p class="admonition-title">Indication</p>
+<p>Pour un élément <span class="math notranslate nohighlight">\(a_1 &lt; a_2 &lt; \ldots &lt; a_p\)</span> de <span class="math notranslate nohighlight">\(F^{(n)}_p\)</span>, considérer <span class="math notranslate nohighlight">\(b_k = a_k-k+1\)</span>.</p>
+</div>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-19">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-252"> Exercise 402</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-252"> Exercise 403</a></p>
 <div class="section" id="solution-content">
 <p>L’indication donne une bijection entre <span class="math notranslate nohighlight">\(F_p^{(n)}\)</span> et les suites de <span class="math notranslate nohighlight">\(p\)</span> entiers de <span class="math notranslate nohighlight">\([1, n-p + 1]\)</span> strictement croissantes. On trouve donc <span class="math notranslate nohighlight">\({n-p+1 \choose p}\)</span></p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-253">
 
-<p class="admonition-title"><span class="caption-number">Exercise 403 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 404 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> un sous ensemble fini de <span class="math notranslate nohighlight">\(\mathbb{P}\)</span> l’ensemble des nombres premiers, et <span class="math notranslate nohighlight">\(n = |\mathcal{P}|\)</span>. Soit <span class="math notranslate nohighlight">\(x_1, \ldots, x_{n+1}\)</span> des entiers, dont les facteurs premiers sont contenus dans <span class="math notranslate nohighlight">\(\mathcal{P}\)</span>. Montrer qu’il existe un sous-ensemble <span class="math notranslate nohighlight">\(I\)</span> non vide de <span class="math notranslate nohighlight">\([\![1,n+1]\!]\)</span> tel que <span class="math notranslate nohighlight">\(\prod_{i \in I} x_i\)</span> soit un carré parfait.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/probabilites/Dénombrement-solution-21">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-253"> Exercise 403</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-253"> Exercise 404</a></p>
 <div class="section" id="solution-content">
 <p>Il suffit que la valuation <span class="math notranslate nohighlight">\(p\)</span>-adique du produit soit paire, pour tout <span class="math notranslate nohighlight">\(p \in \mathcal{P}\)</span>. On va procéder par récurrence.
 <strong>initialisation</strong> Pour <span class="math notranslate nohighlight">\(n=1\)</span>, soit <span class="math notranslate nohighlight">\(x_1\)</span> ou <span class="math notranslate nohighlight">\(x_2\)</span> est de valuation <span class="math notranslate nohighlight">\(p_1\)</span>-adique paire et est un carré parfait, soit les deux ont une valuation <span class="math notranslate nohighlight">\(p_1\)</span>-adique impaire et leur produit est un carré parfait.

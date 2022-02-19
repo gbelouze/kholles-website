@@ -400,30 +400,33 @@
 <h1>Séries numériques<a class="headerlink" href="#series-numeriques" title="Permalink to this headline">¶</a></h1>
 <div class="exercise admonition" id="exo-143">
 
-<p class="admonition-title"><span class="caption-number">Exercise 127 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 128 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\((u_n)\)</span> telle que <span class="math notranslate nohighlight">\(u_{n+1} = o(u_n)\)</span>. Montrer que <span class="math notranslate nohighlight">\(\sum_{k \geq n} u_k \sim u_n\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Séries numériques-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-143"> Exercise 127</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-143"> Exercise 128</a></p>
 <div class="section" id="solution-content">
 <p>On se place à <span class="math notranslate nohighlight">\(n\)</span> suffisamment grand pour que <span class="math notranslate nohighlight">\(|u_{n+1}| \leq \varepsilon |u_n|\)</span>. Alors <span class="math notranslate nohighlight">\(\sum_{k \geq n+1} |u_k| \leq \frac{\varepsilon}{1-\varepsilon} |u_n|\)</span> et de là <span class="math notranslate nohighlight">\(\sum_{k \geq n+1} u_k = o(u_n)\)</span>. Le résultat suit naturellement.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-144">
 
-<p class="admonition-title"><span class="caption-number">Exercise 128 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 129 </span></p>
 <div class="section" id="exercise-content">
-<p>Soit <span class="math notranslate nohighlight">\((u_n)\)</span> une suite de réels positifs et \begin{equation*}
-v_n = \frac{u_n}{1+u_n} \end{equation*}</p>
+<p>Soit <span class="math notranslate nohighlight">\((u_n)\)</span> une suite de réels positifs et</p>
+<div class="amsmath math notranslate nohighlight">
+\[\begin{equation*}
+ v_n = \frac{u_n}{1+u_n}
+\end{equation*}\]</div>
 <p>Montrer que les séries de terme général <span class="math notranslate nohighlight">\(u_n\)</span> et <span class="math notranslate nohighlight">\(v_n\)</span> sont de même nature.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Séries numériques-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-144"> Exercise 128</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-144"> Exercise 129</a></p>
 <div class="section" id="solution-content">
 <p>On a <span class="math notranslate nohighlight">\(0 \leq v_n \leq u_n\)</span> donc <span class="math notranslate nohighlight">\(\sum u_b\)</span> converge <span class="math notranslate nohighlight">\( \Rightarrow \sum v_n\)</span> converge.
 On suppose que <span class="math notranslate nohighlight">\(v_n\)</span> converge. Alors <span class="math notranslate nohighlight">\(v_n \rightarrow 0\)</span> donc <span class="math notranslate nohighlight">\(u_n \rightarrow 0\)</span> et <span class="math notranslate nohighlight">\( v_n = u_n (1 + o(1)) = u_n + o(u_n)\)</span>. Supposons par l’absurde que <span class="math notranslate nohighlight">\(u_n\)</span> diverge, alors <span class="math notranslate nohighlight">\(\sum o(u_n) = o(\sum u_n)\)</span> donc <span class="math notranslate nohighlight">\(\sum v_n \sim \sum u_n\)</span> diverge. Non!</p>
@@ -431,69 +434,69 @@ On suppose que <span class="math notranslate nohighlight">\(v_n\)</span> converg
 </div>
 <div class="exercise admonition" id="exo-145">
 
-<p class="admonition-title"><span class="caption-number">Exercise 129 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 130 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\((u_n)\)</span> une suite réelle telle que la série de terme général <span class="math notranslate nohighlight">\((u_n)\)</span> diverge. Montrer qu’il existe <span class="math notranslate nohighlight">\((v_n)\)</span> telle que <span class="math notranslate nohighlight">\(v_n = o(u_n)\)</span> et telle que la série de terme général <span class="math notranslate nohighlight">\((v_n)\)</span> diverge.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Séries numériques-solution-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-145"> Exercise 129</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-145"> Exercise 130</a></p>
 <div class="section" id="solution-content">
 <p>Raisonner sur les sommes partielles (par exemple prendre <span class="math notranslate nohighlight">\(V_n = \ln(U_n)\)</span>).</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-146">
 
-<p class="admonition-title"><span class="caption-number">Exercise 130 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 131 </span></p>
 <div class="section" id="exercise-content">
 <p>Montrer qu’il existe <span class="math notranslate nohighlight">\((u_n) \in \R^{\N}\)</span> telle que pour tout <span class="math notranslate nohighlight">\(\lambda \in \overline{\R}\)</span>, il existe <span class="math notranslate nohighlight">\(\phi\)</span> un réordonnement de <span class="math notranslate nohighlight">\(\N\)</span> (bijection de <span class="math notranslate nohighlight">\(\N\)</span> dans <span class="math notranslate nohighlight">\(\N\)</span>) tel que  <span class="math notranslate nohighlight">\(\sum \limits_{n=1}^{+ \infty} u_{\phi(n)} = \lambda\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Séries numériques-solution-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-146"> Exercise 130</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-146"> Exercise 131</a></p>
 <div class="section" id="solution-content">
 <p>Prendre <span class="math notranslate nohighlight">\(u_n = \frac{(-1)^n}{n}\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-147">
 
-<p class="admonition-title"><span class="caption-number">Exercise 131 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 132 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\( \sum u_n\)</span> une série réelle convergente mais pas absolument convergente. Montrer que pour tout <span class="math notranslate nohighlight">\(\lambda \in \bar{\R}\)</span>, il existe <span class="math notranslate nohighlight">\(\sigma\)</span> une bijection de <span class="math notranslate nohighlight">\(\N\)</span> dans <span class="math notranslate nohighlight">\(\N\)</span> telle que <span class="math notranslate nohighlight">\(\sum_{\sigma(n)} \rightarrow \lambda\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-148">
 
-<p class="admonition-title"><span class="caption-number">Exercise 132 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 133 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(\sigma\)</span> une permutation de <span class="math notranslate nohighlight">\(\N\)</span> dans <span class="math notranslate nohighlight">\(\N\)</span>. Montrer que la série de terme général <span class="math notranslate nohighlight">\((\frac{\sigma(n)}{n^2})\)</span> diverge.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Séries numériques-solution-10">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-148"> Exercise 132</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-148"> Exercise 133</a></p>
 <div class="section" id="solution-content">
 <p><span class="math notranslate nohighlight">\(S_{2n}-S_n\)</span> est minoré par <span class="math notranslate nohighlight">\(\frac{1}{8}\)</span> (majorer grossièrement <span class="math notranslate nohighlight">\(\frac{1}{k^2}\)</span>) donc le critère de Cauchy n’est pas vérifié.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-149">
 
-<p class="admonition-title"><span class="caption-number">Exercise 133 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 134 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\((u_n)\)</span> une suite réelle positive telle que la série de terme général <span class="math notranslate nohighlight">\(u_n\)</span> diverge. Soit <span class="math notranslate nohighlight">\(\alpha &gt; 0\)</span>. Étudier la nature de la série <span class="math notranslate nohighlight">\(\frac{u_n}{U_n^{\alpha}}\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Séries numériques-solution-12">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-149"> Exercise 133</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-149"> Exercise 134</a></p>
 <div class="section" id="solution-content">
 </div>
 </div>
 <div class="exercise admonition" id="exo-150">
 
-<p class="admonition-title"><span class="caption-number">Exercise 134 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 135 </span></p>
 <div class="section" id="exercise-content">
 <ol class="simple">
 <li><p>Soit <span class="math notranslate nohighlight">\(u_n\)</span> une suite décroissante vers <span class="math notranslate nohighlight">\(0\)</span> telle que <span class="math notranslate nohighlight">\(\sum u_n\)</span> converge. Montrer que <span class="math notranslate nohighlight">\(u_n = o(\frac{1}{n})\)</span>.</p></li>
@@ -503,7 +506,7 @@ On suppose que <span class="math notranslate nohighlight">\(v_n\)</span> converg
 </div>
 <div class="solution dropdown admonition" id="parts/analyse_reelle/Séries numériques-solution-14">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-150"> Exercise 134</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-150"> Exercise 135</a></p>
 <div class="section" id="solution-content">
 <p>On a <span class="math notranslate nohighlight">\(0 &lt; (2n)u_{2n} \leq 2 \sum_{k = n+1}^{2n} u_k = 2(S_{2n}-S_n) \rightarrow 0\)</span>. De là <span class="math notranslate nohighlight">\(2nu_{2n} \rightarrow 0\)</span> et il vient facilement <span class="math notranslate nohighlight">\(u_n = o(u_n)\)</span>.
 Puis prendre <span class="math notranslate nohighlight">\(u_n = \frac{1}{n}\)</span> si <span class="math notranslate nohighlight">\(n\)</span> est un carré, <span class="math notranslate nohighlight">\(0\)</span> sinon.</p>
@@ -511,21 +514,21 @@ Puis prendre <span class="math notranslate nohighlight">\(u_n = \frac{1}{n}\)</s
 </div>
 <div class="exercise admonition" id="exo-151">
 
-<p class="admonition-title"><span class="caption-number">Exercise 135 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 136 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(\frac{p_n}{q_n}\)</span> convergeant vers un irrationnel. Montrer que <span class="math notranslate nohighlight">\(p_n \rightarrow +\infty\)</span> et <span class="math notranslate nohighlight">\(q_n \rightarrow +\infty\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-152">
 
-<p class="admonition-title"><span class="caption-number">Exercise 136 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 137 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\((z_n)\)</span> une suite de complexe de partie réelle positive, et telle que les séries de terme général <span class="math notranslate nohighlight">\(z_n\)</span> et <span class="math notranslate nohighlight">\(z_n^2\)</span> (respectivement) convergent. Montrer que <span class="math notranslate nohighlight">\(\sum |z_n|^2\)</span> converge. Et si on abandonne l’hypothèse partie réelle positive ?</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-153">
 
-<p class="admonition-title"><span class="caption-number">Exercise 137 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 138 </span></p>
 <div class="section" id="exercise-content">
 <ol class="simple">
 <li><p>Équivalent de <span class="math notranslate nohighlight">\(\ln(n!)\)</span>.</p></li>

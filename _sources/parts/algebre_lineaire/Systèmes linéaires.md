@@ -59,15 +59,16 @@ Soit $A \in \M_{n,p}(\R)$ de rang $r$, $V \in GL_p(\R)$ telle que $AV$ soit éch
 :label: exo-401
 Soit $A \in \M_n(\R)$ de rang $r$ et $U \in GL_n(\R)$ telle que $UA$ est échelonnée en lignes. Montrer que
 
-1. $X\in Ker(A)$ si et seulement si
- \begin{equation*}
- L_1(UA)X=0, \ldots, L_r(UA)X=0 \end{equation*}
-
-1. $Y \in Im(A)$ si et seulement si
-\begin{equation*}
-
-L_{r+1}(U)Y=0, \ldots, L_n(U)Y=0
-\end{equation*}
+1. 
+    $X\in Ker(A)$ si et seulement si
+    \begin{equation*}
+    L_1(UA)X=0, \ldots, L_r(UA)X=0
+    \end{equation*}
+2. 
+    $Y \in Im(A)$ si et seulement si
+    \begin{equation*}
+    L_{r+1}(U)Y=0, \ldots, L_n(U)Y=0
+    \end{equation*}
 
 ```
 
@@ -81,7 +82,10 @@ L_{r+1}(U)Y=0, \ldots, L_n(U)Y=0
 
 ```{exercise}
 :label: exo-402
-Trouver une base du noyau et de l'image de $A=\begin{pmatrix} 1&0&2&1&2 \\ 0&1&1&3&3\\ 1&1&2&2&1 \end{pmatrix} $
+Trouver une base du noyau et de l'image de 
+\begin{equation*}
+A=\begin{pmatrix} 1&0&2&1&2 \\ 0&1&1&3&3\\ 1&1&2&2&1 \end{pmatrix}
+\end{equation*}
 ```
 
 

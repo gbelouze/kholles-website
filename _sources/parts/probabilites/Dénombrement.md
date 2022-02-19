@@ -63,11 +63,14 @@ Pour les $p$-décompositions strictes. On écrit $n = 1+1+\ldots+1$ et on transf
 ```
 
 
-```{exercise}
+````{exercise}
 :label: exo-247
 Soit $(a_i)$ une suite finie de $mn+1$ réels distincts. Montrer qu'il existe soit une sous-suite décroissante de longueur $m+1$, soit une sous-suite croissante de longueur $n+1$.
-*Indication : Considérer $\alpha_i$ la longueur de la plus grande sous-suite croissante finissant en $x_i$, et $\beta_i$ de la plus grande suite décroissante.*
+```{admonition} Indication
+:class: tip
+Considérer $\alpha_i$ la longueur de la plus grande sous-suite croissante finissant en $x_i$, et $\beta_i$ de la plus grande suite décroissante.```
 ```
+````
 
 ```{solution} exo-247
 :class: dropdown
@@ -128,8 +131,7 @@ et
 :class: dropdown
 
 1. ${a+b \choose a}$
-
-2.
+2. À faire
 
 ```
 
@@ -144,10 +146,14 @@ En combien de façon peut-on paver un damier $2\times n$ avec des pièces $2 \ti
 Soit $C_n$ ce nombre. $C_1 = 1$, et $C_{n+2} = C_{n+1} + C_n$ donc c'est fibonacci.
 ```
 
-```{exercise}
+````{exercise}
 :label: exo-252
-On note $F^{(n)}_p$ l'ensemble des parties de $[\![1,n]\!]$ ne contenant pas deux entiers consécutifs. Déterminer $|F^{(n)}_p|$. *Indication : pour un élément $a_1 < a_2 < \ldots < a_p$ de $F^{(n)}_p$, considérer $b_k = a_k-k+1$.*
+On note $F^{(n)}_p$ l'ensemble des parties de $[\![1,n]\!]$ ne contenant pas deux entiers consécutifs. Déterminer $|F^{(n)}_p|$.
+```{admonition} Indication
+:class: tip
+Pour un élément $a_1 < a_2 < \ldots < a_p$ de $F^{(n)}_p$, considérer $b_k = a_k-k+1$.
 ```
+````
 
 ```{solution} exo-252
 :class: dropdown

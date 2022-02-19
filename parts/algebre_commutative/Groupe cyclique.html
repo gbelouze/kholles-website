@@ -400,21 +400,21 @@
 <h1>Groupe cyclique<a class="headerlink" href="#groupe-cyclique" title="Permalink to this headline">¶</a></h1>
 <div class="exercise admonition" id="exo-235">
 
-<p class="admonition-title"><span class="caption-number">Exercise 244 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 245 </span></p>
 <div class="section" id="exercise-content">
 <p>Montrer que le groupe alterné <span class="math notranslate nohighlight">\(\mathcal{A}_n\)</span> est engendré par les 3-cycles de <span class="math notranslate nohighlight">\(\S_n\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Groupe cyclique-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-235"> Exercise 244</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-235"> Exercise 245</a></p>
 <div class="section" id="solution-content">
 <p>On observe que <span class="math notranslate nohighlight">\((a_1 \; a_2 \; a_3) \circ (a_2 \; a_3 \; a_4) = (a_1 \; a_2) \circ (a_3 \; a_4)\)</span>. Puis <span class="math notranslate nohighlight">\((a_1 \; a_2) \circ (a_2 \; a_3) = (a_1 \; a_2 \; a_3)\)</span>.  Notons <span class="math notranslate nohighlight">\(\mathcal{B}_n\)</span> le groupe engendré par les trois cycles. Alors pour tout <span class="math notranslate nohighlight">\(b \in \mathcal{B}_n\)</span>, <span class="math notranslate nohighlight">\(\varepsilon(b) = 1\)</span> donc <span class="math notranslate nohighlight">\(\mathcal{B}_n \subset \mathcal{A}_n\)</span>. Si <span class="math notranslate nohighlight">\(a \in \mathcal{A}_n\)</span>, on décompose <span class="math notranslate nohighlight">\(a\)</span> comme produit de transpositions. En évaluant la signature de <span class="math notranslate nohighlight">\(a\)</span>, il vient qu’il y a un nombre pair de ces transpositions, on peut donc les regrouper deux par deux. D’après l’observation initiale, <span class="math notranslate nohighlight">\(a\)</span> se décompose en produit de 3-cycles. Cela conclut.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-236">
 
-<p class="admonition-title"><span class="caption-number">Exercise 245 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 246 </span></p>
 <div class="section" id="exercise-content">
 <p>Trouver tous les morphismes de groupe de <span class="math notranslate nohighlight">\((\S_n,\circ)\)</span> dans <span class="math notranslate nohighlight">\((\C^*, \times)\)</span>.</p>
 <p><em>Variante</em> trouver tous les morphismes de groupe de <span class="math notranslate nohighlight">\((\S_n,\circ)\)</span> dans <span class="math notranslate nohighlight">\(G\)</span> un groupe commutatif (ça marche pareil).</p>
@@ -422,21 +422,21 @@
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Groupe cyclique-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-236"> Exercise 245</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-236"> Exercise 246</a></p>
 <div class="section" id="solution-content">
 <p>Soit <span class="math notranslate nohighlight">\(\mu\)</span> un tel morphisme. Alors pour toute transposition <span class="math notranslate nohighlight">\((i \; j)\)</span>, <span class="math notranslate nohighlight">\(\mu^2(i \; j) = 1\)</span> donc l’image des transpositions par <span class="math notranslate nohighlight">\(\mu\)</span> est dans <span class="math notranslate nohighlight">\(\{-1,1\}\)</span> et puisque les transpositions engendrent le groupe symétrique, <span class="math notranslate nohighlight">\(\mu\)</span> est un morphisme dans <span class="math notranslate nohighlight">\((\{-1,1\}, \times)\)</span>. S’il vaut <span class="math notranslate nohighlight">\(1\)</span> sur les transpositions, il est trivial. Sinon par exemple <span class="math notranslate nohighlight">\(f(1 \; 2) = -1\)</span>. Alors pour tout <span class="math notranslate nohighlight">\(i \in [\![3,n]\!]\)</span>, on a <span class="math notranslate nohighlight">\(f(1 \; 2 \; i)^3 = f(Id)=1=f((1 \; i) \circ (1 \; 2))^3 = -1 \times f(1 \; i)^3\)</span> donc <span class="math notranslate nohighlight">\(f(1 \; i) = -1\)</span> puis avec le même raisonnement, pour tout <span class="math notranslate nohighlight">\(j\)</span>, <span class="math notranslate nohighlight">\(f(i \; j) = -1\)</span>. Ainsi <span class="math notranslate nohighlight">\(\mu\)</span> et le morphisme signature <span class="math notranslate nohighlight">\(\varepsilon\)</span> coïncident sur une partie qui engendre le groupe, donc sont égaux. Finalement les deux seuls morphismes de <span class="math notranslate nohighlight">\((\S_n,\circ)\)</span> dans <span class="math notranslate nohighlight">\((\C^*, \times)\)</span> sont l’identité et la signature.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-237">
 
-<p class="admonition-title"><span class="caption-number">Exercise 246 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 247 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(n \in \N^*\)</span>. Calculer le nombre moyen de points fixes des permutations de <span class="math notranslate nohighlight">\(\S_n\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Groupe cyclique-solution-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-237"> Exercise 246</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-237"> Exercise 247</a></p>
 <div class="section" id="solution-content">
 <p>Soit <span class="math notranslate nohighlight">\(m\)</span> ce nombre. On écrit</p>
 <div class="amsmath math notranslate nohighlight">
@@ -450,21 +450,21 @@ m &amp;= \frac{1}{n!} \sum_{\sigma \in \S_n} \sum_{i=1}^n \mathds{1}_{i=\sigma(i
 </div>
 <div class="exercise admonition" id="exo-238">
 
-<p class="admonition-title"><span class="caption-number">Exercise 247 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 248 </span></p>
 <div class="section" id="exercise-content">
 <p>Montrer que les permutations de <span class="math notranslate nohighlight">\(\S_n\)</span> qui commutent avec <span class="math notranslate nohighlight">\(\sigma = (1 \; 2 \; \ldots \; n)\)</span> sont les puissances de <span class="math notranslate nohighlight">\(\sigma\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Groupe cyclique-solution-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-238"> Exercise 247</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-238"> Exercise 248</a></p>
 <div class="section" id="solution-content">
 <p>Soit <span class="math notranslate nohighlight">\(\tau\)</span> qui commute avec <span class="math notranslate nohighlight">\(\sigma\)</span>. On a <span class="math notranslate nohighlight">\((\tau(1) \; \tau(2) \; \ldots \; \tau(n)) = \tau \circ \sigma \circ \tau^{-1} = (1 \; 2 \; \ldots \; n) \)</span>. Soit <span class="math notranslate nohighlight">\(i = \tau^{-1}(1)\)</span>. On a donc pour tout <span class="math notranslate nohighlight">\(k \in [\![ 0,n-1 ]\!]\)</span>, <span class="math notranslate nohighlight">\(\tau(i+k) = 1+k\)</span>, donc <span class="math notranslate nohighlight">\(\tau = \sigma^{i-1}\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-239">
 
-<p class="admonition-title"><span class="caption-number">Exercise 248 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 249 </span></p>
 <div class="section" id="exercise-content">
 <p>Pour <span class="math notranslate nohighlight">\(\sigma \in \S_n\)</span>, on définit l’orbite d’un élément <span class="math notranslate nohighlight">\(i \in [\![1,n]\!]\)</span> comme étant</p>
 <div class="amsmath math notranslate nohighlight">
@@ -477,14 +477,14 @@ m &amp;= \frac{1}{n!} \sum_{\sigma \in \S_n} \sum_{i=1}^n \mathds{1}_{i=\sigma(i
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Groupe cyclique-solution-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-239"> Exercise 248</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-239"> Exercise 249</a></p>
 <div class="section" id="solution-content">
 <p>On décompose en cycles à supports disjoints. On trouve <span class="math notranslate nohighlight">\(\varepsilon(\sigma) = (-1)^{n-o(\sigma)}\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-240">
 
-<p class="admonition-title"><span class="caption-number">Exercise 249 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 250 </span></p>
 <div class="section" id="exercise-content">
 <p>Pour chacune des décompositions suivantes, calculer leur puissance 2018.</p>
 <div class="amsmath math notranslate nohighlight">
@@ -512,35 +512,35 @@ m &amp;= \frac{1}{n!} \sum_{\sigma \in \S_n} \sum_{i=1}^n \mathds{1}_{i=\sigma(i
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Groupe cyclique-solution-11">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-240"> Exercise 249</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-240"> Exercise 250</a></p>
 <div class="section" id="solution-content">
 <p>Simple décomposition en cycles à supports dijoints.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-241">
 
-<p class="admonition-title"><span class="caption-number">Exercise 250 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 251 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(\sigma = (i_1 \; i_2 \; \ldots \; i_p)\)</span> un cycle de <span class="math notranslate nohighlight">\(\S_n\)</span> et <span class="math notranslate nohighlight">\(\tau \in \S_n\)</span>. Exprimer <span class="math notranslate nohighlight">\( \tau \circ \sigma \circ \tau^{-1}\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Groupe cyclique-solution-13">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-241"> Exercise 250</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-241"> Exercise 251</a></p>
 <div class="section" id="solution-content">
 <p>Il s’agit de <span class="math notranslate nohighlight">\((\tau(i_1), \tau(i_2), \ldots, \tau(i_p))\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-242">
 
-<p class="admonition-title"><span class="caption-number">Exercise 251 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 252 </span></p>
 <div class="section" id="exercise-content">
 <p>Montrer que <span class="math notranslate nohighlight">\(\S_n\)</span> est engendré par <span class="math notranslate nohighlight">\((1 \; 2)\)</span> et <span class="math notranslate nohighlight">\((1\; 2 \; \ldots \; n )\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Groupe cyclique-solution-15">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-242"> Exercise 251</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-242"> Exercise 252</a></p>
 <div class="section" id="solution-content">
 <p>Notons <span class="math notranslate nohighlight">\(\sigma = (1 \; 2)\)</span> et <span class="math notranslate nohighlight">\(\tau = (1\; 2 \; \ldots \; n )\)</span>. Les <span class="math notranslate nohighlight">\(\tau^n \circ \sigma \circ \tau^{-n}\)</span> génèrent les <span class="math notranslate nohighlight">\((i,i+1)\)</span>. Puis on génère <span class="math notranslate nohighlight">\((1,i+1) = (i, i+1) (1,i) (i, i+1)\)</span>. Enfin on génère <span class="math notranslate nohighlight">\((i,j) = (1,j) (1,i) (1,j)\)</span>, donc toutes les transpositions, donc le groupe.</p>
 </div>

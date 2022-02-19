@@ -110,14 +110,20 @@ On se donne $(\Omega_n)$ comme dans l'énoncé. Soit $x \in E$ et $B=\mathcal{B}
 ```
 
 
-```{exercise} Une application du théorème de Baire
+````{exercise} Une application du théorème de Baire
 :label: exo-136
 Soit $f : \R_+ \rightarrow \R$ continue vérifiant la propriété
 \begin{equation*}
 \forall a > 0, \; f(na) \underset{n \rightarrow + \infty}{\longrightarrow} 0
 \end{equation*}
-Montrer que $f$ tend vers $0$ en $+\infty$. Indication : la propriété de Baire a un énoncé équivalent en terme de fermés. C'est plutôt celle-ci qu'il faut utiliser.
+Montrer que $f$ tend vers $0$ en $+\infty$.
+
+```{admonition} Indication
+:class: tip
+La propriété de Baire a un énoncé équivalent en terme de fermés. C'est plutôt celle-ci qu'il faut utiliser.
 ```
+````
+
 ```{solution} exo-136
 :class: dropdown
 Pour $\varepsilon > 0$ on regarde les fermés $F_p = \{ a \geq 0 \; | \; |f(na)| \leq \varepsilon \forall n \geq p \}$. L'union des $F_p$ est $\R$ d'après l'hypothèse, donc l'un au moins de ces $F_p$, mettons $F_{p_0}$ est d'intérieur non vide et contient par exemple $[a,b]$ avec $a<b$, donc contient tous les $[na;nb]$. Fixons $N$ suffisamment grand pour que $(N+1)a < Nb$ et soit $x > Nb$. Fixons aussi $n \geq N$ tel que $nb \leq x < (n+1)b$. Alors $x \in [nb, (n+1)b] \subset [(n+1)a;(n+1)b] \subset F_{p_0}$ donc $x \in F_{p_0}$. Si on rergarde de loin ce qu'on a montré :
@@ -179,28 +185,29 @@ Soit $E$ un espace de Banach (vectoriel, normé, complet). Soit $\overline{\math
 
 ```{solution} exo-140
 :class: dropdown
-1. Si $a=b$ c'est fini. Sinon on note $l = ||b-a||>0$ et on regarde $x = a-r\frac{b-a}{l}$. $x \in \mathcal{B}(a,r)$ donc $x \in \mathcal{B}(b,\rho)$. De là
-\begin{align*}
-||b-x|| &\leq \rho \\
-i.e. \; ||b-a + \frac{r}{l}(b-a)|| &\leq \rho \\
-||b-a|| + r &\leq \rho \\
-||b-a||&\leq \rho-r
-\end{align*}
+1.
+    Si $a=b$ c'est fini. Sinon on note $l = ||b-a||>0$ et on regarde $x = a-r\frac{b-a}{l}$. $x \in \mathcal{B}(a,r)$ donc $x \in \mathcal{B}(b,\rho)$. De là
+    \begin{align*}
+    ||b-x|| &\leq \rho \\
+    i.e. \; ||b-a + \frac{r}{l}(b-a)|| &\leq \rho \\
+    ||b-a|| + r &\leq \rho \\
+    ||b-a||&\leq \rho-r
+    \end{align*}
+2. 
+    Un corollaire de la question précédente est $\rho \geq r$. En particulier $(r_n)$ décroît donc converge, mettons vers $r$. Puis avec la propriété précédente, $(a_n)$ est de Cauchy, donc par complétude de $E$ converge, mettons vers $a$.
 
-2. Un corollaire de la question précédente est $\rho \geq r$. En particulier $(r_n)$ décroît donc converge, mettons vers $r$. Puis avec la propriété précédente, $(a_n)$ est de Cauchy, donc par complétude de $E$ converge, mettons vers $a$.
+    Ensuite on montre que $\mathcal{B}(a,r) \subset \bigcap \limits_{n \in \N} F_n $. Soit donc $x\in B(a,r)$. Notons $\varepsilon = r-||x-a|| >0$. Pour tout $n$ assez grand, $||x-a_n|| \leq ||x-a|| + ||a-a_n|| = r- \varepsilon + ||a-a_n|| \leq r \leq r_n $ donc $x \in \bigcap \limits_{n \geq N} F_n = \bigcap \limits_{n \in \N} F_n$. Ainsi $\mathcal{B}(a,r) \subset \bigcap \limits_{n \in \N} F_n$.
 
-Ensuite on montre que $\mathcal{B}(a,r) \subset \bigcap \limits_{n \in \N} F_n $. Soit donc $x\in B(a,r)$. Notons $\varepsilon = r-||x-a|| >0$. Pour tout $n$ assez grand, $||x-a_n|| \leq ||x-a|| + ||a-a_n|| = r- \varepsilon + ||a-a_n|| \leq r \leq r_n $ donc $x \in \bigcap \limits_{n \geq N} F_n = \bigcap \limits_{n \in \N} F_n$. Ainsi $\mathcal{B}(a,r) \subset \bigcap \limits_{n \in \N} F_n$.
+    Puis comme une intersection de fermés reste fermée, $\overline{\mathcal{B}(a,r)} = \overline{\mathcal{B}}(a, r) \subset \bigcap \limits_{n \in \N} F_n$.
 
-Puis comme une intersection de fermés reste fermée, $\overline{\mathcal{B}(a,r)} = \overline{\mathcal{B}}(a, r) \subset \bigcap \limits_{n \in \N} F_n$.
-
-Pour l'inclusion inverse, on fixe $\varepsilon>0$ et $n$ tel que $||a-a_n||\leq \varepsilon$ et $|r-r_n|\leq \epsilon$. Soit $x \in \bigcap \limits_{i \in \N} F_i$. Par def, $x\in F_n$ donc $||x-a_n||\leq r_n$. De là
-\begin{align*}
-||x-a|| &= ||x-a_n +a_n -a||\\
-&\leq ||x-a_n|| + ||a_n-a|| \\
-&\leq r_n + \varepsilon \\
-&\leq r + 2\varepsilon
-\end{align*}
-Ainsi $\bigcap \limits_{n \in \N} F_n \subset \mathcal{B}(a,r+2\varepsilon)$. Ceci étant vrai pour tout $\varepsilon$, on a l'inclusion inverse.
+    Pour l'inclusion inverse, on fixe $\varepsilon>0$ et $n$ tel que $||a-a_n||\leq \varepsilon$ et $|r-r_n|\leq \epsilon$. Soit $x \in \bigcap \limits_{i \in \N} F_i$. Par def, $x\in F_n$ donc $||x-a_n||\leq r_n$. De là
+    \begin{align*}
+    ||x-a|| &= ||x-a_n +a_n -a||\\
+    &\leq ||x-a_n|| + ||a_n-a|| \\
+    &\leq r_n + \varepsilon \\
+    &\leq r + 2\varepsilon
+    \end{align*}
+    Ainsi $\bigcap \limits_{n \in \N} F_n \subset \mathcal{B}(a,r+2\varepsilon)$. Ceci étant vrai pour tout $\varepsilon$, on a l'inclusion inverse.
 
 ```
 

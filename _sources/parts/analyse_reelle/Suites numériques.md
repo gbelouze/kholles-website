@@ -21,12 +21,11 @@
 
 ```{exercise}
 :label: exo-97
-Voir énoncé 5.2 du poly de Mansuy. Soit $\alpha \in \mathbb{R}$ et $(u_n)_n$ la suite définie par :
+Soit $\alpha \in \mathbb{R}$ et $(u_n)_n$ la suite définie par :
 \begin{equation*}
  \forall n \in \mathbb{N}, \; \; u_{n+2} - 2 \cos(\alpha )u_{n+1} + u_n = 0
 \end{equation*}
 Donner l'expression de $u_n$ en fonction de $n$.
-Difficulté : */**
 ```
 
 ```{solution} exo-97
@@ -39,11 +38,12 @@ $A+B=u_0$ et $A e^{i\alpha} + B e^{-i\alpha} = u_1$ ce qui fournit sans difficul
 
 ```{exercise}
 :label: exo-99
-Voir énoncé 5.11 du poly de Mansuy. Soit $(u_n)_n$ une suite définie par $u_0=1$ et \begin{equation*}
- \forall n \in \mathbb{N}, \; u_{n+1} = (\prod \limits_{k=0}^n u_k) +2 \end{equation*}
+Soit $(u_n)_n$ une suite définie par $u_0=1$ et
+\begin{equation*}
+ \forall n \in \mathbb{N}, \; u_{n+1} = (\prod \limits_{k=0}^n u_k) +2 
+\end{equation*}
 
 Déterminer l'expression, pour $n \geq 1$, de $u_n$ en fonction de $n$.
-Difficulté : **
 ```
 
 ```{solution} exo-99
@@ -69,9 +69,8 @@ Ainsi $w_n = v_n - 3^n$ vérifie $w_{n+1} = 2w_n$. On trouve alors facilement un
 
 ```{exercise}
 :label: exo-101
-Voir énoncé 5.14 du poly de Mansuy. Considérons la suite $(u_n)_{n\geq1}$, dont les valeurs sont successivement 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, $\ldots$. Donner
+Considérons la suite $(u_n)_{n\geq1}$, dont les valeurs sont successivement 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, $\ldots$. Donner
 une expression explicite de $u_n$ en fonction de $n$.
-Difficulté : **
 ```
 
 ```{solution} exo-101
@@ -85,8 +84,7 @@ La limite a lieu lorsque $2p = n(n+1)$ soit $n=\frac{-1+\sqrt{1+8p}}{2}$. Ainsi 
 
 ```{exercise}
 :label: exo-102
-Voir énoncé 5.12 du poly de Mansuy. Soit $u_n=\sum \limits_{k=1}^n \lfloor \frac{n}{k} \rfloor$. Trouver les entiers $n \in \mathbb{N}$ pour lesquels $u_n$ est pair.
-Difficulté : **
+Soit $u_n=\sum \limits_{k=1}^n \lfloor \frac{n}{k} \rfloor$. Trouver les entiers $n \in \mathbb{N}$ pour lesquels $u_n$ est pair.
 ```
 
 

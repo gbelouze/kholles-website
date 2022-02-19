@@ -211,25 +211,26 @@ Soit $n \geq 1$ et $\K$ un corps fini de cardinal $q \geq 2$
 
 ```{solution} exo-356
 :class: dropdown
-1. Notons $\mathcal{D}$ l'ensemble des droites. Une droite est de la forme $\K x$ avec $x$ un vecteur non nul. Il est naturel de regarder
-\begin{align*}
-\phi : \begin{cases}
-K^n \setminus \{0\} &\rightarrow \mathcal{D} \\
-x &\mapsto \K x
-\end{cases}
-\end{align*}
-L'application $\phi$ est par construction surjective. Regardons le nombre d'antécédents d'un éléments de $\mathcal{D}$.
-\begin{align*}
-\phi(x) = \phi(y) &\Longrightarrow \K x = \K y\\
-&\Longrightarrow y = 1y \in \K x\\
-&\Longrightarrow \exists k \in \K^*, \; y = k x
-\end{align*}
-Réciproquement, il est évident que $x = k y$ pour $k$ non nul implique $\phi(x) = \phi(y)$. Ainsi tout élément de $\mathcal{D}$ possède exactement $q-1$ antécédent par $\phi$. Ainsi
-\begin{equation*}
- |\mathcal{D}| = \frac{|\K^n \setminus \{ 0\}|}{|K^*|} = 1 + q +\ldots + q^{n-1}
-\end{equation*}
-
-2. à faire
+1.
+    Notons $\mathcal{D}$ l'ensemble des droites. Une droite est de la forme $\K x$ avec $x$ un vecteur non nul. Il est naturel de regarder
+    \begin{align*}
+    \phi : \begin{cases}
+    K^n \setminus \{0\} &\rightarrow \mathcal{D} \\
+    x &\mapsto \K x
+    \end{cases}
+    \end{align*}
+    L'application $\phi$ est par construction surjective. Regardons le nombre d'antécédents d'un éléments de $\mathcal{D}$.
+    \begin{align*}
+    \phi(x) = \phi(y) &\Longrightarrow \K x = \K y\\
+    &\Longrightarrow y = 1y \in \K x\\
+    &\Longrightarrow \exists k \in \K^*, \; y = k x
+    \end{align*}
+    Réciproquement, il est évident que $x = k y$ pour $k$ non nul implique $\phi(x) = \phi(y)$. Ainsi tout élément de $\mathcal{D}$ possède exactement $q-1$ antécédent par $\phi$. Ainsi
+    \begin{equation*}
+     |\mathcal{D}| = \frac{|\K^n \setminus \{ 0\}|}{|K^*|} = 1 + q +\ldots + q^{n-1}
+    \end{equation*}
+2.
+    à faire
 ```
 
 

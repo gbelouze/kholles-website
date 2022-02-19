@@ -140,14 +140,16 @@ est une bijection et calculer sa réciproque.
 
 
 
-```{exercise}
+````{exercise}
 :label: exo-62
 Trouver le plus grand $\alpha$ tel que
 \begin{equation*}
 \forall z \in \mathbb{U} \setminus \{1\}, \; \exists n \in \mathbb{N} \text{ tel que } |z^n -1| \geq \alpha \end{equation*}
-Indication : On pourra séparer les cas où $z$ est une racine de l'unité.
-Difficulté : ***
+```{admonition} Indication
+:class: tip
+On pourra séparer les cas où $z$ est une racine de l'unité.
 ```
+````
 
 ```{solution} exo-62
 :class: dropdown

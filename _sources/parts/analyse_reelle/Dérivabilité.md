@@ -21,7 +21,7 @@
 
 ```{exercise}
 :label: exo-176
-Voir exercice 9.5 du poly de Mansuy. Soit $f \; : \; \mathbb{R} \longrightarrow \mathbb{R}$ dérivable et $a \in \mathbb{R}$. Déterminer $\underset{x \longrightarrow a}{\lim}\frac{xf(a)-af(x)}{x-a}$.
+Soit $f \; : \; \mathbb{R} \longrightarrow \mathbb{R}$ dérivable et $a \in \mathbb{R}$. Déterminer $\underset{x \longrightarrow a}{\lim}\frac{xf(a)-af(x)}{x-a}$.
 ```
 
 ```{solution} exo-176

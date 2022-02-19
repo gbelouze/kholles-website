@@ -405,7 +405,7 @@
 \end{equation*}\]</div>
 <div class="exercise admonition" id="exo-310">
 
-<p class="admonition-title"><span class="caption-number">Exercise 281 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 282 </span></p>
 <div class="section" id="exercise-content">
 <p>Décomposer en éléments simples les fractions rationnelles suivantes.</p>
 <ol class="simple">
@@ -419,80 +419,79 @@
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Fractions rationnelles-solution-1">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-310"> Exercise 281</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-310"> Exercise 282</a></p>
 <div class="section" id="solution-content">
-<ol class="simple">
-<li><p>Notons <span class="math notranslate nohighlight">\(w_1, \ldots, w_n\)</span> les racines <span class="math notranslate nohighlight">\(n\)</span>-ième de l’unité. On a donc <span class="math notranslate nohighlight">\( F_1 = \sum \frac{a_k}{X-w_k} \)</span>. On écrit</p></li>
-</ol>
+<ol>
+<li><p>Notons <span class="math notranslate nohighlight">\(w_1, \ldots, w_n\)</span> les racines <span class="math notranslate nohighlight">\(n\)</span>-ième de l’unité. On a donc <span class="math notranslate nohighlight">\( F_1 = \sum \frac{a_k}{X-w_k} \)</span>. On écrit</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-a_k &amp;= \frac{1}{\prod_{i \neq k} (w_k - w_i)}\\
-&amp;= \frac{1}{w_k^{n-1}}  \frac{1}{\prod_{i \neq k} (1 - w_i/w_k)}\\
-&amp;= w_k^{1-n} \left ( \prod_{w_i \neq 1} (1 - w_i) \right ) ^{-1}\\
-&amp;= w_k^{1-n}n^{-1}\\
-&amp;= \frac{w_k}{n}
-\end{align*}\]</div>
+    a_k &amp;= \frac{1}{\prod_{i \neq k} (w_k - w_i)}\\
+    &amp;= \frac{1}{w_k^{n-1}}  \frac{1}{\prod_{i \neq k} (1 - w_i/w_k)}\\
+    &amp;= w_k^{1-n} \left ( \prod_{w_i \neq 1} (1 - w_i) \right ) ^{-1}\\
+    &amp;= w_k^{1-n}n^{-1}\\
+    &amp;= \frac{w_k}{n}
+    \end{align*}\]</div>
 <p>D’où</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
- F_1 = \frac{1}{n} \sum \frac{w_k}{X-w_k}
-\end{equation*}\]</div>
-<ol class="simple">
+     F_1 = \frac{1}{n} \sum \frac{w_k}{X-w_k}
+    \end{equation*}\]</div>
+</li>
 <li><p>On a donc <span class="math notranslate nohighlight">\(F_2 = \sum_{k=1}^n \frac{a_k}{X-k}\)</span>
-Et on évalue :</p></li>
-</ol>
+Et on évalue :</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-a_k &amp;= \frac{n!}{(k-1)!\times (-1)^{n-k}(n-k)!} \\
-&amp;= (-1)^{n-k} n {n-1 \choose k-1}
-\end{align*}\]</div>
+    a_k &amp;= \frac{n!}{(k-1)!\times (-1)^{n-k}(n-k)!} \\
+    &amp;= (-1)^{n-k} n {n-1 \choose k-1}
+    \end{align*}\]</div>
 <p>d’où</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
- F_2 = n (-1)^n \sum_{k=1}^n (-1)^k\frac{{n-1 \choose k-1}}{X-k}
-\end{equation*}\]</div>
-<ol class="simple">
-<li><p>Notons <span class="math notranslate nohighlight">\(w = e^{\frac{i\pi}{2n}}\)</span>, un pôle de <span class="math notranslate nohighlight">\(F_3\)</span>. Notons <span class="math notranslate nohighlight">\(w_0, \ldots, w_{2n-1}\)</span> les racines <span class="math notranslate nohighlight">\(2n\)</span>-ièmes de l’unité. Il vients que les <span class="math notranslate nohighlight">\(\nu_k = ww_k = e^{i\pi \frac{2k+1}{2n}}\)</span> sont les pôles de <span class="math notranslate nohighlight">\(F_3\)</span> dans <span class="math notranslate nohighlight">\(\C\)</span>, puis</p></li>
-</ol>
+     F_2 = n (-1)^n \sum_{k=1}^n (-1)^k\frac{{n-1 \choose k-1}}{X-k}
+    \end{equation*}\]</div>
+</li>
+<li><p>Notons <span class="math notranslate nohighlight">\(w = e^{\frac{i\pi}{2n}}\)</span>, un pôle de <span class="math notranslate nohighlight">\(F_3\)</span>. Notons <span class="math notranslate nohighlight">\(w_0, \ldots, w_{2n-1}\)</span> les racines <span class="math notranslate nohighlight">\(2n\)</span>-ièmes de l’unité. Il vients que les <span class="math notranslate nohighlight">\(\nu_k = ww_k = e^{i\pi \frac{2k+1}{2n}}\)</span> sont les pôles de <span class="math notranslate nohighlight">\(F_3\)</span> dans <span class="math notranslate nohighlight">\(\C\)</span>, puis</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
- F_3 = -\frac{1}{2n}\sum_{k=0}^{2n-1} \frac{\nu_k}{X-\nu_k}
-\end{equation*}\]</div>
+     F_3 = -\frac{1}{2n}\sum_{k=0}^{2n-1} \frac{\nu_k}{X-\nu_k}
+    \end{equation*}\]</div>
 <p>est la DES dans <span class="math notranslate nohighlight">\(\C\)</span> de <span class="math notranslate nohighlight">\(F_3\)</span>. Puis en associant <span class="math notranslate nohighlight">\(\nu_{k}\)</span> et <span class="math notranslate nohighlight">\(\nu_{2n-1-k}\)</span> on trouve la DES dans <span class="math notranslate nohighlight">\(\R\)</span> : <span class="math notranslate nohighlight">\(F_3 = \frac{1}{2n} \sum_{k=1}^n \frac{a_kX+b_k}{X^2-2\cos{\frac{2k+1}{2n}\pi}+1}\)</span> où
 <span class="math notranslate nohighlight">\( a_kX + b_k = (X-\nu_k)\nu_{2n-1-k} + (X-\nu_{2n-1-k})\nu_k
-\)</span> d’où <span class="math notranslate nohighlight">\(a_k = 2\cos{\frac{2k+1}{2n}\pi}\)</span> et <span class="math notranslate nohighlight">\(b_k = -2\)</span> soit</p>
+ \)</span> d’où <span class="math notranslate nohighlight">\(a_k = 2\cos{\frac{2k+1}{2n}\pi}\)</span> et <span class="math notranslate nohighlight">\(b_k = -2\)</span> soit</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
-F_3 = \frac{1}{n} \sum_{k=1}^n \frac{-\cos{\frac{2k+1}{2n}\pi}X+1}{X^2-2\cos{\frac{2k+1}{2n}\pi}+1}
-\end{equation*}\]</div>
-<ol class="simple">
-<li><p>On effectue un DL en <span class="math notranslate nohighlight">\(0\)</span> de <span class="math notranslate nohighlight">\(\frac{x+1}{x+2}\)</span> :</p></li>
-</ol>
+    F_3 = \frac{1}{n} \sum_{k=1}^n \frac{-\cos{\frac{2k+1}{2n}\pi}X+1}{X^2-2\cos{\frac{2k+1}{2n}\pi}+1}
+    \end{equation*}\]</div>
+</li>
+<li><p>On effectue un DL en <span class="math notranslate nohighlight">\(0\)</span> de <span class="math notranslate nohighlight">\(\frac{x+1}{x+2}\)</span> :</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-\frac{x+1}{x+2} &amp;\underset{0}{=} \frac{1}{2}(x+1)(\sum_{k=0}^8 (-1)^k(\frac{x}{2})^k + o(x^8)) \\
-&amp;\underset{0}{=} \frac{1}{2} - \sum_{k=1}^8(-1)^k(\frac{x}{2})^k \\
-\end{align*}\]</div>
-<p>On en déduit un <span class="math notranslate nohighlight">\(DL\)</span> de <span class="math notranslate nohighlight">\(F_4\)</span> puis on identifie les termes de la DES et du DL.
-5. On écrit</p>
+    \frac{x+1}{x+2} &amp;\underset{0}{=} \frac{1}{2}(x+1)(\sum_{k=0}^8 (-1)^k(\frac{x}{2})^k + o(x^8)) \\
+    &amp;\underset{0}{=} \frac{1}{2} - \sum_{k=1}^8(-1)^k(\frac{x}{2})^k \\
+    \end{align*}\]</div>
+<p>On en déduit un <span class="math notranslate nohighlight">\(DL\)</span> de <span class="math notranslate nohighlight">\(F_4\)</span> puis on identifie les termes de la DES et du DL.</p>
+</li>
+<li><p>On écrit</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
- F_5 = \frac{a}{X-1}+\frac{b}{(X-1)^2}+\frac{c}{X+1}+\frac{d}{(X+1)^2}
-\end{equation*}\]</div>
+     F_5 = \frac{a}{X-1}+\frac{b}{(X-1)^2}+\frac{c}{X+1}+\frac{d}{(X+1)^2}
+    \end{equation*}\]</div>
 <p>Mais <span class="math notranslate nohighlight">\(F_5\)</span> est paire, cela amène en remplaçant <span class="math notranslate nohighlight">\(X\)</span> par <span class="math notranslate nohighlight">\(-X\)</span> :</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{equation*}
-\begin{cases}
-a &amp;= -c \\
-b &amp;= d
-\end{cases}
-\end{equation*}\]</div>
+    \begin{cases}
+    a &amp;= -c \\
+    b &amp;= d
+    \end{cases}
+    \end{equation*}\]</div>
 <p>On évalue en <span class="math notranslate nohighlight">\(0\)</span> pour obtenir l’équation supplémentaire <span class="math notranslate nohighlight">\(a=b\)</span>, puis en <span class="math notranslate nohighlight">\(1\)</span> pour obtenir <span class="math notranslate nohighlight">\(b=\frac{1}{4}\)</span>. Cela fournit la DES.</p>
+</li>
+</ol>
 </div>
 </div>
 <div class="exercise admonition" id="exo-311">
 
-<p class="admonition-title"><span class="caption-number">Exercise 282 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 283 </span></p>
 <div class="section" id="exercise-content">
 <p>Calculer la dérivée <span class="math notranslate nohighlight">\(n\)</span>-ième de</p>
 <div class="amsmath math notranslate nohighlight">
@@ -503,7 +502,7 @@ b &amp;= d
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Fractions rationnelles-solution-3">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-311"> Exercise 282</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-311"> Exercise 283</a></p>
 <div class="section" id="solution-content">
 <p>On décompose</p>
 <div class="amsmath math notranslate nohighlight">
@@ -520,14 +519,14 @@ F^{(n)} &amp;= \frac{in!}{2}(-1)^{n}\left (\frac{1}{(X+i)^{n+1}} - \frac{1}{(X-i
 </div>
 <div class="exercise admonition" id="exo-312">
 
-<p class="admonition-title"><span class="caption-number">Exercise 283 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 284 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(P,Q\)</span> non nuls, premiers entre eux. Montrer que <span class="math notranslate nohighlight">\(F=\frac{P}{Q}\)</span> est paire si et seulement si <span class="math notranslate nohighlight">\(P\)</span> et <span class="math notranslate nohighlight">\(Q\)</span> sont pairs. Établir un résultat équivalent pour <span class="math notranslate nohighlight">\(F\)</span> impaire.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Fractions rationnelles-solution-5">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-312"> Exercise 283</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-312"> Exercise 284</a></p>
 <div class="section" id="solution-content">
 <p><span class="math notranslate nohighlight">\(P\)</span> divise <span class="math notranslate nohighlight">\(P(X)Q(-X)=P(-X)Q(X)\)</span> donc par Gauss divise <span class="math notranslate nohighlight">\(P(-X)\)</span>. De même <span class="math notranslate nohighlight">\(P(-X)\)</span> divise <span class="math notranslate nohighlight">\(Q(X)\)</span>. Ainsi <span class="math notranslate nohighlight">\(P(X)=\lambda P(-X)\)</span>. L’analyse des coefficients amène <span class="math notranslate nohighlight">\(\lambda = (-1)^{n}\)</span>. Pareil pour <span class="math notranslate nohighlight">\(Q\)</span>. Ainsi <span class="math notranslate nohighlight">\(P\)</span> et <span class="math notranslate nohighlight">\(Q\)</span> sont tous deux pairs ou tous deux impairs. Le cas impair est exclu car alors <span class="math notranslate nohighlight">\(0\)</span> est racine à la fois de <span class="math notranslate nohighlight">\(P\)</span> et <span class="math notranslate nohighlight">\(Q\)</span>.</p>
 <p>Le résultat à établir ensuite est <span class="math notranslate nohighlight">\(F\)</span> impaire si et seulement si <span class="math notranslate nohighlight">\(P\)</span> pair, <span class="math notranslate nohighlight">\(Q\)</span> impair, ou bien <span class="math notranslate nohighlight">\(P\)</span> impair, <span class="math notranslate nohighlight">\(Q\)</span> pair.</p>
@@ -535,7 +534,7 @@ F^{(n)} &amp;= \frac{in!}{2}(-1)^{n}\left (\frac{1}{(X+i)^{n+1}} - \frac{1}{(X-i
 </div>
 <div class="exercise admonition" id="exo-313">
 
-<p class="admonition-title"><span class="caption-number">Exercise 284 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 285 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(x_1,, \ldots, x_n\)</span> des complexes distincts et</p>
 <div class="amsmath math notranslate nohighlight">
@@ -551,7 +550,7 @@ P = \prod_{i=1}^n (X-x_i)
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Fractions rationnelles-solution-7">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-313"> Exercise 284</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-313"> Exercise 285</a></p>
 <div class="section" id="solution-content">
 <p>On regarde la fraction rationnelle <span class="math notranslate nohighlight">\(F = \frac{P''}{P}\)</span>. Sa DES est donnée par</p>
 <div class="amsmath math notranslate nohighlight">
@@ -563,21 +562,21 @@ P = \prod_{i=1}^n (X-x_i)
 </div>
 <div class="exercise admonition" id="exo-314">
 
-<p class="admonition-title"><span class="caption-number">Exercise 285 </span></p>
+<p class="admonition-title"><span class="caption-number">Exercise 286 </span></p>
 <div class="section" id="exercise-content">
 <p>Soit <span class="math notranslate nohighlight">\(P \in \R[X]\)</span> unitaire de degré <span class="math notranslate nohighlight">\(n\)</span>, et <span class="math notranslate nohighlight">\(Q = \prod_{k=0}^n (X-k)\)</span>. Calculer <span class="math notranslate nohighlight">\(S = \sum_{k=0}^n \frac{P(k)}{\prod_{i \neq k}(k-i)}\)</span> et en déduire l’existence d’un <span class="math notranslate nohighlight">\(k \in [\![0,n]\!] \)</span> tel que <span class="math notranslate nohighlight">\(|P(k)| \geq \frac{n!}{2^n}\)</span>.</p>
 </div>
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Fractions rationnelles-solution-9">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-314"> Exercise 285</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-314"> Exercise 286</a></p>
 <div class="section" id="solution-content">
 <p>DES de <span class="math notranslate nohighlight">\(\frac{P}{Q}\)</span> pour en déduire <span class="math notranslate nohighlight">\(S = \underset{x\rightarrow +\infty}{\lim}\frac{xP}{Q} = 1\)</span>. Puis si aucun <span class="math notranslate nohighlight">\(k\)</span> ne vérifie l’inégalité, <span class="math notranslate nohighlight">\(S &lt; \frac{1}{2^n}\sum \frac{n!}{k!(n-k)!} = 1\)</span>.</p>
 </div>
 </div>
 <div class="exercise admonition" id="exo-315">
 
-<p class="admonition-title"><span class="caption-number">Exercise 286 </span> (théorème de Gauss-Lucas])</p>
+<p class="admonition-title"><span class="caption-number">Exercise 287 </span> (théorème de Gauss-Lucas])</p>
 <div class="section" id="exercise-content">
 <ol class="simple">
 <li><p>Soit <span class="math notranslate nohighlight">\(P \in \C[X]\)</span> non constant. Montrer que les racines de <span class="math notranslate nohighlight">\(P'\)</span> appartiennent à l’enveloppe convexe des racines de <span class="math notranslate nohighlight">\(P\)</span>.</p></li>
@@ -588,20 +587,19 @@ P = \prod_{i=1}^n (X-x_i)
 </div>
 <div class="solution dropdown admonition" id="parts/algebre_commutative/Fractions rationnelles-solution-11">
 
-<p class="admonition-title">Solution to<a class="reference internal" href="#exo-315"> Exercise 286 (théorème de Gauss-Lucas])</a></p>
+<p class="admonition-title">Solution to<a class="reference internal" href="#exo-315"> Exercise 287 (théorème de Gauss-Lucas])</a></p>
 <div class="section" id="solution-content">
-<ol class="simple">
-<li><p>On considère la fraction rationnelle <span class="math notranslate nohighlight">\(\frac{P'}{P}\)</span>, de DES <span class="math notranslate nohighlight">\(\sum \frac{\alpha_k}{X-x_k}\)</span>, où les <span class="math notranslate nohighlight">\(x_k\)</span> sont les racines de <span class="math notranslate nohighlight">\(P\)</span> et <span class="math notranslate nohighlight">\(\alpha_k\)</span> leur multiplicité. Soit <span class="math notranslate nohighlight">\(x\)</span> une racine de <span class="math notranslate nohighlight">\(P'\)</span> qui n’est pas aussi une racine de <span class="math notranslate nohighlight">\(P\)</span>. On écrit</p></li>
-</ol>
+<ol>
+<li><p>On considère la fraction rationnelle <span class="math notranslate nohighlight">\(\frac{P'}{P}\)</span>, de DES <span class="math notranslate nohighlight">\(\sum \frac{\alpha_k}{X-x_k}\)</span>, où les <span class="math notranslate nohighlight">\(x_k\)</span> sont les racines de <span class="math notranslate nohighlight">\(P\)</span> et <span class="math notranslate nohighlight">\(\alpha_k\)</span> leur multiplicité. Soit <span class="math notranslate nohighlight">\(x\)</span> une racine de <span class="math notranslate nohighlight">\(P'\)</span> qui n’est pas aussi une racine de <span class="math notranslate nohighlight">\(P\)</span>. On écrit</p>
 <div class="amsmath math notranslate nohighlight">
 \[\begin{align*}
-0 &amp;= \sum_k \frac{\alpha_k}{x-x_k} \\
-0 &amp;= \sum_k \overline{(x - x_k)}\frac{\alpha_k}{|x-x_k|^2}\\
-0 &amp;= \sum_k (x - x_k)\frac{\alpha_k}{|x-x_k|^2}\\
-x &amp;= \sum_k \frac{\lambda_k}{\sum_i \lambda_i} x_k
-\end{align*}\]</div>
+    0 &amp;= \sum_k \frac{\alpha_k}{x-x_k} \\
+    0 &amp;= \sum_k \overline{(x - x_k)}\frac{\alpha_k}{|x-x_k|^2}\\
+    0 &amp;= \sum_k (x - x_k)\frac{\alpha_k}{|x-x_k|^2}\\
+    x &amp;= \sum_k \frac{\lambda_k}{\sum_i \lambda_i} x_k
+    \end{align*}\]</div>
 <p>où les <span class="math notranslate nohighlight">\(\lambda_k = \frac{1}{|x-x_k|^2}\)</span> sont compris entre <span class="math notranslate nohighlight">\(0\)</span> et <span class="math notranslate nohighlight">\(1\)</span>.</p>
-<ol class="simple">
+</li>
 <li><p>Soit <span class="math notranslate nohighlight">\(z\in \C\)</span>. On considère <span class="math notranslate nohighlight">\(P_z = P-z\)</span>. <span class="math notranslate nohighlight">\(P_z\)</span> vérifie les mêmes hypothèses que <span class="math notranslate nohighlight">\(P\)</span>. Si <span class="math notranslate nohighlight">\(P_z\)</span> ne s’annule pas sur <span class="math notranslate nohighlight">\(H\)</span>, alors l’enveloppe convexe des racines de <span class="math notranslate nohighlight">\(P_z\)</span> est incluse dans <span class="math notranslate nohighlight">\(\C \setminus H\)</span> et donc les racines de <span class="math notranslate nohighlight">\(P'_z\)</span> le sont aussi. Cela étant exclu par hypothèse, <span class="math notranslate nohighlight">\(P_z\)</span> s’annule sur <span class="math notranslate nohighlight">\(H\)</span>, donc <span class="math notranslate nohighlight">\(P\)</span> atteint <span class="math notranslate nohighlight">\(z\)</span> sur <span class="math notranslate nohighlight">\(H\)</span>. Cela conclut.</p></li>
 <li><p>Récurrence sur le degré. Le cas d’initialisation se fait à la main (et est, au passage, trivial).</p></li>
 </ol>
